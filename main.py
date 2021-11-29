@@ -12,7 +12,7 @@ def parse_args(args=None):
     )
 
     parser.add_argument('--dataset', type=str, default=None, required=False, help='Specify dataset')
-    parser.add_argument('--columns', type=str, default=None, required=True, help='Specify dataset')
+    parser.add_argument('--columns', type=str, default=None, required=True, help='Specify temporal columns')
     parser.add_argument('--creator', type=str, default=None, required=True, help='Specify creator')
     parser.add_argument('--critic', type=str, default=None, required=True, help='Specify critic')
     parser.add_argument('--word_embedding', type=str, required=False, help='Word Embedding file')

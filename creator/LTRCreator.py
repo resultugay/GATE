@@ -1,10 +1,11 @@
 import logging
 from .Creator import Creator
 
-class MultiLabelCreator(Creator):
+class LTRCreator(Creator):
 
     def __init__(self,dataset):
-        logging.info('Creator is MultiLabel')
+        logging.info('Creator is LTR')
+        pass
 
     def train(self):
         pass

@@ -4,18 +4,19 @@ import logging
 
 class Gate:
     _instance = None
+    creator = None
+    critic = None
 
     def __new__(cls):
         if cls._instance is None:
-            print('Creating the object')
+            logging.info('Creating the GATE object')
             cls._instance = super(Gate, cls).__new__(cls)
         return cls._instance
 
-
     def initialize(self,args):
         logging.info('GATE initializing')
-        self.creator = CreatorFactory.get_creator(args.creator)
-        self.critic = CriticFactory.get_critic(args.critic)
+        self.creator = CreatorFactory.get_creator(args.creator,args.dataset)
+        self.critic = CriticFactory.get_critic(args.critic,args.dataset)
         logging.info('GATE initialized')
 
 

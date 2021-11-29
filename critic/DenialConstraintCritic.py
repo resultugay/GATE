@@ -1,7 +1,11 @@
 import logging
+from .Critic import Critic
 
 
-class DenialConstraintCritic:
-    def __init__(self):
+class DenialConstraintCritic(Critic):
+    def __init__(self,dataset):
         logging.info('Critic is Denial')
+        pass
+
+    def train(self):
         pass
