@@ -1,5 +1,9 @@
 --creator A2V
 --critic Denial
---columns 'status,gender'
+--columns status job marital_status
 --dataset data/synthetic/synthetic_training.csv
---epoch 170
+--epoch 5
+--write_every 1
+--lr 0.0001
+--emb_dim 2
+--batch_size 1
