@@ -11,11 +11,15 @@ def parse_args(path):
         usage='main.py [<args>] [-h | --help]',
         fromfile_prefix_chars='@'
     )
-    parser.add_argument('--dataset', type=str, default=None, required=False, help='Specify dataset')
-    parser.add_argument('--columns', type=str, default=None, required=True, help='Specify temporal columns')
-    parser.add_argument('--creator', type=str, default=None, required=True, help='Specify creator')
-    parser.add_argument('--critic', type=str, default=None, required=True, help='Specify critic')
-    parser.add_argument('--epoch', type=int, default=None, required=True, help='Specify critic')
+    parser.add_argument('--dataset', type=str, default=None, required=True, help='Specify dataset')
+    parser.add_argument('--columns', type=str, default=None,nargs='+', required=True, help='Specify temporal columns')
+    parser.add_argument('--creator', type=str, default='AV2', required=True, help='Specify creator')
+    parser.add_argument('--critic', type=str, default='Denial', required=True, help='Specify critic')
+    parser.add_argument('--epoch', type=int, default=100, required=True, help='Epoch Number')
+    parser.add_argument('--emb_dim', type=int, default=2, required=True, help='Embedding dimension of attribute values')
+    parser.add_argument('--write_every', type=int, default=1, required=True, help='Write output of the epoch at every iteration')
+    parser.add_argument('--lr', type=float, default=0.001, required=True, help='Learning Rate')
+    parser.add_argument('--batch_size', type=int, default=1, required=True, help='Batch Size')
     parser.add_argument('--word_embedding', type=str, required=False, help='Word Embedding file')
 
     """ # using shlex parse arguments

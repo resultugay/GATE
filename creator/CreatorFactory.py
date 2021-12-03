@@ -8,13 +8,14 @@ class CreatorFactory:
     def __init__(self):
         pass
 
-    def get_creator(args):
+    def get_creator(args,data_training):
         if args.creator == 'LTR':
-            return LTRCreator(args)
+            return LTRCreator(args,data_training)
         elif args.creator == 'Multi':
-            return MultiLabelCreator(args)
+            return MultiLabelCreator(args,data_training)
         elif args.creator == 'A2V':
-            return A2VCreator(args)
+            logging.info('Creator is A2V')
+            return A2VCreator(args,data_training)
         else:
             logging.error('No such creator name as ' + args.creator)
             raise ValueError(args.creator)

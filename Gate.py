@@ -1,3 +1,5 @@
+import pandas as pd
+
 from creator.CreatorFactory import CreatorFactory
 from critic.CriticFactory import CriticFactory
 import logging
@@ -6,6 +8,7 @@ class Gate:
     _instance = None
     creator = None
     critic = None
+    data_training = None
 
     def __new__(cls):
         if cls._instance is None:
@@ -18,7 +21,8 @@ class Gate:
 
     def initialize(self,args):
         logging.info('GATE initializing')
-        self.creator = CreatorFactory.get_creator(args)
+        self.data_training = pd.read_csv(args.dataset)
+        self.creator = CreatorFactory.get_creator(args,self.data_training)
         self.critic = CriticFactory.get_critic(args)
         logging.info('GATE initialized')
 
