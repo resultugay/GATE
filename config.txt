@@ -1,0 +1,5 @@
+--creator A2V
+--critic Denial
+--columns 'status,gender'
+--dataset data/synthetic/synthetic_training.csv
+--epoch 170
