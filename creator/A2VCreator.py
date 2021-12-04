@@ -81,10 +81,11 @@ class A2VCreator(Creator):
     def save_vectors(self,col,vector):
         f = open('output_vectors/'+ col + "_vectors.txt", "w")
         for key, value in vector.items():
-            f.write(key + ' ')
+            f.write(str(key) + ' ')
             for elem in value:
                 f.write("%s " % elem.item())
             f.write('\n')
+
         f.close()
 
     def train(self):
@@ -118,7 +119,7 @@ class A2VCreator(Creator):
                     total_loss += loss.item()
                     optimizer.step()
                 if ((ep + 1) % write_every) == 0:
-                    logging.info('Epoch ' + str(ep) + ' Loss ' + str(total_loss / (write_every)*len(self.training_data[col])))
+                    logging.info('Epoch ' + str(ep) + ' Loss ' + str(total_loss / ((write_every)*len(self.training_data[col]))))
                     total_loss = 0
 
             vector = {}
