@@ -110,7 +110,7 @@ class A2VCreator(Creator):
                     optimizer.step()
                 if ((ep + 1) % write_every) == 0:
                     logging.info('Epoch ' + str(ep) + ' Loss ' + str(total_loss / (
-                                write_every * len(self.training_data[col]))))
+                                write_every * len(dataloader))))
                     total_loss = 0
 
             vector = {}

@@ -69,23 +69,24 @@ class ElmoCreator(Creator):
             total_loss = 0
             for ep in range(epoch):
                 for data, label in dataloader:
+                    model.zero_grad()
                     data = torch.cat(data, dim=0)
                     data, label = data.to(device), label.to(device)
                     model = model.to(device)
-                    model.zero_grad()
                     res = model(data)
                     loss = criterion(res, label)
-                    loss.backward()
                     total_loss += loss.item()
+                    loss.backward()
                     optimizer.step()
                 if ((ep + 1) % write_every) == 0:
                     logging.info('Epoch ' + str(ep) + ' Loss ' + str(
-                        total_loss / (write_every * len(self.training_data[col]))))
+                        total_loss / (write_every * len(dataloader))))
                     total_loss = 0
 
             vector = {}
             for key, value in dataset.embeddings.items():
                 inter_vector = torch.matmul(dataset.embeddings[key].reshape(1, -1), model.x_embed.weight.t())
+                inter_vector = inter_vector.squeeze()
                 vector[key] = inter_vector
 
             """
@@ -97,21 +98,32 @@ class ElmoCreator(Creator):
                 print(key, res)
             """
             self.save_vectors(col, vector)
+            """
+            word_vectors = {}
+            for key, value in dataset.embeddings.items():
+                vector = torch.matmul(dataset.embeddings[key].reshape(1, -1), model.x_embed.weight.t())
+                word_vectors[key] = vector
+
+            cos = nn.CosineSimilarity(dim=1, eps=1e-6)
+            vec_stat = word_vectors['status']
+            embedding_vectors = []
+            for key, value in word_vectors.items():
+                res = cos(vec_stat, value)
+                print(key, res)
+            """
 
 class ElmoNet(nn.Module):
     def __init__(self, elmo_dim, embed_dim):
         super(ElmoNet, self).__init__()
         self.x_embed = nn.Linear(elmo_dim, embed_dim)
-        self.x1_embed = nn.Linear(elmo_dim, embed_dim)
-        self.x2_embed = nn.Linear(elmo_dim, embed_dim)
         self.relu = nn.ReLU()
 
     def forward(self, inputs_):
         x = self.x_embed(inputs_[0])
-        x1 = self.x1_embed(inputs_[1])
-        x2 = self.x2_embed(inputs_[2])
-        one = self.relu(torch.dot(x, x1))
-        two = self.relu(torch.dot(x, x2))
-        return one, two
+        x1 = self.x_embed(inputs_[1])
+        x2 = self.x_embed(inputs_[2])
+        one = torch.dot(x, x1)
+        two = torch.dot(x, x2)
+        return (one, two)
 
 

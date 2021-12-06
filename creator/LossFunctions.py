@@ -13,4 +13,4 @@ class PairWiseLoss(nn.Module):
         super(PairWiseLoss, self).__init__()
 
     def forward(self,res, target_):
-        return (1-(res[0]) + (1+res[1]))
+        return torch.max(torch.tensor(0),1-res[0]) + torch.max(torch.tensor(0),1+res[1])
