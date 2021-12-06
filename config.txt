@@ -1,8 +1,8 @@
---creator A2V
+--creator Elmo
 --critic Denial
---columns status job marital_status
+--columns kids city country salary status job marital_status
 --dataset data/synthetic/synthetic_training.csv
---epoch 5
+--epoch 10
 --write_every 1
 --lr 0.0001
 --emb_dim 2

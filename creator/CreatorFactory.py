@@ -2,6 +2,7 @@ from .LTRCreator import LTRCreator
 from .MultiLabelCreator import MultiLabelCreator
 from .A2VCreator import A2VCreator
 import logging
+from .ElmoCreator import ElmoCreator
 
 class CreatorFactory:
 
@@ -16,6 +17,9 @@ class CreatorFactory:
         elif args.creator == 'A2V':
             logging.info('Creator is A2V')
             return A2VCreator(args,data_training)
+        elif args.creator == 'Elmo':
+            logging.info('Creator is Elmo')
+            return ElmoCreator(args,data_training)
         else:
             logging.error('No such creator name as ' + args.creator)
             raise ValueError(args.creator)

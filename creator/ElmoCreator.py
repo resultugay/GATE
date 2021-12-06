@@ -3,17 +3,17 @@ import sys
 
 sys.path.append("..")
 from .Creator import Creator
-from dataloader.A2VDataLoader import AV2Dataset
+from dataloader.ElmoDataLoader import ElmoDataset
 import torch.nn as nn
 import torch
 import torch.nn.functional
 from torch.utils.data import Dataset, DataLoader
 import torch.optim as optim
-import numpy as np
-import matplotlib.pyplot as plt
-from .LossFunctions import A2VLoss
+from .LossFunctions import PairWiseLoss
+import tensorflow_hub as hub
+import tensorflow as tf
+class ElmoCreator(Creator):
 
-class A2VCreator(Creator):
     def __init__(self, args,data_training):
         self.args = args
         self.df = data_training
@@ -22,6 +22,7 @@ class A2VCreator(Creator):
         self.index_word = {}
         self.word_index = {}
         self.prepare_data()
+        self.elmo = hub.load('elmo_3')
 
     def prepare_data(self):
         self.df.index = self.df.id
@@ -50,47 +51,16 @@ class A2VCreator(Creator):
                             self.training_data[col].append(torch.tensor([word_index[col], word_index[key], word_index[key2]]))
                             self.labels[col].append(status[key] - status[key2])
 
-    def save_img(self,model,col,vector):
-        cos = nn.CosineSimilarity(dim=0, eps=1e-6)
-        vec_stat = vector[col]
-        embedding_vectors = []
-        for key, value in vector.items():
-            res = cos(vec_stat, value)
-            embedding_vectors.append(value.detach().numpy())
-
-        embedding_vectors = np.array(embedding_vectors)
-
-        fig, ax = plt.subplots(figsize=(10, 10))
-
-        ax.scatter(embedding_vectors[1:, 0], embedding_vectors[1:, 1], c='white')
-
-        for idx, word in sorted(self.index_word[col].items()):
-            x_coord = embedding_vectors[idx, 0]
-            y_coord = embedding_vectors[idx, 1]
-            ax.annotate(
-                word,
-                (x_coord, y_coord),
-                horizontalalignment='center',
-                verticalalignment='center',
-                size=20,
-                alpha=0.7
-            )
-            ax.set_title(f"Column-{col}")
-        plt.savefig(f"Column-{col}.jpg")
-
     def train(self):
         for col in self.args.columns:
             logging.info('Current Column is ' + col)
-            dataset = AV2Dataset(self.training_data[col], self.labels[col])
+            dataset = ElmoDataset(self.training_data[col], self.labels[col],self.elmo,self.index_word[col])
             dataloader = DataLoader(dataset, batch_size=self.args.batch_size, shuffle=True)
-
-            emb_dim = self.args.emb_dim
-            vocab_size = len(self.word_index[col])
             write_every = self.args.write_every
             epoch = self.args.epoch
 
-            model = A2VNet(vocab_size, emb_dim)
-            criterion = A2VLoss()
+            model = ElmoNet(1024,self.args.emb_dim)
+            criterion = PairWiseLoss()
             optimizer = optim.SGD(model.parameters(), lr=0.001)
             # CUDA for PyTorch
             use_cuda = torch.cuda.is_available()
@@ -99,41 +69,49 @@ class A2VCreator(Creator):
             total_loss = 0
             for ep in range(epoch):
                 for data, label in dataloader:
+                    data = torch.cat(data, dim=0)
                     data, label = data.to(device), label.to(device)
                     model = model.to(device)
                     model.zero_grad()
-                    data = data.squeeze()
                     res = model(data)
                     loss = criterion(res, label)
                     loss.backward()
                     total_loss += loss.item()
                     optimizer.step()
                 if ((ep + 1) % write_every) == 0:
-                    logging.info('Epoch ' + str(ep) + ' Loss ' + str(total_loss / (
-                                write_every * len(self.training_data[col]))))
+                    logging.info('Epoch ' + str(ep) + ' Loss ' + str(
+                        total_loss / (write_every * len(self.training_data[col]))))
                     total_loss = 0
 
             vector = {}
-            for key, value in self.index_word[col].items():
-                vector[value] = model.embeddings.weight[key]
+            for key, value in dataset.embeddings.items():
+                inter_vector = torch.matmul(dataset.embeddings[key].reshape(1, -1), model.x_embed.weight.t())
+                vector[key] = inter_vector
 
-            self.save_img(model,col,vector)
-            self.save_vectors(col,vector)
+            """
+            cos = nn.CosineSimilarity(dim=1, eps=1e-6)
+            vec_stat = vector['status']
+            embedding_vectors = []
+            for key, value in vector.items():
+                res = cos(vec_stat, value)
+                print(key, res)
+            """
+            self.save_vectors(col, vector)
 
-class A2VNet(nn.Module):
-    def __init__(self, vocab_size, emb_dim):
-        super(A2VNet, self).__init__()
-        self.embeddings = nn.Embedding(vocab_size, emb_dim)
-        self.linear = nn.Linear(emb_dim, 1)
-        self.cos = nn.CosineSimilarity(dim=0, eps=1e-6)
+class ElmoNet(nn.Module):
+    def __init__(self, elmo_dim, embed_dim):
+        super(ElmoNet, self).__init__()
+        self.x_embed = nn.Linear(elmo_dim, embed_dim)
+        self.x1_embed = nn.Linear(elmo_dim, embed_dim)
+        self.x2_embed = nn.Linear(elmo_dim, embed_dim)
+        self.relu = nn.ReLU()
 
     def forward(self, inputs_):
-        x = self.embeddings(inputs_[0])
-        x1 = self.embeddings(inputs_[1])
-        x2 = self.embeddings(inputs_[2])
-        one = self.cos(x, x1)
-        two = self.cos(x, x2)
-        return two - one
-
+        x = self.x_embed(inputs_[0])
+        x1 = self.x1_embed(inputs_[1])
+        x2 = self.x2_embed(inputs_[2])
+        one = self.relu(torch.dot(x, x1))
+        two = self.relu(torch.dot(x, x2))
+        return one, two
 
 
