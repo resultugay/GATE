@@ -9,8 +9,7 @@ import torch
 import torch.nn.functional
 from torch.utils.data import Dataset, DataLoader
 import torch.optim as optim
-import numpy as np
-import matplotlib.pyplot as plt
+
 from .LossFunctions import A2VLoss
 
 class A2VCreator(Creator):
@@ -23,7 +22,7 @@ class A2VCreator(Creator):
         self.word_index = {}
         self.prepare_data()
 
-    def prepare_data(self):
+    def prepare_data(self,remove_list):
         self.df.index = self.df.id
         for col in self.args.columns:
             logging.info('Preparing training data for column ' + col)
@@ -50,33 +49,6 @@ class A2VCreator(Creator):
                             self.training_data[col].append(torch.tensor([word_index[col], word_index[key], word_index[key2]]))
                             self.labels[col].append(status[key] - status[key2])
 
-    def save_img(self,model,col,vector):
-        cos = nn.CosineSimilarity(dim=0, eps=1e-6)
-        vec_stat = vector[col]
-        embedding_vectors = []
-        for key, value in vector.items():
-            res = cos(vec_stat, value)
-            embedding_vectors.append(value.detach().numpy())
-
-        embedding_vectors = np.array(embedding_vectors)
-
-        fig, ax = plt.subplots(figsize=(10, 10))
-
-        ax.scatter(embedding_vectors[1:, 0], embedding_vectors[1:, 1], c='white')
-
-        for idx, word in sorted(self.index_word[col].items()):
-            x_coord = embedding_vectors[idx, 0]
-            y_coord = embedding_vectors[idx, 1]
-            ax.annotate(
-                word,
-                (x_coord, y_coord),
-                horizontalalignment='center',
-                verticalalignment='center',
-                size=20,
-                alpha=0.7
-            )
-            ax.set_title(f"Column-{col}")
-        plt.savefig(f"Column-{col}.jpg")
 
     def train(self):
         for col in self.args.columns:

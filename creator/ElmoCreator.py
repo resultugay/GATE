@@ -12,19 +12,22 @@ import torch.optim as optim
 from .LossFunctions import PairWiseLoss
 import tensorflow_hub as hub
 import tensorflow as tf
+
+
 class ElmoCreator(Creator):
 
-    def __init__(self, args,data_training):
+    def __init__(self, args, data_training):
         self.args = args
         self.df = data_training
         self.training_data = {}
         self.labels = {}
         self.index_word = {}
         self.word_index = {}
-        self.prepare_data()
+        self.prepare_data({})
         self.elmo = hub.load('elmo_3')
+        self.CC = {}
 
-    def prepare_data(self):
+    def prepare_data(self, remove_list):
         self.df.index = self.df.id
         for col in self.args.columns:
             logging.info('Preparing training data for column ' + col)
@@ -47,19 +50,25 @@ class ElmoCreator(Creator):
                 for key, value in status.items():
                     for key2, value2 in status.items():
                         if (value == latest_timestamp and value2 != latest_timestamp) and (key != key2) and key_attr != \
-                               word_index[key] and key_attr != word_index[key2]:
-                            self.training_data[col].append(torch.tensor([word_index[col], word_index[key], word_index[key2]]))
-                            self.labels[col].append(status[key] - status[key2])
+                                word_index[key] and key_attr != word_index[key2]:
+                            if remove_list.get(col,None) and (key, key2) in remove_list[col]:
+                                    #logging.info(str(key) + ' and ' + str(key2) + ' removed from training data')
+                                    pass
+                            else:
+                                self.training_data[col].append(
+                                    torch.tensor([word_index[col], word_index[key], word_index[key2]]))
+                                self.labels[col].append(int(status[key]) - int(status[key2]))
+                                #logging.info(str(key) + ' and ' + str(key2) + ' removed from training data')
 
     def train(self):
         for col in self.args.columns:
             logging.info('Current Column is ' + col)
-            dataset = ElmoDataset(self.training_data[col], self.labels[col],self.elmo,self.index_word[col])
+            dataset = ElmoDataset(self.training_data[col], self.labels[col], self.elmo, self.index_word[col])
             dataloader = DataLoader(dataset, batch_size=self.args.batch_size, shuffle=True)
             write_every = self.args.write_every
             epoch = self.args.epoch
 
-            model = ElmoNet(1024,self.args.emb_dim)
+            model = ElmoNet(1024, self.args.emb_dim)
             criterion = PairWiseLoss()
             optimizer = optim.SGD(model.parameters(), lr=0.001)
             # CUDA for PyTorch
@@ -98,6 +107,7 @@ class ElmoCreator(Creator):
                 print(key, res)
             """
             self.save_vectors(col, vector)
+            self.save_img(col,vector)
             """
             word_vectors = {}
             for key, value in dataset.embeddings.items():
@@ -111,6 +121,9 @@ class ElmoCreator(Creator):
                 res = cos(vec_stat, value)
                 print(key, res)
             """
+            self.create_currency_constraints(col, vector, self.CC)
+        return self.CC
+
 
 class ElmoNet(nn.Module):
     def __init__(self, elmo_dim, embed_dim):
@@ -125,5 +138,3 @@ class ElmoNet(nn.Module):
         one = torch.dot(x, x1)
         two = torch.dot(x, x2)
         return (one, two)
-
-
