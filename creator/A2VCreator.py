@@ -45,9 +45,18 @@ class A2VCreator(Creator):
                 for key, value in status.items():
                     for key2, value2 in status.items():
                         if (value == latest_timestamp and value2 != latest_timestamp) and (key != key2) and key_attr != \
-                               word_index[key] and key_attr != word_index[key2]:
-                            self.training_data[col].append(torch.tensor([word_index[col], word_index[key], word_index[key2]]))
-                            self.labels[col].append(status[key] - status[key2])
+                                word_index[key] and key_attr != word_index[key2]:
+                            if remove_list.get(col,None) and (key, key2) in remove_list[col]:
+                                #logging.info(str(key) + ' and ' + str(key2) + ' removed from training data')
+                                #Consider these as negative instances
+                                self.training_data[col].append(
+                                    torch.tensor([word_index[col], word_index[key2], word_index[key]]))
+                                self.labels[col].append(int(status[key2]) - int(status[key]))
+                            else:
+                                self.training_data[col].append(
+                                    torch.tensor([word_index[col], word_index[key], word_index[key2]]))
+                                self.labels[col].append(int(status[key]) - int(status[key2]))
+                                #logging.info(str(key) + ' and ' + str(key2) + ' removed from training data')
 
 
     def train(self):
