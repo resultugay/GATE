@@ -2,7 +2,6 @@ from abc import ABC, abstractmethod
 import numpy as np
 import matplotlib.pyplot as plt
 import torch.nn as nn
-from currency_constraints import T1
 
 class Creator(ABC):
 

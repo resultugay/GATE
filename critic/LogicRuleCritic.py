@@ -1,6 +1,5 @@
 import logging
 from .Critic import Critic
-from currency_constraints import T1
 
 
 class LogicRuleCritic(Critic):
