@@ -107,7 +107,7 @@ class ElmoCreator(Creator):
                 print(key, res)
             """
             self.save_vectors(col, vector)
-            self.save_img(col,vector)
+            #self.save_img(col,vector)
             """
             word_vectors = {}
             for key, value in dataset.embeddings.items():
