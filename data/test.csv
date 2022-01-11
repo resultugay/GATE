@@ -1,0 +1,7 @@
+﻿id,row_id,FN,LN,Phone,status,gender,timestamp
+0,0,A,smith,12,single,F,1
+0,1,B,bath,23,married,F,2
+0,2,B,bath,23,divorced,F,3
+1,0,A,smith,12,single,F,1
+1,1,B,bath,23,married,F,2
+1,2,B,bath,23,divorced,F,3
