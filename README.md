@@ -1,7 +1,7 @@
 # GATE
 
 Getting Started
-
+python 3.8 or newer
 1) Install required packages via
 pip3 install -r requirements.txt
 2) Download Elmo3 from https://tfhub.dev/google/elmo/3 and put it in under GATE folder
