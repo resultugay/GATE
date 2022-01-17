@@ -1,9 +1,1 @@
-status,dead,working
-status,deceased,expire
-status,dead,operating
-status,operating,gone
-status,working,gone
-kids,0,5
-kids,2,5
-kids,3,5
-kids,4,5
+status,gone,working

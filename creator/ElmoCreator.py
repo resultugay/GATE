@@ -28,43 +28,44 @@ class ElmoCreator(Creator):
         self.CC = {}
 
     def prepare_data(self, remove_list):
-        self.df.index = self.df.id
-        for col in self.args.columns:
-            logging.info('Preparing training data for column ' + col)
-            self.training_data[col] = []
-            self.labels[col] = []
-            tokens = set(self.df[col].unique())
-            tokens.add(col)
-            index_word = {i: x for i, x in enumerate(tokens)}
-            word_index = {x: i for i, x in enumerate(tokens)}
-            self.index_word[col] = index_word
-            self.word_index[col] = word_index
+        if self.args.training:
+            self.df.index = self.df.id
+            for col in self.args.temporal_columns:
+                logging.info('Preparing training data for column ' + col)
+                self.training_data[col] = []
+                self.labels[col] = []
+                tokens = set(self.df[col].unique())
+                tokens.add(col)
+                index_word = {i: x for i, x in enumerate(tokens)}
+                word_index = {x: i for i, x in enumerate(tokens)}
+                self.index_word[col] = index_word
+                self.word_index[col] = word_index
 
-            for index in self.df.index:
-                sub_df = self.df.loc[index][[col, 'timestamp']]
-                status = dict(zip(sub_df[col], sub_df.timestamp))
+                for index in self.df.index:
+                    sub_df = self.df.loc[index][[col, 'timestamp']]
+                    status = dict(zip(sub_df[col], sub_df.timestamp))
 
-                latest_timestamp = sub_df['timestamp'].max()
+                    latest_timestamp = sub_df['timestamp'].max()
 
-                key_attr = word_index[col]
-                for key, value in status.items():
-                    for key2, value2 in status.items():
-                        if (value == latest_timestamp and value2 != latest_timestamp) and (key != key2) and key_attr != \
-                                word_index[key] and key_attr != word_index[key2]:
-                            if remove_list.get(col,None) and (key, key2) in remove_list[col]:
-                                #logging.info(str(key) + ' and ' + str(key2) + ' removed from training data')
-                                #Consider these as negative instances
-                                self.training_data[col].append(
-                                    torch.tensor([word_index[col], word_index[key2], word_index[key]]))
-                                self.labels[col].append(int(status[key2]) - int(status[key]))
-                            else:
-                                self.training_data[col].append(
-                                    torch.tensor([word_index[col], word_index[key], word_index[key2]]))
-                                self.labels[col].append(int(status[key]) - int(status[key2]))
-                                #logging.info(str(key) + ' and ' + str(key2) + ' removed from training data')
+                    key_attr = word_index[col]
+                    for key, value in status.items():
+                        for key2, value2 in status.items():
+                            if (value == latest_timestamp and value2 != latest_timestamp) and (key != key2) and key_attr != \
+                                    word_index[key] and key_attr != word_index[key2]:
+                                if remove_list.get(col,None) and (key, key2) in remove_list[col]:
+                                    #logging.info(str(key) + ' and ' + str(key2) + ' removed from training data')
+                                    #Consider these as negative instances
+                                    self.training_data[col].append(
+                                        torch.tensor([word_index[col], word_index[key2], word_index[key]]))
+                                    self.labels[col].append(int(status[key2]) - int(status[key]))
+                                else:
+                                    self.training_data[col].append(
+                                        torch.tensor([word_index[col], word_index[key], word_index[key2]]))
+                                    self.labels[col].append(int(status[key]) - int(status[key2]))
+                                    #logging.info(str(key) + ' and ' + str(key2) + ' removed from training data')
 
     def train(self):
-        for col in self.args.columns:
+        for col in self.args.temporal_columns:
             logging.info('Current Column is ' + col)
             dataset = ElmoDataset(self.training_data[col], self.labels[col], self.elmo, self.index_word[col])
             dataloader = DataLoader(dataset, batch_size=self.args.batch_size, shuffle=True)

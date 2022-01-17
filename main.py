@@ -11,8 +11,10 @@ def parse_args(path):
         usage='main.py [<args>] [-h | --help]',
         fromfile_prefix_chars='@'
     )
-    parser.add_argument('--dataset', type=str, default=None, required=True, help='Specify dataset')
-    parser.add_argument('--columns', type=str, default=None,nargs='+', required=True, help='Specify temporal columns')
+    parser.add_argument('--training_data', type=str, default=None, required=True, help='Specify training data')
+    parser.add_argument('--test_data', type=str, default=None, required=True, help='Specify test data')
+    parser.add_argument('--temporal_columns', type=str, default=None,nargs='+', required=True, help='Specify temporal columns')
+    parser.add_argument('--non_temporal_columns', type=str, default=None,nargs='+', required=True, help='Specify non temporal columns')
     parser.add_argument('--creator', type=str, default='AV2', required=True, help='Specify creator')
     parser.add_argument('--critic', type=str, default='Denial', required=True, help='Specify critic')
     parser.add_argument('--epoch', type=int, default=100, required=True, help='Epoch Number')
@@ -20,6 +22,8 @@ def parse_args(path):
     parser.add_argument('--write_every', type=int, default=1, required=True, help='Write output of the epoch at every iteration')
     parser.add_argument('--lr', type=float, default=0.001, required=True, help='Learning Rate')
     parser.add_argument('--batch_size', type=int, default=1, required=True, help='Batch Size')
+    parser.add_argument('--training', type=int, default=1, required=True, help='Training ?')
+    parser.add_argument('--test', type=int, default=1, required=True, help='Test ?')
     parser.add_argument('--word_embedding', type=str, required=False, help='Word Embedding file')
 
     """ # using shlex parse arguments

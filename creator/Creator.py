@@ -14,11 +14,11 @@ class Creator(ABC):
         pass
 
     def save_vectors(self,col,vector):
-        f = open('output_vectors/' + col + "_vectors.txt", "w")
+        f = open('output_vectors/' + col + ".txt", "w")
         for key, value in vector.items():
-            f.write(str(key) + ' ')
+            f.write(str(key) + '\t')
             for elem in value:
-                f.write("%s " % elem.item())
+                f.write("%s\t" % elem.item())
             f.write('\n')
 
         f.close()
