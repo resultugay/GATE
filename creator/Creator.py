@@ -2,6 +2,9 @@ from abc import ABC, abstractmethod
 import numpy as np
 import matplotlib.pyplot as plt
 import torch.nn as nn
+from numpy.linalg import norm
+import itertools
+import torch
 
 class Creator(ABC):
 
@@ -31,7 +34,6 @@ class Creator(ABC):
         y_s = []
         for key, value in vector.items():
             #embedding_vectors.append(value.detach().numpy())
-
             x_s.append(value.detach().numpy().tolist()[0])
             y_s.append(value.detach().numpy().tolist()[1])
 
@@ -54,21 +56,15 @@ class Creator(ABC):
         plt.savefig(f"Column-{col}.jpg")
 
     def create_currency_constraints(self,col,vector,cc):
-        cos = nn.CosineSimilarity(dim=0, eps=1e-6)
-        vec_stat = vector[col]
-        latest = []
-        non_latest = []
-        for key, value in vector.items():
-            res = cos(vec_stat, value)
-            # print(key,res.item())
-            if key != col:
-                if res.item() > 0.5:
-                    latest.append(key)
-                else:
-                    non_latest.append(key)
+        ref_vector = vector[col]
+        dist = []
+        cc[col] = []
+        for value, vec in vector.items():
+            euc_dist = np.linalg.norm(ref_vector.detach().numpy() - vec.detach().numpy())
+            if value != col:
+                dist.append((str(value), euc_dist.item()))
 
-        for l in latest:
-            for nl in non_latest:
-                if col not in cc:
-                    cc[col] = []
-                cc[col].append((l,nl))
+        sim = [x[0] for x in sorted(dist, key=lambda x: x[1])]
+        for i in itertools.combinations(sim, 2):
+            cc[col].append((i[0], i[1]))
+

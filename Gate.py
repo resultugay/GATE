@@ -40,7 +40,7 @@ class Gate:
 
     def e_step(self):
         currency_constraints = self.creator.train()
-        remove_list = self.critic.choose_rules(currency_constraints)
+        remove_list = self.critic.choose_rules(currency_constraints,self.data_training)
         return remove_list
 
     def m_step(self, remove_list):

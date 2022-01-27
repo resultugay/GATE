@@ -1,13 +1,13 @@
 --creator Elmo
---critic Logic
---temporal_columns status job kids salary marital_status
+--critic Measures
+--temporal_columns status
 --non_temporal_columns city country
 --training_data data/synthetic/synthetic_training.csv
 --test_data data/synthetic/synthetic_test.csv
---epoch 3
+--epoch 1
 --write_every 1
 --lr 0.0001
 --emb_dim 2
 --batch_size 1
---training 0
---test 1
+--training 1
+--test 0

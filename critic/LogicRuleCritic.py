@@ -27,10 +27,12 @@ class LogicRuleCritic(Critic):
         for col, cc_1 in currency_constraints.items():
             if col not in remove_list:
                 remove_list[col] = []
-            cc_2 = self.CC[col]
+            try:
+                cc_2 = self.CC[col]
 
-            for l, nl in cc_1:
-                if (nl, l) in cc_2:
-                    remove_list[col].append((l, nl))
-
+                for l, nl in cc_1:
+                    if (nl, l) in cc_2:
+                        remove_list[col].append((l, nl))
+            except:
+                pass
         return remove_list
