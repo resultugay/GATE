@@ -8,7 +8,7 @@ from numpy import dot
 from numpy.linalg import norm
 import logging
 import pickle
-
+import itertools
 
 class Gate:
     _instance = None
@@ -63,12 +63,14 @@ class Gate:
         if self.args.test:
             logging.info('Evaluation Started')
             self.data_test.index = self.data_test.id
-            with open('cc.pickle', 'rb') as handle:
+            with open('cc_temporal.pickle', 'rb') as handle:
                 cc = pickle.load(handle)
 
             vectors, columns = self.read_and_load_word_vectors()
-            tp, fp = self.calculate_metrics_for_temporal_cols(columns, vectors)
-            tp, fn = self.calculate_metrics_for_non_temporal_cols(self.args.non_temporal_columns, cc, tp)
+            with open('cc_temporal.pickle', 'rb') as handle:
+                temporal_ccs = pickle.load(handle)
+            tp, fp, fn = self.calculate_metrics_for_temporal_cols(temporal_ccs)
+            #tp, fn += self.calculate_metrics_for_non_temporal_cols(self.args.non_temporal_columns, cc, tp)
             self.calculate_metrics(tp, 0, fp, fn)
             logging.info('Evaluation Finished')
         else:
@@ -118,35 +120,27 @@ class Gate:
 
         return tp, fn
 
-    def calculate_metrics_for_temporal_cols(self, columns, vectors):
+    def calculate_metrics_for_temporal_cols(self, temporal_ccs):
         tp = 0
         fp = 0
+        fn = 0
         for i in self.data_test.id.unique():
             sub_df = self.data_test.loc[i]
-            for col in columns:
-                values_and_timestamps = sub_df[[col, 'timestamp']].to_dict('split')['data']
-                a = vectors[col].get(col)
-                max_score = -1
-                attribute_value = ''
-                max_time_stamp_of_value = 0
-                max_timestamp = sub_df['timestamp'].max()
-                min_timestamp = sub_df['timestamp'].min()
-                for value, timestamp in values_and_timestamps:
-                    b = vectors[col].get(str(value))
-                    cos_sim = dot(a, b) / (norm(a) * norm(b))
-                    if cos_sim > max_score:
-                        max_score = cos_sim
-                        attribute_value = value
-                        max_time_stamp_of_value = timestamp
-                    # print(value,cos_sim)
-                # print(sub_df.index[0],'value for', col, ' is', attribute_value)
-                # print(max_timestamp,timestamp)
-                if max_timestamp == max_time_stamp_of_value:
-                    tp += 1
-                else:
-                    fp += 1
-                    # print(sub_df.index[0],'value for', col, ' is', attribute_value, max_timestamp,max_time_stamp_of_value)
-        return tp, fp
+            rows = sub_df.to_dict('Records')
+            for i in itertools.permutations(rows, 2):
+                if i[0]['timestamp'] <= i[1]['timestamp']:
+                    continue
+
+                for col in temporal_ccs.keys():
+
+                    if (str(i[0][col]), str(i[1][col])) in temporal_ccs[col]:
+                        tp += 1
+                    elif (str(i[1][col]), str(i[0][col])) in temporal_ccs[col]:
+                        fp += 1
+                    else:
+                        # print(col,i[0][col],i[1][col],i[0]['row_id'],i[1]['row_id'])
+                        fn += 1
+        return tp, fp, fn
 
     def load_vectors(self,col):
         try:
