@@ -10,6 +10,7 @@ import logging
 import pickle
 import itertools
 
+
 class Gate:
     _instance = None
     creator = None
@@ -32,7 +33,7 @@ class Gate:
         self.data_training = pd.read_csv(args.training_data)
         self.data_training = self.data_training.astype(str)
         self.data_test = pd.read_csv(args.test_data)
-        #self.data_test = self.data_test.astype(str)
+        # self.data_test = self.data_test.astype(str)
         self.creator = CreatorFactory.get_creator(args, self.data_training)
         self.critic = CriticFactory.get_critic(args)
         self.args = args
@@ -40,7 +41,7 @@ class Gate:
 
     def e_step(self):
         currency_constraints = self.creator.train()
-        remove_list = self.critic.choose_rules(currency_constraints,self.data_training)
+        remove_list = self.critic.choose_rules(currency_constraints, self.data_training)
         return remove_list
 
     def m_step(self, remove_list):
@@ -59,32 +60,61 @@ class Gate:
         else:
             logging.info('No Training')
 
+    def read_vectors_convert_into_ccs(self):
+        vectors = {}
+        columns = []
+        for col in self.args.temporal_columns:
+            vector = self.load_vectors(col)
+            if vector is not None:
+                vectors[col] = vector
+                columns.append(col)
+
+        ccs = {}
+        for attr, values in vectors.items():
+            ccs[attr] = []
+            ref_vector = values[attr]
+            ref_vector = vectors[attr][attr]
+            dist = []
+            for vec, n in vectors[attr].items():
+                euc_dist = np.linalg.norm(ref_vector - n)
+                if vec != attr:
+                    dist.append((str(vec), euc_dist))
+            sim = [x[0] for x in sorted(dist, key=lambda x: x[1])]
+            for i in itertools.combinations(sim, 2):
+                ccs[attr].append((i[0], i[1]))
+
+        with open('cc_temporal_' + str(self.args.dataset) + '.pickle', 'wb') as handle:
+            pickle.dump(ccs, handle, protocol=pickle.HIGHEST_PROTOCOL)
+
+        return ccs
+
     def evaluate(self):
         if self.args.test:
             logging.info('Evaluation Started')
+            self.read_vectors_convert_into_ccs()
             self.data_test.index = self.data_test.id
-            with open('cc_temporal.pickle', 'rb') as handle:
-                cc = pickle.load(handle)
+            # with open('cc_temporal.pickle', 'rb') as handle:
+            #    cc = pickle.load(handle)
 
             vectors, columns = self.read_and_load_word_vectors()
-            with open('cc_temporal.pickle', 'rb') as handle:
+            with open('cc_temporal_' + str(self.args.dataset) + '.pickle', 'rb') as handle:
                 temporal_ccs = pickle.load(handle)
             tp, fp, fn = self.calculate_metrics_for_temporal_cols(temporal_ccs)
-            #tp, fn += self.calculate_metrics_for_non_temporal_cols(self.args.non_temporal_columns, cc, tp)
+            # tp, fn += self.calculate_metrics_for_non_temporal_cols(self.args.non_temporal_columns, cc, tp)
             self.calculate_metrics(tp, 0, fp, fn)
             logging.info('Evaluation Finished')
         else:
             logging.info('No Test')
 
-    def calculate_metrics(self,tp, tn, fp, fn):
+    def calculate_metrics(self, tp, tn, fp, fn):
         accuracy = (tp + tn) / (tp + fn + tn + fp)
         recall = tp / (fn + tp)
         precision = tp / (fp + tp)
         f_measure = (2 * precision * recall) / (precision + recall)
         logging.info('Data is :' + self.args.test_data)
-        logging.info('ACCURACY :'+ str(accuracy))
-        logging.info('RECALL :'+ str(recall))
-        logging.info('PRECISION :'+ str(precision))
+        logging.info('ACCURACY :' + str(accuracy))
+        logging.info('RECALL :' + str(recall))
+        logging.info('PRECISION :' + str(precision))
         logging.info('F-MEASURE :' + str(f_measure))
 
     def calculate_metrics_for_non_temporal_cols(self, non_temp_cols, cc, tp):
@@ -130,19 +160,20 @@ class Gate:
             for i in itertools.permutations(rows, 2):
                 if i[0]['timestamp'] <= i[1]['timestamp']:
                     continue
-
                 for col in temporal_ccs.keys():
-
-                    if (str(i[0][col]), str(i[1][col])) in temporal_ccs[col]:
-                        tp += 1
-                    elif (str(i[1][col]), str(i[0][col])) in temporal_ccs[col]:
-                        fp += 1
-                    else:
-                        # print(col,i[0][col],i[1][col],i[0]['row_id'],i[1]['row_id'])
-                        fn += 1
+                    try:
+                        if (str(i[0][col]), str(i[1][col])) in temporal_ccs[col]:
+                            tp += 1
+                        elif (str(i[1][col]), str(i[0][col])) in temporal_ccs[col]:
+                            fp += 1
+                        else:
+                            # print(col,i[0][col],i[1][col],i[0]['row_id'],i[1]['row_id'])
+                            fn += 1
+                    except:
+                        logging.error(str(col) + ' Column key error')
         return tp, fp, fn
 
-    def load_vectors(self,col):
+    def load_vectors(self, col):
         try:
             vector = {}
             path = 'output_vectors/' + str(col) + '.txt'

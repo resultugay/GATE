@@ -2,6 +2,7 @@ import torch
 import tensorflow_hub as hub
 import tensorflow as tf
 
+
 class ElmoDataset(torch.utils.data.Dataset):
     def __init__(self, list_IDs, labels, elmo, index_word):
         'Initialization'

@@ -12,6 +12,7 @@ def parse_args(path):
         fromfile_prefix_chars='@'
     )
     parser.add_argument('--training_data', type=str, default=None, required=True, help='Specify training data')
+    parser.add_argument('--dataset', type=str, default=None, required=True, help='Specify dataset name')
     parser.add_argument('--test_data', type=str, default=None, required=True, help='Specify test data')
     parser.add_argument('--temporal_columns', type=str, default=None,nargs='+', required=True, help='Specify temporal columns')
     parser.add_argument('--non_temporal_columns', type=str, default=None,nargs='+', required=True, help='Specify non temporal columns')

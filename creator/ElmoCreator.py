@@ -67,65 +67,68 @@ class ElmoCreator(Creator):
     def train(self):
         for col in self.args.temporal_columns:
             logging.info('Current Column is ' + col)
-            dataset = ElmoDataset(self.training_data[col], self.labels[col], self.elmo, self.index_word[col])
-            dataloader = DataLoader(dataset, batch_size=self.args.batch_size, shuffle=True)
-            write_every = self.args.write_every
-            epoch = self.args.epoch
+            if len(self.training_data[col]) != 0:
+                dataset = ElmoDataset(self.training_data[col], self.labels[col], self.elmo, self.index_word[col])
+                dataloader = DataLoader(dataset, batch_size=self.args.batch_size, shuffle=True)
+                write_every = self.args.write_every
+                epoch = self.args.epoch
 
-            model = ElmoNet(1024, self.args.emb_dim)
-            criterion = PairWiseLoss()
-            optimizer = optim.SGD(model.parameters(), lr=0.001)
-            # CUDA for PyTorch
-            use_cuda = torch.cuda.is_available()
-            device = torch.device("cuda:0" if use_cuda else "cpu")
-            torch.backends.cudnn.benchmark = True
-            total_loss = 0
-            for ep in range(epoch):
-                for data, label in dataloader:
-                    model.zero_grad()
-                    data = torch.cat(data, dim=0)
-                    data, label = data.to(device), label.to(device)
-                    model = model.to(device)
-                    res = model(data)
-                    loss = criterion(res, label)
-                    total_loss += loss.item()
-                    loss.backward()
-                    optimizer.step()
-                if ((ep + 1) % write_every) == 0:
-                    logging.info('Epoch ' + str(ep) + ' Loss ' + str(
-                        total_loss / (write_every * len(dataloader))))
-                    total_loss = 0
+                model = ElmoNet(1024, self.args.emb_dim)
+                criterion = PairWiseLoss()
+                optimizer = optim.SGD(model.parameters(), lr=0.001)
+                # CUDA for PyTorch
+                use_cuda = torch.cuda.is_available()
+                device = torch.device("cuda:0" if use_cuda else "cpu")
+                torch.backends.cudnn.benchmark = True
+                total_loss = 0
+                for ep in range(epoch):
+                    for data, label in dataloader:
+                        model.zero_grad()
+                        data = torch.cat(data, dim=0)
+                        data, label = data.to(device), label.to(device)
+                        model = model.to(device)
+                        res = model(data)
+                        loss = criterion(res, label)
+                        total_loss += loss.item()
+                        loss.backward()
+                        optimizer.step()
+                    if ((ep + 1) % write_every) == 0:
+                        logging.info('Epoch ' + str(ep) + ' Loss ' + str(
+                            total_loss / (write_every * len(dataloader))))
+                        total_loss = 0
 
-            vector = {}
-            for key, value in dataset.embeddings.items():
-                inter_vector = torch.matmul(dataset.embeddings[key].reshape(1, -1), model.x_embed.weight.t())
-                inter_vector = inter_vector.squeeze()
-                vector[key] = inter_vector
+                vector = {}
+                for key, value in dataset.embeddings.items():
+                    inter_vector = torch.matmul(dataset.embeddings[key].reshape(1, -1), model.x_embed.weight.t())
+                    inter_vector = inter_vector.squeeze()
+                    vector[key] = inter_vector
 
-            """
-            cos = nn.CosineSimilarity(dim=1, eps=1e-6)
-            vec_stat = vector['status']
-            embedding_vectors = []
-            for key, value in vector.items():
-                res = cos(vec_stat, value)
-                print(key, res)
-            """
-            self.save_vectors(col, vector)
-            self.save_img(col,vector)
-            """
-            word_vectors = {}
-            for key, value in dataset.embeddings.items():
-                vector = torch.matmul(dataset.embeddings[key].reshape(1, -1), model.x_embed.weight.t())
-                word_vectors[key] = vector
-
-            cos = nn.CosineSimilarity(dim=1, eps=1e-6)
-            vec_stat = word_vectors['status']
-            embedding_vectors = []
-            for key, value in word_vectors.items():
-                res = cos(vec_stat, value)
-                print(key, res)
-            """
-            self.create_currency_constraints(col, vector, self.CC)
+                """
+                cos = nn.CosineSimilarity(dim=1, eps=1e-6)
+                vec_stat = vector['status']
+                embedding_vectors = []
+                for key, value in vector.items():
+                    res = cos(vec_stat, value)
+                    print(key, res)
+                """
+                self.save_vectors(col, vector)
+                self.save_img(col,vector)
+                """
+                word_vectors = {}
+                for key, value in dataset.embeddings.items():
+                    vector = torch.matmul(dataset.embeddings[key].reshape(1, -1), model.x_embed.weight.t())
+                    word_vectors[key] = vector
+    
+                cos = nn.CosineSimilarity(dim=1, eps=1e-6)
+                vec_stat = word_vectors['status']
+                embedding_vectors = []
+                for key, value in word_vectors.items():
+                    res = cos(vec_stat, value)
+                    print(key, res)
+                """
+                self.create_currency_constraints(col, vector, self.CC)
+            else:
+                logging.info('Training data not available for ' + col)
         return self.CC
 
 
