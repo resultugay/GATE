@@ -6,4 +6,3 @@ __pycache__
 *.jpg
 output_vectors/
 *.pickle
-elmo_3
