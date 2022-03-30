@@ -7,6 +7,7 @@ import torch.nn.functional
 from torch.utils.data import Dataset, DataLoader
 import torch.optim as optim
 import time
+import sys
 
 sys.path.append("..")
 from .Creator import Creator
@@ -15,19 +16,19 @@ from .Creator import Creator
 class GateCreator(Creator):
 
     def __init__(self, args, training_data):
-        self.training_data = training_data
         self.args = args
+        self.model = Net(self.args.input_dim, self.args.embedding_dim)
 
-    def train(self):
+    def train(self, training_data):
         use_cuda = torch.cuda.is_available()
         device = torch.device("cuda:0" if use_cuda else "cpu")
         torch.backends.cudnn.benchmark = True
-        model = Net(1536, 80, 2)
-        model = model.to(device)
+        model = self.model.to(device)
         criterion = PairWiseLoss()
-        optimizer = optim.Adam(model.parameters(), lr=0.001)
-        training_set = GateDataset(self.training_data)
+        optimizer = optim.Adam(model.parameters(), lr=self.args.lr)
+        training_set = GateDataset(training_data)
         training_generator = torch.utils.data.DataLoader(training_set, batch_size=self.args.batch_size)
+        total_loss_min = sys.maxsize
         for ep in range(self.args.epoch):
             total_loss = 0
             start_time = time.time()
@@ -42,31 +43,36 @@ class GateCreator(Creator):
                 optimizer.step()
             end_time = time.time()
             epoch_time = (end_time - start_time) / 60
-            logging.info('Epoch: ' + str(ep) + ' Total Loss: %.4f | execution time %.4f mins' , total_loss, epoch_time)
+            logging.info('Epoch: ' + str(ep) + ' Total Loss: %.4f | execution time %.4f mins', total_loss, epoch_time)
+            if total_loss < total_loss_min:
+                logging.info('Saving the best model')
+                torch.save(model.state_dict(), 'best_saved_weights.pt')
+                logging.info('Model saved as best_saved_weights.pt')
+                total_loss_min = total_loss
+        self.model = model
 
 
 # Here we define our NN module
 class Net(nn.Module):
-    def __init__(self, dim, hidden_dim, embed_dim, ):
+    def __init__(self, input_dim, embed_dim):
         super(Net, self).__init__()
-        self.x_embed = nn.Linear(dim, hidden_dim)
-        self.x_embed2 = nn.Linear(hidden_dim, embed_dim)
-        self.embed_size = dim
+        self.x_input2embed = nn.Linear(input_dim, embed_dim)
+        self.x_embed2last = nn.Linear(embed_dim, 2)
         self.relu = nn.ReLU()
         self.cos = nn.CosineSimilarity(dim=1, eps=1e-6)
 
     def forward(self, inputs_):
-        x = self.x_embed(inputs_[0])
-        x = self.x_embed2(x)
+        dummy_reference_vector = self.x_input2embed(inputs_[0])
+        dummy_reference_vector = self.x_embed2last(dummy_reference_vector)
 
-        x1 = self.x_embed(inputs_[1])
-        x1 = self.x_embed2(x1)
+        latest_value_vector = self.x_input2embed(inputs_[1])
+        latest_value_vector = self.x_embed2last(latest_value_vector)
 
-        x2 = self.x_embed(inputs_[2])
-        x2 = self.x_embed2(x2)
+        non_latest_value_vector = self.x_input2embed(inputs_[2])
+        non_latest_value_vector = self.x_embed2last(non_latest_value_vector)
 
-        one = self.cos(x, x1)
-        two = self.cos(x, x2)
+        one = self.cos(dummy_reference_vector, latest_value_vector)
+        two = self.cos(dummy_reference_vector, non_latest_value_vector)
         return one, two
 
 
@@ -75,4 +81,4 @@ class PairWiseLoss(nn.Module):
         super(PairWiseLoss, self).__init__()
 
     def forward(self, res):
-        return torch.sum(torch.max(torch.tensor(0), 1 - res[0]) + torch.max(torch.tensor(0), res[1]))
+        return torch.sum(torch.max(torch.tensor(0), 1 - res[0]) + torch.max(torch.tensor(0), 1 + res[1]))
