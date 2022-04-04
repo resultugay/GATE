@@ -34,6 +34,8 @@ class Gate:
     simple_ccs = None
     complex_ccs = None
 
+    validation = dict()
+
     def __new__(cls):
         if cls._instance is None:
             logging.info('Creating the GATE object')
@@ -42,20 +44,34 @@ class Gate:
             logging.info('GATE object already exist')
         return cls._instance
 
+    def load_data(self):
+        # Training data
+        self.training_embedded = torch.load(self.args.data + 'training_embedded.pt')
+        with open(self.args.data + 'training_processed.pkl', 'rb') as f:
+            self.training_processed = pickle.load(f)
+        with open(self.args.data + 'training_attribute_embeddings.pkl', 'rb') as f:
+            self.training_attribute_embeddings = pickle.load(f)
+
+        self.training_sentence_embeddings = torch.load(self.args.data + 'training_sentence_embeddings.pt')
+        self.training_data = pd.read_csv(self.args.data + 'training.csv')
+
+        # Validation data
+        with open(self.args.data + 'validation_processed.pkl', 'rb') as f:
+            self.validation['data_processed'] = pickle.load(f)
+        with open(self.args.data + 'validation_attribute_embeddings.pkl', 'rb') as f:
+            self.validation['data_attribute_embeddings'] = pickle.load(f)
+
+        self.validation['data_sentence_embeddings'] = torch.load(self.args.data + 'validation_sentence_embeddings.pt')
+        self.validation['data'] = pd.read_csv(self.args.data + 'validation.csv')
+
     def initialize(self, args):
         logging.info('GATE initializing')
         self.args = args
         logging.info('Data loading')
-        self.training_embedded = torch.load(args.training + 'training_embedded.pt')
+        self.load_data()
         self.creator = CreatorFactory.get_creator(args, self.args.creator)
         self.critic = Critic()
-        with open(self.args.training + 'training_processed.pkl', 'rb') as f:
-            self.training_processed = pickle.load(f)
-        self.training_sentence_embeddings = torch.load(self.args.training + 'training_sentence_embeddings.pt')
-        with open(self.args.training + 'training_attribute_embeddings.pkl', 'rb') as f:
-            self.training_attribute_embeddings = pickle.load(f)
-        self.training_data = pd.read_csv(self.args.training + 'training.csv')
-        self.complex_ccs, self.simple_ccs = self.read_ccs(self.args.training)
+        self.complex_ccs, self.simple_ccs = self.read_ccs(self.args.data)
 
         logging.info('Data loaded')
 
@@ -84,12 +100,13 @@ class Gate:
         round = 1
         while improved_data:
             logging.info('Training round ' + str(round) + ' started')
-            self.creator.train(improved_data)
+            self.creator.train(improved_data, self.validation)
             high_conf_ccs = self.choose_high_confidence(self.creator.model, improved_data_processed)
             new_temporal_orders = self.critic.deduce(high_conf_ccs, self.training_data, self.complex_ccs)
             conflicted_orders = self.critic.conflict(self.simple_ccs, high_conf_ccs)
             improved_data, improved_data_processed = self.create_training_data(new_temporal_orders, conflicted_orders)
-            logging.info('Training round ' + str(round) + ' finished ' + str(len(improved_data)) + ' new training instances found')
+            logging.info('Training round ' + str(round) + ' finished ' + str(
+                len(improved_data)) + ' new training instances found')
             round += 1
         logging.info('Training Finished')
 
@@ -103,11 +120,11 @@ class Gate:
         cos = nn.CosineSimilarity(dim=0, eps=1e-6)
         confidence_map = {}
 
-        if isinstance(training_processed,dict):
+        if isinstance(training_processed, dict):
             embeddings = self.get_embeddings(training_processed)
             cnt = 0
             for attribute, orders in training_processed.items():
-                for pos_att,neg_att in orders:
+                for pos_att, neg_att in orders:
                     attr_vec, pos_vec, neg_vec = embeddings[cnt]
 
                     pos_sim = cos(attr_vec, pos_vec)

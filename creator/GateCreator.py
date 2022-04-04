@@ -1,6 +1,6 @@
 import logging
 import sys
-from creator.GateDataset import GateDataset
+from creator.GateDataset import GateDataset, GateValidationTestDataset
 import torch.nn as nn
 import torch
 import torch.nn.functional
@@ -8,6 +8,8 @@ from torch.utils.data import Dataset, DataLoader
 import torch.optim as optim
 import time
 import sys
+import numpy as np
+from sklearn.metrics import ndcg_score
 
 sys.path.append("..")
 from .Creator import Creator
@@ -19,7 +21,21 @@ class GateCreator(Creator):
         self.args = args
         self.model = Net(self.args.input_dim, self.args.embedding_dim)
 
-    def train(self, training_data):
+    def collate_fn(self, validation_set):
+        max_len = max([len(x) for x in validation_set])
+        lengths = [len(x) for x in validation_set]
+        lengths = torch.tensor(lengths)
+
+        zeros = torch.zeros(validation_set[0][0].shape)
+        data = []
+        for v in validation_set:
+            temp = v.copy()
+            for i in range(len(v), max_len):
+                temp.append(zeros)
+            data.append(temp)
+        return data, lengths
+
+    def train(self, training_data, validation_data):
         use_cuda = torch.cuda.is_available()
         device = torch.device("cuda:0" if use_cuda else "cpu")
         torch.backends.cudnn.benchmark = True
@@ -29,9 +45,15 @@ class GateCreator(Creator):
         training_set = GateDataset(training_data)
         training_generator = torch.utils.data.DataLoader(training_set, batch_size=self.args.batch_size)
         total_loss_min = sys.maxsize
+
+        validation_set = GateValidationTestDataset(validation_data)
+        validation_generator = torch.utils.data.DataLoader(validation_set, batch_size=self.args.batch_size, collate_fn=self.collate_fn)
+
         for ep in range(self.args.epoch):
             total_loss = 0
+            ndcg = 0
             start_time = time.time()
+            model.train()
             for local_batch in training_generator:
                 model.zero_grad()
                 local_batch = torch.stack(local_batch)
@@ -44,6 +66,25 @@ class GateCreator(Creator):
             end_time = time.time()
             epoch_time = (end_time - start_time) / 60
             logging.info('Epoch: ' + str(ep) + ' Total Loss: %.4f | execution time %.4f mins', total_loss, epoch_time)
+
+            model.eval()
+            for local_batch, lengths in validation_generator:
+                for attributes, length in zip(local_batch, lengths):
+                    attributes[0] = attributes[0].to(device)
+                    attr_emb = model.x_embed2last(model.x_input2embed(attributes[0]))
+                    res = []
+                    for idx in range(1, length):
+                        attributes[idx] = attributes[idx].to(device)
+                        val_emb = model.x_embed2last(model.x_input2embed(attributes[idx]))
+                        dist = np.linalg.norm(attr_emb.detach().numpy() - val_emb.detach().numpy())
+                        res.append(dist)
+
+                    pred = np.argsort(res) + 1
+                    ground_truth = np.arange(length - 1) + 1
+                    ndcg += ndcg_score([ground_truth], [pred])
+
+            logging.info('NDCG score for validation set is ' + str(ndcg / (len(validation_generator)*self.args.batch_size)))
+
             if total_loss < total_loss_min:
                 logging.info('Saving the best model')
                 torch.save(model.state_dict(), 'best_saved_weights.pt')
