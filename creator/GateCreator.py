@@ -61,7 +61,7 @@ class GateCreator(Creator):
                 res = model(local_batch)
                 loss = criterion(res)
                 total_loss += loss.item()
-                loss.backward()
+                loss.backward(retain_graph=True)
                 optimizer.step()
             end_time = time.time()
             epoch_time = (end_time - start_time) / 60
@@ -91,6 +91,7 @@ class GateCreator(Creator):
                 logging.info('Model saved as best_saved_weights.pt')
                 total_loss_min = total_loss
         self.model = model
+
 
 
 # Here we define our NN module

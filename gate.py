@@ -1,4 +1,7 @@
 import logging
+
+from sklearn.metrics import ndcg_score
+
 from creator.CreatorFactory import CreatorFactory
 import torch
 import pickle
@@ -8,6 +11,8 @@ import random
 import pandas as pd
 from critic.Critic import Critic
 from creator.BERT import get_emb
+from creator.GateDataset import GateValidationTestDataset
+from creator.GateDataset import GateValidationTestDataset
 
 
 class Gate:
@@ -35,6 +40,9 @@ class Gate:
     complex_ccs = None
 
     validation = dict()
+    test = dict()
+    complex_ccs = []
+    simple_ccs = {}
 
     def __new__(cls):
         if cls._instance is None:
@@ -64,6 +72,15 @@ class Gate:
         self.validation['data_sentence_embeddings'] = torch.load(self.args.data + 'validation_sentence_embeddings.pt')
         self.validation['data'] = pd.read_csv(self.args.data + 'validation.csv')
 
+        # Test data
+        with open(self.args.data + 'test_processed.pkl', 'rb') as f:
+            self.test['data_processed'] = pickle.load(f)
+        with open(self.args.data + 'test_attribute_embeddings.pkl', 'rb') as f:
+            self.test['data_attribute_embeddings'] = pickle.load(f)
+
+        self.test['data_sentence_embeddings'] = torch.load(self.args.data + 'test_sentence_embeddings.pt')
+        self.test['data'] = pd.read_csv(self.args.data + 'test.csv')
+
     def initialize(self, args):
         logging.info('GATE initializing')
         self.args = args
@@ -78,20 +95,19 @@ class Gate:
         logging.info('GATE initialized')
 
     def read_ccs(self, path):
-        complex_ccs = []
-        simple_ccs = {}
+
         with open(path + 'ccs.txt') as f:
             for line in f:
                 cc = line.split(',')
                 if len(cc) > 2:
-                    if cc[0] not in simple_ccs:
-                        simple_ccs[cc[0]] = []
-                    simple_ccs[cc[0]].append((str(cc[1]).strip(), str(cc[2]).strip()))
+                    if cc[0] not in self.simple_ccs:
+                        self.simple_ccs[cc[0]] = []
+                    self.simple_ccs[cc[0]].append((str(cc[1]).strip(), str(cc[2]).strip()))
                 else:
                     cc = line.split('>')
-                    complex_ccs.append((str(cc[0]).strip(), str(cc[1].strip())))
+                    self.complex_ccs.append((str(cc[0]).strip(), str(cc[1].strip())))
 
-        return complex_ccs, simple_ccs
+        return self.complex_ccs, self.simple_ccs
 
     def train(self):
         logging.info('Training Started')
@@ -109,6 +125,37 @@ class Gate:
                 len(improved_data)) + ' new training instances found')
             round += 1
         logging.info('Training Finished')
+
+    def evaluate(self):
+        logging.info('Evaluation Started')
+        test_set = GateValidationTestDataset(self.test)
+        test_generator = torch.utils.data.DataLoader(test_set, batch_size=self.args.batch_size, collate_fn=self.creator.collate_fn)
+        if self.creator.model is None:
+            from creator.GateCreator import Net
+            model = Net(self.args.input_dim, self.args.embedding_dim)
+            path = 'best_saved_weights.pt'
+            model.load_state_dict(torch.load(path))
+
+        self.creator.model.eval()
+        ndcg = 0
+        use_cuda = torch.cuda.is_available()
+        device = torch.device("cuda:0" if use_cuda else "cpu")
+        for local_batch, lengths in test_generator:
+            for attributes, length in zip(local_batch, lengths):
+                attributes[0] = attributes[0].to(device)
+                attr_emb = self.creator.model.x_embed2last(self.creator.model.x_input2embed(attributes[0]))
+                res = []
+                for idx in range(1, length):
+                    attributes[idx] = attributes[idx].to(device)
+                    val_emb = self.creator.model.x_embed2last(self.creator.model.x_input2embed(attributes[idx]))
+                    dist = np.linalg.norm(attr_emb.detach().numpy() - val_emb.detach().numpy())
+                    res.append(dist)
+
+                pred = np.argsort(res) + 1
+                ground_truth = np.arange(length - 1) + 1
+                ndcg += ndcg_score([ground_truth], [pred])
+
+        logging.info('NDCG score for test set is ' + str(ndcg / (len(test_generator) * self.args.batch_size)))
 
     def choose_high_confidence(self, model, training_processed):
         if self.creator.model is None:

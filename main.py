@@ -49,3 +49,4 @@ if __name__ == '__main__':
     gate = Gate()
     gate.initialize(args)
     gate.train()
+    gate.evaluate()
