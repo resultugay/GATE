@@ -121,8 +121,6 @@ class Net(nn.Module):
         latest_value_vector = latest_value_vector.double()
         non_latest_value_vector = non_latest_value_vector.double()
 
-        #print('dummy',dummy_reference_vector, latest_value_vector,non_latest_value_vector)
-
         one = self.cos(dummy_reference_vector, latest_value_vector)
         two = self.cos(dummy_reference_vector, non_latest_value_vector)
 

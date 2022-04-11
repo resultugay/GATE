@@ -52,13 +52,6 @@ class Gate:
             logging.info('GATE object already exist')
         return cls._instance
 
-    def read_txt_embeddings(self,path, emb):
-        with open(path, 'r') as f:
-            for line in f:
-                split_line = line.split()
-                word = split_line[0].replace('##', ' ')
-                embedding = torch.tensor(np.array(split_line[1:], dtype=np.float32))
-                emb[word] = embedding
 
 
     def load_data(self):
@@ -67,12 +60,8 @@ class Gate:
         with open(self.args.data + 'training_processed.pkl', 'rb') as f:
             self.training_processed = pickle.load(f)
 
-        # This is so fast and memory efficient
-        self.read_txt_embeddings(self.args.data + 'training_attribute_embeddings.txt',self.training_attribute_embeddings)
-        # This is the slowest and the most memory occupying thing,
-        # 3.3 GB vs 4.1MB, you choose
-        #with open(self.args.data + 'training_attribute_embeddings.pkl', 'rb') as f:
-        #    self.training_attribute_embeddings = pickle.load(f)
+        with open(self.args.data + 'training_attribute_embeddings.pkl', 'rb') as f:
+            self.training_attribute_embeddings = pickle.load(f)
 
         self.training_sentence_embeddings = torch.load(self.args.data + 'training_sentence_embeddings.pt')
         self.training_data = pd.read_csv(self.args.data + 'training.csv')
@@ -83,9 +72,8 @@ class Gate:
 
         self.validation['data_attribute_embeddings'] = dict()
 
-        self.read_txt_embeddings(self.args.data + 'validation_attribute_embeddings.txt',self.validation['data_attribute_embeddings'])
-        #with open(self.args.data + 'validation_attribute_embeddings.pkl', 'rb') as f:
-        #    self.validation['data_attribute_embeddings'] = pickle.load(f)
+        with open(self.args.data + 'validation_attribute_embeddings.pkl', 'rb') as f:
+            self.validation['data_attribute_embeddings'] = pickle.load(f)
 
         self.validation['data_sentence_embeddings'] = torch.load(self.args.data + 'validation_sentence_embeddings.pt')
         self.validation['data'] = pd.read_csv(self.args.data + 'validation.csv')
@@ -97,17 +85,21 @@ class Gate:
 
         self.test['data_attribute_embeddings'] = dict()
 
-        self.read_txt_embeddings(self.args.data + 'test_attribute_embeddings.txt',self.test['data_attribute_embeddings'])
 
-        #with open(self.args.data + 'test_attribute_embeddings.pkl', 'rb') as f:
-        #    self.test['data_attribute_embeddings'] = pickle.load(f)
+        with open(self.args.data + 'test_attribute_embeddings.pkl', 'rb') as f:
+            self.test['data_attribute_embeddings'] = pickle.load(f)
 
         self.test['data_sentence_embeddings'] = torch.load(self.args.data + 'test_sentence_embeddings.pt')
         self.test['data'] = pd.read_csv(self.args.data + 'test.csv')
 
     def initialize(self, args):
-        logging.info('GATE initializing')
         self.args = args
+        logging.info('GATE initializing')
+        logging.info('Data ' + self.args.data)
+        logging.info('Embedding Dim : ' + str(self.args.embedding_dim))
+        logging.info('Epoch : ' + str(self.args.epoch))
+        logging.info('Learning Rate : ' + str(self.args.lr))
+        logging.info('Batch Size : ' + str(self.args.batch_size))
         logging.info('Data loading')
         self.load_data()
         self.creator = CreatorFactory.get_creator(args)
