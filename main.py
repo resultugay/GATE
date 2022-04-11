@@ -17,7 +17,7 @@ def parse_args(path):
     parser.add_argument('--lr', type=float, default=0.001, required=True, help='Learning rate')
     parser.add_argument('--batch_size', type=int, default=1, required=True, help='Batch size')
     parser.add_argument('--input_dim', type=int, default=1536, required=False, help='Input dimension')
-    parser.add_argument('--embedding_dim', type=int, default=64, required=False,
+    parser.add_argument('--embedding_dim', type=int, default=2, required=False,
                         help='Hidden layer embedding dimension')
 
     args = parser.parse_args(convert_arg_line_to_args(open(sys.argv[1]).read()))

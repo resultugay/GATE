@@ -33,7 +33,7 @@ class Gate:
     # Sentence embeddings of the tuples
     training_sentence_embeddings = None
     # Unique attribute embeddings of the attribute values
-    training_attribute_embeddings = None
+    training_attribute_embeddings = {}
     # This is training data
     training_data = None
     simple_ccs = None
@@ -52,13 +52,27 @@ class Gate:
             logging.info('GATE object already exist')
         return cls._instance
 
+    def read_txt_embeddings(self,path, emb):
+        with open(path, 'r') as f:
+            for line in f:
+                split_line = line.split()
+                word = split_line[0].replace('##', ' ')
+                embedding = torch.tensor(np.array(split_line[1:], dtype=np.float32))
+                emb[word] = embedding
+
+
     def load_data(self):
         # Training data
         self.training_embedded = torch.load(self.args.data + 'training_embedded.pt')
         with open(self.args.data + 'training_processed.pkl', 'rb') as f:
             self.training_processed = pickle.load(f)
-        with open(self.args.data + 'training_attribute_embeddings.pkl', 'rb') as f:
-            self.training_attribute_embeddings = pickle.load(f)
+
+        # This is so fast and memory efficient
+        self.read_txt_embeddings(self.args.data + 'training_attribute_embeddings.txt',self.training_attribute_embeddings)
+        # This is the slowest and the most memory occupying thing,
+        # 3.3 GB vs 4.1MB, you choose
+        #with open(self.args.data + 'training_attribute_embeddings.pkl', 'rb') as f:
+        #    self.training_attribute_embeddings = pickle.load(f)
 
         self.training_sentence_embeddings = torch.load(self.args.data + 'training_sentence_embeddings.pt')
         self.training_data = pd.read_csv(self.args.data + 'training.csv')
@@ -66,8 +80,12 @@ class Gate:
         # Validation data
         with open(self.args.data + 'validation_processed.pkl', 'rb') as f:
             self.validation['data_processed'] = pickle.load(f)
-        with open(self.args.data + 'validation_attribute_embeddings.pkl', 'rb') as f:
-            self.validation['data_attribute_embeddings'] = pickle.load(f)
+
+        self.validation['data_attribute_embeddings'] = dict()
+
+        self.read_txt_embeddings(self.args.data + 'validation_attribute_embeddings.txt',self.validation['data_attribute_embeddings'])
+        #with open(self.args.data + 'validation_attribute_embeddings.pkl', 'rb') as f:
+        #    self.validation['data_attribute_embeddings'] = pickle.load(f)
 
         self.validation['data_sentence_embeddings'] = torch.load(self.args.data + 'validation_sentence_embeddings.pt')
         self.validation['data'] = pd.read_csv(self.args.data + 'validation.csv')
@@ -75,8 +93,14 @@ class Gate:
         # Test data
         with open(self.args.data + 'test_processed.pkl', 'rb') as f:
             self.test['data_processed'] = pickle.load(f)
-        with open(self.args.data + 'test_attribute_embeddings.pkl', 'rb') as f:
-            self.test['data_attribute_embeddings'] = pickle.load(f)
+
+
+        self.test['data_attribute_embeddings'] = dict()
+
+        self.read_txt_embeddings(self.args.data + 'test_attribute_embeddings.txt',self.test['data_attribute_embeddings'])
+
+        #with open(self.args.data + 'test_attribute_embeddings.pkl', 'rb') as f:
+        #    self.test['data_attribute_embeddings'] = pickle.load(f)
 
         self.test['data_sentence_embeddings'] = torch.load(self.args.data + 'test_sentence_embeddings.pt')
         self.test['data'] = pd.read_csv(self.args.data + 'test.csv')
@@ -86,7 +110,7 @@ class Gate:
         self.args = args
         logging.info('Data loading')
         self.load_data()
-        self.creator = CreatorFactory.get_creator(args, self.args.creator)
+        self.creator = CreatorFactory.get_creator(args)
         self.critic = Critic()
         self.complex_ccs, self.simple_ccs = self.read_ccs(self.args.data)
 
@@ -95,18 +119,19 @@ class Gate:
         logging.info('GATE initialized')
 
     def read_ccs(self, path):
-
-        with open(path + 'ccs.txt') as f:
-            for line in f:
-                cc = line.split(',')
-                if len(cc) > 2:
-                    if cc[0] not in self.simple_ccs:
-                        self.simple_ccs[cc[0]] = []
-                    self.simple_ccs[cc[0]].append((str(cc[1]).strip(), str(cc[2]).strip()))
-                else:
-                    cc = line.split('>')
-                    self.complex_ccs.append((str(cc[0]).strip(), str(cc[1].strip())))
-
+        try:
+            with open(path + 'ccs.txt') as f:
+                for line in f:
+                    cc = line.split(',')
+                    if len(cc) > 2:
+                        if cc[0] not in self.simple_ccs:
+                            self.simple_ccs[cc[0]] = []
+                        self.simple_ccs[cc[0]].append((str(cc[1]).strip(), str(cc[2]).strip()))
+                    else:
+                        cc = line.split('>')
+                        self.complex_ccs.append((str(cc[0]).strip(), str(cc[1].strip())))
+        except:
+            pass
         return self.complex_ccs, self.simple_ccs
 
     def train(self):
