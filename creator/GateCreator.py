@@ -101,21 +101,27 @@ class Net(nn.Module):
         self.x_input2embed = nn.Linear(input_dim, embed_dim)
         self.x_embed2last = nn.Linear(embed_dim, 2)
         self.relu = nn.ReLU()
-        self.cos = nn.CosineSimilarity(dim=1, eps=1e-6)
-        self.dropout = nn.Dropout(0.1)
+        self.cos = nn.CosineSimilarity(dim=1, eps=1e-8)
+        self.dropout = nn.Dropout(0.2)
 
     def forward(self, inputs_):
-        dummy_reference_vector = self.x_input2embed(inputs_[0])
+        dummy_reference_vector = self.x_input2embed(inputs_[0].float())
         dummy_reference_vector = self.x_embed2last(dummy_reference_vector)
         dummy_reference_vector = self.dropout(dummy_reference_vector)
 
-        latest_value_vector = self.x_input2embed(inputs_[1])
+        latest_value_vector = self.x_input2embed(inputs_[1].float())
         latest_value_vector = self.x_embed2last(latest_value_vector)
         latest_value_vector = self.dropout(latest_value_vector)
 
-        non_latest_value_vector = self.x_input2embed(inputs_[2])
+        non_latest_value_vector = self.x_input2embed(inputs_[2].float())
         non_latest_value_vector = self.x_embed2last(non_latest_value_vector)
         non_latest_value_vector = self.dropout(non_latest_value_vector)
+
+        dummy_reference_vector = dummy_reference_vector.double()
+        latest_value_vector = latest_value_vector.double()
+        non_latest_value_vector = non_latest_value_vector.double()
+
+        #print('dummy',dummy_reference_vector, latest_value_vector,non_latest_value_vector)
 
         one = self.cos(dummy_reference_vector, latest_value_vector)
         two = self.cos(dummy_reference_vector, non_latest_value_vector)
@@ -128,4 +134,4 @@ class PairWiseLoss(nn.Module):
         super(PairWiseLoss, self).__init__()
 
     def forward(self, res):
-        return torch.sum(1 - res[0] + res[1])
+        return torch.sum(torch.max(torch.tensor(0), 1 - res[0]) + torch.max(torch.tensor(0), res[1]))

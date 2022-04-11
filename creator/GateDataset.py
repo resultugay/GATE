@@ -17,6 +17,7 @@ class GateDataset():
 
 
 class GateValidationTestDataset():
+
     def __init__(self, valid_or_test):
         self.data_processed = valid_or_test['data_processed']
         self.data_sentence_emb = valid_or_test['data_sentence_embeddings']
