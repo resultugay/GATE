@@ -101,7 +101,6 @@ class Net(nn.Module):
         self.x_input2embed = nn.Linear(input_dim, embed_dim)
         self.x_embed2last = nn.Linear(embed_dim, 2)
         self.relu = nn.ReLU()
-        self.cos = nn.CosineSimilarity(dim=1, eps=1e-8)
         self.dropout = nn.Dropout(0.2)
 
     def forward(self, inputs_):
@@ -127,6 +126,7 @@ class Net(nn.Module):
 class PairWiseLoss(nn.Module):
     def __init__(self, weight=None, size_average=True):
         super(PairWiseLoss, self).__init__()
+        self.cos = nn.CosineSimilarity(dim=1, eps=1e-8)
 
     def forward(self, res):
         dummy_reference_vector = res[0]
