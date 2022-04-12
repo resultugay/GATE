@@ -12,7 +12,6 @@ import pandas as pd
 from critic.Critic import Critic
 from creator.BERT import get_emb
 from creator.GateDataset import GateValidationTestDataset
-from creator.GateDataset import GateValidationTestDataset
 
 
 class Gate:
