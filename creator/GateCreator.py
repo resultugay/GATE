@@ -121,10 +121,7 @@ class Net(nn.Module):
         latest_value_vector = latest_value_vector.double()
         non_latest_value_vector = non_latest_value_vector.double()
 
-        one = self.cos(dummy_reference_vector, latest_value_vector)
-        two = self.cos(dummy_reference_vector, non_latest_value_vector)
-
-        return one, two
+        return dummy_reference_vector, latest_value_vector, non_latest_value_vector
 
 
 class PairWiseLoss(nn.Module):
@@ -132,4 +129,15 @@ class PairWiseLoss(nn.Module):
         super(PairWiseLoss, self).__init__()
 
     def forward(self, res):
-        return torch.sum(torch.max(torch.tensor(0), 1 - res[0]) + torch.max(torch.tensor(0), res[1]))
+        dummy_reference_vector = res[0]
+        latest_value_vector = res[1]
+        non_latest_value_vector = res[2]
+        one = self.cos(dummy_reference_vector, latest_value_vector)
+        two = self.cos(dummy_reference_vector, non_latest_value_vector)
+        one, two = self.adaptive_marging(one,two)
+        return torch.sum(torch.max(torch.tensor(0), 1 - one) + torch.max(torch.tensor(0), two))
+
+    def adaptive_marging(self,one,two):
+        one = 1/(one + 1e-6)
+        two = 2/(two + 1e-6)
+        return one,two
