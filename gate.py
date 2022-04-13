@@ -23,22 +23,22 @@ class Gate:
     # The first element in the tuple is the dummy attribute vector
     # Second element is the vector of latest attribute value
     # Third element is the vector of non-latest attribute value
-    training_embedded = None
+    #training_embedded = None
 
     # training_processed is processed version of the training data
     # This is a list of lists, each list consists of three elements
     # [attr, (latest_attr_idx,latest_attr), (non_latest_attr_idx, non_latest_attr)]
     # These indexes help us to find the context vector of the tuple
-    training_processed = None
+    #training_processed = None
     # Sentence embeddings of the tuples
-    training_sentence_embeddings = None
+    #training_sentence_embeddings = None
     # Unique attribute embeddings of the attribute values
-    training_attribute_embeddings = {}
+    #training_attribute_embeddings = {}
     # This is training data
     training_data = None
     simple_ccs = None
     complex_ccs = None
-
+    training = dict()
     validation = dict()
     test = dict()
     complex_ccs = []
@@ -52,19 +52,22 @@ class Gate:
             logging.info('GATE object already exist')
         return cls._instance
 
-
-
     def load_data(self):
         # Training data
-        self.training_embedded = torch.load(self.args.data + 'training_embedded.pt')
+        try:
+            self.training['training_embedded'] = torch.load(self.args.data + 'training_embedded.pt')
+        except Exception as e:
+            self.training['training_embedded'] = None
+            logging.info('Training Embedded file missing, embeddings will be fetched during training')
+
         with open(self.args.data + 'training_processed.pkl', 'rb') as f:
-            self.training_processed = pickle.load(f)
+            self.training['data_processed'] = pickle.load(f)
 
         with open(self.args.data + 'training_attribute_embeddings.pkl', 'rb') as f:
-            self.training_attribute_embeddings = pickle.load(f)
+            self.training['data_attribute_embeddings'] = pickle.load(f)
 
-        self.training_sentence_embeddings = torch.load(self.args.data + 'training_sentence_embeddings.pt')
-        self.training_data = pd.read_csv(self.args.data + 'training.csv')
+        self.training['data_sentence_embeddings'] = torch.load(self.args.data + 'training_sentence_embeddings.pt')
+        self.training['data'] = pd.read_csv(self.args.data + 'training.csv')
 
         # Validation data
         with open(self.args.data + 'validation_processed.pkl', 'rb') as f:
@@ -82,9 +85,7 @@ class Gate:
         with open(self.args.data + 'test_processed.pkl', 'rb') as f:
             self.test['data_processed'] = pickle.load(f)
 
-
         self.test['data_attribute_embeddings'] = dict()
-
 
         with open(self.args.data + 'test_attribute_embeddings.pkl', 'rb') as f:
             self.test['data_attribute_embeddings'] = pickle.load(f)
@@ -128,12 +129,12 @@ class Gate:
 
     def train(self):
         logging.info('Training Started')
-        improved_data = self.training_embedded
-        improved_data_processed = self.training_processed
+        improved_data = self.training['training_embedded'] if self.training['training_embedded'] else [1]
+        improved_data_processed = self.training['data_processed']
         round = 1
         while improved_data:
             logging.info('Training round ' + str(round) + ' started')
-            self.creator.train(improved_data, self.validation)
+            self.creator.train(improved_data, self.training, self.validation)
             high_conf_ccs = self.choose_high_confidence(self.creator.model, improved_data_processed)
             new_temporal_orders = self.critic.deduce(high_conf_ccs, self.training_data, self.complex_ccs)
             conflicted_orders = self.critic.conflict(self.simple_ccs, high_conf_ccs)
@@ -146,7 +147,8 @@ class Gate:
     def evaluate(self):
         logging.info('Evaluation Started')
         test_set = GateValidationTestDataset(self.test)
-        test_generator = torch.utils.data.DataLoader(test_set, batch_size=self.args.batch_size, collate_fn=self.creator.collate_fn)
+        test_generator = torch.utils.data.DataLoader(test_set, batch_size=self.args.batch_size,
+                                                     collate_fn=self.creator.collate_fn)
         if self.creator.model is None:
             from creator.GateCreator import Net
             model = Net(self.args.input_dim, self.args.embedding_dim)

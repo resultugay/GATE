@@ -39,10 +39,10 @@ class GateCreator(Creator):
             data.append(temp)
         return data, lengths
 
-    def train(self, training_data, validation_data):
+    def train(self, improved_data, training_data, validation_data):
         criterion = PairWiseLoss()
         optimizer = optim.Adam(self.model.parameters(), lr=self.args.lr)
-        training_set = GateDataset(training_data)
+        training_set = GateDataset(improved_data,training_data)
         training_generator = torch.utils.data.DataLoader(training_set, batch_size=self.args.batch_size)
         total_loss_min = sys.maxsize
 
@@ -106,25 +106,28 @@ class Net(nn.Module):
 
     def forward(self, inputs_):
         dummy_reference_vector = self.x_input2embed(inputs_[0].float())
-        dummy_reference_vector = self.x_embed2last(dummy_reference_vector)
+        dummy_reference_vector = self.relu(self.x_embed2last(dummy_reference_vector))
         dummy_reference_vector = self.dropout(dummy_reference_vector)
 
         latest_value_vector = self.x_input2embed(inputs_[1].float())
-        latest_value_vector = self.x_embed2last(latest_value_vector)
+        latest_value_vector = self.relu(self.x_embed2last(latest_value_vector))
         latest_value_vector = self.dropout(latest_value_vector)
 
         non_latest_value_vector = self.x_input2embed(inputs_[2].float())
-        non_latest_value_vector = self.x_embed2last(non_latest_value_vector)
+        non_latest_value_vector = self.relu(self.x_embed2last(non_latest_value_vector))
         non_latest_value_vector = self.dropout(non_latest_value_vector)
 
         dummy_reference_vector = dummy_reference_vector.double()
         latest_value_vector = latest_value_vector.double()
         non_latest_value_vector = non_latest_value_vector.double()
+        # https://discuss.pytorch.org/t/dot-product-batch-wise/9746
+        one = torch.sum(dummy_reference_vector*latest_value_vector,dim=1)
+        two = torch.sum(dummy_reference_vector*non_latest_value_vector,dim=1)
 
-        one = self.cos(dummy_reference_vector, latest_value_vector)
-        two = self.cos(dummy_reference_vector, non_latest_value_vector)
+        cos_one = self.cos(dummy_reference_vector, latest_value_vector)
+        cos_two = self.cos(dummy_reference_vector, non_latest_value_vector)
 
-        return one, two
+        return one, cos_one, two, cos_two
 
 
 class PairWiseLoss(nn.Module):
@@ -132,4 +135,4 @@ class PairWiseLoss(nn.Module):
         super(PairWiseLoss, self).__init__()
 
     def forward(self, res):
-        return torch.sum(torch.max(torch.tensor(0), 1 - res[0]) + torch.max(torch.tensor(0), res[1]))
+        return torch.sum( torch.max(torch.tensor(0), (1 - res[0] - res[1])) + torch.max(torch.tensor(0),(1 + res[2] - res[3])))
