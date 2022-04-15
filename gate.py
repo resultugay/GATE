@@ -206,11 +206,11 @@ class Gate:
                 pos_context_index, pos_att = i[1]
                 neg_context_index, neg_att = i[2]
 
-                attribute_emb = self.training_attribute_embeddings[attribute]
-                pos_context_emb = self.training_sentence_embeddings[pos_context_index]
-                pos_att_emb = self.training_attribute_embeddings[str(pos_att)]
-                neg_context_emb = self.training_sentence_embeddings[neg_context_index]
-                neg_att_emb = self.training_attribute_embeddings[str(neg_att)]
+                attribute_emb = self.training['data_attribute_embeddings'][attribute]
+                pos_context_emb = self.training['data_sentence_embeddings'][pos_context_index]
+                pos_att_emb = self.training['data_attribute_embeddings'][str(pos_att)]
+                neg_context_emb = self.training['data_sentence_embeddings'][neg_context_index]
+                neg_att_emb = self.training['data_attribute_embeddings'][str(neg_att)]
 
                 # concat all of the tensors
                 attribute_emb = torch.cat((attribute_emb, attribute_emb), 0)
@@ -244,24 +244,24 @@ class Gate:
     def get_embeddings(self, order_dict):
         data = []
         for attribute, orders in order_dict.items():
-            if attribute not in self.training_attribute_embeddings:
+            if attribute not in self.training['data_attribute_embeddings']:
                 attribute_emb = get_emb(attribute)
-                self.training_attribute_embeddings[attribute] = attribute_emb
+                self.training['data_attribute_embeddings'][attribute] = attribute_emb
 
-            attribute_emb = self.training_attribute_embeddings[attribute]
+            attribute_emb = self.training['data_attribute_embeddings'][attribute]
             attribute_emb = torch.cat((attribute_emb, attribute_emb), 0)
 
             for pos_att, neg_att in orders:
-                if pos_att not in self.training_attribute_embeddings:
+                if pos_att not in self.training['data_attribute_embeddings']:
                     pos_att_emb = get_emb(str(pos_att))
-                    self.training_attribute_embeddings[pos_att] = pos_att_emb
+                    self.training['data_attribute_embeddings'][pos_att] = pos_att_emb
 
-                if neg_att not in self.training_attribute_embeddings:
+                if neg_att not in self.training['data_attribute_embeddings']:
                     neg_att_emb = get_emb(str(neg_att))
-                    self.training_attribute_embeddings[neg_att] = neg_att_emb
+                    self.training['data_attribute_embeddings'][neg_att] = neg_att_emb
 
-                pos_att_emb = self.training_attribute_embeddings[str(pos_att)]
-                neg_att_emb = self.training_attribute_embeddings[str(neg_att)]
+                pos_att_emb = self.training['data_attribute_embeddings'][str(pos_att)]
+                neg_att_emb = self.training['data_attribute_embeddings'][str(neg_att)]
                 pos_att_emb = torch.cat((pos_att_emb, pos_att_emb), 0)
                 neg_att_emb = torch.cat((neg_att_emb, neg_att_emb), 0)
                 data.append((attribute_emb, pos_att_emb, neg_att_emb))
