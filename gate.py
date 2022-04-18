@@ -176,6 +176,7 @@ class Gate:
         logging.info('NDCG score for test set is ' + str(ndcg / (len(test_generator) * self.args.batch_size)))
 
     def choose_high_confidence(self, model, training_processed):
+        logging.info('Choosing high confidence temporal orders')
         if self.creator.model is None:
             from creator.GateCreator import Net
             model = Net(self.args.input_dim, self.args.embedding_dim)
