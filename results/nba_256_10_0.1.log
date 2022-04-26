@@ -1,0 +1,60 @@
+05:29:23 INFO	Creating the GATE object
+05:29:23 INFO	GATE initializing
+05:29:23 INFO	Data data/nba/
+05:29:23 INFO	Embedding Dim : 64
+05:29:23 INFO	Epoch : 10
+05:29:23 INFO	Learning Rate : 0.0001
+05:29:23 INFO	Batch Size : 256
+05:29:23 INFO	High Confidence Sample Ratio : 0.1
+05:29:23 INFO	Data loading
+05:29:39 INFO	Data loaded
+05:29:39 INFO	GATE initialized
+05:29:39 INFO	Training Started
+05:29:39 INFO	Size of initial training data 188959
+05:29:39 INFO	Training round 1 started
+05:32:58 INFO	Epoch: 0 Total Loss: 391.6305 | execution time 3.3071 mins
+05:34:05 INFO	NDCG score for validation set is 0.737746119076338
+05:34:05 INFO	NDCG score from torchmetrics for validation set is 0.7377471446990966
+05:34:05 INFO	MRR score for validation set is 0.56484375
+05:34:05 INFO	Saving the best model
+05:34:05 INFO	Model saved as best_saved_weights.pt
+05:37:27 INFO	Epoch: 1 Total Loss: 1082.8091 | execution time 3.3642 mins
+05:38:29 INFO	NDCG score for validation set is 0.7424738460925707
+05:38:29 INFO	NDCG score from torchmetrics for validation set is 0.742474889755249
+05:38:29 INFO	MRR score for validation set is 0.550390625
+05:41:07 INFO	Creating the GATE object
+05:41:07 INFO	GATE initializing
+05:41:07 INFO	Data data/nba/
+05:41:07 INFO	Embedding Dim : 64
+05:41:07 INFO	Epoch : 10
+05:41:07 INFO	Learning Rate : 0.0001
+05:41:07 INFO	Batch Size : 256
+05:41:07 INFO	High Confidence Sample Ratio : 0.1
+05:41:07 INFO	Data loading
+05:41:23 INFO	Data loaded
+05:41:23 INFO	GATE initialized
+05:41:23 INFO	Training Started
+05:41:23 INFO	Size of initial training data 188959
+05:41:23 INFO	Training round 1 started
+05:44:35 INFO	Epoch: 0 Total Loss: 738.1211 | execution time 3.1941 mins
+05:45:40 INFO	NDCG score for validation set is 0.742576248474917
+05:45:40 INFO	NDCG score from torchmetrics for validation set is 0.742577314376831
+05:45:40 INFO	MRR score for validation set is 0.54609375
+05:45:40 INFO	Saving the best model
+05:45:40 INFO	Model saved as best_saved_weights.pt
+05:47:40 INFO	Creating the GATE object
+05:47:40 INFO	--------------------------------------------------------------------------------------
+05:47:40 INFO	--------------------------------------------------------------------------------------
+05:47:40 INFO	GATE initializing
+05:47:40 INFO	Data data/nba/
+05:47:40 INFO	Embedding Dim : 64
+05:47:40 INFO	Epoch : 10
+05:47:40 INFO	Learning Rate : 0.0001
+05:47:40 INFO	Batch Size : 256
+05:47:40 INFO	High Confidence Sample Ratio : 0.1
+05:47:40 INFO	Data loading
+05:47:57 INFO	Data loaded
+05:47:57 INFO	GATE initialized
+05:47:57 INFO	Training Started
+05:47:57 INFO	Size of initial training data 188959
+05:47:57 INFO	Training round 1 started

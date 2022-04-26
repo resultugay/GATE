@@ -15,20 +15,21 @@ def parse_args(path):
     parser.add_argument('--critic', type=str, default=None, required=False, help='Specify critic')
     parser.add_argument('--epoch', type=int, default=100, required=True, help='Epoch Number')
     parser.add_argument('--lr', type=float, default=0.001, required=True, help='Learning rate')
+    parser.add_argument('--high_conf_sample_ratio', type=float, default=0.1, required=True, help='Learning rate')
     parser.add_argument('--batch_size', type=int, default=1, required=True, help='Batch size')
     parser.add_argument('--input_dim', type=int, default=1536, required=False, help='Input dimension')
     parser.add_argument('--embedding_dim', type=int, default=64, required=False,
                         help='Hidden layer embedding dimension')
-
     args = parser.parse_args(convert_arg_line_to_args(open(sys.argv[1]).read()))
     return args
 
 
-def log_config():
+def log_config(args):
     logging.basicConfig(
         format='%(asctime)s %(levelname)s\t%(message)s', datefmt='%I:%M:%S',
         level=logging.INFO,
-        # filename='example.log',
+        filename='results/' + args.data[4:-1] + '_' + str(args.batch_size) + '_' + str(args.epoch) + '_' + str(args.high_conf_sample_ratio) + '.log',
+        filemode='a'
     )
 
 
@@ -45,7 +46,7 @@ if __name__ == '__main__':
         sys.exit(0)
     args = parse_args(sys.argv[1])
 
-    log_config()
+    log_config(args)
     gate = Gate()
     gate.initialize(args)
     gate.train()

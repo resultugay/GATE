@@ -10,7 +10,7 @@ import time
 import sys
 import numpy as np
 from sklearn.metrics import ndcg_score
-
+from torchmetrics.functional import retrieval_reciprocal_rank, retrieval_normalized_dcg
 sys.path.append("..")
 from .Creator import Creator
 
@@ -53,6 +53,8 @@ class GateCreator(Creator):
         for ep in range(self.args.epoch):
             total_loss = 0
             ndcg = 0
+            ndcgmetric = 0
+            mrr = 0
             start_time = time.time()
             self.model.train()
             for local_batch in training_generator:
@@ -83,9 +85,23 @@ class GateCreator(Creator):
                     pred = np.argsort(res) + 1
                     ground_truth = np.arange(length - 1) + 1
                     ndcg += ndcg_score([ground_truth], [pred])
+                    ndcgmetric += retrieval_normalized_dcg(torch.tensor(pred,dtype=torch.float32), torch.tensor(ground_truth))
+
+                    mrr_pred = [0]*len(pred)
+                    mrr_pred[np.argmin(pred)] = 1
+                    mrr_ground_truth = [True] + [False]*(len(pred)-1)
+                    mrr_pred = torch.tensor(mrr_pred,dtype=torch.float32)
+                    mrr_ground_truth = torch.tensor(mrr_ground_truth)
+                    mrr += retrieval_reciprocal_rank(mrr_pred,mrr_ground_truth)
 
             logging.info(
                 'NDCG score for validation set is ' + str(ndcg / (len(validation_generator) * self.args.batch_size)))
+
+            logging.info(
+                'NDCG score from torchmetrics for validation set is ' + str(ndcgmetric.item() / (len(validation_generator) * self.args.batch_size)))
+
+            logging.info(
+                'MRR score for validation set is ' + str(mrr.item() / (len(validation_generator) * self.args.batch_size)))
 
             if total_loss < total_loss_min:
                 logging.info('Saving the best model')
@@ -121,6 +137,8 @@ class Net(nn.Module):
         latest_value_vector = latest_value_vector.double()
         non_latest_value_vector = non_latest_value_vector.double()
         # https://discuss.pytorch.org/t/dot-product-batch-wise/9746
+
+        # Adaptive Margin Dot Product
         one = torch.sum(dummy_reference_vector*latest_value_vector,dim=1)
         two = torch.sum(dummy_reference_vector*non_latest_value_vector,dim=1)
 
@@ -135,4 +153,5 @@ class PairWiseLoss(nn.Module):
         super(PairWiseLoss, self).__init__()
 
     def forward(self, res):
-        return torch.sum( torch.max(torch.tensor(0), (1 - res[0] - res[1])) + torch.max(torch.tensor(0),(1 + res[2] - res[3])))
+        #return torch.sum( torch.max(torch.tensor(0), (1 - res[0] - res[1])) + torch.max(torch.tensor(0),(1 + res[2] - res[3])))
+        return torch.sum( torch.max(torch.tensor(0), (res[1])) + torch.max(torch.tensor(0),(1 - res[3])))

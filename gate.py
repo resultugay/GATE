@@ -12,6 +12,7 @@ import pandas as pd
 from critic.Critic import Critic
 from creator.BERT import get_emb
 from creator.GateDataset import GateValidationTestDataset
+from torchmetrics.functional import retrieval_reciprocal_rank, retrieval_normalized_dcg
 
 
 class Gate:
@@ -94,12 +95,15 @@ class Gate:
 
     def initialize(self, args):
         self.args = args
+        logging.info('--------------------------------------------------------------------------------------')
+        logging.info('--------------------------------------------------------------------------------------')
         logging.info('GATE initializing')
         logging.info('Data ' + self.args.data)
         logging.info('Embedding Dim : ' + str(self.args.embedding_dim))
         logging.info('Epoch : ' + str(self.args.epoch))
         logging.info('Learning Rate : ' + str(self.args.lr))
         logging.info('Batch Size : ' + str(self.args.batch_size))
+        logging.info('High Confidence Sample Ratio : ' + str(self.args.high_conf_sample_ratio))
         logging.info('Data loading')
         self.load_data()
         self.creator = CreatorFactory.get_creator(args)
@@ -131,10 +135,11 @@ class Gate:
         improved_data = self.training['training_embedded'] if self.training['training_embedded'] else [1]
         improved_data_processed = self.training['data_processed']
         round = 1
+        logging.info('Size of initial training data ' + str(len(self.training['data_processed'])))
         while improved_data:
             logging.info('Training round ' + str(round) + ' started')
             self.creator.train(improved_data, self.training, self.validation)
-            high_conf_ccs = self.choose_high_confidence(self.creator.model, improved_data_processed)
+            high_conf_ccs = self.choose_high_confidence(self.creator.model, improved_data_processed, self.args.high_conf_sample_ratio)
             new_temporal_orders = self.critic.deduce(high_conf_ccs, self.training_data, self.complex_ccs)
             conflicted_orders = self.critic.conflict(self.simple_ccs, high_conf_ccs)
             improved_data, improved_data_processed = self.create_training_data(new_temporal_orders, conflicted_orders)
@@ -148,6 +153,8 @@ class Gate:
         test_set = GateValidationTestDataset(self.test)
         test_generator = torch.utils.data.DataLoader(test_set, batch_size=self.args.batch_size,
                                                      collate_fn=self.creator.collate_fn)
+        logging.info('Size of training data ' + str(len(test_generator)))
+
         if self.creator.model is None:
             from creator.GateCreator import Net
             model = Net(self.args.input_dim, self.args.embedding_dim)
@@ -156,6 +163,8 @@ class Gate:
 
         self.creator.model.eval()
         ndcg = 0
+        ndcgmetric = 0
+        mrr = 0
         use_cuda = torch.cuda.is_available()
         device = torch.device("cuda:0" if use_cuda else "cpu")
         for local_batch, lengths in test_generator:
@@ -172,10 +181,23 @@ class Gate:
                 pred = np.argsort(res) + 1
                 ground_truth = np.arange(length - 1) + 1
                 ndcg += ndcg_score([ground_truth], [pred])
+                ndcgmetric += retrieval_normalized_dcg(torch.tensor(pred, dtype=torch.float32),
+                                                       torch.tensor(ground_truth))
+
+                mrr_pred = [0] * len(pred)
+                mrr_pred[np.argmin(pred)] = 1
+                mrr_ground_truth = [True] + [False] * (len(pred) - 1)
+                mrr += retrieval_reciprocal_rank(torch.tensor(mrr_pred, dtype=torch.float32), torch.tensor(mrr_ground_truth))
 
         logging.info('NDCG score for test set is ' + str(ndcg / (len(test_generator) * self.args.batch_size)))
 
-    def choose_high_confidence(self, model, training_processed):
+        logging.info(
+            'NDCG score from torchmetrics for validation set is ' + str(
+                ndcgmetric.item() / (len(test_generator) * self.args.batch_size)))
+
+        logging.info('MRR score for test set is ' + str(mrr.item() / (len(test_generator) * self.args.batch_size)))
+
+    def choose_high_confidence(self, model, training_processed, high_conf_sample_ratio):
         logging.info('Choosing high confidence temporal orders')
         if self.creator.model is None:
             from creator.GateCreator import Net
@@ -202,7 +224,7 @@ class Gate:
                     cnt += 1
         else:
             # sample training data, reduce calculations
-            for index, i in random.sample(list(enumerate(training_processed)), (len(training_processed) // 20)):
+            for index, i in random.sample(list(enumerate(training_processed)), (len(training_processed) * high_conf_sample_ratio)):
                 attribute = i[0]
                 pos_context_index, pos_att = i[1]
                 neg_context_index, neg_att = i[2]
