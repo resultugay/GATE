@@ -35,7 +35,6 @@ class Gate:
     # Unique attribute embeddings of the attribute values
     #training_attribute_embeddings = {}
     # This is training data
-    training_data = None
     simple_ccs = None
     complex_ccs = None
     training = dict()
@@ -140,7 +139,7 @@ class Gate:
             logging.info('Training round ' + str(round) + ' started')
             self.creator.train(improved_data, self.training, self.validation)
             high_conf_ccs = self.choose_high_confidence(self.creator.model, improved_data_processed, self.args.high_conf_sample_ratio)
-            new_temporal_orders = self.critic.deduce(high_conf_ccs, self.training_data, self.complex_ccs)
+            new_temporal_orders = self.critic.deduce(high_conf_ccs, self.training['data'], self.complex_ccs)
             conflicted_orders = self.critic.conflict(self.simple_ccs, high_conf_ccs)
             improved_data, improved_data_processed = self.create_training_data(new_temporal_orders, conflicted_orders)
             logging.info('Training round ' + str(round) + ' finished ' + str(
@@ -224,7 +223,7 @@ class Gate:
                     cnt += 1
         else:
             # sample training data, reduce calculations
-            for index, i in random.sample(list(enumerate(training_processed)), (len(training_processed) * high_conf_sample_ratio)):
+            for index, i in random.sample(list(enumerate(training_processed)), int(len(training_processed) * high_conf_sample_ratio)):
                 attribute = i[0]
                 pos_context_index, pos_att = i[1]
                 neg_context_index, neg_att = i[2]
