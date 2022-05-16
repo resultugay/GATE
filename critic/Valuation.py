@@ -27,8 +27,11 @@ class Predicate(object):
             if a_1 in timelinessAttrs and a_2 in timelinessAttrs:
                 self.isTimeliness = True
 
+    '''
     def toString(self):
-
+        if self.constant != None:
+            return self.operand1['relation'] + '.' + self.operand1['attribute'] + '.' + 
+    '''
 
     def isTimelinessPredicate(self):
         return self.isTimeliness
@@ -146,13 +149,25 @@ class CCs(object):
         for ruleStr in ruleStrs:
             self.CCsList.append(CC(ruleStr, timelinessAttrs))
 
+        self.indexByTO()
+
     def getCC(self, rid):
         return self.CCsList[rid]
 
+    def indexByTO(self):
+        self.CCsIndex = defaultdict(list)
+        for cc_id, cc in enumerate(self.CCsList):
+            for p in cc.getLHSs():
+                if p.isTimelinessPredicate():
+                    attr1, attr2 = p.getAttrs()
+                    if attr1 not in self.CCsIndex or self.CCsIndex[attr1][-1] != cc_id:
+                        self.CCsIndex[attr1].append(cc_id)
+
 
 class Valuation(object):
-    def __init__(self, CC, t_0, t_1, eid, satisfiedLHSs):
+    def __init__(self, CC, cc_id, t_0, t_1, eid, satisfiedLHSs):
         self.CC = CC
+        self.cc_id = cc_id
         self.t0 = t_0
         self.t1 = t_1
         self.eid = eid
@@ -163,7 +178,7 @@ class Valuation(object):
         return len(self.satistiedLHSs) == len(self.CC.getLHSs())
 
     def encode(self):
-        return
+        return str(self.t0) + RELATION_ATTRIBUTE + str(self.t1) + RELATION_ATTRIBUTE + str(self.cc_id)
 
     def checkNonTOPredicates(self, attrMap, D):
         # 1. get all non-to predicates

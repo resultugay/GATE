@@ -3,14 +3,17 @@ from Valuation import *
 
 class Chase(object):
 
+
+    ''' the first column is TID, the second column is EID
+    '''
     def __init__(self, D, schemas):
         self.D = D # original dataset (only consider ONE)
         self.schemas = schemas
         self.PLIs = []
-        self.
+        self.computedValuations = defaultdict()
 
     def constructPLIs(self):
-        for cid in range(len(self.schemas)):
+        for cid in range(2, len(self.schemas), 1):
             pli = self.constructPLI(D, cid)
             self.PLIs.append(pli)
 
@@ -20,6 +23,11 @@ class Chase(object):
             c = D[tid][cid]
             pli[c].append(tid)
 
+    def envoke(self, ccs, fixes):
+
+
+
     def PChase(self, ccs, fixes):
+
 
 
