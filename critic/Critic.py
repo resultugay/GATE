@@ -5,6 +5,7 @@ class Critic:
     def __init__(self):
         pass
 
+
     def deduce(self, high_conf_css, training_data, ccs):
 
         if not high_conf_css:
