@@ -1,0 +1,1323 @@
+Some weights of the model checkpoint at distilbert-base-uncased were not used when initializing DistilBertModel: ['vocab_layer_norm.bias', 'vocab_layer_norm.weight', 'vocab_transform.bias', 'vocab_transform.weight', 'vocab_projector.weight', 'vocab_projector.bias']
+- This IS expected if you are initializing DistilBertModel from the checkpoint of a model trained on another task or with another architecture (e.g. initializing a BertForSequenceClassification model from a BertForPreTraining model).
+- This IS NOT expected if you are initializing DistilBertModel from the checkpoint of a model that you expect to be exactly identical (initializing a BertForSequenceClassification model from a BertForSequenceClassification model).
+usage: main.py [<args>] [-h | --help]
+main.py: error: the following arguments are required: --high_conf_sample_ratio
+Some weights of the model checkpoint at distilbert-base-uncased were not used when initializing DistilBertModel: ['vocab_layer_norm.bias', 'vocab_projector.weight', 'vocab_transform.weight', 'vocab_projector.bias', 'vocab_layer_norm.weight', 'vocab_transform.bias']
+- This IS expected if you are initializing DistilBertModel from the checkpoint of a model trained on another task or with another architecture (e.g. initializing a BertForSequenceClassification model from a BertForPreTraining model).
+- This IS NOT expected if you are initializing DistilBertModel from the checkpoint of a model that you expect to be exactly identical (initializing a BertForSequenceClassification model from a BertForSequenceClassification model).
+/opt/disk1/yaoshuw/timeliness/codes/GATE/gate.py:159: UserWarning: To copy construct from a tensor, it is recommended to use sourceTensor.clone().detach() or sourceTensor.clone().detach().requires_grad_(True), rather than torch.tensor(sourceTensor).
+  attribute_embeddings[k] = torch.tensor(torch.nan_to_num(attribute_embeddings[k]), dtype=torch.float32) #torch.tensor(attribute_embeddings[k])
+/opt/disk1/yaoshuw/timeliness/codes/GATE/gate.py:162: UserWarning: To copy construct from a tensor, it is recommended to use sourceTensor.clone().detach() or sourceTensor.clone().detach().requires_grad_(True), rather than torch.tensor(sourceTensor).
+  sentence_embeddings = torch.tensor(torch.nan_to_num(sentence_embeddings), dtype=torch.float32)
+/root/anaconda3/lib/python3.9/site-packages/torch/nn/functional.py:1949: UserWarning: nn.functional.tanh is deprecated. Use torch.tanh instead.
+  warnings.warn("nn.functional.tanh is deprecated. Use torch.tanh instead.")
+/opt/disk1/yaoshuw/timeliness/codes/GATE/creator/GateCreator.py:116: UserWarning: To copy construct from a tensor, it is recommended to use sourceTensor.clone().detach() or sourceTensor.clone().detach().requires_grad_(True), rather than torch.tensor(sourceTensor).
+  attr = torch.tensor(oneTOEmbedds[0]).to(self.device)  # oneTOEmbedds[1], oneTOEmbedds[2]
+/opt/disk1/yaoshuw/timeliness/codes/GATE/creator/GateCreator.py:118: UserWarning: To copy construct from a tensor, it is recommended to use sourceTensor.clone().detach() or sourceTensor.clone().detach().requires_grad_(True), rather than torch.tensor(sourceTensor).
+  val_pos = torch.tensor(oneTOEmbedds[1]).to(self.device)
+/opt/disk1/yaoshuw/timeliness/codes/GATE/creator/GateCreator.py:120: UserWarning: To copy construct from a tensor, it is recommended to use sourceTensor.clone().detach() or sourceTensor.clone().detach().requires_grad_(True), rather than torch.tensor(sourceTensor).
+  val_neg = torch.tensor(oneTOEmbedds[2]).to(self.device)
+/opt/disk1/yaoshuw/timeliness/codes/GATE/creator/GateCreator.py:108: UserWarning: To copy construct from a tensor, it is recommended to use sourceTensor.clone().detach() or sourceTensor.clone().detach().requires_grad_(True), rather than torch.tensor(sourceTensor).
+  attr = torch.tensor(attribute_emb).to(self.device)
+/opt/disk1/yaoshuw/timeliness/codes/GATE/creator/GateCreator.py:110: UserWarning: To copy construct from a tensor, it is recommended to use sourceTensor.clone().detach() or sourceTensor.clone().detach().requires_grad_(True), rather than torch.tensor(sourceTensor).
+  val = torch.tensor(value_emb).to(self.device)
+1. The time of evaluating training data is 1.1920928955078125e-06 with 5042 number of training data
+Epoch: 0 Total Loss: 36.949598306020526 Accuracy: 0.6190003966679889 | execution time 0.6580047607421875 seconds
+Epoch: 1 Total Loss: 32.05640541314617 Accuracy: 0.6749305831019436 | execution time 0.5881412029266357 seconds
+Epoch: 2 Total Loss: 27.956676308931836 Accuracy: 0.7026973423244744 | execution time 0.4674854278564453 seconds
+Epoch: 3 Total Loss: 26.270187535237596 Accuracy: 0.7225307417691392 | execution time 0.44829893112182617 seconds
+Epoch: 4 Total Loss: 25.618051515004456 Accuracy: 0.7314557715192384 | execution time 0.5351252555847168 seconds
+Epoch: 5 Total Loss: 24.633129616547368 Accuracy: 0.7344307814359381 | execution time 0.46455907821655273 seconds
+Epoch: 6 Total Loss: 23.90406729690295 Accuracy: 0.7330424434748116 | execution time 0.3517327308654785 seconds
+Epoch: 7 Total Loss: 23.437916929486995 Accuracy: 0.738397461324871 | execution time 0.4530208110809326 seconds
+Epoch: 8 Total Loss: 22.947390514521857 Accuracy: 0.7477191590638635 | execution time 0.2935819625854492 seconds
+Epoch: 9 Total Loss: 22.52793647729473 Accuracy: 0.7500991669972233 | execution time 0.28707122802734375 seconds
+Epoch: 10 Total Loss: 22.426835011607572 Accuracy: 0.7526775089250297 | execution time 0.48114943504333496 seconds
+Epoch: 11 Total Loss: 22.33333877437776 Accuracy: 0.7556525188417295 | execution time 0.46950674057006836 seconds
+Epoch: 12 Total Loss: 22.183639662604975 Accuracy: 0.7554541848472828 | execution time 0.5241775512695312 seconds
+Epoch: 13 Total Loss: 21.47192208870418 Accuracy: 0.7594208647362158 | execution time 0.5588304996490479 seconds
+Epoch: 14 Total Loss: 20.9754965874834 Accuracy: 0.761007536691789 | execution time 0.5258100032806396 seconds
+Epoch: 15 Total Loss: 20.71348904938205 Accuracy: 0.7623958746529155 | execution time 0.4255027770996094 seconds
+Epoch: 16 Total Loss: 21.509744820279153 Accuracy: 0.7653708845696152 | execution time 0.4586982727050781 seconds
+Epoch: 17 Total Loss: 21.23151237879853 Accuracy: 0.7663625545418484 | execution time 0.4357171058654785 seconds
+Epoch: 18 Total Loss: 20.297875282125972 Accuracy: 0.7653708845696152 | execution time 0.46100282669067383 seconds
+Epoch: 19 Total Loss: 19.960554054372096 Accuracy: 0.767750892502975 | execution time 0.45978808403015137 seconds
+Epoch: 20 Total Loss: 20.871232455622017 Accuracy: 0.7691392304641016 | execution time 0.4302842617034912 seconds
+Epoch: 21 Total Loss: 20.68972063750948 Accuracy: 0.7699325664418881 | execution time 0.6695730686187744 seconds
+Epoch: 22 Total Loss: 20.554014780704872 Accuracy: 0.7729075763585879 | execution time 0.5995626449584961 seconds
+Epoch: 23 Total Loss: 19.509826335133635 Accuracy: 0.7738992463308211 | execution time 0.4882183074951172 seconds
+Epoch: 24 Total Loss: 19.627112398469002 Accuracy: 0.7742959143197145 | execution time 0.4726438522338867 seconds
+Epoch: 25 Total Loss: 19.138857989162418 Accuracy: 0.7756842522808409 | execution time 0.4181485176086426 seconds
+Epoch: 26 Total Loss: 18.97229072996909 Accuracy: 0.777865926219754 | execution time 0.4616274833679199 seconds
+Epoch: 27 Total Loss: 19.0837878915938 Accuracy: 0.7746925823086077 | execution time 0.40615010261535645 seconds
+Epoch: 28 Total Loss: 18.993624324178057 Accuracy: 0.7772709242364141 | execution time 0.3340952396392822 seconds
+Epoch: 29 Total Loss: 18.44641145791069 Accuracy: 0.7802459341531138 | execution time 0.4922666549682617 seconds
+Epoch: 30 Total Loss: 18.149519527304754 Accuracy: 0.7792542641808806 | execution time 0.48920249938964844 seconds
+Epoch: 31 Total Loss: 18.14858092281119 Accuracy: 0.781832606108687 | execution time 0.3974909782409668 seconds
+Epoch: 32 Total Loss: 17.953366053061288 Accuracy: 0.7816342721142404 | execution time 0.4356379508972168 seconds
+Epoch: 33 Total Loss: 17.592116666219244 Accuracy: 0.7808409361364538 | execution time 0.431978702545166 seconds
+Epoch: 34 Total Loss: 17.26931362116983 Accuracy: 0.7822292740975804 | execution time 0.5693721771240234 seconds
+Epoch: 35 Total Loss: 17.552610344079664 Accuracy: 0.7820309401031337 | execution time 0.5184519290924072 seconds
+Epoch: 36 Total Loss: 18.089862320563867 Accuracy: 0.7883776279254264 | execution time 0.2544112205505371 seconds
+Epoch: 37 Total Loss: 17.918915882720874 Accuracy: 0.7824276080920269 | execution time 0.3232998847961426 seconds
+Epoch: 38 Total Loss: 17.128868625680806 Accuracy: 0.7834192780642603 | execution time 0.28010988235473633 seconds
+Epoch: 39 Total Loss: 17.142100286485135 Accuracy: 0.7867909559698533 | execution time 0.2995119094848633 seconds
+2. The time of training Creator is 29.38069438934326 with 5042 number of training data 
+3. The time of update training data is  1.33514404296875e-05
+4. The time of choosing high confidence TOs is 60.061683654785156 with 504 temporal orders
+5. The time of Chase is 1.9455387592315674 with 18922 temporal orders
+AUG : indicator = True, the number of additional training data is 9903
+6. The time of adding more training data is 0.39258766174316406
+roundGATE=0 ndcg=0.8994925618171692 mrr=0.8611501455307007 precision=0.7434883885085057 recall=0.7415342735784854 Fmeasure=0.7425100453509411 accuracy=0.7417484651732793
+roundCreator=0 ndcg=0.8978043794631958 mrr=0.8584953546524048 precision=0.7359346322179867 recall=0.7339485602985004 Fmeasure=0.7349402544911938 accuracy=0.7341656552325513
+7. The time of evaluation is 1084.15789270401
+1. The time of evaluating training data is 6.9141387939453125e-06 with 5042 number of training data
+Epoch: 0 Total Loss: 74.73817981192458 Accuracy: 0.746135831381733 | execution time 1.1078779697418213 seconds
+Epoch: 1 Total Loss: 69.40849426336196 Accuracy: 0.7514218802275008 | execution time 1.023045539855957 seconds
+Epoch: 2 Total Loss: 66.2783440065399 Accuracy: 0.7544329207092673 | execution time 1.0229732990264893 seconds
+Epoch: 3 Total Loss: 65.78134325129491 Accuracy: 0.754633656741385 | execution time 1.022942066192627 seconds
+Epoch: 4 Total Loss: 64.48284653035515 Accuracy: 0.7604550016728002 | execution time 1.019312858581543 seconds
+Epoch: 5 Total Loss: 65.61356796375405 Accuracy: 0.7605888256942122 | execution time 1.0212438106536865 seconds
+Epoch: 6 Total Loss: 63.53197156818672 Accuracy: 0.7662094345935095 | execution time 1.0180861949920654 seconds
+Epoch: 7 Total Loss: 62.3217706370792 Accuracy: 0.7638675142188023 | execution time 1.0082485675811768 seconds
+Epoch: 8 Total Loss: 63.1751890798248 Accuracy: 0.766677818668451 | execution time 1.0084164142608643 seconds
+Epoch: 9 Total Loss: 61.13918100118339 Accuracy: 0.7654064904650385 | execution time 1.0049176216125488 seconds
+Epoch: 10 Total Loss: 60.42703289878424 Accuracy: 0.7686851789896286 | execution time 1.0073847770690918 seconds
+Epoch: 11 Total Loss: 59.533595260281025 Accuracy: 0.7688859150217464 | execution time 1.01363205909729 seconds
+Epoch: 12 Total Loss: 60.03075508322672 Accuracy: 0.7706256273001003 | execution time 1.0103328227996826 seconds
+Epoch: 13 Total Loss: 59.73211202712488 Accuracy: 0.7713616594178655 | execution time 1.0079843997955322 seconds
+Epoch: 14 Total Loss: 58.24741792452238 Accuracy: 0.7732351957176313 | execution time 1.0090174674987793 seconds
+Epoch: 15 Total Loss: 57.721661710350546 Accuracy: 0.7749749079959852 | execution time 1.0103034973144531 seconds
+Epoch: 16 Total Loss: 58.41692343106056 Accuracy: 0.775242556038809 | execution time 1.0155060291290283 seconds
+Epoch: 17 Total Loss: 57.36269136298793 Accuracy: 0.7769822683171629 | execution time 1.0128729343414307 seconds
+Epoch: 18 Total Loss: 57.93277677980106 Accuracy: 0.7781197724991636 | execution time 1.0156354904174805 seconds
+Epoch: 19 Total Loss: 58.70096121929121 Accuracy: 0.7769822683171629 | execution time 1.0161006450653076 seconds
+Epoch: 20 Total Loss: 57.76359830933256 Accuracy: 0.7805955168952827 | execution time 1.0055134296417236 seconds
+Epoch: 21 Total Loss: 57.089024249736184 Accuracy: 0.7807293409166945 | execution time 1.0089151859283447 seconds
+Epoch: 22 Total Loss: 57.481770348322364 Accuracy: 0.7832719973235196 | execution time 1.0175950527191162 seconds
+Epoch: 23 Total Loss: 55.31924775912482 Accuracy: 0.7822683171629308 | execution time 1.0154871940612793 seconds
+Epoch: 24 Total Loss: 54.98804931717696 Accuracy: 0.7858146537303446 | execution time 1.0277938842773438 seconds
+Epoch: 25 Total Loss: 55.31846037916229 Accuracy: 0.7852124456339913 | execution time 1.0184197425842285 seconds
+Epoch: 26 Total Loss: 55.522946903579914 Accuracy: 0.7866175978588157 | execution time 1.0102825164794922 seconds
+Epoch: 27 Total Loss: 54.0023522452718 Accuracy: 0.7865506858481097 | execution time 1.0052504539489746 seconds
+Epoch: 28 Total Loss: 54.07332365273691 Accuracy: 0.7878889260622282 | execution time 1.0280060768127441 seconds
+Epoch: 29 Total Loss: 52.846120962460176 Accuracy: 0.7876881900301104 | execution time 1.0149602890014648 seconds
+Epoch: 30 Total Loss: 53.96872915635604 Accuracy: 0.7868852459016393 | execution time 1.0142714977264404 seconds
+Epoch: 31 Total Loss: 57.962869776869184 Accuracy: 0.7851455336232854 | execution time 1.0196609497070312 seconds
+Epoch: 32 Total Loss: 55.30675406834955 Accuracy: 0.7891602542656407 | execution time 1.0095458030700684 seconds
+Epoch: 33 Total Loss: 52.27363861549538 Accuracy: 0.7910337905654065 | execution time 1.0164923667907715 seconds
+Epoch: 34 Total Loss: 51.8673917178942 Accuracy: 0.7908999665439946 | execution time 1.0051026344299316 seconds
+Epoch: 35 Total Loss: 50.79718185191419 Accuracy: 0.7926396788223486 | execution time 0.999948263168335 seconds
+Epoch: 36 Total Loss: 51.114569953818304 Accuracy: 0.7933087989294079 | execution time 1.0216732025146484 seconds
+Epoch: 37 Total Loss: 52.228276068242934 Accuracy: 0.7910337905654065 | execution time 1.0629425048828125 seconds
+Epoch: 38 Total Loss: 50.447526176939576 Accuracy: 0.7936433589829375 | execution time 1.0094404220581055 seconds
+Epoch: 39 Total Loss: 50.9067885554447 Accuracy: 0.7931749749079959 | execution time 1.0241832733154297 seconds
+2. The time of training Creator is 51.93221688270569 with 14945 number of training data 
+3. The time of update training data is  0.003383159637451172
+4. The time of choosing high confidence TOs is 55.06994652748108 with 1494 temporal orders
+5. The time of Chase is 0.5719547271728516 with 2004 temporal orders
+AUG : indicator = True, the number of additional training data is 2489
+6. The time of adding more training data is 0.09256601333618164
+roundGATE=1 ndcg=0.9004884362220764 mrr=0.8625038266181946 precision=0.7462870049585026 recall=0.7443561823856569 Fmeasure=0.7453203431797287 accuracy=0.7445618231738214
+roundCreator=1 ndcg=0.8991067409515381 mrr=0.8602544665336609 precision=0.7401705380770361 recall=0.7384248938117476 Fmeasure=0.7392966854820237 accuracy=0.7384902725569448
+7. The time of evaluation is 1072.5217454433441
+1. The time of evaluating training data is 2.384185791015625e-06 with 14945 number of training data
+Epoch: 0 Total Loss: 59.590138079235025 Accuracy: 0.8175404382241597 | execution time 1.830650806427002 seconds
+Epoch: 1 Total Loss: 55.99542446570717 Accuracy: 0.8205231157508317 | execution time 1.7578439712524414 seconds
+Epoch: 2 Total Loss: 57.01392762484878 Accuracy: 0.8192038545371114 | execution time 1.5738513469696045 seconds
+Epoch: 3 Total Loss: 55.54332647325024 Accuracy: 0.8208672708500631 | execution time 1.9072813987731934 seconds
+Epoch: 4 Total Loss: 54.29075128831454 Accuracy: 0.8232189973614775 | execution time 1.5648841857910156 seconds
+Epoch: 5 Total Loss: 55.29326473129305 Accuracy: 0.8209246300332683 | execution time 1.7061617374420166 seconds
+Epoch: 6 Total Loss: 53.55420475011438 Accuracy: 0.8228748422622462 | execution time 1.458845615386963 seconds
+Epoch: 7 Total Loss: 55.14205378561501 Accuracy: 0.8206951933004474 | execution time 1.7568085193634033 seconds
+Epoch: 8 Total Loss: 54.43861481509129 Accuracy: 0.8234484340942985 | execution time 1.5125072002410889 seconds
+Epoch: 9 Total Loss: 53.04555567408287 Accuracy: 0.8242514626591717 | execution time 1.774871587753296 seconds
+Epoch: 10 Total Loss: 52.30985129905072 Accuracy: 0.8235057932775037 | execution time 1.3926286697387695 seconds
+Epoch: 11 Total Loss: 52.22982452147887 Accuracy: 0.8234484340942985 | execution time 1.1159424781799316 seconds
+Epoch: 12 Total Loss: 52.627937124939 Accuracy: 0.8251692095904555 | execution time 1.6717004776000977 seconds
+Epoch: 13 Total Loss: 51.749193100234685 Accuracy: 0.8256854422393025 | execution time 1.4312489032745361 seconds
+Epoch: 14 Total Loss: 51.53821636499226 Accuracy: 0.8233910749110933 | execution time 1.6029510498046875 seconds
+Epoch: 15 Total Loss: 51.16990960073061 Accuracy: 0.8252265687736606 | execution time 1.3290700912475586 seconds
+Epoch: 16 Total Loss: 52.29870682773363 Accuracy: 0.8258001606057129 | execution time 1.22780442237854 seconds
+Epoch: 17 Total Loss: 51.44118630286827 Accuracy: 0.8267752667202019 | execution time 1.335085153579712 seconds
+Epoch: 18 Total Loss: 50.393993483457905 Accuracy: 0.8258001606057129 | execution time 1.278324842453003 seconds
+Epoch: 19 Total Loss: 50.24332500199198 Accuracy: 0.826545829987381 | execution time 1.6015183925628662 seconds
+Epoch: 20 Total Loss: 48.70631960693081 Accuracy: 0.8272341401858437 | execution time 1.1520006656646729 seconds
+Epoch: 21 Total Loss: 50.29290201971958 Accuracy: 0.8283239646667432 | execution time 1.0666520595550537 seconds
+Epoch: 22 Total Loss: 49.912758515945825 Accuracy: 0.8267752667202019 | execution time 1.030118703842163 seconds
+Epoch: 23 Total Loss: 49.339480962298865 Accuracy: 0.8274062177354594 | execution time 1.0598077774047852 seconds
+Epoch: 24 Total Loss: 49.79117671853606 Accuracy: 0.8286107605827693 | execution time 1.0253922939300537 seconds
+Epoch: 25 Total Loss: 49.78020078393945 Accuracy: 0.8263163932545601 | execution time 1.0371904373168945 seconds
+Epoch: 26 Total Loss: 47.93653347359489 Accuracy: 0.8294137891476425 | execution time 1.0423049926757812 seconds
+Epoch: 27 Total Loss: 46.98826437889408 Accuracy: 0.8303315360789263 | execution time 1.043412208557129 seconds
+Epoch: 28 Total Loss: 48.07332632378712 Accuracy: 0.8295858666972582 | execution time 1.0502469539642334 seconds
+Epoch: 29 Total Loss: 47.96939270650536 Accuracy: 0.8279224503843066 | execution time 1.0639221668243408 seconds
+Epoch: 30 Total Loss: 48.60163111908469 Accuracy: 0.8290696340484112 | execution time 1.0463471412658691 seconds
+Epoch: 31 Total Loss: 46.60453297261573 Accuracy: 0.8292990707812321 | execution time 1.0947134494781494 seconds
+Epoch: 32 Total Loss: 46.92395122652481 Accuracy: 0.8307904095445681 | execution time 1.0745058059692383 seconds
+Epoch: 33 Total Loss: 45.86117352690556 Accuracy: 0.8296432258804635 | execution time 1.0319676399230957 seconds
+Epoch: 34 Total Loss: 46.51529225411284 Accuracy: 0.8298153034300791 | execution time 1.0666778087615967 seconds
+Epoch: 35 Total Loss: 46.04026953886597 Accuracy: 0.8298726626132844 | execution time 1.0855975151062012 seconds
+Epoch: 36 Total Loss: 45.6082908007909 Accuracy: 0.8300447401629001 | execution time 1.0662312507629395 seconds
+Epoch: 37 Total Loss: 46.97326931282266 Accuracy: 0.8292417115980268 | execution time 1.1022460460662842 seconds
+Epoch: 38 Total Loss: 49.646832806101784 Accuracy: 0.8286681197659745 | execution time 1.0892283916473389 seconds
+Epoch: 39 Total Loss: 47.061234062795144 Accuracy: 0.8307330503613628 | execution time 1.0651140213012695 seconds
+2. The time of training Creator is 63.49651789665222 with 17434 number of training data 
+3. The time of update training data is  0.02421855926513672
+4. The time of choosing high confidence TOs is 60.20315885543823 with 1743 temporal orders
+5. The time of Chase is 0.8087160587310791 with 6098 temporal orders
+AUG : indicator = True, the number of additional training data is 4759
+6. The time of adding more training data is 0.17602181434631348
+roundGATE=2 ndcg=0.8998720049858093 mrr=0.8616352677345276 precision=0.7449890279273078 recall=0.7429129608335484 Fmeasure=0.743949546014 accuracy=0.7432125897034043
+roundCreator=2 ndcg=0.898535966873169 mrr=0.8594181537628174 precision=0.7392084320979667 recall=0.7373219440076971 Fmeasure=0.7382639829176811 accuracy=0.7374798204164359
+7. The time of evaluation is 1053.668140888214
+1. The time of evaluating training data is 1.9073486328125e-06 with 17434 number of training data
+Epoch: 0 Total Loss: 61.24271205493249 Accuracy: 0.859054656873789 | execution time 1.6459813117980957 seconds
+Epoch: 1 Total Loss: 57.70994656164622 Accuracy: 0.8627044563601135 | execution time 1.7635014057159424 seconds
+Epoch: 2 Total Loss: 55.44203344274002 Accuracy: 0.8644617672238994 | execution time 0.9949429035186768 seconds
+Epoch: 3 Total Loss: 55.897317674917446 Accuracy: 0.863740819177218 | execution time 1.2952566146850586 seconds
+Epoch: 4 Total Loss: 54.365845720205044 Accuracy: 0.8636957599243005 | execution time 1.4263899326324463 seconds
+Epoch: 5 Total Loss: 54.60390719735127 Accuracy: 0.8642815302122291 | execution time 1.510448932647705 seconds
+Epoch: 6 Total Loss: 54.2945399962533 Accuracy: 0.8642364709593114 | execution time 1.4647369384765625 seconds
+Epoch: 7 Total Loss: 54.7063755507646 Accuracy: 0.8661740188347677 | execution time 1.4355354309082031 seconds
+Epoch: 8 Total Loss: 53.82821764325582 Accuracy: 0.8662641373406029 | execution time 1.4818034172058105 seconds
+Epoch: 9 Total Loss: 54.32368630254454 Accuracy: 0.8663542558464381 | execution time 1.5115108489990234 seconds
+Epoch: 10 Total Loss: 52.510013537100896 Accuracy: 0.8661740188347677 | execution time 1.489772081375122 seconds
+Epoch: 11 Total Loss: 54.37734156703013 Accuracy: 0.8645969449826522 | execution time 1.3907361030578613 seconds
+Epoch: 12 Total Loss: 54.02232523870586 Accuracy: 0.8640111746947235 | execution time 1.4428739547729492 seconds
+Epoch: 13 Total Loss: 50.92079033293587 Accuracy: 0.8651827152705808 | execution time 1.4666626453399658 seconds
+Epoch: 14 Total Loss: 51.56216791908943 Accuracy: 0.8662190780876853 | execution time 1.4805028438568115 seconds
+Epoch: 15 Total Loss: 50.31023870415847 Accuracy: 0.8660388410760149 | execution time 1.467916488647461 seconds
+Epoch: 16 Total Loss: 51.21569950843461 Accuracy: 0.8682467444689767 | execution time 1.422011137008667 seconds
+Epoch: 17 Total Loss: 50.82136969079217 Accuracy: 0.8662641373406029 | execution time 1.274122714996338 seconds
+Epoch: 18 Total Loss: 50.37654845551556 Accuracy: 0.8672103816518723 | execution time 1.4586355686187744 seconds
+Epoch: 19 Total Loss: 50.55935954184538 Accuracy: 0.8672554409047898 | execution time 1.446732521057129 seconds
+Epoch: 20 Total Loss: 50.476819932546796 Accuracy: 0.8679313296985536 | execution time 1.397085428237915 seconds
+Epoch: 21 Total Loss: 50.7001807479118 Accuracy: 0.8676159149281305 | execution time 1.4687325954437256 seconds
+Epoch: 22 Total Loss: 48.62055025145179 Accuracy: 0.8685621592393998 | execution time 1.5231146812438965 seconds
+Epoch: 23 Total Loss: 47.667146145566 Accuracy: 0.8688775740098229 | execution time 1.388662576675415 seconds
+Epoch: 24 Total Loss: 49.192591757597654 Accuracy: 0.8683368629748118 | execution time 1.447389841079712 seconds
+Epoch: 25 Total Loss: 50.77267441626176 Accuracy: 0.8670301446402019 | execution time 1.4855272769927979 seconds
+Epoch: 26 Total Loss: 48.176862963750004 Accuracy: 0.866579552111026 | execution time 1.6787166595458984 seconds
+Epoch: 27 Total Loss: 46.53773830536683 Accuracy: 0.8690127517685757 | execution time 1.9556677341461182 seconds
+Epoch: 28 Total Loss: 47.2569508711043 Accuracy: 0.868652277745235 | execution time 1.5206186771392822 seconds
+Epoch: 29 Total Loss: 48.58075442428224 Accuracy: 0.8682467444689767 | execution time 1.7949554920196533 seconds
+Epoch: 30 Total Loss: 49.11005813480439 Accuracy: 0.8672554409047898 | execution time 1.6211926937103271 seconds
+Epoch: 31 Total Loss: 48.456386050858974 Accuracy: 0.8691028702744108 | execution time 1.6278443336486816 seconds
+Epoch: 32 Total Loss: 47.40994345492736 Accuracy: 0.8672103816518723 | execution time 1.5634617805480957 seconds
+Epoch: 33 Total Loss: 46.04701249943948 Accuracy: 0.869418285044834 | execution time 1.7074320316314697 seconds
+Epoch: 34 Total Loss: 47.627952013462064 Accuracy: 0.8670752038931194 | execution time 1.8382902145385742 seconds
+Epoch: 35 Total Loss: 47.76153213141058 Accuracy: 0.867886270445636 | execution time 1.4994406700134277 seconds
+Epoch: 36 Total Loss: 47.359567149092754 Accuracy: 0.8679763889514712 | execution time 1.4795382022857666 seconds
+Epoch: 37 Total Loss: 47.02891225840759 Accuracy: 0.8669400261343667 | execution time 1.4769916534423828 seconds
+Epoch: 38 Total Loss: 47.627477586536905 Accuracy: 0.867660974181048 | execution time 1.5344078540802002 seconds
+Epoch: 39 Total Loss: 49.56217243900417 Accuracy: 0.8663993150993556 | execution time 1.7691891193389893 seconds
+2. The time of training Creator is 72.87153148651123 with 22193 number of training data 
+3. The time of update training data is  0.031120777130126953
+4. The time of choosing high confidence TOs is 50.695794105529785 with 2000 temporal orders
+5. The time of Chase is 0.9639878273010254 with 6897 temporal orders
+AUG : indicator = True, the number of additional training data is 5424
+6. The time of adding more training data is 0.1724083423614502
+roundGATE=3 ndcg=0.8981094360351562 mrr=0.8594300150871277 precision=0.7406899635777371 recall=0.7385128951259006 Fmeasure=0.739599827263567 accuracy=0.7388702968313635
+roundCreator=3 ndcg=0.8967710733413696 mrr=0.8572247624397278 precision=0.7352099742167909 recall=0.7327341421631897 Fmeasure=0.733969970322922 accuracy=0.7332818778501821
+7. The time of evaluation is 997.9520106315613
+1. The time of evaluating training data is 2.1457672119140625e-06 with 22193 number of training data
+Epoch: 0 Total Loss: 61.067427716453835 Accuracy: 0.8866640112973893 | execution time 2.329732656478882 seconds
+Epoch: 1 Total Loss: 57.66233227918766 Accuracy: 0.8881848137017054 | execution time 2.116818428039551 seconds
+Epoch: 2 Total Loss: 58.175944597639415 Accuracy: 0.8895969873628562 | execution time 2.0884859561920166 seconds
+Epoch: 3 Total Loss: 55.639092955818384 Accuracy: 0.8905022268892349 | execution time 2.488880157470703 seconds
+Epoch: 4 Total Loss: 57.59446366643031 Accuracy: 0.8895245682007459 | execution time 2.30061936378479 seconds
+Epoch: 5 Total Loss: 58.07740862029625 Accuracy: 0.8885831190933121 | execution time 2.476362943649292 seconds
+Epoch: 6 Total Loss: 54.37793313391202 Accuracy: 0.8929282688199297 | execution time 1.6532831192016602 seconds
+Epoch: 7 Total Loss: 53.65256856767023 Accuracy: 0.8921678676177717 | execution time 2.0575222969055176 seconds
+Epoch: 8 Total Loss: 54.716549744685274 Accuracy: 0.8936886700220878 | execution time 1.861067295074463 seconds
+Epoch: 9 Total Loss: 53.45484660602134 Accuracy: 0.8931455263062607 | execution time 1.8218755722045898 seconds
+Epoch: 10 Total Loss: 53.2126666014635 Accuracy: 0.8923127059419923 | execution time 1.591440200805664 seconds
+Epoch: 11 Total Loss: 51.91162298861325 Accuracy: 0.8914798855777238 | execution time 1.5841948986053467 seconds
+Epoch: 12 Total Loss: 54.90932024886061 Accuracy: 0.8915885143208893 | execution time 1.5903887748718262 seconds
+Epoch: 13 Total Loss: 52.38022182512007 Accuracy: 0.8930368975630952 | execution time 1.7968895435333252 seconds
+Epoch: 14 Total Loss: 53.104177925071795 Accuracy: 0.8922764963609371 | execution time 1.852327585220337 seconds
+Epoch: 15 Total Loss: 53.43898037869456 Accuracy: 0.8933627837925915 | execution time 1.8782730102539062 seconds
+Epoch: 16 Total Loss: 51.06538483211697 Accuracy: 0.8935438316978672 | execution time 1.8933875560760498 seconds
+Epoch: 17 Total Loss: 52.16354774152021 Accuracy: 0.8939421370894739 | execution time 1.8516552448272705 seconds
+Epoch: 18 Total Loss: 50.202555381684434 Accuracy: 0.89419560415686 | execution time 1.8463325500488281 seconds
+Epoch: 19 Total Loss: 50.525689010034775 Accuracy: 0.8928196400767643 | execution time 1.8667573928833008 seconds
+Epoch: 20 Total Loss: 49.620752415612436 Accuracy: 0.8941231849947496 | execution time 1.7382960319519043 seconds
+Epoch: 21 Total Loss: 50.04905848472345 Accuracy: 0.89300068798204 | execution time 1.6917221546173096 seconds
+Epoch: 22 Total Loss: 49.61998883775294 Accuracy: 0.8926385921714886 | execution time 1.8299124240875244 seconds
+Epoch: 23 Total Loss: 51.11754298268579 Accuracy: 0.893217945468371 | execution time 1.898561716079712 seconds
+Epoch: 24 Total Loss: 49.61922608710779 Accuracy: 0.8931455263062607 | execution time 1.7963693141937256 seconds
+Epoch: 25 Total Loss: 49.964826790449834 Accuracy: 0.8922764963609371 | execution time 1.7779464721679688 seconds
+Epoch: 26 Total Loss: 49.096399334306156 Accuracy: 0.892493753847268 | execution time 2.1573212146759033 seconds
+Epoch: 27 Total Loss: 48.739396798550914 Accuracy: 0.8931093167252054 | execution time 2.153019905090332 seconds
+Epoch: 28 Total Loss: 48.723943849189645 Accuracy: 0.8940507658326393 | execution time 2.178304433822632 seconds
+Epoch: 29 Total Loss: 52.05142025516248 Accuracy: 0.8923851251041025 | execution time 2.2200138568878174 seconds
+Epoch: 30 Total Loss: 47.50793879579168 Accuracy: 0.89419560415686 | execution time 2.1167898178100586 seconds
+Epoch: 31 Total Loss: 47.306207554159315 Accuracy: 0.8923851251041025 | execution time 2.151203155517578 seconds
+Epoch: 32 Total Loss: 46.79317641295263 Accuracy: 0.8936162508599775 | execution time 2.065490961074829 seconds
+Epoch: 33 Total Loss: 48.38468555611598 Accuracy: 0.8929282688199297 | execution time 2.1897706985473633 seconds
+Epoch: 34 Total Loss: 46.818482120419205 Accuracy: 0.8926748017525438 | execution time 1.8712337017059326 seconds
+Epoch: 35 Total Loss: 46.89016647825533 Accuracy: 0.8930368975630952 | execution time 1.99198579788208 seconds
+Epoch: 36 Total Loss: 46.09830329432936 Accuracy: 0.89300068798204 | execution time 2.1931211948394775 seconds
+Epoch: 37 Total Loss: 47.562946570617804 Accuracy: 0.8932541550494261 | execution time 1.8460216522216797 seconds
+Epoch: 38 Total Loss: 46.88063566961056 Accuracy: 0.892493753847268 | execution time 2.2941553592681885 seconds
+Epoch: 39 Total Loss: 47.50146175604036 Accuracy: 0.8916609334829996 | execution time 2.1469533443450928 seconds
+2. The time of training Creator is 91.33583068847656 with 27617 number of training data 
+3. The time of update training data is  0.05379891395568848
+4. The time of choosing high confidence TOs is 48.23296308517456 with 2000 temporal orders
+5. The time of Chase is 1.1130399703979492 with 7863 temporal orders
+AUG : indicator = True, the number of additional training data is 5899
+6. The time of adding more training data is 0.17688345909118652
+roundGATE=4 ndcg=0.8959847092628479 mrr=0.8564512133598328 precision=0.7350975454780787 recall=0.7330274798770329 Fmeasure=0.7340610532747398 accuracy=0.7332995533978295
+roundCreator=4 ndcg=0.8944401144981384 mrr=0.8539830446243286 precision=0.728974547594527 recall=0.7267207190294042 Fmeasure=0.7278458885294834 accuracy=0.7271042739474212
+7. The time of evaluation is 1001.6171109676361
+1. The time of evaluating training data is 3.0994415283203125e-06 with 27617 number of training data
+Epoch: 0 Total Loss: 59.04270171868342 Accuracy: 0.9041055018498627 | execution time 1.8075506687164307 seconds
+Epoch: 1 Total Loss: 58.79826017423335 Accuracy: 0.9041651748418665 | execution time 1.9885079860687256 seconds
+Epoch: 2 Total Loss: 56.99956094337975 Accuracy: 0.9045530492898914 | execution time 2.3961915969848633 seconds
+Epoch: 3 Total Loss: 56.534024626351076 Accuracy: 0.9056271631459601 | execution time 2.185825824737549 seconds
+Epoch: 4 Total Loss: 55.70163793907923 Accuracy: 0.9065520945220193 | execution time 2.7201972007751465 seconds
+Epoch: 5 Total Loss: 57.30448825248201 Accuracy: 0.9049409237379162 | execution time 2.5711398124694824 seconds
+Epoch: 6 Total Loss: 55.868455447642035 Accuracy: 0.9058658551139754 | execution time 2.8395843505859375 seconds
+Epoch: 7 Total Loss: 55.31603529734078 Accuracy: 0.9067012770020288 | execution time 2.605178117752075 seconds
+Epoch: 8 Total Loss: 55.714090689920305 Accuracy: 0.906671440506027 | execution time 2.3332877159118652 seconds
+Epoch: 9 Total Loss: 53.549768170523585 Accuracy: 0.9085511397541473 | execution time 2.4683682918548584 seconds
+Epoch: 10 Total Loss: 54.562257384486216 Accuracy: 0.9077753908580977 | execution time 2.0647075176239014 seconds
+Epoch: 11 Total Loss: 54.87413529695529 Accuracy: 0.9080737558181167 | execution time 2.1076858043670654 seconds
+Epoch: 12 Total Loss: 53.22148804076748 Accuracy: 0.9073576799140709 | execution time 1.942556619644165 seconds
+Epoch: 13 Total Loss: 52.4160163693154 Accuracy: 0.9095059076262084 | execution time 1.9329371452331543 seconds
+Epoch: 14 Total Loss: 50.26818006104271 Accuracy: 0.9087003222341569 | execution time 2.5940678119659424 seconds
+Epoch: 15 Total Loss: 50.70668781169509 Accuracy: 0.9075665353860842 | execution time 2.236361026763916 seconds
+Epoch: 16 Total Loss: 53.51066185780987 Accuracy: 0.9058360186179735 | execution time 2.0475618839263916 seconds
+Epoch: 17 Total Loss: 53.635369462141114 Accuracy: 0.906313402554004 | execution time 2.3281328678131104 seconds
+Epoch: 18 Total Loss: 52.01376356547487 Accuracy: 0.9063730755460079 | execution time 2.4955127239227295 seconds
+Epoch: 19 Total Loss: 50.79639687653227 Accuracy: 0.906671440506027 | execution time 2.5806188583374023 seconds
+Epoch: 20 Total Loss: 51.394431031407784 Accuracy: 0.9063730755460079 | execution time 2.660905361175537 seconds
+Epoch: 21 Total Loss: 53.1773979822991 Accuracy: 0.9044038668098818 | execution time 2.413241386413574 seconds
+Epoch: 22 Total Loss: 53.656454204409535 Accuracy: 0.9057763456259696 | execution time 2.2985591888427734 seconds
+Epoch: 23 Total Loss: 48.885762076844514 Accuracy: 0.9060150375939849 | execution time 2.3272459506988525 seconds
+Epoch: 24 Total Loss: 49.16500480967634 Accuracy: 0.9068504594820385 | execution time 2.171928882598877 seconds
+Epoch: 25 Total Loss: 49.691429350627324 Accuracy: 0.9070891514500538 | execution time 2.1637911796569824 seconds
+Epoch: 26 Total Loss: 52.38631997780552 Accuracy: 0.9055376536579544 | execution time 2.3513224124908447 seconds
+Epoch: 27 Total Loss: 48.08697929651459 Accuracy: 0.9059255281059793 | execution time 2.5218610763549805 seconds
+Epoch: 28 Total Loss: 49.416293686619305 Accuracy: 0.9050304332259219 | execution time 2.454211473464966 seconds
+Epoch: 29 Total Loss: 51.39866438292411 Accuracy: 0.9050901062179257 | execution time 2.5223872661590576 seconds
+Epoch: 30 Total Loss: 49.999951863838916 Accuracy: 0.905656999641962 | execution time 2.0281546115875244 seconds
+Epoch: 31 Total Loss: 49.625171895408165 Accuracy: 0.9030910609857978 | execution time 2.2154080867767334 seconds
+Epoch: 32 Total Loss: 50.736556218756505 Accuracy: 0.9042546843298723 | execution time 2.1239399909973145 seconds
+Epoch: 33 Total Loss: 47.46901639122465 Accuracy: 0.9061642200739946 | execution time 2.4181783199310303 seconds
+Epoch: 34 Total Loss: 49.54443599256742 Accuracy: 0.9044038668098818 | execution time 2.174924612045288 seconds
+Epoch: 35 Total Loss: 48.76961679887083 Accuracy: 0.9038369733858456 | execution time 2.42128586769104 seconds
+Epoch: 36 Total Loss: 47.085911219701174 Accuracy: 0.9048215777539086 | execution time 2.9239468574523926 seconds
+Epoch: 37 Total Loss: 48.284030493808565 Accuracy: 0.9044038668098818 | execution time 2.7849888801574707 seconds
+Epoch: 38 Total Loss: 50.26963258342609 Accuracy: 0.9039861558658551 | execution time 3.4231560230255127 seconds
+Epoch: 39 Total Loss: 48.168607542360206 Accuracy: 0.9041950113378685 | execution time 2.916356086730957 seconds
+2. The time of training Creator is 105.85548734664917 with 33516 number of training data 
+3. The time of update training data is  0.061223745346069336
+4. The time of choosing high confidence TOs is 49.26960635185242 with 2000 temporal orders
+5. The time of Chase is 1.0990684032440186 with 7716 temporal orders
+AUG : indicator = True, the number of additional training data is 5825
+6. The time of adding more training data is 0.15800070762634277
+roundGATE=5 ndcg=0.892574667930603 mrr=0.8520084619522095 precision=0.726571048699274 recall=0.7245676202097951 Fmeasure=0.7255679514972065 accuracy=0.7247740475825742
+roundCreator=5 ndcg=0.8906902074813843 mrr=0.8491551876068115 precision=0.7196414593522491 recall=0.7173573792035295 Fmeasure=0.71849760402864 accuracy=0.7177421255435231
+7. The time of evaluation is 1020.7131736278534
+1. The time of evaluating training data is 2.86102294921875e-06 with 33516 number of training data
+Epoch: 0 Total Loss: 60.18236304864971 Accuracy: 0.9113138964439135 | execution time 2.9146902561187744 seconds
+Epoch: 1 Total Loss: 58.28084975320375 Accuracy: 0.9125848351592486 | execution time 3.1301429271698 seconds
+Epoch: 2 Total Loss: 59.561653924062455 Accuracy: 0.910322564245952 | execution time 3.02201509475708 seconds
+Epoch: 3 Total Loss: 59.53054493061599 Accuracy: 0.9104750768917923 | execution time 3.1192002296447754 seconds
+Epoch: 4 Total Loss: 57.39240265249489 Accuracy: 0.9125339976106353 | execution time 3.1782965660095215 seconds
+Epoch: 5 Total Loss: 60.74148738793889 Accuracy: 0.9108817772806995 | execution time 3.0550785064697266 seconds
+Epoch: 6 Total Loss: 59.044395080483646 Accuracy: 0.9109834523779263 | execution time 2.9989752769470215 seconds
+Epoch: 7 Total Loss: 54.82171102862283 Accuracy: 0.9133473983884497 | execution time 3.324742555618286 seconds
+Epoch: 8 Total Loss: 57.18315992384914 Accuracy: 0.9111868025723799 | execution time 2.9807543754577637 seconds
+Epoch: 9 Total Loss: 56.635637295116474 Accuracy: 0.9120764596731146 | execution time 2.718818426132202 seconds
+Epoch: 10 Total Loss: 55.4817057642883 Accuracy: 0.9107038458605526 | execution time 2.498051881790161 seconds
+Epoch: 11 Total Loss: 57.01039457612881 Accuracy: 0.9124069037391017 | execution time 2.7475364208221436 seconds
+Epoch: 12 Total Loss: 54.1058476592603 Accuracy: 0.911873109478661 | execution time 2.5199966430664062 seconds
+Epoch: 13 Total Loss: 55.18219565511567 Accuracy: 0.9120764596731146 | execution time 2.5355074405670166 seconds
+Epoch: 14 Total Loss: 55.18741377088948 Accuracy: 0.9120002033501945 | execution time 2.495779514312744 seconds
+Epoch: 15 Total Loss: 54.3186094021608 Accuracy: 0.9131186294196894 | execution time 2.4736077785491943 seconds
+Epoch: 16 Total Loss: 54.71621387559653 Accuracy: 0.9111868025723799 | execution time 2.4496755599975586 seconds
+Epoch: 17 Total Loss: 54.02360440509054 Accuracy: 0.9110597087008464 | execution time 2.448029041290283 seconds
+Epoch: 18 Total Loss: 52.76213428460142 Accuracy: 0.911695178058514 | execution time 2.4546058177948 seconds
+Epoch: 19 Total Loss: 52.448910887209216 Accuracy: 0.911440990315447 | execution time 2.466412305831909 seconds
+Epoch: 20 Total Loss: 53.91326778007086 Accuracy: 0.9099921201799649 | execution time 2.476233959197998 seconds
+Epoch: 21 Total Loss: 52.49480153959399 Accuracy: 0.9107038458605526 | execution time 2.444002628326416 seconds
+Epoch: 22 Total Loss: 52.933771932393846 Accuracy: 0.9122543910932615 | execution time 2.4599945545196533 seconds
+Epoch: 23 Total Loss: 52.39483516721225 Accuracy: 0.909127881853537 | execution time 2.451078176498413 seconds
+Epoch: 24 Total Loss: 52.64000685750107 Accuracy: 0.9095345822424443 | execution time 2.4594204425811768 seconds
+Epoch: 25 Total Loss: 52.90497485237135 Accuracy: 0.9094074883709108 | execution time 2.460750102996826 seconds
+Epoch: 26 Total Loss: 51.322087405609345 Accuracy: 0.9098650263084314 | execution time 2.487948417663574 seconds
+Epoch: 27 Total Loss: 52.33831747141478 Accuracy: 0.9102717266973387 | execution time 2.5021181106567383 seconds
+Epoch: 28 Total Loss: 52.34100048261126 Accuracy: 0.910322564245952 | execution time 2.466059923171997 seconds
+Epoch: 29 Total Loss: 52.73333534877461 Accuracy: 0.908695762690323 | execution time 2.4605307579040527 seconds
+Epoch: 30 Total Loss: 50.31214193620582 Accuracy: 0.9092803944993773 | execution time 2.499898672103882 seconds
+Epoch: 31 Total Loss: 49.76418802896646 Accuracy: 0.9080094557840421 | execution time 2.4769997596740723 seconds
+Epoch: 32 Total Loss: 51.73800104589988 Accuracy: 0.9083653186243359 | execution time 2.4377589225769043 seconds
+Epoch: 33 Total Loss: 50.05557119873306 Accuracy: 0.9091787194021504 | execution time 2.4476101398468018 seconds
+Epoch: 34 Total Loss: 50.02001513875501 Accuracy: 0.9095854197910577 | execution time 2.452329635620117 seconds
+Epoch: 35 Total Loss: 51.864841358221994 Accuracy: 0.9071706362319208 | execution time 2.427180290222168 seconds
+Epoch: 36 Total Loss: 51.32655292827721 Accuracy: 0.9086449251417097 | execution time 2.4388535022735596 seconds
+Epoch: 37 Total Loss: 49.93628942393633 Accuracy: 0.9075519178465214 | execution time 2.4421215057373047 seconds
+Epoch: 38 Total Loss: 49.90648658825397 Accuracy: 0.9076281741694415 | execution time 2.471362829208374 seconds
+Epoch: 39 Total Loss: 54.66008998468096 Accuracy: 0.9052642281589182 | execution time 2.4938223361968994 seconds
+2. The time of training Creator is 114.40822267532349 with 39341 number of training data 
+3. The time of update training data is  0.05168724060058594
+4. The time of choosing high confidence TOs is 48.76703500747681 with 2000 temporal orders
+5. The time of Chase is 1.089080810546875 with 7624 temporal orders
+AUG : indicator = True, the number of additional training data is 5767
+6. The time of adding more training data is 1.3457140922546387
+roundGATE=6 ndcg=0.8884937167167664 mrr=0.8466700315475464 precision=0.7160514133985009 recall=0.7151104123154906 Fmeasure=0.7155806034988846 accuracy=0.7145516891931701
+roundCreator=6 ndcg=0.88555908203125 mrr=0.8424597382545471 precision=0.7063309149489082 recall=0.7048142585595945 Fmeasure=0.7055717717259161 accuracy=0.7046298151137717
+7. The time of evaluation is 974.7559063434601
+1. The time of evaluating training data is 2.86102294921875e-06 with 39341 number of training data
+Epoch: 0 Total Loss: 66.8140425070061 Accuracy: 0.9061807218231799 | execution time 2.874434232711792 seconds
+Epoch: 1 Total Loss: 64.64492737762595 Accuracy: 0.9081981023321806 | execution time 2.892543077468872 seconds
+Epoch: 2 Total Loss: 63.77210775059039 Accuracy: 0.906601933138246 | execution time 2.888568639755249 seconds
+Epoch: 3 Total Loss: 61.860780645814536 Accuracy: 0.9091070320120599 | execution time 2.895888328552246 seconds
+Epoch: 4 Total Loss: 62.82852309378453 Accuracy: 0.9091957080783897 | execution time 2.907485246658325 seconds
+Epoch: 5 Total Loss: 63.858723358762994 Accuracy: 0.9077768910171145 | execution time 2.898073673248291 seconds
+Epoch: 6 Total Loss: 63.92363503285452 Accuracy: 0.9080872572492684 | execution time 2.8912618160247803 seconds
+Epoch: 7 Total Loss: 64.65664756964965 Accuracy: 0.9085971446306642 | execution time 2.8954017162323 seconds
+Epoch: 8 Total Loss: 60.237312034990026 Accuracy: 0.9094617362773787 | execution time 2.8677730560302734 seconds
+Epoch: 9 Total Loss: 60.43524314813016 Accuracy: 0.910259820874346 | execution time 2.903034210205078 seconds
+Epoch: 10 Total Loss: 61.57897013549661 Accuracy: 0.9088188347964884 | execution time 2.924787998199463 seconds
+Epoch: 11 Total Loss: 59.70298555346037 Accuracy: 0.9087301587301587 | execution time 2.9228804111480713 seconds
+Epoch: 12 Total Loss: 59.23812800881425 Accuracy: 0.9097055954597854 | execution time 2.9193336963653564 seconds
+Epoch: 13 Total Loss: 63.051134850484885 Accuracy: 0.9085971446306642 | execution time 2.920607566833496 seconds
+Epoch: 14 Total Loss: 61.90423554240761 Accuracy: 0.908641482663829 | execution time 2.9422190189361572 seconds
+Epoch: 15 Total Loss: 61.65787371382741 Accuracy: 0.9088410038130709 | execution time 2.917126417160034 seconds
+Epoch: 16 Total Loss: 58.098579674135785 Accuracy: 0.9109027223552363 | execution time 2.8596999645233154 seconds
+Epoch: 17 Total Loss: 57.87403554343044 Accuracy: 0.910148975791434 | execution time 2.958482265472412 seconds
+Epoch: 18 Total Loss: 57.625854037678224 Accuracy: 0.9100824687416866 | execution time 2.9227447509765625 seconds
+Epoch: 19 Total Loss: 59.25988824326392 Accuracy: 0.9077990600336969 | execution time 2.972135066986084 seconds
+Epoch: 20 Total Loss: 58.99668749907193 Accuracy: 0.9095725813602908 | execution time 2.9353039264678955 seconds
+Epoch: 21 Total Loss: 55.909407342177786 Accuracy: 0.9083976234814224 | execution time 2.8912301063537598 seconds
+Epoch: 22 Total Loss: 57.407022619054935 Accuracy: 0.909683426443203 | execution time 2.901703119277954 seconds
+Epoch: 23 Total Loss: 55.406716608604405 Accuracy: 0.9102819898909285 | execution time 2.893141031265259 seconds
+Epoch: 24 Total Loss: 56.92730079304381 Accuracy: 0.9088631728296532 | execution time 2.8811585903167725 seconds
+Epoch: 25 Total Loss: 56.41420754067318 Accuracy: 0.9076217079010375 | execution time 2.895246982574463 seconds
+Epoch: 26 Total Loss: 55.60602309320795 Accuracy: 0.9072448346191363 | execution time 2.901073932647705 seconds
+Epoch: 27 Total Loss: 56.5453837123517 Accuracy: 0.9075108628181254 | execution time 2.9046640396118164 seconds
+Epoch: 28 Total Loss: 60.65852644543386 Accuracy: 0.9063802429724217 | execution time 2.918799638748169 seconds
+Epoch: 29 Total Loss: 57.54254916865474 Accuracy: 0.9065132570719163 | execution time 2.939173936843872 seconds
+Epoch: 30 Total Loss: 58.124447241553376 Accuracy: 0.9067349472377405 | execution time 2.9020559787750244 seconds
+Epoch: 31 Total Loss: 54.11789565867169 Accuracy: 0.9076217079010375 | execution time 2.9872593879699707 seconds
+Epoch: 32 Total Loss: 55.90558691253723 Accuracy: 0.9065354260884987 | execution time 2.9241979122161865 seconds
+Epoch: 33 Total Loss: 54.51683135184227 Accuracy: 0.907333510685466 | execution time 2.938328981399536 seconds
+Epoch: 34 Total Loss: 55.14121691354472 Accuracy: 0.9065797641216635 | execution time 2.9097683429718018 seconds
+Epoch: 35 Total Loss: 54.45746032739924 Accuracy: 0.9046288906624103 | execution time 2.926363229751587 seconds
+Epoch: 36 Total Loss: 53.51472348811668 Accuracy: 0.9054713132925424 | execution time 2.9040801525115967 seconds
+Epoch: 37 Total Loss: 53.87511568564561 Accuracy: 0.9046067216458278 | execution time 2.893397092819214 seconds
+Epoch: 38 Total Loss: 54.5876520983019 Accuracy: 0.9051831160769708 | execution time 2.9053330421447754 seconds
+Epoch: 39 Total Loss: 54.12370155588008 Accuracy: 0.9031213975348054 | execution time 2.9164793491363525 seconds
+2. The time of training Creator is 125.66954731941223 with 45108 number of training data 
+3. The time of update training data is  0.059566497802734375
+4. The time of choosing high confidence TOs is 49.833489179611206 with 1971 temporal orders
+5. The time of Chase is 1.0795683860778809 with 7601 temporal orders
+AUG : indicator = True, the number of additional training data is 5744
+6. The time of adding more training data is 0.14986276626586914
+roundGATE=7 ndcg=0.8961887955665588 mrr=0.8566514253616333 precision=0.735141237622598 recall=0.7334850867106282 Fmeasure=0.7343122283566311 accuracy=0.7334763088743033
+roundCreator=7 ndcg=0.893713116645813 mrr=0.8528040647506714 precision=0.7269167584245515 recall=0.7242684157416751 Fmeasure=0.7255901705345258 accuracy=0.7249183978883612
+7. The time of evaluation is 965.9087319374084
+1. The time of evaluating training data is 2.384185791015625e-06 with 45108 number of training data
+Epoch: 0 Total Loss: 68.18688147557522 Accuracy: 0.8998859435223787 | execution time 2.9440836906433105 seconds
+Epoch: 1 Total Loss: 70.08114166065242 Accuracy: 0.9016557854165028 | execution time 2.8882226943969727 seconds
+Epoch: 2 Total Loss: 67.88389740776536 Accuracy: 0.9029733343821286 | execution time 2.8987913131713867 seconds
+Epoch: 3 Total Loss: 66.58807970221025 Accuracy: 0.903012664201998 | execution time 2.878994941711426 seconds
+Epoch: 4 Total Loss: 65.53000068089617 Accuracy: 0.9049594902855345 | execution time 2.9382433891296387 seconds
+Epoch: 5 Total Loss: 66.88461792178543 Accuracy: 0.9035042869503658 | execution time 2.8934383392333984 seconds
+Epoch: 6 Total Loss: 67.82429520662323 Accuracy: 0.9025210414536301 | execution time 2.880643606185913 seconds
+Epoch: 7 Total Loss: 66.06082806620213 Accuracy: 0.9021277432549359 | execution time 2.896143913269043 seconds
+Epoch: 8 Total Loss: 64.48575921110867 Accuracy: 0.9037992605993864 | execution time 2.9045333862304688 seconds
+Epoch: 9 Total Loss: 63.8973383160028 Accuracy: 0.9042712184378195 | execution time 2.8951525688171387 seconds
+Epoch: 10 Total Loss: 64.69050241700606 Accuracy: 0.9018917643357194 | execution time 2.8991479873657227 seconds
+Epoch: 11 Total Loss: 63.83273535284547 Accuracy: 0.9042318886179501 | execution time 2.88159441947937 seconds
+Epoch: 12 Total Loss: 63.75070742500549 Accuracy: 0.9031306536616063 | execution time 2.873290777206421 seconds
+Epoch: 13 Total Loss: 62.32561575150682 Accuracy: 0.9040155746086683 | execution time 2.9153170585632324 seconds
+Epoch: 14 Total Loss: 62.1535138123463 Accuracy: 0.9036812711397781 | execution time 2.8871710300445557 seconds
+Epoch: 15 Total Loss: 63.830178915593585 Accuracy: 0.9020490836151971 | execution time 2.940901756286621 seconds
+Epoch: 16 Total Loss: 64.04729436061939 Accuracy: 0.9020884134350665 | execution time 2.915923833847046 seconds
+Epoch: 17 Total Loss: 64.27089024228711 Accuracy: 0.9023440572642177 | execution time 2.8870928287506104 seconds
+Epoch: 18 Total Loss: 63.12357321314651 Accuracy: 0.9004562259104854 | execution time 2.9209628105163574 seconds
+Epoch: 19 Total Loss: 64.09977281042065 Accuracy: 0.9011641626681349 | execution time 2.8937435150146484 seconds
+Epoch: 20 Total Loss: 61.82137909417187 Accuracy: 0.902462046723826 | execution time 2.899030923843384 seconds
+Epoch: 21 Total Loss: 61.635567125721536 Accuracy: 0.9026980256430426 | execution time 2.925372362136841 seconds
+Epoch: 22 Total Loss: 65.78994357041113 Accuracy: 0.9005545504601589 | execution time 2.874279499053955 seconds
+Epoch: 23 Total Loss: 61.42169266054986 Accuracy: 0.9035042869503658 | execution time 2.9081003665924072 seconds
+Epoch: 24 Total Loss: 60.18207494795939 Accuracy: 0.9030519940218674 | execution time 2.8909502029418945 seconds
+Epoch: 25 Total Loss: 61.486069706815115 Accuracy: 0.9031306536616063 | execution time 2.8976259231567383 seconds
+Epoch: 26 Total Loss: 60.18865051158161 Accuracy: 0.9016754503264375 | execution time 2.8579347133636475 seconds
+Epoch: 27 Total Loss: 58.25755182416071 Accuracy: 0.9016951152363722 | execution time 2.891969919204712 seconds
+Epoch: 28 Total Loss: 58.76675126379524 Accuracy: 0.9009675135687879 | execution time 2.867537260055542 seconds
+Epoch: 29 Total Loss: 60.16727501294981 Accuracy: 0.9003185715409423 | execution time 2.90224027633667 seconds
+Epoch: 30 Total Loss: 60.38134167099707 Accuracy: 0.9006725399197671 | execution time 2.8712122440338135 seconds
+Epoch: 31 Total Loss: 60.58547091289165 Accuracy: 0.9002792417210729 | execution time 2.8900468349456787 seconds
+Epoch: 32 Total Loss: 58.9034853202616 Accuracy: 0.8985290647368835 | execution time 2.91495943069458 seconds
+Epoch: 33 Total Loss: 58.96237237124177 Accuracy: 0.9005545504601589 | execution time 2.8962552547454834 seconds
+Epoch: 34 Total Loss: 58.53756681534485 Accuracy: 0.8993746558640762 | execution time 2.8782846927642822 seconds
+Epoch: 35 Total Loss: 60.23558223694798 Accuracy: 0.8968378824824982 | execution time 2.8823294639587402 seconds
+Epoch: 36 Total Loss: 61.83632366768273 Accuracy: 0.8968182175725635 | execution time 2.868065595626831 seconds
+Epoch: 37 Total Loss: 58.961358939797655 Accuracy: 0.8983520805474711 | execution time 2.8491766452789307 seconds
+Epoch: 38 Total Loss: 58.54839690608267 Accuracy: 0.8999449382521828 | execution time 2.8817152976989746 seconds
+Epoch: 39 Total Loss: 58.00094403727993 Accuracy: 0.8983717454574058 | execution time 2.8823142051696777 seconds
+2. The time of training Creator is 124.73518705368042 with 50852 number of training data 
+3. The time of update training data is  0.06242942810058594
+4. The time of choosing high confidence TOs is 44.79406404495239 with 1569 temporal orders
+5. The time of Chase is 1.01063871383667 with 7577 temporal orders
+AUG : indicator = True, the number of additional training data is 5322
+6. The time of adding more training data is 0.12864995002746582
+roundGATE=8 ndcg=0.8956031799316406 mrr=0.8559525012969971 precision=0.7334919935360659 recall=0.7323000023467017 Fmeasure=0.7328955132740504 accuracy=0.7319709413996677
+roundCreator=8 ndcg=0.8927631378173828 mrr=0.8516827821731567 precision=0.7241584170063585 recall=0.7222678525332645 Fmeasure=0.7232118992301569 accuracy=0.7223907945747853
+7. The time of evaluation is 1035.016412973404
+1. The time of evaluating training data is 9.5367431640625e-07 with 50852 number of training data
+Epoch: 0 Total Loss: 72.46887383043868 Accuracy: 0.8897176629757539 | execution time 4.160019159317017 seconds
+Epoch: 1 Total Loss: 74.83027954675676 Accuracy: 0.8899846904261758 | execution time 3.2161784172058105 seconds
+Epoch: 2 Total Loss: 72.3180036092292 Accuracy: 0.8930644070210417 | execution time 3.173274278640747 seconds
+Epoch: 3 Total Loss: 69.30870939567374 Accuracy: 0.8946131662334889 | execution time 3.454956531524658 seconds
+Epoch: 4 Total Loss: 71.647004511845 Accuracy: 0.8924591448000855 | execution time 2.560934543609619 seconds
+Epoch: 5 Total Loss: 70.89941500247828 Accuracy: 0.8922277210097198 | execution time 3.5434577465057373 seconds
+Epoch: 6 Total Loss: 69.81104634772181 Accuracy: 0.8927795777405917 | execution time 3.566490411758423 seconds
+Epoch: 7 Total Loss: 74.42316250354894 Accuracy: 0.8919428917292698 | execution time 3.494313955307007 seconds
+Epoch: 8 Total Loss: 69.34509246012189 Accuracy: 0.8939010930323638 | execution time 3.361987829208374 seconds
+Epoch: 9 Total Loss: 69.58645405419585 Accuracy: 0.8939010930323638 | execution time 3.4968090057373047 seconds
+Epoch: 10 Total Loss: 69.16584361466461 Accuracy: 0.8926193612703386 | execution time 3.983579158782959 seconds
+Epoch: 11 Total Loss: 69.8591622658822 Accuracy: 0.8928329832306761 | execution time 4.148121118545532 seconds
+Epoch: 12 Total Loss: 71.57217359614083 Accuracy: 0.8930822088510699 | execution time 4.336995601654053 seconds
+Epoch: 13 Total Loss: 68.61619074427661 Accuracy: 0.8951472211343326 | execution time 4.274650573730469 seconds
+Epoch: 14 Total Loss: 68.05479706265042 Accuracy: 0.895200626624417 | execution time 3.8517873287200928 seconds
+Epoch: 15 Total Loss: 65.57769157987592 Accuracy: 0.8955922668850358 | execution time 4.19044303894043 seconds
+Epoch: 16 Total Loss: 68.93844313189864 Accuracy: 0.8923345319898885 | execution time 3.785989761352539 seconds
+Epoch: 17 Total Loss: 69.85527371325647 Accuracy: 0.8917292697689323 | execution time 3.5346546173095703 seconds
+Epoch: 18 Total Loss: 68.7431953515596 Accuracy: 0.8913732331683697 | execution time 2.831413984298706 seconds
+Epoch: 19 Total Loss: 64.26195753244046 Accuracy: 0.8933136326414355 | execution time 3.531147003173828 seconds
+Epoch: 20 Total Loss: 66.90791417348323 Accuracy: 0.8949692028340513 | execution time 3.3480544090270996 seconds
+Epoch: 21 Total Loss: 69.22268784921049 Accuracy: 0.8920497027094385 | execution time 3.312006711959839 seconds
+Epoch: 22 Total Loss: 68.08437107906448 Accuracy: 0.8932068216612667 | execution time 3.3449206352233887 seconds
+Epoch: 23 Total Loss: 63.82559196503268 Accuracy: 0.8933136326414355 | execution time 3.2971649169921875 seconds
+Epoch: 24 Total Loss: 64.1702062248174 Accuracy: 0.8939723003524762 | execution time 2.8345305919647217 seconds
+Epoch: 25 Total Loss: 65.185805329097 Accuracy: 0.8927617759105636 | execution time 3.249535322189331 seconds
+Epoch: 26 Total Loss: 65.21808599898344 Accuracy: 0.8907857727774415 | execution time 3.377865791320801 seconds
+Epoch: 27 Total Loss: 67.38910081263295 Accuracy: 0.8905365471570478 | execution time 3.6604201793670654 seconds
+Epoch: 28 Total Loss: 66.080357976685 Accuracy: 0.8889343824545163 | execution time 3.5633349418640137 seconds
+Epoch: 29 Total Loss: 66.45021784078477 Accuracy: 0.8915334496386228 | execution time 3.44584059715271 seconds
+Epoch: 30 Total Loss: 63.87979056394648 Accuracy: 0.8910171965678072 | execution time 3.4068782329559326 seconds
+Epoch: 31 Total Loss: 64.26174812600323 Accuracy: 0.8904653398369352 | execution time 3.32285475730896 seconds
+Epoch: 32 Total Loss: 64.40725698650982 Accuracy: 0.8888097696443195 | execution time 3.5562336444854736 seconds
+Epoch: 33 Total Loss: 63.33698656287746 Accuracy: 0.8889521842845445 | execution time 3.510930061340332 seconds
+Epoch: 34 Total Loss: 63.42207706008403 Accuracy: 0.8907679709474134 | execution time 3.4092788696289062 seconds
+Epoch: 35 Total Loss: 64.79341115229002 Accuracy: 0.8878128671627443 | execution time 3.4260551929473877 seconds
+Epoch: 36 Total Loss: 63.81440252476971 Accuracy: 0.8906967636273009 | execution time 3.7769808769226074 seconds
+Epoch: 37 Total Loss: 63.88232516963605 Accuracy: 0.8912308185281447 | execution time 4.24381947517395 seconds
+Epoch: 38 Total Loss: 65.98944322519928 Accuracy: 0.8853740164488909 | execution time 4.105410099029541 seconds
+Epoch: 39 Total Loss: 62.68046502908565 Accuracy: 0.8904119343468508 | execution time 4.132933616638184 seconds
+2. The time of training Creator is 151.69765853881836 with 56174 number of training data 
+3. The time of update training data is  0.06383752822875977
+4. The time of choosing high confidence TOs is 47.28875207901001 with 1424 temporal orders
+5. The time of Chase is 0.834343671798706 with 6040 temporal orders
+AUG : indicator = True, the number of additional training data is 4419
+6. The time of adding more training data is 0.10513734817504883
+roundGATE=9 ndcg=0.8967955112457275 mrr=0.8574554920196533 precision=0.7364189954959981 recall=0.7357320535986671 Fmeasure=0.7360753642753379 accuracy=0.7350700540871759
+roundCreator=9 ndcg=0.8935770988464355 mrr=0.8525954484939575 precision=0.7261243467884624 recall=0.7247142890667168 Fmeasure=0.7254186327160402 accuracy=0.7245118602924714
+7. The time of evaluation is 972.7043790817261
+1. The time of evaluating training data is 1.430511474609375e-06 with 56174 number of training data
+Epoch: 0 Total Loss: 76.21070899482511 Accuracy: 0.8818510388988827 | execution time 4.055622339248657 seconds
+Epoch: 1 Total Loss: 76.9134935983788 Accuracy: 0.8831713234201971 | execution time 4.332711935043335 seconds
+Epoch: 2 Total Loss: 74.84260953787117 Accuracy: 0.8842275510372485 | execution time 4.324197053909302 seconds
+Epoch: 3 Total Loss: 75.36475947064481 Accuracy: 0.8842275510372485 | execution time 4.404271841049194 seconds
+Epoch: 4 Total Loss: 78.4151968526342 Accuracy: 0.8818015282293334 | execution time 4.381967782974243 seconds
+Epoch: 5 Total Loss: 73.56296282082462 Accuracy: 0.8850362253065536 | execution time 4.359054088592529 seconds
+Epoch: 6 Total Loss: 73.04171061435716 Accuracy: 0.8857953889063093 | execution time 4.430833578109741 seconds
+Epoch: 7 Total Loss: 70.78731674252668 Accuracy: 0.8852672750977836 | execution time 4.357980251312256 seconds
+Epoch: 8 Total Loss: 73.93305727161996 Accuracy: 0.8839139834634364 | execution time 4.34920597076416 seconds
+Epoch: 9 Total Loss: 74.23263341304168 Accuracy: 0.8848711897413892 | execution time 4.451967477798462 seconds
+Epoch: 10 Total Loss: 73.84098192153144 Accuracy: 0.8840955225851171 | execution time 4.3246753215789795 seconds
+Epoch: 11 Total Loss: 72.5629188330849 Accuracy: 0.882593698942122 | execution time 4.387771129608154 seconds
+Epoch: 12 Total Loss: 72.00377574460596 Accuracy: 0.8841615368111828 | execution time 4.383022785186768 seconds
+Epoch: 13 Total Loss: 70.6662096644359 Accuracy: 0.8845906292806099 | execution time 4.417124271392822 seconds
+Epoch: 14 Total Loss: 70.17628247506158 Accuracy: 0.8848546861848728 | execution time 4.438689947128296 seconds
+Epoch: 15 Total Loss: 70.35418161467102 Accuracy: 0.8824946776030235 | execution time 4.347343683242798 seconds
+Epoch: 16 Total Loss: 71.25355407306596 Accuracy: 0.882478174046507 | execution time 4.3642051219940186 seconds
+Epoch: 17 Total Loss: 70.80408232547516 Accuracy: 0.8812734144208076 | execution time 4.35234260559082 seconds
+Epoch: 18 Total Loss: 72.019334602836 Accuracy: 0.8824286633769577 | execution time 4.35401725769043 seconds
+Epoch: 19 Total Loss: 74.36614382485406 Accuracy: 0.8781377386826861 | execution time 4.28964900970459 seconds
+Epoch: 20 Total Loss: 72.22170113565198 Accuracy: 0.8780882280131368 | execution time 4.355834722518921 seconds
+Epoch: 21 Total Loss: 71.13636221495236 Accuracy: 0.8791114485171554 | execution time 4.362358093261719 seconds
+Epoch: 22 Total Loss: 69.2551250046931 Accuracy: 0.8801511725776905 | execution time 4.3117265701293945 seconds
+Epoch: 23 Total Loss: 71.40080321413429 Accuracy: 0.8787648738303104 | execution time 4.325496673583984 seconds
+Epoch: 24 Total Loss: 68.41070410625187 Accuracy: 0.8802006832472398 | execution time 4.3436572551727295 seconds
+Epoch: 25 Total Loss: 69.18151057770108 Accuracy: 0.8785338240390804 | execution time 4.357868194580078 seconds
+Epoch: 26 Total Loss: 72.46739480857313 Accuracy: 0.8758107372138696 | execution time 4.3106279373168945 seconds
+Epoch: 27 Total Loss: 71.81962376943835 Accuracy: 0.8770980146221511 | execution time 4.332320213317871 seconds
+Epoch: 28 Total Loss: 69.90290103273658 Accuracy: 0.879788094334329 | execution time 4.337407350540161 seconds
+Epoch: 29 Total Loss: 70.58996023822309 Accuracy: 0.8813229250903569 | execution time 4.286802291870117 seconds
+Epoch: 30 Total Loss: 69.04805385807828 Accuracy: 0.8791774627432212 | execution time 4.310057640075684 seconds
+Epoch: 31 Total Loss: 70.9759776563426 Accuracy: 0.8783522849173997 | execution time 4.329288959503174 seconds
+Epoch: 32 Total Loss: 65.83656623677102 Accuracy: 0.8810588681860941 | execution time 4.3377344608306885 seconds
+Epoch: 33 Total Loss: 68.68796425629506 Accuracy: 0.8791939662997376 | execution time 4.322218418121338 seconds
+Epoch: 34 Total Loss: 72.54141220152884 Accuracy: 0.8767184328222732 | execution time 4.385202169418335 seconds
+Epoch: 35 Total Loss: 69.93953235286342 Accuracy: 0.8791609591867048 | execution time 4.347259044647217 seconds
+Epoch: 36 Total Loss: 67.50103313000557 Accuracy: 0.878632845378179 | execution time 4.300206184387207 seconds
+Epoch: 37 Total Loss: 68.38084076595494 Accuracy: 0.8777251497697753 | execution time 4.297822713851929 seconds
+Epoch: 38 Total Loss: 67.16555236816512 Accuracy: 0.8814219464294556 | execution time 4.338632106781006 seconds
+Epoch: 39 Total Loss: 65.50113671136118 Accuracy: 0.8818015282293334 | execution time 4.366774320602417 seconds
+2. The time of training Creator is 184.6600570678711 with 60593 number of training data 
+3. The time of update training data is  0.06329035758972168
+4. The time of choosing high confidence TOs is 52.8119170665741 with 1322 temporal orders
+5. The time of Chase is 0.7571642398834229 with 5490 temporal orders
+AUG : indicator = True, the number of additional training data is 4044
+6. The time of adding more training data is 0.09663128852844238
+roundGATE=10 ndcg=0.8974190950393677 mrr=0.8585072159767151 precision=0.7383473580293344 recall=0.7371518081336681 Fmeasure=0.7377490987235341 accuracy=0.7368405547765221
+roundCreator=10 ndcg=0.8939497470855713 mrr=0.8533621430397034 precision=0.7274128276316408 recall=0.7255180344026471 Fmeasure=0.7264641955002057 accuracy=0.7256519331157277
+7. The time of evaluation is 1025.9582142829895
+1. The time of evaluating training data is 1.1920928955078125e-06 with 60593 number of training data
+Epoch: 0 Total Loss: 79.56971548847288 Accuracy: 0.8671194517072265 | execution time 4.152580738067627 seconds
+Epoch: 1 Total Loss: 78.08035118036526 Accuracy: 0.8722867707350279 | execution time 4.385132074356079 seconds
+Epoch: 2 Total Loss: 76.47447398363316 Accuracy: 0.8716524591178427 | execution time 3.326462984085083 seconds
+Epoch: 3 Total Loss: 82.22939467611836 Accuracy: 0.86995064746198 | execution time 4.45024847984314 seconds
+Epoch: 4 Total Loss: 77.19072168209247 Accuracy: 0.8717607562232158 | execution time 4.782538414001465 seconds
+Epoch: 5 Total Loss: 74.16683443794206 Accuracy: 0.8740814084812104 | execution time 3.8503506183624268 seconds
+Epoch: 6 Total Loss: 77.18042555754327 Accuracy: 0.8707396692296981 | execution time 4.509520769119263 seconds
+Epoch: 7 Total Loss: 77.18908724374843 Accuracy: 0.8739421693457308 | execution time 4.536744594573975 seconds
+Epoch: 8 Total Loss: 77.30642841698527 Accuracy: 0.8694710459953278 | execution time 4.871022462844849 seconds
+Epoch: 9 Total Loss: 77.54744432030512 Accuracy: 0.8679858285502112 | execution time 4.520065069198608 seconds
+Epoch: 10 Total Loss: 78.14957191294606 Accuracy: 0.8702755387780993 | execution time 4.891944885253906 seconds
+Epoch: 11 Total Loss: 77.70971488648945 Accuracy: 0.8705540170490585 | execution time 4.71843695640564 seconds
+Epoch: 12 Total Loss: 77.44362650382395 Accuracy: 0.8676918792641986 | execution time 4.891633749008179 seconds
+Epoch: 13 Total Loss: 74.90737680060282 Accuracy: 0.8713120967866702 | execution time 4.787027835845947 seconds
+Epoch: 14 Total Loss: 75.6222227707698 Accuracy: 0.8688831474233024 | execution time 4.903596639633179 seconds
+Epoch: 15 Total Loss: 78.632683368648 Accuracy: 0.8648916255395517 | execution time 4.990547180175781 seconds
+Epoch: 16 Total Loss: 75.37898096200864 Accuracy: 0.8731067345328527 | execution time 5.0250773429870605 seconds
+Epoch: 17 Total Loss: 74.30457599369092 Accuracy: 0.8694555749802745 | execution time 4.1105711460113525 seconds
+Epoch: 18 Total Loss: 74.0626991886092 Accuracy: 0.8683571329114903 | execution time 4.121980667114258 seconds
+Epoch: 19 Total Loss: 75.15181454154798 Accuracy: 0.8641954298621533 | execution time 4.514508485794067 seconds
+Epoch: 20 Total Loss: 75.62599067238803 Accuracy: 0.8625864442966104 | execution time 4.67745304107666 seconds
+Epoch: 21 Total Loss: 73.46990224437411 Accuracy: 0.8673360459179726 | execution time 4.112153768539429 seconds
+Epoch: 22 Total Loss: 75.48755064900254 Accuracy: 0.8654949951266303 | execution time 4.101084470748901 seconds
+Epoch: 23 Total Loss: 76.50606574028662 Accuracy: 0.8641644878320467 | execution time 4.136594295501709 seconds
+Epoch: 24 Total Loss: 72.58362951535815 Accuracy: 0.8669956835868001 | execution time 4.209622859954834 seconds
+Epoch: 25 Total Loss: 72.85618830430472 Accuracy: 0.865278400915884 | execution time 4.625544548034668 seconds
+Epoch: 26 Total Loss: 74.22983283563958 Accuracy: 0.8667172053158407 | execution time 3.942470073699951 seconds
+Epoch: 27 Total Loss: 74.76917874044186 Accuracy: 0.8662530748642419 | execution time 4.210770130157471 seconds
+Epoch: 28 Total Loss: 75.35191352390271 Accuracy: 0.8654485820814704 | execution time 4.227297067642212 seconds
+Epoch: 29 Total Loss: 76.64904052038956 Accuracy: 0.8594767702708975 | execution time 4.2633514404296875 seconds
+Epoch: 30 Total Loss: 72.23759469730292 Accuracy: 0.861689125423519 | execution time 4.049900770187378 seconds
+Epoch: 31 Total Loss: 74.65778268437748 Accuracy: 0.8627875674923031 | execution time 5.076913356781006 seconds
+Epoch: 32 Total Loss: 75.09673364038827 Accuracy: 0.863406408094435 | execution time 4.707165479660034 seconds
+Epoch: 33 Total Loss: 71.68361999408768 Accuracy: 0.8658044154276963 | execution time 4.0083043575286865 seconds
+Epoch: 34 Total Loss: 71.45188052038597 Accuracy: 0.8652165168556709 | execution time 3.0199973583221436 seconds
+Epoch: 35 Total Loss: 70.25469710929872 Accuracy: 0.8641799588471 | execution time 4.4540863037109375 seconds
+Epoch: 36 Total Loss: 74.6853204445568 Accuracy: 0.862570973281557 | execution time 4.830082178115845 seconds
+Epoch: 37 Total Loss: 72.41714206950483 Accuracy: 0.863406408094435 | execution time 4.336012840270996 seconds
+Epoch: 38 Total Loss: 71.49051154151567 Accuracy: 0.8649689806148181 | execution time 4.812835693359375 seconds
+Epoch: 39 Total Loss: 70.67325315626142 Accuracy: 0.8643501400126863 | execution time 4.821881294250488 seconds
+2. The time of training Creator is 186.02251505851746 with 64637 number of training data 
+3. The time of update training data is  0.00019788742065429688
+4. The time of choosing high confidence TOs is 44.51122307777405 with 1162 temporal orders
+5. The time of Chase is 0.6986353397369385 with 5152 temporal orders
+AUG : indicator = True, the number of additional training data is 3710
+6. The time of adding more training data is 0.08738327026367188
+roundGATE=11 ndcg=0.8965078592300415 mrr=0.8572162985801697 precision=0.7361738414490708 recall=0.7343944336235421 Fmeasure=0.7352830609823433 accuracy=0.7344720313917726
+roundCreator=11 ndcg=0.8925362825393677 mrr=0.8513537049293518 precision=0.7240350319596003 recall=0.7216987773684087 Fmeasure=0.7228650170116996 accuracy=0.7221286072846824
+7. The time of evaluation is 969.2659568786621
+1. The time of evaluating training data is 9.5367431640625e-07 with 64637 number of training data
+Epoch: 0 Total Loss: 83.5056267213743 Accuracy: 0.8518588965133802 | execution time 4.00015664100647 seconds
+Epoch: 1 Total Loss: 82.97064840102239 Accuracy: 0.8537170614657557 | execution time 4.210824251174927 seconds
+Epoch: 2 Total Loss: 83.74332645063295 Accuracy: 0.856599411824952 | execution time 4.434978485107422 seconds
+Epoch: 3 Total Loss: 81.66767795199 Accuracy: 0.8578138030930399 | execution time 4.169449329376221 seconds
+Epoch: 4 Total Loss: 83.03197405864726 Accuracy: 0.8574919162508962 | execution time 4.201230049133301 seconds
+Epoch: 5 Total Loss: 81.29010986187721 Accuracy: 0.8569359298871932 | execution time 4.147457599639893 seconds
+Epoch: 6 Total Loss: 82.19661882307528 Accuracy: 0.8583551582366453 | execution time 4.120093107223511 seconds
+Epoch: 7 Total Loss: 82.847283805585 Accuracy: 0.8556776449588132 | execution time 4.122766494750977 seconds
+Epoch: 8 Total Loss: 80.6723669584789 Accuracy: 0.8539657922074122 | execution time 4.149183750152588 seconds
+Epoch: 9 Total Loss: 84.76384809237656 Accuracy: 0.8530732877814681 | execution time 4.154555797576904 seconds
+Epoch: 10 Total Loss: 81.61700944627269 Accuracy: 0.8553996517769616 | execution time 4.190271615982056 seconds
+Epoch: 11 Total Loss: 80.52136269528174 Accuracy: 0.8541267356284841 | execution time 4.21659517288208 seconds
+Epoch: 12 Total Loss: 86.26743013754276 Accuracy: 0.8541413668485816 | execution time 4.214040279388428 seconds
+Epoch: 13 Total Loss: 80.29365049666609 Accuracy: 0.8576674908920655 | execution time 4.163080215454102 seconds
+Epoch: 14 Total Loss: 81.8842779546275 Accuracy: 0.8548582966333562 | execution time 4.213073492050171 seconds
+Epoch: 15 Total Loss: 81.0070504647565 Accuracy: 0.8563360498631981 | execution time 4.185672283172607 seconds
+Epoch: 16 Total Loss: 77.47755245242033 Accuracy: 0.8562628937627109 | execution time 4.154874563217163 seconds
+Epoch: 17 Total Loss: 81.63325817792514 Accuracy: 0.8560726879014441 | execution time 4.150777101516724 seconds
+Epoch: 18 Total Loss: 79.61618766789304 Accuracy: 0.8580917962748914 | execution time 4.163724184036255 seconds
+Epoch: 19 Total Loss: 77.13922847999379 Accuracy: 0.8588526197199584 | execution time 4.193979740142822 seconds
+Epoch: 20 Total Loss: 81.20556096021845 Accuracy: 0.8571115045283626 | execution time 4.1171815395355225 seconds
+Epoch: 21 Total Loss: 79.29293734333606 Accuracy: 0.8551948146955974 | execution time 4.134319067001343 seconds
+Epoch: 22 Total Loss: 80.04568128945048 Accuracy: 0.8530440253412732 | execution time 4.215787887573242 seconds
+Epoch: 23 Total Loss: 76.12229008706012 Accuracy: 0.8555020703176438 | execution time 4.170621633529663 seconds
+Epoch: 24 Total Loss: 78.09048859001342 Accuracy: 0.8569944547675831 | execution time 4.190935373306274 seconds
+Epoch: 25 Total Loss: 76.45683659407696 Accuracy: 0.8564677308440751 | execution time 4.191004514694214 seconds
+Epoch: 26 Total Loss: 76.95274338430116 Accuracy: 0.8543462039299458 | execution time 4.165544748306274 seconds
+Epoch: 27 Total Loss: 80.46906166040674 Accuracy: 0.8516394282119186 | execution time 4.16767144203186 seconds
+Epoch: 28 Total Loss: 79.58952481105575 Accuracy: 0.8474110056037573 | execution time 4.182860374450684 seconds
+Epoch: 29 Total Loss: 80.45079218624473 Accuracy: 0.8509663920874362 | execution time 4.195546627044678 seconds
+Epoch: 30 Total Loss: 75.87246473738962 Accuracy: 0.8538194800064377 | execution time 4.168333530426025 seconds
+Epoch: 31 Total Loss: 75.42056365732635 Accuracy: 0.8543754663701406 | execution time 4.203182935714722 seconds
+Epoch: 32 Total Loss: 74.99930548610402 Accuracy: 0.8542876790495559 | execution time 4.176266431808472 seconds
+Epoch: 33 Total Loss: 77.22123774132903 Accuracy: 0.8523417267765959 | execution time 4.126363039016724 seconds
+Epoch: 34 Total Loss: 78.89216908260389 Accuracy: 0.8531757063221502 | execution time 4.155900001525879 seconds
+Epoch: 35 Total Loss: 75.24494203937567 Accuracy: 0.8521515209153291 | execution time 4.203687906265259 seconds
+Epoch: 36 Total Loss: 72.82302773447563 Accuracy: 0.8566140430450495 | execution time 4.165984153747559 seconds
+Epoch: 37 Total Loss: 74.90991932151353 Accuracy: 0.8521222584751342 | execution time 4.146641492843628 seconds
+Epoch: 38 Total Loss: 71.72647762361649 Accuracy: 0.8558239571597875 | execution time 4.20711088180542 seconds
+Epoch: 39 Total Loss: 79.24219584323464 Accuracy: 0.8482742475895065 | execution time 4.189351558685303 seconds
+2. The time of training Creator is 176.84554314613342 with 68347 number of training data 
+3. The time of update training data is  0.08911967277526855
+4. The time of choosing high confidence TOs is 51.51828408241272 with 1109 temporal orders
+5. The time of Chase is 0.6290221214294434 with 4572 temporal orders
+AUG : indicator = True, the number of additional training data is 3376
+6. The time of adding more training data is 0.08793354034423828
+roundGATE=12 ndcg=0.8982473611831665 mrr=0.8595589399337769 precision=0.7403252911520336 recall=0.7391699716049093 Fmeasure=0.7397471802911008 accuracy=0.7388378916606766
+roundCreator=12 ndcg=0.8937751054763794 mrr=0.8529295921325684 precision=0.726799515345434 recall=0.7249489592377912 Fmeasure=0.7258730578318207 accuracy=0.7250509644957166
+7. The time of evaluation is 1055.9613118171692
+1. The time of evaluating training data is 7.152557373046875e-07 with 68347 number of training data
+Epoch: 0 Total Loss: 87.08743947339673 Accuracy: 0.8406926648355478 | execution time 4.536742925643921 seconds
+Epoch: 1 Total Loss: 84.52579938739264 Accuracy: 0.840302274026463 | execution time 5.6871302127838135 seconds
+Epoch: 2 Total Loss: 85.24661737212385 Accuracy: 0.845168216611129 | execution time 4.853233814239502 seconds
+Epoch: 3 Total Loss: 85.15805105515346 Accuracy: 0.8441504120017289 | execution time 4.634612321853638 seconds
+Epoch: 4 Total Loss: 84.2512033630949 Accuracy: 0.8412364234624876 | execution time 5.308341026306152 seconds
+Epoch: 5 Total Loss: 86.37081890539993 Accuracy: 0.8415989292137808 | execution time 5.548600912094116 seconds
+Epoch: 6 Total Loss: 82.24664521288398 Accuracy: 0.8469668028386989 | execution time 5.425776720046997 seconds
+Epoch: 7 Total Loss: 85.04057051430708 Accuracy: 0.8403719866709424 | execution time 5.170933246612549 seconds
+Epoch: 8 Total Loss: 84.64506627635367 Accuracy: 0.8412364234624876 | execution time 5.27247166633606 seconds
+Epoch: 9 Total Loss: 86.31480970924297 Accuracy: 0.8410551705868411 | execution time 4.720265626907349 seconds
+Epoch: 10 Total Loss: 83.85791851620358 Accuracy: 0.844652343041981 | execution time 4.6099865436553955 seconds
+Epoch: 11 Total Loss: 84.57762957323101 Accuracy: 0.8419893200228658 | execution time 4.752586603164673 seconds
+Epoch: 12 Total Loss: 86.03774188824168 Accuracy: 0.8408878602400903 | execution time 5.122149229049683 seconds
+Epoch: 13 Total Loss: 81.1159548961052 Accuracy: 0.8455028373046303 | execution time 4.500145196914673 seconds
+Epoch: 14 Total Loss: 84.2037241904342 Accuracy: 0.8423518257741589 | execution time 4.765907287597656 seconds
+Epoch: 15 Total Loss: 83.7652467905913 Accuracy: 0.8411667108180082 | execution time 4.902008771896362 seconds
+Epoch: 16 Total Loss: 81.78840763917201 Accuracy: 0.843495113143622 | execution time 4.982125759124756 seconds
+Epoch: 17 Total Loss: 81.53986078836616 Accuracy: 0.8459629407581947 | execution time 4.866382122039795 seconds
+Epoch: 18 Total Loss: 86.16302959224113 Accuracy: 0.8419893200228658 | execution time 4.64272928237915 seconds
+Epoch: 19 Total Loss: 81.33139266467609 Accuracy: 0.8419614349650739 | execution time 4.7804765701293945 seconds
+Epoch: 20 Total Loss: 83.81185031115788 Accuracy: 0.8414037338092383 | execution time 4.546175718307495 seconds
+Epoch: 21 Total Loss: 81.91234784129662 Accuracy: 0.8410969981735287 | execution time 5.215535879135132 seconds
+Epoch: 22 Total Loss: 86.38743083058505 Accuracy: 0.8408739177111945 | execution time 5.036513090133667 seconds
+Epoch: 23 Total Loss: 81.27577854709847 Accuracy: 0.8429792395744741 | execution time 5.840871810913086 seconds
+Epoch: 24 Total Loss: 84.13543749071465 Accuracy: 0.837736848709619 | execution time 5.3242027759552 seconds
+Epoch: 25 Total Loss: 81.19651316983287 Accuracy: 0.8397166878128355 | execution time 4.783986806869507 seconds
+Epoch: 26 Total Loss: 81.29761192192657 Accuracy: 0.8384060900966217 | execution time 4.58532190322876 seconds
+Epoch: 27 Total Loss: 81.70001646618476 Accuracy: 0.8397166878128355 | execution time 4.80031418800354 seconds
+Epoch: 28 Total Loss: 82.77534070502192 Accuracy: 0.8346973774103147 | execution time 4.695088863372803 seconds
+Epoch: 29 Total Loss: 87.06724003156505 Accuracy: 0.8376810785940354 | execution time 5.309372186660767 seconds
+Epoch: 30 Total Loss: 80.37905789838999 Accuracy: 0.8412085384046959 | execution time 4.976581811904907 seconds
+Epoch: 31 Total Loss: 79.69117842351949 Accuracy: 0.8403719866709424 | execution time 5.449710845947266 seconds
+Epoch: 32 Total Loss: 83.70491980834485 Accuracy: 0.8362310555888627 | execution time 5.410406827926636 seconds
+Epoch: 33 Total Loss: 79.49385297554646 Accuracy: 0.8387685958479149 | execution time 4.525646448135376 seconds
+Epoch: 34 Total Loss: 79.67971436631883 Accuracy: 0.8419196073783863 | execution time 4.83616304397583 seconds
+Epoch: 35 Total Loss: 77.94287505777869 Accuracy: 0.8436484809614768 | execution time 5.2519049644470215 seconds
+Epoch: 36 Total Loss: 79.4679725796245 Accuracy: 0.839911883217378 | execution time 4.48445725440979 seconds
+Epoch: 37 Total Loss: 77.75733377251292 Accuracy: 0.8407344924222355 | execution time 4.890422344207764 seconds
+Epoch: 38 Total Loss: 79.69491235880919 Accuracy: 0.8419335499072822 | execution time 5.689626455307007 seconds
+Epoch: 39 Total Loss: 82.45211713264345 Accuracy: 0.8363704808778216 | execution time 5.634533166885376 seconds
+2. The time of training Creator is 210.1015350818634 with 71723 number of training data 
+3. The time of update training data is  0.08720159530639648
+4. The time of choosing high confidence TOs is 43.783100605010986 with 907 temporal orders
+5. The time of Chase is 0.5857975482940674 with 4352 temporal orders
+AUG : indicator = True, the number of additional training data is 3061
+6. The time of adding more training data is 0.07218694686889648
+roundGATE=13 ndcg=0.8979082107543945 mrr=0.8590958714485168 precision=0.7396970267218668 recall=0.7379438199610447 Fmeasure=0.7388193832599119 accuracy=0.7380130327704654
+roundCreator=13 ndcg=0.8930404186248779 mrr=0.8519389033317566 precision=0.725366382357099 recall=0.7224555886701242 Fmeasure=0.7239080594909175 accuracy=0.7232834097309782
+7. The time of evaluation is 1033.7723593711853
+1. The time of evaluating training data is 2.384185791015625e-06 with 71723 number of training data
+Epoch: 0 Total Loss: 89.88520546726009 Accuracy: 0.8283322635857937 | execution time 5.1210339069366455 seconds
+Epoch: 1 Total Loss: 91.79206986976756 Accuracy: 0.8312205819426616 | execution time 4.852295875549316 seconds
+Epoch: 2 Total Loss: 91.40020674640395 Accuracy: 0.8271956568249893 | execution time 5.45815110206604 seconds
+Epoch: 3 Total Loss: 87.39591792336262 Accuracy: 0.8300706033376123 | execution time 5.092923641204834 seconds
+Epoch: 4 Total Loss: 88.6842749551883 Accuracy: 0.8343629653401797 | execution time 4.59833025932312 seconds
+Epoch: 5 Total Loss: 88.08999492651186 Accuracy: 0.8334269362430466 | execution time 4.907092094421387 seconds
+Epoch: 6 Total Loss: 88.55216110254813 Accuracy: 0.8333199614890886 | execution time 5.416912794113159 seconds
+Epoch: 7 Total Loss: 87.42259855734319 Accuracy: 0.8324374197689345 | execution time 4.707562685012817 seconds
+Epoch: 8 Total Loss: 93.00552400139989 Accuracy: 0.8259253316217373 | execution time 5.029015302658081 seconds
+Epoch: 9 Total Loss: 85.78560942762097 Accuracy: 0.8306455926401369 | execution time 4.991541147232056 seconds
+Epoch: 10 Total Loss: 90.46323964614578 Accuracy: 0.8255108044501498 | execution time 4.754740953445435 seconds
+Epoch: 11 Total Loss: 88.77599375938048 Accuracy: 0.8276904150620453 | execution time 5.24138331413269 seconds
+Epoch: 12 Total Loss: 89.57860420046586 Accuracy: 0.8269282199400941 | execution time 5.325576543807983 seconds
+Epoch: 13 Total Loss: 85.6790679475607 Accuracy: 0.8295624732563115 | execution time 5.092053413391113 seconds
+Epoch: 14 Total Loss: 86.15332801356556 Accuracy: 0.8290543431750107 | execution time 4.96794867515564 seconds
+Epoch: 15 Total Loss: 86.64149989570552 Accuracy: 0.8241335044929397 | execution time 4.74616813659668 seconds
+Epoch: 16 Total Loss: 86.46870616521834 Accuracy: 0.8263532306375695 | execution time 5.836510896682739 seconds
+Epoch: 17 Total Loss: 83.76483412802877 Accuracy: 0.8303380402225075 | execution time 5.6236279010772705 seconds
+Epoch: 18 Total Loss: 90.94711599418514 Accuracy: 0.8212451861360719 | execution time 5.13485312461853 seconds
+Epoch: 19 Total Loss: 87.83591500571221 Accuracy: 0.8261660248181429 | execution time 5.468997478485107 seconds
+Epoch: 20 Total Loss: 89.37870130545029 Accuracy: 0.8279177364142063 | execution time 5.424187898635864 seconds
+Epoch: 21 Total Loss: 86.42357097851405 Accuracy: 0.8267811296534018 | execution time 5.3621666431427 seconds
+Epoch: 22 Total Loss: 86.23252757689528 Accuracy: 0.829482242190843 | execution time 5.152254104614258 seconds
+Epoch: 23 Total Loss: 85.39036639482009 Accuracy: 0.8281851732991015 | execution time 5.443709373474121 seconds
+Epoch: 24 Total Loss: 89.22996340352542 Accuracy: 0.8285729567821994 | execution time 5.096246957778931 seconds
+Epoch: 25 Total Loss: 83.41829723192221 Accuracy: 0.8269817073170732 | execution time 5.352266550064087 seconds
+Epoch: 26 Total Loss: 86.70141504804188 Accuracy: 0.8264067180145486 | execution time 5.761415243148804 seconds
+Epoch: 27 Total Loss: 89.3544415479542 Accuracy: 0.8277171587505349 | execution time 5.815941333770752 seconds
+Epoch: 28 Total Loss: 85.9535028488406 Accuracy: 0.8251497646555412 | execution time 5.176799058914185 seconds
+Epoch: 29 Total Loss: 87.54963749637531 Accuracy: 0.824775353016688 | execution time 5.42012619972229 seconds
+Epoch: 30 Total Loss: 85.18506973928336 Accuracy: 0.8240265297389816 | execution time 4.708897352218628 seconds
+Epoch: 31 Total Loss: 83.97289311635238 Accuracy: 0.8263264869490801 | execution time 4.837921142578125 seconds
+Epoch: 32 Total Loss: 85.61113669190416 Accuracy: 0.8264735772357723 | execution time 5.778893947601318 seconds
+Epoch: 33 Total Loss: 84.30843530191414 Accuracy: 0.8269817073170732 | execution time 3.9510650634765625 seconds
+Epoch: 34 Total Loss: 85.30863553626926 Accuracy: 0.8213922764227642 | execution time 5.142653226852417 seconds
+Epoch: 35 Total Loss: 83.77501705761458 Accuracy: 0.8236654899443732 | execution time 5.363885164260864 seconds
+Epoch: 36 Total Loss: 84.63063141646694 Accuracy: 0.823505027813436 | execution time 5.6843719482421875 seconds
+Epoch: 37 Total Loss: 82.72920706206206 Accuracy: 0.8231439880188276 | execution time 5.401065111160278 seconds
+Epoch: 38 Total Loss: 83.53509118470119 Accuracy: 0.8233713093709885 | execution time 5.495198965072632 seconds
+Epoch: 39 Total Loss: 85.76640650865482 Accuracy: 0.820964377406932 | execution time 5.530545949935913 seconds
+2. The time of training Creator is 217.33189940452576 with 74784 number of training data 
+3. The time of update training data is  0.1012582778930664
+4. The time of choosing high confidence TOs is 42.17175316810608 with 930 temporal orders
+5. The time of Chase is 0.510854959487915 with 3614 temporal orders
+AUG : indicator = True, the number of additional training data is 2717
+6. The time of adding more training data is 0.06364750862121582
+roundGATE=14 ndcg=0.8987545371055603 mrr=0.8602713942527771 precision=0.7422650681827545 recall=0.7399091826437941 Fmeasure=0.7410852530974283 accuracy=0.7403903939290386
+roundCreator=14 ndcg=0.8935250043869019 mrr=0.8526394963264465 precision=0.7268402810525323 recall=0.7234118696172529 Fmeasure=0.7251220229344311 accuracy=0.7245972921061005
+7. The time of evaluation is 1053.0591008663177
+1. The time of evaluating training data is 9.5367431640625e-07 with 74784 number of training data
+Epoch: 0 Total Loss: 92.97671371343404 Accuracy: 0.8164023690016903 | execution time 4.931435823440552 seconds
+Epoch: 1 Total Loss: 96.85394740908812 Accuracy: 0.8126475787409194 | execution time 5.302570819854736 seconds
+Epoch: 2 Total Loss: 94.17756464113201 Accuracy: 0.8099379362846931 | execution time 5.31144905090332 seconds
+Epoch: 3 Total Loss: 92.76403746716228 Accuracy: 0.8098863240474317 | execution time 5.336388111114502 seconds
+Epoch: 4 Total Loss: 94.86215236986529 Accuracy: 0.8112540483348601 | execution time 5.424769401550293 seconds
+Epoch: 5 Total Loss: 96.71095361074859 Accuracy: 0.8067508806337983 | execution time 5.401763916015625 seconds
+Epoch: 6 Total Loss: 96.85874605222855 Accuracy: 0.8080669926839653 | execution time 5.4068763256073 seconds
+Epoch: 7 Total Loss: 92.11250431519899 Accuracy: 0.811847589063367 | execution time 5.401557445526123 seconds
+Epoch: 8 Total Loss: 91.14215970199328 Accuracy: 0.812737900156127 | execution time 5.3529698848724365 seconds
+Epoch: 9 Total Loss: 94.43991507747647 Accuracy: 0.8113314666907524 | execution time 5.312359809875488 seconds
+Epoch: 10 Total Loss: 93.66844832372198 Accuracy: 0.8103895433607309 | execution time 5.291614532470703 seconds
+Epoch: 11 Total Loss: 93.25878423468868 Accuracy: 0.8090992374291944 | execution time 5.496189832687378 seconds
+Epoch: 12 Total Loss: 95.20686014614324 Accuracy: 0.808196023277119 | execution time 5.323748588562012 seconds
+Epoch: 13 Total Loss: 92.10979343711436 Accuracy: 0.8129830582831189 | execution time 5.188468933105469 seconds
+Epoch: 14 Total Loss: 92.66689881293158 Accuracy: 0.8143894917484936 | execution time 5.302598476409912 seconds
+Epoch: 15 Total Loss: 89.2408048959162 Accuracy: 0.8155507670868763 | execution time 5.246706962585449 seconds
+Epoch: 16 Total Loss: 90.43897071959715 Accuracy: 0.8114734003432214 | execution time 5.236299514770508 seconds
+Epoch: 17 Total Loss: 90.60427922068041 Accuracy: 0.8129314460458574 | execution time 5.213817358016968 seconds
+Epoch: 18 Total Loss: 90.19544665892303 Accuracy: 0.8124153236732429 | execution time 5.24544620513916 seconds
+Epoch: 19 Total Loss: 91.05684965859143 Accuracy: 0.8119250074192591 | execution time 5.223340272903442 seconds
+Epoch: 20 Total Loss: 92.05064693813367 Accuracy: 0.812028231893782 | execution time 5.206258773803711 seconds
+Epoch: 21 Total Loss: 92.10408778548876 Accuracy: 0.8086734364717875 | execution time 5.221604108810425 seconds
+Epoch: 22 Total Loss: 93.50980031039208 Accuracy: 0.8097830995729087 | execution time 5.252848386764526 seconds
+Epoch: 23 Total Loss: 90.58753478590495 Accuracy: 0.8111379208010219 | execution time 5.226653099060059 seconds
+Epoch: 24 Total Loss: 89.57819532986073 Accuracy: 0.8134217622998413 | execution time 5.2891929149627686 seconds
+Epoch: 25 Total Loss: 91.94725857784135 Accuracy: 0.8142604611553399 | execution time 5.238814115524292 seconds
+Epoch: 26 Total Loss: 89.48817599019421 Accuracy: 0.8124927420291351 | execution time 5.239408493041992 seconds
+Epoch: 27 Total Loss: 88.99112986078028 Accuracy: 0.8143249764519167 | execution time 5.277207851409912 seconds
+Epoch: 28 Total Loss: 89.27639677192556 Accuracy: 0.8120024257751512 | execution time 5.234418153762817 seconds
+Epoch: 29 Total Loss: 90.57456066976822 Accuracy: 0.8110217932671836 | execution time 5.306972980499268 seconds
+Epoch: 30 Total Loss: 87.93179757265803 Accuracy: 0.809008916013987 | execution time 5.21232533454895 seconds
+Epoch: 31 Total Loss: 87.83069934636328 Accuracy: 0.8110088902078683 | execution time 5.257101058959961 seconds
+Epoch: 32 Total Loss: 89.50720231465108 Accuracy: 0.8096669720390705 | execution time 5.23419451713562 seconds
+Epoch: 33 Total Loss: 92.1208949966683 Accuracy: 0.8095250383866015 | execution time 5.184259653091431 seconds
+Epoch: 34 Total Loss: 88.311779395658 Accuracy: 0.8087508548276796 | execution time 5.2220234870910645 seconds
+Epoch: 35 Total Loss: 87.36742869812512 Accuracy: 0.8078992529128657 | execution time 5.186793565750122 seconds
+Epoch: 36 Total Loss: 94.46246070256494 Accuracy: 0.8088153701242564 | execution time 5.308490037918091 seconds
+Epoch: 37 Total Loss: 94.22109551242785 Accuracy: 0.8071766815912053 | execution time 5.254008769989014 seconds
+Epoch: 38 Total Loss: 88.92110279698834 Accuracy: 0.8092540741409788 | execution time 5.251886606216431 seconds
+Epoch: 39 Total Loss: 86.3331278896038 Accuracy: 0.8119895227158359 | execution time 5.17885684967041 seconds
+2. The time of training Creator is 220.5586199760437 with 77501 number of training data 
+3. The time of update training data is  0.08187603950500488
+4. The time of choosing high confidence TOs is 47.89236783981323 with 933 temporal orders
+5. The time of Chase is 0.5269699096679688 with 3687 temporal orders
+AUG : indicator = True, the number of additional training data is 2764
+6. The time of adding more training data is 0.07186269760131836
+roundGATE=15 ndcg=0.9001149535179138 mrr=0.8619321584701538 precision=0.7450883624741492 recall=0.7440217773918757 Fmeasure=0.7445546879586684 accuracy=0.7436456406207652
+roundCreator=15 ndcg=0.8944228291511536 mrr=0.8535657525062561 precision=0.7282423885865569 recall=0.7262044446530401 Fmeasure=0.7272219888551731 accuracy=0.7264384949860363
+7. The time of evaluation is 1035.1865847110748
+1. The time of evaluating training data is 9.5367431640625e-07 with 77501 number of training data
+Epoch: 0 Total Loss: 98.03829132923101 Accuracy: 0.8040740048589049 | execution time 6.091865062713623 seconds
+Epoch: 1 Total Loss: 96.8845250310448 Accuracy: 0.8056687223571918 | execution time 5.387953519821167 seconds
+Epoch: 2 Total Loss: 98.09539346470076 Accuracy: 0.8009468635146079 | execution time 4.986936092376709 seconds
+Epoch: 3 Total Loss: 95.11311571273227 Accuracy: 0.8043979318507444 | execution time 4.85270094871521 seconds
+Epoch: 4 Total Loss: 92.44325595173397 Accuracy: 0.805980190618576 | execution time 4.8812010288238525 seconds
+Epoch: 5 Total Loss: 96.42921814679453 Accuracy: 0.807749330343238 | execution time 4.790558576583862 seconds
+Epoch: 6 Total Loss: 96.66648038913941 Accuracy: 0.8044228493116552 | execution time 4.195825576782227 seconds
+Epoch: 7 Total Loss: 98.9685592903512 Accuracy: 0.8001495047654644 | execution time 4.790764570236206 seconds
+Epoch: 8 Total Loss: 97.59358962961697 Accuracy: 0.8032143524574846 | execution time 4.846997499465942 seconds
+Epoch: 9 Total Loss: 95.81251401083188 Accuracy: 0.8021802778296891 | execution time 5.319737911224365 seconds
+Epoch: 10 Total Loss: 95.84346247594411 Accuracy: 0.8009966984364293 | execution time 4.726935625076294 seconds
+Epoch: 11 Total Loss: 93.95000804895983 Accuracy: 0.8059178969662991 | execution time 4.587571382522583 seconds
+Epoch: 12 Total Loss: 93.3341073338592 Accuracy: 0.8055565937830935 | execution time 4.706822395324707 seconds
+Epoch: 13 Total Loss: 96.27400578501475 Accuracy: 0.8000249174609108 | execution time 4.772364377975464 seconds
+Epoch: 14 Total Loss: 93.95351101248565 Accuracy: 0.7987042920326419 | execution time 4.79665207862854 seconds
+Epoch: 15 Total Loss: 94.57924074341938 Accuracy: 0.8016694698810192 | execution time 5.088865041732788 seconds
+Epoch: 16 Total Loss: 94.91228956082121 Accuracy: 0.7959633713324612 | execution time 4.733808755874634 seconds
+Epoch: 17 Total Loss: 92.77793681840288 Accuracy: 0.8006478539836791 | execution time 4.9174418449401855 seconds
+Epoch: 18 Total Loss: 96.93384488103703 Accuracy: 0.7987541269544634 | execution time 5.79621958732605 seconds
+Epoch: 19 Total Loss: 94.16521911690579 Accuracy: 0.7987292094935526 | execution time 5.259499788284302 seconds
+Epoch: 20 Total Loss: 94.14666266958982 Accuracy: 0.8045100604248427 | execution time 4.656007766723633 seconds
+Epoch: 21 Total Loss: 94.49567658037468 Accuracy: 0.7995141095122407 | execution time 5.052043914794922 seconds
+Epoch: 22 Total Loss: 91.3258328658498 Accuracy: 0.8024792873606179 | execution time 4.794841289520264 seconds
+Epoch: 23 Total Loss: 95.93250508708181 Accuracy: 0.8041238397807263 | execution time 4.832181930541992 seconds
+Epoch: 24 Total Loss: 99.00617617720259 Accuracy: 0.7973338316825516 | execution time 3.9309990406036377 seconds
+Epoch: 25 Total Loss: 94.1716018363394 Accuracy: 0.8012334143150813 | execution time 5.182393550872803 seconds
+Epoch: 26 Total Loss: 91.8410112584965 Accuracy: 0.8017068460723852 | execution time 5.733440399169922 seconds
+Epoch: 27 Total Loss: 95.75134803036514 Accuracy: 0.79897838410266 | execution time 5.933005094528198 seconds
+Epoch: 28 Total Loss: 97.5974836253432 Accuracy: 0.8015698000373762 | execution time 6.004140853881836 seconds
+Epoch: 29 Total Loss: 93.28792948215113 Accuracy: 0.7988537967981063 | execution time 5.362687587738037 seconds
+Epoch: 30 Total Loss: 92.94415698925172 Accuracy: 0.797383666604373 | execution time 5.381321907043457 seconds
+Epoch: 31 Total Loss: 96.10154105506722 Accuracy: 0.7978321809007662 | execution time 5.030720233917236 seconds
+Epoch: 32 Total Loss: 97.91522783241898 Accuracy: 0.7988288793371955 | execution time 5.887559175491333 seconds
+Epoch: 33 Total Loss: 91.11496091852108 Accuracy: 0.8005481841400361 | execution time 5.007718324661255 seconds
+Epoch: 34 Total Loss: 90.11500929373435 Accuracy: 0.8014078365414564 | execution time 4.902504920959473 seconds
+Epoch: 35 Total Loss: 91.11752055342735 Accuracy: 0.8013081666978135 | execution time 5.423193693161011 seconds
+Epoch: 36 Total Loss: 92.45755283488528 Accuracy: 0.7983429888494362 | execution time 4.997030735015869 seconds
+Epoch: 37 Total Loss: 93.71485370600256 Accuracy: 0.7967607300816046 | execution time 5.606472969055176 seconds
+Epoch: 38 Total Loss: 93.00452904863357 Accuracy: 0.8000747523827322 | execution time 5.901756525039673 seconds
+Epoch: 39 Total Loss: 91.85351679129737 Accuracy: 0.7955771506883449 | execution time 6.004405498504639 seconds
+2. The time of training Creator is 214.83192586898804 with 80265 number of training data 
+3. The time of update training data is  0.08073663711547852
+4. The time of choosing high confidence TOs is 30.437347650527954 with 811 temporal orders
+5. The time of Chase is 0.5100381374359131 with 3700 temporal orders
+AUG : indicator = True, the number of additional training data is 2642
+6. The time of adding more training data is 0.06156301498413086
+roundGATE=16 ndcg=0.8990099430084229 mrr=0.8605903387069702 precision=0.7425557547086651 recall=0.7413054701616878 Fmeasure=0.7419300856974255 accuracy=0.7410443891919918
+roundCreator=16 ndcg=0.8929657340049744 mrr=0.8518574833869934 precision=0.7249522016648527 recall=0.7229659962922113 Fmeasure=0.7239577366737457 accuracy=0.7231567349728386
+7. The time of evaluation is 980.7685468196869
+1. The time of evaluating training data is 7.152557373046875e-07 with 80265 number of training data
+Epoch: 0 Total Loss: 105.56410995649959 Accuracy: 0.7900659775411003 | execution time 5.5876405239105225 seconds
+Epoch: 1 Total Loss: 100.10543724660445 Accuracy: 0.7891613494638571 | execution time 5.460651636123657 seconds
+Epoch: 2 Total Loss: 98.892197176338 Accuracy: 0.7928763554344024 | execution time 5.440920352935791 seconds
+Epoch: 3 Total Loss: 96.56833971732173 Accuracy: 0.7923697637111462 | execution time 5.5491554737091064 seconds
+Epoch: 4 Total Loss: 103.76070050254187 Accuracy: 0.7914289505108133 | execution time 5.5771050453186035 seconds
+Epoch: 5 Total Loss: 100.87119658218013 Accuracy: 0.7913686419723305 | execution time 6.750298023223877 seconds
+Epoch: 6 Total Loss: 98.87775954106274 Accuracy: 0.7939016005886114 | execution time 6.483707666397095 seconds
+Epoch: 7 Total Loss: 100.04024745929142 Accuracy: 0.7926954298189538 | execution time 5.565422058105469 seconds
+Epoch: 8 Total Loss: 103.72365084204195 Accuracy: 0.7896800028948099 | execution time 5.664393424987793 seconds
+Epoch: 9 Total Loss: 97.8088037666098 Accuracy: 0.7904398904796941 | execution time 5.248419284820557 seconds
+Epoch: 10 Total Loss: 101.68067173614479 Accuracy: 0.7892699048331263 | execution time 6.020638942718506 seconds
+Epoch: 11 Total Loss: 101.40203701068 Accuracy: 0.7901865946180661 | execution time 6.33674955368042 seconds
+Epoch: 12 Total Loss: 102.9771390357949 Accuracy: 0.7876777594171783 | execution time 6.589899778366089 seconds
+Epoch: 13 Total Loss: 98.57908918328349 Accuracy: 0.7963380655433197 | execution time 6.112730979919434 seconds
+Epoch: 14 Total Loss: 96.3464296653341 Accuracy: 0.7929607873882785 | execution time 5.675376653671265 seconds
+Epoch: 15 Total Loss: 101.10111826540074 Accuracy: 0.7918511102801935 | execution time 5.677131652832031 seconds
+Epoch: 16 Total Loss: 99.3403481625415 Accuracy: 0.7949750925736065 | execution time 5.786042213439941 seconds
+Epoch: 17 Total Loss: 98.19383832840178 Accuracy: 0.7892337197100365 | execution time 5.33437180519104 seconds
+Epoch: 18 Total Loss: 97.67812325978527 Accuracy: 0.7888598067714427 | execution time 5.67365574836731 seconds
+Epoch: 19 Total Loss: 100.26031657043983 Accuracy: 0.789306089956216 | execution time 5.462561845779419 seconds
+Epoch: 20 Total Loss: 97.0258958352148 Accuracy: 0.7929246022651887 | execution time 5.384066581726074 seconds
+Epoch: 21 Total Loss: 96.39447146017774 Accuracy: 0.7927557383574366 | execution time 5.318422079086304 seconds
+Epoch: 22 Total Loss: 98.55595797859752 Accuracy: 0.7877018828325715 | execution time 5.423318147659302 seconds
+Epoch: 23 Total Loss: 95.64304879542003 Accuracy: 0.7878707467403235 | execution time 6.370467185974121 seconds
+Epoch: 24 Total Loss: 99.78517280673455 Accuracy: 0.785808194724209 | execution time 6.754027843475342 seconds
+Epoch: 25 Total Loss: 99.4974892840823 Accuracy: 0.7860494288781406 | execution time 6.642051935195923 seconds
+Epoch: 26 Total Loss: 99.93106787615635 Accuracy: 0.786435403524431 | execution time 6.636736631393433 seconds
+Epoch: 27 Total Loss: 96.43376776473664 Accuracy: 0.7866283908475762 | execution time 6.41508150100708 seconds
+Epoch: 28 Total Loss: 103.40261201075714 Accuracy: 0.7814659799534418 | execution time 6.438829660415649 seconds
+Epoch: 29 Total Loss: 100.4285185532511 Accuracy: 0.7861459225397132 | execution time 6.517108678817749 seconds
+Epoch: 30 Total Loss: 94.51372694164715 Accuracy: 0.7899574221718311 | execution time 6.52449369430542 seconds
+Epoch: 31 Total Loss: 99.42826268205633 Accuracy: 0.7889804238484085 | execution time 6.435616493225098 seconds
+Epoch: 32 Total Loss: 101.8315584826617 Accuracy: 0.7816107204458007 | execution time 6.6245951652526855 seconds
+Epoch: 33 Total Loss: 98.5551993032443 Accuracy: 0.782937508292424 | execution time 6.326281785964966 seconds
+Epoch: 34 Total Loss: 95.93553325444684 Accuracy: 0.7843849132160131 | execution time 6.478753328323364 seconds
+Epoch: 35 Total Loss: 97.59458923261491 Accuracy: 0.7844331600467994 | execution time 6.294198036193848 seconds
+Epoch: 36 Total Loss: 97.54196595522392 Accuracy: 0.7838421363696673 | execution time 6.382394790649414 seconds
+Epoch: 37 Total Loss: 97.20616170416639 Accuracy: 0.7872435379401016 | execution time 6.053430557250977 seconds
+Epoch: 38 Total Loss: 97.03415676473966 Accuracy: 0.7872555996477981 | execution time 5.298539400100708 seconds
+Epoch: 39 Total Loss: 97.61468962406572 Accuracy: 0.7874485869709433 | execution time 5.772258996963501 seconds
+2. The time of training Creator is 250.64972686767578 with 82907 number of training data 
+3. The time of update training data is  0.08308196067810059
+4. The time of choosing high confidence TOs is 43.26583170890808 with 852 temporal orders
+5. The time of Chase is 0.45537233352661133 with 3182 temporal orders
+AUG : indicator = True, the number of additional training data is 2431
+6. The time of adding more training data is 0.05689883232116699
+roundGATE=17 ndcg=0.9004027843475342 mrr=0.8623409867286682 precision=0.7460117795046025 recall=0.7445849858024547 Fmeasure=0.7452976997927052 accuracy=0.7444528239633291
+roundCreator=17 ndcg=0.893682599067688 mrr=0.8525106310844421 precision=0.7268675259219134 recall=0.7242449487245676 Fmeasure=0.7255538674479634 accuracy=0.7248771549438506
+7. The time of evaluation is 999.6320252418518
+1. The time of evaluating training data is 7.152557373046875e-07 with 82907 number of training data
+Epoch: 0 Total Loss: 106.83898162576631 Accuracy: 0.7803674799034428 | execution time 5.686474561691284 seconds
+Epoch: 1 Total Loss: 106.34019167874652 Accuracy: 0.7790784878951932 | execution time 5.469923496246338 seconds
+Epoch: 2 Total Loss: 104.09671067387266 Accuracy: 0.7788675619302069 | execution time 5.478540897369385 seconds
+Epoch: 3 Total Loss: 107.70288098156263 Accuracy: 0.7772738990836439 | execution time 5.412537336349487 seconds
+Epoch: 4 Total Loss: 105.49389424188982 Accuracy: 0.7787269446202161 | execution time 5.390146732330322 seconds
+Epoch: 5 Total Loss: 104.6066818794761 Accuracy: 0.782675947409126 | execution time 5.4332053661346436 seconds
+Epoch: 6 Total Loss: 106.87144543016446 Accuracy: 0.7801917082659542 | execution time 5.425699949264526 seconds
+Epoch: 7 Total Loss: 107.0731319509017 Accuracy: 0.7820080151866695 | execution time 5.409576654434204 seconds
+Epoch: 8 Total Loss: 109.99655781718266 Accuracy: 0.7696688462349716 | execution time 5.684278249740601 seconds
+Epoch: 9 Total Loss: 104.61224038437594 Accuracy: 0.7722233940331388 | execution time 5.641718149185181 seconds
+Epoch: 10 Total Loss: 103.99974284271674 Accuracy: 0.776758302280344 | execution time 5.688826322555542 seconds
+Epoch: 11 Total Loss: 106.10711901238415 Accuracy: 0.7776488785769529 | execution time 5.615447998046875 seconds
+Epoch: 12 Total Loss: 102.5690327686052 Accuracy: 0.7801799901567883 | execution time 5.663174629211426 seconds
+Epoch: 13 Total Loss: 106.16229869499725 Accuracy: 0.7785394548735616 | execution time 5.589797496795654 seconds
+Epoch: 14 Total Loss: 105.69273032743193 Accuracy: 0.7791839508776863 | execution time 5.581106185913086 seconds
+Epoch: 15 Total Loss: 105.61946532284605 Accuracy: 0.7789261524760365 | execution time 5.528794765472412 seconds
+Epoch: 16 Total Loss: 103.39586776901479 Accuracy: 0.7790550516768614 | execution time 5.566824674606323 seconds
+Epoch: 17 Total Loss: 104.24689879780007 Accuracy: 0.7777660596686119 | execution time 5.6874542236328125 seconds
+Epoch: 18 Total Loss: 104.95443881172605 Accuracy: 0.7783285289085753 | execution time 5.517848253250122 seconds
+Epoch: 19 Total Loss: 103.58335469260845 Accuracy: 0.7808713585975767 | execution time 5.500144958496094 seconds
+Epoch: 20 Total Loss: 105.96948251025896 Accuracy: 0.7806135601959268 | execution time 5.610552787780762 seconds
+Epoch: 21 Total Loss: 106.4621756002672 Accuracy: 0.7780472942885935 | execution time 5.5843400955200195 seconds
+Epoch: 22 Total Loss: 106.36310042145989 Accuracy: 0.7743678080104994 | execution time 5.612519979476929 seconds
+Epoch: 23 Total Loss: 106.75406271439573 Accuracy: 0.779722983899318 | execution time 5.647995710372925 seconds
+Epoch: 24 Total Loss: 103.81625156271244 Accuracy: 0.7765590944245236 | execution time 5.6271748542785645 seconds
+Epoch: 25 Total Loss: 100.89319756262816 Accuracy: 0.7798987555368065 | execution time 5.5458269119262695 seconds
+Epoch: 26 Total Loss: 100.83494204559011 Accuracy: 0.7805666877592632 | execution time 5.6578991413116455 seconds
+Epoch: 27 Total Loss: 102.43262168550903 Accuracy: 0.7814689821650378 | execution time 5.587886810302734 seconds
+Epoch: 28 Total Loss: 105.8852661266228 Accuracy: 0.7751060488879514 | execution time 5.667278051376343 seconds
+Epoch: 29 Total Loss: 103.48415863930418 Accuracy: 0.7777309053411141 | execution time 5.560726165771484 seconds
+Epoch: 30 Total Loss: 101.50299810110238 Accuracy: 0.7780238580702618 | execution time 5.633401870727539 seconds
+Epoch: 31 Total Loss: 104.28349094842909 Accuracy: 0.774906841032131 | execution time 5.639977931976318 seconds
+Epoch: 32 Total Loss: 102.71750552234789 Accuracy: 0.7762309873678783 | execution time 5.615236759185791 seconds
+Epoch: 33 Total Loss: 99.63502382164103 Accuracy: 0.779969064191802 | execution time 5.631234169006348 seconds
+Epoch: 34 Total Loss: 99.62482774239533 Accuracy: 0.7810588483442312 | execution time 5.619236469268799 seconds
+Epoch: 35 Total Loss: 100.24982025325019 Accuracy: 0.779605802807659 | execution time 5.591813087463379 seconds
+Epoch: 36 Total Loss: 101.40277609272202 Accuracy: 0.776020061402892 | execution time 5.638835191726685 seconds
+Epoch: 37 Total Loss: 102.898320204675 Accuracy: 0.7813400829642129 | execution time 5.571747303009033 seconds
+Epoch: 38 Total Loss: 100.73083031323857 Accuracy: 0.7803206074667791 | execution time 5.583271741867065 seconds
+Epoch: 39 Total Loss: 103.66605354388238 Accuracy: 0.7755982094729195 | execution time 5.602318286895752 seconds
+2. The time of training Creator is 234.29941749572754 with 85338 number of training data 
+3. The time of update training data is  0.15433359146118164
+4. The time of choosing high confidence TOs is 38.3980278968811 with 879 temporal orders
+5. The time of Chase is 0.483844518661499 with 3494 temporal orders
+AUG : indicator = True, the number of additional training data is 2600
+6. The time of adding more training data is 0.06082725524902344
+roundGATE=18 ndcg=0.9018926024436951 mrr=0.8643579483032227 precision=0.7498220870802873 recall=0.7479525027573745 Fmeasure=0.7488861280725096 accuracy=0.7481263919493772
+roundCreator=18 ndcg=0.8951373100280762 mrr=0.8544851541519165 precision=0.7304591100509468 recall=0.7276007321709338 Fmeasure=0.7290271193315248 accuracy=0.728400480774896
+7. The time of evaluation is 968.4128572940826
+1. The time of evaluating training data is 9.5367431640625e-07 with 85338 number of training data
+Epoch: 0 Total Loss: 111.44515452252203 Accuracy: 0.769712752166299 | execution time 5.728079319000244 seconds
+Epoch: 1 Total Loss: 107.51401982702853 Accuracy: 0.7729764152016193 | execution time 5.371400356292725 seconds
+Epoch: 2 Total Loss: 111.65148327301637 Accuracy: 0.770042529964293 | execution time 5.130574464797974 seconds
+Epoch: 3 Total Loss: 107.86128474131947 Accuracy: 0.7724533193841115 | execution time 5.054101943969727 seconds
+Epoch: 4 Total Loss: 110.42727863573465 Accuracy: 0.7683254110850827 | execution time 5.234060287475586 seconds
+Epoch: 5 Total Loss: 112.53048313062529 Accuracy: 0.7660738247401578 | execution time 5.490183353424072 seconds
+Epoch: 6 Total Loss: 109.130791330182 Accuracy: 0.7731469899247196 | execution time 4.741853952407837 seconds
+Epoch: 7 Total Loss: 108.91720320025189 Accuracy: 0.7704177943551138 | execution time 5.408947229385376 seconds
+Epoch: 8 Total Loss: 109.12302198471076 Accuracy: 0.7735449976119538 | execution time 7.096056699752808 seconds
+Epoch: 9 Total Loss: 107.60179413686639 Accuracy: 0.7730787600354796 | execution time 6.454158544540405 seconds
+Epoch: 10 Total Loss: 107.97552109800992 Accuracy: 0.773169733221133 | execution time 6.421624660491943 seconds
+Epoch: 11 Total Loss: 108.16089750016893 Accuracy: 0.7694057176647183 | execution time 6.4028160572052 seconds
+Epoch: 12 Total Loss: 105.09636287003299 Accuracy: 0.7723850894948714 | execution time 6.485144376754761 seconds
+Epoch: 13 Total Loss: 108.52791274296573 Accuracy: 0.766767495280766 | execution time 6.557274103164673 seconds
+Epoch: 14 Total Loss: 105.94515322677448 Accuracy: 0.7706907139120744 | execution time 5.9411985874176025 seconds
+Epoch: 15 Total Loss: 110.22398569138451 Accuracy: 0.7660283381473311 | execution time 5.889466762542725 seconds
+Epoch: 16 Total Loss: 109.4855213165473 Accuracy: 0.7693033728308581 | execution time 5.824134349822998 seconds
+Epoch: 17 Total Loss: 106.79195917619987 Accuracy: 0.7686665605312833 | execution time 4.723251581192017 seconds
+Epoch: 18 Total Loss: 111.88065527596001 Accuracy: 0.7628329050012509 | execution time 5.487306356430054 seconds
+Epoch: 19 Total Loss: 114.30614166154245 Accuracy: 0.7663922308899452 | execution time 5.60030460357666 seconds
+Epoch: 20 Total Loss: 109.04410427378069 Accuracy: 0.7724533193841115 | execution time 5.660917282104492 seconds
+Epoch: 21 Total Loss: 108.26829422989493 Accuracy: 0.7706793422638677 | execution time 5.510117530822754 seconds
+Epoch: 22 Total Loss: 107.27589868957227 Accuracy: 0.7696217789806454 | execution time 5.80181622505188 seconds
+Epoch: 23 Total Loss: 104.45754924326582 Accuracy: 0.7704064227069072 | execution time 6.775829553604126 seconds
+Epoch: 24 Total Loss: 107.86369413203629 Accuracy: 0.7661534262776046 | execution time 6.852046012878418 seconds
+Epoch: 25 Total Loss: 107.79937988586539 Accuracy: 0.7646068821214946 | execution time 6.89066219329834 seconds
+Epoch: 26 Total Loss: 108.38536386325279 Accuracy: 0.7677909436193682 | execution time 6.7699432373046875 seconds
+Epoch: 27 Total Loss: 108.22875595591985 Accuracy: 0.7669949282448998 | execution time 6.713482856750488 seconds
+Epoch: 28 Total Loss: 103.07317982510291 Accuracy: 0.7709408901726216 | execution time 5.987817764282227 seconds
+Epoch: 29 Total Loss: 107.74306744062096 Accuracy: 0.7694398326093383 | execution time 5.468233346939087 seconds
+Epoch: 30 Total Loss: 105.56988298102777 Accuracy: 0.7674839091177875 | execution time 5.348521947860718 seconds
+Epoch: 31 Total Loss: 108.03028698169126 Accuracy: 0.7680638631763288 | execution time 4.393362998962402 seconds
+Epoch: 32 Total Loss: 108.9802298205416 Accuracy: 0.7655507289226501 | execution time 4.370128154754639 seconds
+Epoch: 33 Total Loss: 105.92639087912838 Accuracy: 0.7704405376515272 | execution time 4.375805139541626 seconds
+Epoch: 34 Total Loss: 109.40028378482336 Accuracy: 0.7635720621346858 | execution time 4.418972492218018 seconds
+Epoch: 35 Total Loss: 109.07142078301948 Accuracy: 0.7645500238804612 | execution time 4.418164968490601 seconds
+Epoch: 36 Total Loss: 106.05738671648278 Accuracy: 0.7677682003229548 | execution time 4.4052734375 seconds
+Epoch: 37 Total Loss: 104.75847570186782 Accuracy: 0.7698037253519525 | execution time 4.37751317024231 seconds
+Epoch: 38 Total Loss: 106.9925890354326 Accuracy: 0.7692123996452046 | execution time 4.406695127487183 seconds
+Epoch: 39 Total Loss: 108.40826726506212 Accuracy: 0.7689849666810707 | execution time 4.393568754196167 seconds
+2. The time of training Creator is 232.3234989643097 with 87938 number of training data 
+3. The time of update training data is  0.11029195785522461
+4. The time of choosing high confidence TOs is 42.45772862434387 with 703 temporal orders
+5. The time of Chase is 0.4931156635284424 with 3516 temporal orders
+AUG : indicator = True, the number of additional training data is 2443
+6. The time of adding more training data is 0.05879068374633789
+roundGATE=19 ndcg=0.9003017544746399 mrr=0.8623867630958557 precision=0.7458950882100587 recall=0.7446260530823927 Fmeasure=0.7452600304156611 accuracy=0.7443880136219554
+roundCreator=19 ndcg=0.8928362727165222 mrr=0.8516725897789001 precision=0.7247561700599789 recall=0.7223793208645249 Fmeasure=0.7235657935330325 accuracy=0.7228385751151857
+7. The time of evaluation is 974.5635943412781
+1. The time of evaluating training data is 7.152557373046875e-07 with 87938 number of training data
+Epoch: 0 Total Loss: 115.16093571933327 Accuracy: 0.762892643365309 | execution time 6.588866472244263 seconds
+Epoch: 1 Total Loss: 118.47857668238946 Accuracy: 0.7562762084951483 | execution time 7.001094102859497 seconds
+Epoch: 2 Total Loss: 112.01080769442443 Accuracy: 0.758234584702537 | execution time 6.923021554946899 seconds
+Epoch: 3 Total Loss: 114.73854936184551 Accuracy: 0.7629479647270997 | execution time 6.314803838729858 seconds
+Epoch: 4 Total Loss: 114.94626044388589 Accuracy: 0.75987209701154 | execution time 7.328845977783203 seconds
+Epoch: 5 Total Loss: 121.05655523466808 Accuracy: 0.7561766300439252 | execution time 7.20351767539978 seconds
+Epoch: 6 Total Loss: 117.80463282686766 Accuracy: 0.759175047852978 | execution time 6.436194658279419 seconds
+Epoch: 7 Total Loss: 116.52358245781217 Accuracy: 0.7595733616578706 | execution time 4.997933387756348 seconds
+Epoch: 8 Total Loss: 110.37967462742972 Accuracy: 0.7636007567962293 | execution time 5.772752046585083 seconds
+Epoch: 9 Total Loss: 111.39287209242956 Accuracy: 0.76176408758478 | execution time 5.984160423278809 seconds
+Epoch: 10 Total Loss: 112.75566617450423 Accuracy: 0.7609785242473529 | execution time 5.770204782485962 seconds
+Epoch: 11 Total Loss: 115.10671468841099 Accuracy: 0.7575596640886912 | execution time 5.7995827198028564 seconds
+Epoch: 12 Total Loss: 110.14428513113039 Accuracy: 0.7616534448611987 | execution time 5.764981746673584 seconds
+Epoch: 13 Total Loss: 114.23824104448956 Accuracy: 0.7597171971985263 | execution time 5.898943901062012 seconds
+Epoch: 14 Total Loss: 111.77484554807114 Accuracy: 0.7617087662229893 | execution time 6.037030220031738 seconds
+Epoch: 15 Total Loss: 110.45379507899236 Accuracy: 0.7658357398125712 | execution time 6.200711727142334 seconds
+Epoch: 16 Total Loss: 112.17890961984934 Accuracy: 0.7604585034465209 | execution time 6.339138031005859 seconds
+Epoch: 17 Total Loss: 110.25116887301512 Accuracy: 0.7650169836580697 | execution time 6.4344282150268555 seconds
+Epoch: 18 Total Loss: 109.90571484515695 Accuracy: 0.7647956982109072 | execution time 5.582110166549683 seconds
+Epoch: 19 Total Loss: 113.73142504408337 Accuracy: 0.7625275223774909 | execution time 6.659031629562378 seconds
+Epoch: 20 Total Loss: 110.91262219681748 Accuracy: 0.7643088702271496 | execution time 5.544581651687622 seconds
+Epoch: 21 Total Loss: 111.40740495402967 Accuracy: 0.7620628229384494 | execution time 6.217988967895508 seconds
+Epoch: 22 Total Loss: 108.08843083304318 Accuracy: 0.76211814430024 | execution time 5.6503965854644775 seconds
+Epoch: 23 Total Loss: 112.53860853581426 Accuracy: 0.7630918002677554 | execution time 5.724676609039307 seconds
+Epoch: 24 Total Loss: 113.84100612660387 Accuracy: 0.7585886414179972 | execution time 5.492669343948364 seconds
+Epoch: 25 Total Loss: 111.88411459109938 Accuracy: 0.758743541231011 | execution time 6.289490222930908 seconds
+Epoch: 26 Total Loss: 112.89131477878162 Accuracy: 0.758920569588741 | execution time 6.231961488723755 seconds
+Epoch: 27 Total Loss: 110.45872423643274 Accuracy: 0.7643863201336564 | execution time 5.77564263343811 seconds
+Epoch: 28 Total Loss: 110.00732280126739 Accuracy: 0.7634790498002899 | execution time 6.102647304534912 seconds
+Epoch: 29 Total Loss: 111.55846810655149 Accuracy: 0.7598167756497494 | execution time 5.999183177947998 seconds
+Epoch: 30 Total Loss: 107.18049732309277 Accuracy: 0.7635675639791549 | execution time 5.582152843475342 seconds
+Epoch: 31 Total Loss: 113.3783266178086 Accuracy: 0.7584779986944159 | execution time 5.929477691650391 seconds
+Epoch: 32 Total Loss: 113.01545433434 Accuracy: 0.7600269968245539 | execution time 5.543790578842163 seconds
+Epoch: 33 Total Loss: 112.4591214990397 Accuracy: 0.7593852690277824 | execution time 5.847570180892944 seconds
+Epoch: 34 Total Loss: 114.70055405248168 Accuracy: 0.7613104524180967 | execution time 6.099272966384888 seconds
+Epoch: 35 Total Loss: 108.28464340401278 Accuracy: 0.7608346887066972 | execution time 5.905494928359985 seconds
+Epoch: 36 Total Loss: 106.0340838365133 Accuracy: 0.7667319458735796 | execution time 5.7755348682403564 seconds
+Epoch: 37 Total Loss: 108.84898598601188 Accuracy: 0.7601708323652095 | execution time 6.491550922393799 seconds
+Epoch: 38 Total Loss: 111.10226497274034 Accuracy: 0.7601818966375676 | execution time 5.4463911056518555 seconds
+Epoch: 39 Total Loss: 113.47833682500814 Accuracy: 0.755822573328465 | execution time 5.704463005065918 seconds
+2. The time of training Creator is 252.48898124694824 with 90381 number of training data 
+3. The time of update training data is  0.10721445083618164
+4. The time of choosing high confidence TOs is 37.09075379371643 with 699 temporal orders
+5. The time of Chase is 0.4411332607269287 with 2823 temporal orders
+AUG : indicator = True, the number of additional training data is 2088
+6. The time of adding more training data is 0.04910874366760254
+roundGATE=20 ndcg=0.9018634557723999 mrr=0.8644648194313049 precision=0.7501735845503866 recall=0.7479466360030976 Fmeasure=0.7490584551025564 accuracy=0.7483591199934011
+roundCreator=20 ndcg=0.8944052457809448 mrr=0.8536760210990906 precision=0.7288133595747941 recall=0.7256236359796306 Fmeasure=0.7272150000881943 accuracy=0.726647655633197
+7. The time of evaluation is 977.0868983268738
+1. The time of evaluating training data is 9.5367431640625e-07 with 90381 number of training data
+Epoch: 0 Total Loss: 116.69843970926183 Accuracy: 0.7527603845613124 | execution time 5.724915504455566 seconds
+Epoch: 1 Total Loss: 117.48119129022348 Accuracy: 0.7529766732634721 | execution time 6.204483985900879 seconds
+Epoch: 2 Total Loss: 121.0326012810298 Accuracy: 0.7488996312277628 | execution time 6.316904067993164 seconds
+Epoch: 3 Total Loss: 118.37746383981286 Accuracy: 0.7530848176145519 | execution time 5.546830177307129 seconds
+Epoch: 4 Total Loss: 116.28494680559345 Accuracy: 0.7568590554672376 | execution time 5.803822040557861 seconds
+Epoch: 5 Total Loss: 116.40323843625244 Accuracy: 0.7564048491927025 | execution time 6.902700185775757 seconds
+Epoch: 6 Total Loss: 115.87045504565022 Accuracy: 0.7538742713774346 | execution time 5.703368425369263 seconds
+Epoch: 7 Total Loss: 125.41943361533804 Accuracy: 0.7489212600979788 | execution time 5.697309255599976 seconds
+Epoch: 8 Total Loss: 120.19239058480589 Accuracy: 0.751776270966486 | execution time 5.714684247970581 seconds
+Epoch: 9 Total Loss: 114.82430559777109 Accuracy: 0.7557451686511155 | execution time 5.715905427932739 seconds
+Epoch: 10 Total Loss: 113.32307993262742 Accuracy: 0.757248375131125 | execution time 5.6831278800964355 seconds
+Epoch: 11 Total Loss: 111.17378460309061 Accuracy: 0.7575619937492565 | execution time 5.71267294883728 seconds
+Epoch: 12 Total Loss: 115.12419582280646 Accuracy: 0.7590219424888341 | execution time 5.700022220611572 seconds
+Epoch: 13 Total Loss: 118.13802339369889 Accuracy: 0.7531929619656317 | execution time 5.680613994598389 seconds
+Epoch: 14 Total Loss: 114.939121728091 Accuracy: 0.7535282094539791 | execution time 5.664900302886963 seconds
+Epoch: 15 Total Loss: 115.44651785551264 Accuracy: 0.7501324768300728 | execution time 5.7338480949401855 seconds
+Epoch: 16 Total Loss: 115.81358350063908 Accuracy: 0.7545015086136976 | execution time 5.678389072418213 seconds
+Epoch: 17 Total Loss: 113.81057915783552 Accuracy: 0.7561344883150029 | execution time 5.735983848571777 seconds
+Epoch: 18 Total Loss: 116.4757031117644 Accuracy: 0.7513220646919508 | execution time 5.710441589355469 seconds
+Epoch: 19 Total Loss: 116.65526238349277 Accuracy: 0.7526954979506646 | execution time 5.684937000274658 seconds
+Epoch: 20 Total Loss: 113.93808072964302 Accuracy: 0.7545015086136976 | execution time 5.713197946548462 seconds
+Epoch: 21 Total Loss: 115.42767246301159 Accuracy: 0.750608311974824 | execution time 5.741927862167358 seconds
+Epoch: 22 Total Loss: 119.84705376739532 Accuracy: 0.7466934864657344 | execution time 5.702975273132324 seconds
+Epoch: 23 Total Loss: 117.99571740079026 Accuracy: 0.7449199191080254 | execution time 5.684096336364746 seconds
+Epoch: 24 Total Loss: 113.44977123514307 Accuracy: 0.7477316722361007 | execution time 5.744727849960327 seconds
+Epoch: 25 Total Loss: 117.9076833203188 Accuracy: 0.7429516919183726 | execution time 5.748440742492676 seconds
+Epoch: 26 Total Loss: 114.6308882083529 Accuracy: 0.7476884144956688 | execution time 5.719277620315552 seconds
+Epoch: 27 Total Loss: 113.64533804177749 Accuracy: 0.7541230033849182 | execution time 5.748753547668457 seconds
+Epoch: 28 Total Loss: 111.6123027573733 Accuracy: 0.7531064464847679 | execution time 5.718944549560547 seconds
+Epoch: 29 Total Loss: 117.02650503423864 Accuracy: 0.7513545079972748 | execution time 5.705897808074951 seconds
+Epoch: 30 Total Loss: 118.27504102164254 Accuracy: 0.748196692945744 | execution time 5.6963112354278564 seconds
+Epoch: 31 Total Loss: 119.9920510938147 Accuracy: 0.7453849398176686 | execution time 5.688038110733032 seconds
+Epoch: 32 Total Loss: 116.23311053721744 Accuracy: 0.7488023013117909 | execution time 5.713007926940918 seconds
+Epoch: 33 Total Loss: 114.39805932130588 Accuracy: 0.7502189923109366 | execution time 5.739217519760132 seconds
+Epoch: 34 Total Loss: 111.00975770879303 Accuracy: 0.753052374309228 | execution time 5.683085680007935 seconds
+Epoch: 35 Total Loss: 115.46518310935845 Accuracy: 0.7477533011063167 | execution time 5.714806079864502 seconds
+Epoch: 36 Total Loss: 114.36516836105429 Accuracy: 0.7491591776703543 | execution time 5.778035879135132 seconds
+Epoch: 37 Total Loss: 112.17062884367363 Accuracy: 0.7486292703500632 | execution time 5.754780530929565 seconds
+Epoch: 38 Total Loss: 112.89070293971417 Accuracy: 0.7488888167926548 | execution time 5.690230131149292 seconds
+Epoch: 39 Total Loss: 115.84724268289715 Accuracy: 0.7465745276795467 | execution time 5.749830961227417 seconds
+2. The time of training Creator is 241.75536370277405 with 92469 number of training data 
+3. The time of update training data is  0.0001933574676513672
+4. The time of choosing high confidence TOs is 40.22451901435852 with 734 temporal orders
+5. The time of Chase is 0.4251577854156494 with 2810 temporal orders
+AUG : indicator = True, the number of additional training data is 2124
+6. The time of adding more training data is 0.050280094146728516
+roundGATE=21 ndcg=0.9030255675315857 mrr=0.8658778667449951 precision=0.752935294117647 recall=0.7509386806842983 Fmeasure=0.7519356620022793 accuracy=0.7512048831646301
+roundCreator=21 ndcg=0.8948617577552795 mrr=0.854003369808197 precision=0.729773519984917 recall=0.7266737849951893 Fmeasure=0.7282203539302722 accuracy=0.7276374863014505
+7. The time of evaluation is 699.5453786849976
+1. The time of evaluating training data is 9.5367431640625e-07 with 92469 number of training data
+Epoch: 0 Total Loss: 126.80869655772963 Accuracy: 0.7392724620215027 | execution time 4.741177558898926 seconds
+Epoch: 1 Total Loss: 117.67441618840208 Accuracy: 0.746577442305456 | execution time 4.6636223793029785 seconds
+Epoch: 2 Total Loss: 118.74053865373298 Accuracy: 0.7446428382649879 | execution time 4.648566484451294 seconds
+Epoch: 3 Total Loss: 123.7645124609518 Accuracy: 0.7402767646654616 | execution time 4.662469387054443 seconds
+Epoch: 4 Total Loss: 128.6644189492586 Accuracy: 0.7399596164621061 | execution time 4.654659032821655 seconds
+Epoch: 5 Total Loss: 122.16353398094228 Accuracy: 0.7427716638651909 | execution time 4.7111570835113525 seconds
+Epoch: 6 Total Loss: 118.747826406455 Accuracy: 0.7454568519869335 | execution time 4.675407886505127 seconds
+Epoch: 7 Total Loss: 119.48899623525479 Accuracy: 0.7459220026851882 | execution time 4.705574035644531 seconds
+Epoch: 8 Total Loss: 115.69862087299552 Accuracy: 0.7474337424545157 | execution time 4.673926591873169 seconds
+Epoch: 9 Total Loss: 118.43618668805924 Accuracy: 0.7472011671053883 | execution time 4.69523286819458 seconds
+Epoch: 10 Total Loss: 121.29137800081087 Accuracy: 0.7427505206516338 | execution time 4.722399473190308 seconds
+Epoch: 11 Total Loss: 119.63704873255752 Accuracy: 0.7443256900616325 | execution time 4.70932149887085 seconds
+Epoch: 12 Total Loss: 120.38688583774052 Accuracy: 0.7453405643123698 | execution time 4.675450801849365 seconds
+Epoch: 13 Total Loss: 117.84047186726418 Accuracy: 0.7461545780343154 | execution time 4.681051254272461 seconds
+Epoch: 14 Total Loss: 116.70614126955239 Accuracy: 0.7433319590244521 | execution time 4.724277019500732 seconds
+Epoch: 15 Total Loss: 117.81219751964255 Accuracy: 0.7448119839734442 | execution time 4.697725534439087 seconds
+Epoch: 16 Total Loss: 115.8518753909439 Accuracy: 0.7426448045838487 | execution time 4.7207701206207275 seconds
+Epoch: 17 Total Loss: 116.62245113873371 Accuracy: 0.7465245842715634 | execution time 4.718992710113525 seconds
+Epoch: 18 Total Loss: 116.3941263536954 Accuracy: 0.7481737549290116 | execution time 4.684473752975464 seconds
+Epoch: 19 Total Loss: 116.67535042322355 Accuracy: 0.7446745530853235 | execution time 4.72362494468689 seconds
+Epoch: 20 Total Loss: 119.33441464616594 Accuracy: 0.7429936676075397 | execution time 4.720686912536621 seconds
+Epoch: 21 Total Loss: 118.18686908266486 Accuracy: 0.7443045468480755 | execution time 4.664550065994263 seconds
+Epoch: 22 Total Loss: 120.98489061701524 Accuracy: 0.7459431458987451 | execution time 4.688802480697632 seconds
+Epoch: 23 Total Loss: 120.63965597431636 Accuracy: 0.7415242142653262 | execution time 4.691662073135376 seconds
+Epoch: 24 Total Loss: 118.51827784124643 Accuracy: 0.7437653949023713 | execution time 4.675588607788086 seconds
+Epoch: 25 Total Loss: 120.64046422428751 Accuracy: 0.7438922541837134 | execution time 4.726105690002441 seconds
+Epoch: 26 Total Loss: 118.84141877081431 Accuracy: 0.7423382279872718 | execution time 4.751672744750977 seconds
+Epoch: 27 Total Loss: 118.82547728045763 Accuracy: 0.7412599240958633 | execution time 4.741109132766724 seconds
+Epoch: 28 Total Loss: 126.01909797396158 Accuracy: 0.7435645343735794 | execution time 4.681766986846924 seconds
+Epoch: 29 Total Loss: 116.52738188905025 Accuracy: 0.7424756588753925 | execution time 4.684845924377441 seconds
+Epoch: 30 Total Loss: 119.36177539414405 Accuracy: 0.739938473248549 | execution time 4.720112323760986 seconds
+Epoch: 31 Total Loss: 126.83693318452151 Accuracy: 0.7318617656697641 | execution time 4.67041015625 seconds
+Epoch: 32 Total Loss: 121.34827639354349 Accuracy: 0.7387967397164695 | execution time 4.698400974273682 seconds
+Epoch: 33 Total Loss: 117.62241392743887 Accuracy: 0.742443944055057 | execution time 4.703956604003906 seconds
+Epoch: 34 Total Loss: 116.29826149020926 Accuracy: 0.738437305086 | execution time 4.6890342235565186 seconds
+Epoch: 35 Total Loss: 116.27934188580066 Accuracy: 0.739177317560496 | execution time 4.725331544876099 seconds
+Epoch: 36 Total Loss: 121.73112449911727 Accuracy: 0.7372744283403635 | execution time 4.70261025428772 seconds
+Epoch: 37 Total Loss: 116.16845816535194 Accuracy: 0.7427399490448553 | execution time 4.70815110206604 seconds
+Epoch: 38 Total Loss: 122.14488298858274 Accuracy: 0.7382893025911008 | execution time 4.68005633354187 seconds
+Epoch: 39 Total Loss: 116.58035636071537 Accuracy: 0.7366612751472096 | execution time 4.700767517089844 seconds
+2. The time of training Creator is 197.47243905067444 with 94593 number of training data 
+3. The time of update training data is  0.12619996070861816
+4. The time of choosing high confidence TOs is 45.40240669250488 with 794 temporal orders
+5. The time of Chase is 0.42064547538757324 with 2968 temporal orders
+AUG : indicator = True, the number of additional training data is 2256
+6. The time of adding more training data is 0.05279421806335449
+roundGATE=22 ndcg=0.9023969173431396 mrr=0.8653028011322021 precision=0.7510552734317668 recall=0.7505397413934715 Fmeasure=0.7507974189156276 accuracy=0.7498173526743104
+roundCreator=22 ndcg=0.8942269086837769 mrr=0.8535182476043701 precision=0.7278831567435352 recall=0.7262689789500857 Fmeasure=0.7270751719398812 accuracy=0.7262116587912282
+7. The time of evaluation is 955.3065774440765
+1. The time of evaluating training data is 1.1920928955078125e-06 with 94593 number of training data
+Epoch: 0 Total Loss: 126.60223222702535 Accuracy: 0.7315718283100496 | execution time 6.078657150268555 seconds
+Epoch: 1 Total Loss: 126.58932556617755 Accuracy: 0.7300436762382678 | execution time 7.22814154624939 seconds
+Epoch: 2 Total Loss: 123.80136296825123 Accuracy: 0.7376431351898316 | execution time 5.893000364303589 seconds
+Epoch: 3 Total Loss: 123.89712891923718 Accuracy: 0.7325837127900133 | execution time 6.506371259689331 seconds
+Epoch: 4 Total Loss: 124.25705212296077 Accuracy: 0.737343699986577 | execution time 7.116368770599365 seconds
+Epoch: 5 Total Loss: 123.36773427685343 Accuracy: 0.7350101704715588 | execution time 8.081695318222046 seconds
+Epoch: 6 Total Loss: 124.87405224670648 Accuracy: 0.7360633563588679 | execution time 8.841039896011353 seconds
+Epoch: 7 Total Loss: 124.93490720346149 Accuracy: 0.7371371929498498 | execution time 7.935436248779297 seconds
+Epoch: 8 Total Loss: 122.25278718209822 Accuracy: 0.7403483773709589 | execution time 7.302124738693237 seconds
+Epoch: 9 Total Loss: 127.48423931546384 Accuracy: 0.7352476535637952 | execution time 6.36331844329834 seconds
+Epoch: 10 Total Loss: 126.27180980609185 Accuracy: 0.7378393168747225 | execution time 8.56222677230835 seconds
+Epoch: 11 Total Loss: 124.91378703950802 Accuracy: 0.7372920732273952 | execution time 6.696301460266113 seconds
+Epoch: 12 Total Loss: 125.56434085547318 Accuracy: 0.7336885254365042 | execution time 7.040034055709839 seconds
+Epoch: 13 Total Loss: 122.94223514056537 Accuracy: 0.7408646449627772 | execution time 7.147711753845215 seconds
+Epoch: 14 Total Loss: 117.67033831367793 Accuracy: 0.7412363576288862 | execution time 7.019502401351929 seconds
+Epoch: 15 Total Loss: 121.50771795708398 Accuracy: 0.7387066464289771 | execution time 7.727434396743774 seconds
+Epoch: 16 Total Loss: 127.43099508208847 Accuracy: 0.7350514718789043 | execution time 7.013950347900391 seconds
+Epoch: 17 Total Loss: 121.5245747137114 Accuracy: 0.7389131534657043 | execution time 7.80574631690979 seconds
+Epoch: 18 Total Loss: 122.79008484430497 Accuracy: 0.7400489421677043 | execution time 8.332182884216309 seconds
+Epoch: 19 Total Loss: 121.17864711672424 Accuracy: 0.7400592675195408 | execution time 7.25937557220459 seconds
+Epoch: 20 Total Loss: 122.24568515323698 Accuracy: 0.7370442647833225 | execution time 7.12177300453186 seconds
+Epoch: 21 Total Loss: 121.3423048071508 Accuracy: 0.7385930675587771 | execution time 7.131845235824585 seconds
+Epoch: 22 Total Loss: 123.04949539127108 Accuracy: 0.7347004099164679 | execution time 6.983493089675903 seconds
+Epoch: 23 Total Loss: 119.72899873231766 Accuracy: 0.738902828113868 | execution time 6.6326963901519775 seconds
+Epoch: 24 Total Loss: 132.01222248556812 Accuracy: 0.7265124059102314 | execution time 6.803360223770142 seconds
+Epoch: 25 Total Loss: 124.33331604298645 Accuracy: 0.7345661803425951 | execution time 6.816433668136597 seconds
+Epoch: 26 Total Loss: 121.97743929149239 Accuracy: 0.7363524662102862 | execution time 8.221715450286865 seconds
+Epoch: 27 Total Loss: 123.17321435823688 Accuracy: 0.7347933380829952 | execution time 7.023375034332275 seconds
+Epoch: 28 Total Loss: 122.42270413853663 Accuracy: 0.7356709929890861 | execution time 6.307903051376343 seconds
+Epoch: 29 Total Loss: 121.00582489186591 Accuracy: 0.7385930675587771 | execution time 7.011056661605835 seconds
+Epoch: 30 Total Loss: 120.23805794039492 Accuracy: 0.7382007041889952 | execution time 7.319705247879028 seconds
+Epoch: 31 Total Loss: 121.4960395903361 Accuracy: 0.7356296915817406 | execution time 4.464400053024292 seconds
+Epoch: 32 Total Loss: 121.42474163288583 Accuracy: 0.7365073464878316 | execution time 2.674980401992798 seconds
+Epoch: 33 Total Loss: 119.21173940526818 Accuracy: 0.7336885254365042 | execution time 2.333406448364258 seconds
+Epoch: 34 Total Loss: 122.28995717529222 Accuracy: 0.7339260085287406 | execution time 2.157457113265991 seconds
+Epoch: 35 Total Loss: 125.52073590410738 Accuracy: 0.7362285619882497 | execution time 2.1417529582977295 seconds
+Epoch: 36 Total Loss: 123.11063064976118 Accuracy: 0.7360633563588679 | execution time 2.1994526386260986 seconds
+Epoch: 37 Total Loss: 120.9534732805793 Accuracy: 0.7389234788175407 | execution time 2.140509843826294 seconds
+Epoch: 38 Total Loss: 123.53007609191044 Accuracy: 0.7327695691230679 | execution time 2.146782159805298 seconds
+Epoch: 39 Total Loss: 123.62727525315537 Accuracy: 0.7370752408388316 | execution time 2.1501290798187256 seconds
+2. The time of training Creator is 255.52409887313843 with 96849 number of training data 
+3. The time of update training data is  0.09682607650756836
+4. The time of choosing high confidence TOs is 11.881328821182251 with 684 temporal orders
+5. The time of Chase is 0.38124942779541016 with 3198 temporal orders
+AUG : indicator = True, the number of additional training data is 2260
+6. The time of adding more training data is 0.05313563346862793
+roundGATE=23 ndcg=0.9029955267906189 mrr=0.8660135865211487 precision=0.752535473161232 recall=0.7526635064416962 Fmeasure=0.752599484356164 accuracy=0.7515200970976751
+roundCreator=23 ndcg=0.8947211503982544 mrr=0.8540797233581543 precision=0.7291667890393256 recall=0.7282812756670499 Fmeasure=0.7287237633439683 accuracy=0.7277288099642953
+7. The time of evaluation is 415.4152112007141
+1. The time of evaluating training data is 9.5367431640625e-07 with 96849 number of training data
+Epoch: 0 Total Loss: 134.23074920902621 Accuracy: 0.7296612820228233 | execution time 2.2236838340759277 seconds
+Epoch: 1 Total Loss: 128.5891223138282 Accuracy: 0.7330010392598049 | execution time 2.212765693664551 seconds
+Epoch: 2 Total Loss: 128.33504989001975 Accuracy: 0.7335257141127446 | execution time 2.192674398422241 seconds
+Epoch: 3 Total Loss: 131.05946735379243 Accuracy: 0.7330615786659133 | execution time 2.1951088905334473 seconds
+Epoch: 4 Total Loss: 130.9078679416974 Accuracy: 0.7348172214430576 | execution time 2.1868040561676025 seconds
+Epoch: 5 Total Loss: 129.0810247834906 Accuracy: 0.7346154234226963 | execution time 2.1840922832489014 seconds
+Epoch: 6 Total Loss: 130.17999877431424 Accuracy: 0.7322039370793773 | execution time 2.184857130050659 seconds
+Epoch: 7 Total Loss: 128.76474853662458 Accuracy: 0.7314068348989496 | execution time 2.192105770111084 seconds
+Epoch: 8 Total Loss: 128.392197238201 Accuracy: 0.7295502931116246 | execution time 2.1685683727264404 seconds
+Epoch: 9 Total Loss: 127.18995444609128 Accuracy: 0.7316792622264375 | execution time 2.1809489727020264 seconds
+Epoch: 10 Total Loss: 134.48649640826366 Accuracy: 0.7293585849922812 | execution time 2.182492256164551 seconds
+Epoch: 11 Total Loss: 125.24750714894833 Accuracy: 0.7339091303514312 | execution time 2.1808595657348633 seconds
+Epoch: 12 Total Loss: 125.6215924831501 Accuracy: 0.7313765651958954 | execution time 2.198509454727173 seconds
+Epoch: 13 Total Loss: 129.80322604121355 Accuracy: 0.7319920491579978 | execution time 2.1826999187469482 seconds
+Epoch: 14 Total Loss: 130.15952830394494 Accuracy: 0.73485758104713 | execution time 2.182853937149048 seconds
+Epoch: 15 Total Loss: 127.26948406835504 Accuracy: 0.7321534875742869 | execution time 2.1929285526275635 seconds
+Epoch: 16 Total Loss: 126.91540465460476 Accuracy: 0.7331422978740578 | execution time 2.1955347061157227 seconds
+Epoch: 17 Total Loss: 128.1343900348036 Accuracy: 0.7310637782643352 | execution time 2.1904563903808594 seconds
+Epoch: 18 Total Loss: 124.47204776076177 Accuracy: 0.7324360048027929 | execution time 2.1804888248443604 seconds
+Epoch: 19 Total Loss: 127.93892287542658 Accuracy: 0.7289650788525764 | execution time 2.1787428855895996 seconds
+Epoch: 20 Total Loss: 131.32498658750242 Accuracy: 0.7321030380691965 | execution time 2.1820642948150635 seconds
+Epoch: 21 Total Loss: 125.75824667310464 Accuracy: 0.7342420970850276 | execution time 2.236814498901367 seconds
+Epoch: 22 Total Loss: 127.39555450438411 Accuracy: 0.7331221180720218 | execution time 2.182162046432495 seconds
+Epoch: 23 Total Loss: 125.18842101077385 Accuracy: 0.7341008384707746 | execution time 2.2023866176605225 seconds
+Epoch: 24 Total Loss: 125.42767390783904 Accuracy: 0.7317902511376363 | execution time 2.200066089630127 seconds
+Epoch: 25 Total Loss: 128.98549079973293 Accuracy: 0.7334349050035819 | execution time 2.1793746948242188 seconds
+Epoch: 26 Total Loss: 124.87934650922807 Accuracy: 0.7331221180720218 | execution time 2.227274179458618 seconds
+Epoch: 27 Total Loss: 124.45759946592403 Accuracy: 0.7347062325318588 | execution time 2.197991132736206 seconds
+Epoch: 28 Total Loss: 122.31795963647363 Accuracy: 0.7380056301647681 | execution time 2.2043182849884033 seconds
+Epoch: 29 Total Loss: 125.68510787564968 Accuracy: 0.7320929481681785 | execution time 2.2131564617156982 seconds
+Epoch: 30 Total Loss: 123.35587471197654 Accuracy: 0.7346557830267685 | execution time 2.2077646255493164 seconds
+Epoch: 31 Total Loss: 122.98642830156022 Accuracy: 0.7361389984764249 | execution time 2.1570186614990234 seconds
+Epoch: 32 Total Loss: 122.95193289579649 Accuracy: 0.7342118273819734 | execution time 2.155123710632324 seconds
+Epoch: 33 Total Loss: 128.22929374266243 Accuracy: 0.7311041378684076 | execution time 2.176096200942993 seconds
+Epoch: 34 Total Loss: 126.32032755207246 Accuracy: 0.7332835564883109 | execution time 2.186732292175293 seconds
+Epoch: 35 Total Loss: 124.63768250550014 Accuracy: 0.7353318063949793 | execution time 2.187565565109253 seconds
+Epoch: 36 Total Loss: 125.6494403721065 Accuracy: 0.7368352016466718 | execution time 2.19364595413208 seconds
+Epoch: 37 Total Loss: 125.20228566090285 Accuracy: 0.7330716685669314 | execution time 2.193265438079834 seconds
+Epoch: 38 Total Loss: 125.63205503121493 Accuracy: 0.7331927473791482 | execution time 2.1990177631378174 seconds
+Epoch: 39 Total Loss: 124.00451334523058 Accuracy: 0.7300346083604919 | execution time 2.1961848735809326 seconds
+2. The time of training Creator is 97.43376207351685 with 99109 number of training data 
+3. The time of update training data is  0.10071802139282227
+4. The time of choosing high confidence TOs is 11.867774724960327 with 619 temporal orders
+5. The time of Chase is 0.31406664848327637 with 2770 temporal orders
+AUG : indicator = True, the number of additional training data is 1986
+6. The time of adding more training data is 0.04659318923950195
+roundGATE=24 ndcg=0.903736412525177 mrr=0.8669923543930054 precision=0.7540745257134817 recall=0.7546054021073382 Fmeasure=0.7543398705076475 accuracy=0.7532022200487846
+roundCreator=24 ndcg=0.895039439201355 mrr=0.8544427752494812 precision=0.729730364800564 recall=0.7287799497805834 Fmeasure=0.7292548476291674 accuracy=0.7282738060167564
+7. The time of evaluation is 417.5575671195984
+1. The time of evaluating training data is 9.5367431640625e-07 with 99109 number of training data
+Epoch: 0 Total Loss: 136.91657803647075 Accuracy: 0.7207873782086156 | execution time 2.264373779296875 seconds
+Epoch: 1 Total Loss: 131.9704786334651 Accuracy: 0.7258024630298234 | execution time 2.2424802780151367 seconds
+Epoch: 2 Total Loss: 131.4255712208239 Accuracy: 0.7230723576833671 | execution time 2.230356454849243 seconds
+Epoch: 3 Total Loss: 138.17146219869645 Accuracy: 0.7178099807112123 | execution time 2.2313754558563232 seconds
+Epoch: 4 Total Loss: 134.6949221134478 Accuracy: 0.7254661457045354 | execution time 2.236070394515991 seconds
+Epoch: 5 Total Loss: 130.73859297375398 Accuracy: 0.7274741579702261 | execution time 2.2271268367767334 seconds
+Epoch: 6 Total Loss: 134.35363117169737 Accuracy: 0.7227162569860033 | execution time 2.235156536102295 seconds
+Epoch: 7 Total Loss: 129.38014707079253 Accuracy: 0.7253375537860428 | execution time 2.2574851512908936 seconds
+Epoch: 8 Total Loss: 127.4352273681994 Accuracy: 0.728077550818537 | execution time 2.2430806159973145 seconds
+Epoch: 9 Total Loss: 130.76222825368026 Accuracy: 0.7277709085513626 | execution time 2.2109529972076416 seconds
+Epoch: 10 Total Loss: 128.99271439656027 Accuracy: 0.7258321380879371 | execution time 2.2353756427764893 seconds
+Epoch: 11 Total Loss: 130.11043736080305 Accuracy: 0.7261387803551115 | execution time 2.2082536220550537 seconds
+Epoch: 12 Total Loss: 134.88414487890716 Accuracy: 0.7228349572184579 | execution time 2.230248212814331 seconds
+Epoch: 13 Total Loss: 129.94145948393847 Accuracy: 0.7267619565754982 | execution time 2.227658748626709 seconds
+Epoch: 14 Total Loss: 132.4357319379094 Accuracy: 0.7250506948909442 | execution time 2.288379430770874 seconds
+Epoch: 15 Total Loss: 134.251364377642 Accuracy: 0.7245857856471636 | execution time 2.228649616241455 seconds
+Epoch: 16 Total Loss: 136.8590322096229 Accuracy: 0.7227162569860033 | execution time 2.2654829025268555 seconds
+Epoch: 17 Total Loss: 129.1365401724148 Accuracy: 0.727652208318908 | execution time 2.2401888370513916 seconds
+Epoch: 18 Total Loss: 134.20149099630902 Accuracy: 0.7176121469904545 | execution time 2.2297189235687256 seconds
+Epoch: 19 Total Loss: 130.376170167865 Accuracy: 0.7210940204757901 | execution time 2.2464349269866943 seconds
+Epoch: 20 Total Loss: 132.24156745298703 Accuracy: 0.7197586428606756 | execution time 2.2598252296447754 seconds
+Epoch: 21 Total Loss: 132.7143374525352 Accuracy: 0.7226074484395866 | execution time 2.2187232971191406 seconds
+Epoch: 22 Total Loss: 127.82843350778126 Accuracy: 0.7274840496562639 | execution time 2.234036684036255 seconds
+Epoch: 23 Total Loss: 130.43371860511695 Accuracy: 0.7229734408229883 | execution time 2.223027467727661 seconds
+Epoch: 24 Total Loss: 130.60151820633556 Accuracy: 0.7264256392502102 | execution time 2.2416903972625732 seconds
+Epoch: 25 Total Loss: 127.12581904521807 Accuracy: 0.7278698254117414 | execution time 2.233570098876953 seconds
+Epoch: 26 Total Loss: 129.1708191101219 Accuracy: 0.7261387803551115 | execution time 2.2483651638031006 seconds
+Epoch: 27 Total Loss: 134.0149415360365 Accuracy: 0.7222513477422227 | execution time 2.2332592010498047 seconds
+Epoch: 28 Total Loss: 131.0786544077714 Accuracy: 0.7230624659973293 | execution time 2.233189344406128 seconds
+Epoch: 29 Total Loss: 128.47695066104964 Accuracy: 0.7240120678569663 | execution time 2.2495791912078857 seconds
+Epoch: 30 Total Loss: 131.03912680659388 Accuracy: 0.7223205895444879 | execution time 2.2535605430603027 seconds
+Epoch: 31 Total Loss: 127.61050265838676 Accuracy: 0.7244374103565953 | execution time 2.238619089126587 seconds
+Epoch: 32 Total Loss: 129.50257801814791 Accuracy: 0.7244967604728226 | execution time 2.240842580795288 seconds
+Epoch: 33 Total Loss: 135.8068932385022 Accuracy: 0.7173549631534695 | execution time 2.241567611694336 seconds
+Epoch: 34 Total Loss: 127.72026530032126 Accuracy: 0.724289035066027 | execution time 2.259950637817383 seconds
+Epoch: 35 Total Loss: 126.1532687188785 Accuracy: 0.7252188535535882 | execution time 2.248410701751709 seconds
+Epoch: 36 Total Loss: 127.90244378131347 Accuracy: 0.7229536574509126 | execution time 2.230564832687378 seconds
+Epoch: 37 Total Loss: 131.39734240580685 Accuracy: 0.7251397200652852 | execution time 2.2581520080566406 seconds
+Epoch: 38 Total Loss: 126.77654336540438 Accuracy: 0.7249221029724516 | execution time 2.215256452560425 seconds
+Epoch: 39 Total Loss: 127.37993122984547 Accuracy: 0.7229833325090261 | execution time 2.2474324703216553 seconds
+2. The time of training Creator is 98.65651607513428 with 101095 number of training data 
+3. The time of update training data is  0.09906768798828125
+4. The time of choosing high confidence TOs is 11.684152603149414 with 570 temporal orders
+5. The time of Chase is 0.2778487205505371 with 2503 temporal orders
+AUG : indicator = True, the number of additional training data is 1811
+6. The time of adding more training data is 0.041448116302490234
+roundGATE=25 ndcg=0.9039719104766846 mrr=0.8673434853553772 precision=0.7549427312775331 recall=0.7540480604510361 Fmeasure=0.7544951306420274 accuracy=0.753591082097027
+roundCreator=25 ndcg=0.8951543569564819 mrr=0.854625940322876 precision=0.7302806620988439 recall=0.727847135850562 Fmeasure=0.7290618682713554 accuracy=0.7283562919057776

@@ -1,8 +1,9 @@
 import torch
-
+import itertools
 
 class GateDataset():
-    def __init__(self, improved_data, training_data):
+    def __init__(self, improved_data, training_data, option='gate'):
+        self.option = option
         if len(improved_data) > 2:
             self.training_instances = improved_data
         else:
@@ -25,12 +26,15 @@ class GateDataset():
             data = self.training_instances[index]
             return data
 
-        attribute, (pos_context_index, pos_att), (neg_context_index, neg_att) = self.data_processed[index]
+        attribute, (pos_context_index, pos_att), (neg_context_index, neg_att), eid = self.data_processed[index]
         attribute_emb = self.attribute_embeddings[attribute]
         pos_context_emb = self.sentence_embeddings[pos_context_index]
         pos_att_emb = self.attribute_embeddings[str(pos_att)]
         neg_context_emb = self.sentence_embeddings[neg_context_index]
         neg_att_emb = self.attribute_embeddings[str(neg_att)]
+        if self.option == 'creatornc':
+            pos_context_emb = pos_att_emb
+            neg_context_emb = neg_att_emb
 
         # concat all of the tensors
         attribute_emb = torch.cat((attribute_emb, attribute_emb), 0)
@@ -42,19 +46,22 @@ class GateDataset():
 
 class GateValidationTestDataset():
 
-    def __init__(self, valid_or_test):
+    def __init__(self, valid_or_test, option='gate'):
+        self.option = option
         self.data_processed = valid_or_test['data_processed']
         self.data_sentence_emb = valid_or_test['data_sentence_embeddings']
         self.data_attribute_emb = valid_or_test['data_attribute_embeddings']
 
         self.data = []
-        for attribute, values in self.data_processed:
+        for attribute, values, eid in self.data_processed:
             attribute_emb = self.data_attribute_emb[attribute]
             attribute_emb = torch.cat((attribute_emb, attribute_emb), 0)
             order_emb = [attribute_emb]
             for context_id, val in values:
                 context_emb = self.data_sentence_emb[context_id]
                 val_emb = self.data_attribute_emb[str(val)]
+                if self.option == 'creatornc':
+                    context_emb = val_emb
                 val_emb = torch.cat((context_emb, val_emb), 0)
                 order_emb.append(val_emb)
             self.data.append(order_emb)

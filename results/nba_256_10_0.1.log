@@ -1,0 +1,110 @@
+05:39:17 INFO	Creating the GATE object
+05:39:17 INFO	--------------------------------------------------------------------------------------
+05:39:17 INFO	--------------------------------------------------------------------------------------
+05:39:17 INFO	GATE initializing
+05:39:17 INFO	Data data/nba/
+05:39:17 INFO	Embedding Dim : 64
+05:39:17 INFO	Epoch : 10
+05:39:17 INFO	Learning Rate : 0.0001
+05:39:17 INFO	Batch Size : 256
+05:39:17 INFO	High Confidence Sample Ratio : 0.1
+05:39:17 INFO	Data loading
+05:39:17 INFO	Training Embedded file missing, embeddings will be fetched during training
+05:40:30 INFO	Creating the GATE object
+05:40:30 INFO	--------------------------------------------------------------------------------------
+05:40:30 INFO	--------------------------------------------------------------------------------------
+05:40:30 INFO	GATE initializing
+05:40:30 INFO	Data data/nba/
+05:40:30 INFO	Embedding Dim : 64
+05:40:30 INFO	Epoch : 10
+05:40:30 INFO	Learning Rate : 0.0001
+05:40:30 INFO	Batch Size : 256
+05:40:30 INFO	High Confidence Sample Ratio : 0.1
+05:40:30 INFO	Data loading
+05:47:39 INFO	Creating the GATE object
+05:47:39 INFO	--------------------------------------------------------------------------------------
+05:47:39 INFO	--------------------------------------------------------------------------------------
+05:47:39 INFO	GATE initializing
+05:47:39 INFO	Data data/nba/
+05:47:39 INFO	Embedding Dim : 64
+05:47:39 INFO	Epoch : 10
+05:47:39 INFO	Learning Rate : 0.0001
+05:47:39 INFO	Batch Size : 256
+05:47:39 INFO	High Confidence Sample Ratio : 0.1
+05:47:39 INFO	Data loading
+05:48:41 INFO	Data loaded
+05:48:41 INFO	GATE initialized
+05:48:41 INFO	Training Started
+05:48:41 INFO	Size of initial training data 188959
+05:48:41 INFO	Training round 1 started
+05:48:57 INFO	Epoch: 0 Total Loss: 1976.8346 | execution time 0.2668 mins
+05:49:01 INFO	NDCG score for validation set is 0.7338155840923928
+05:49:01 INFO	NDCG score from torchmetrics for validation set is 0.7338171005249023
+05:49:01 INFO	MRR score for validation set is 0.56015625
+05:49:01 INFO	Saving the best model
+05:49:01 INFO	Model saved as best_saved_weights.pt
+05:49:17 INFO	Epoch: 1 Total Loss: 1969.9394 | execution time 0.2641 mins
+05:49:20 INFO	NDCG score for validation set is 0.7331515429953719
+05:49:20 INFO	NDCG score from torchmetrics for validation set is 0.7331530094146729
+05:49:20 INFO	MRR score for validation set is 0.55234375
+05:49:20 INFO	Saving the best model
+05:49:20 INFO	Model saved as best_saved_weights.pt
+05:49:35 INFO	Epoch: 2 Total Loss: 1969.5912 | execution time 0.2475 mins
+05:49:37 INFO	NDCG score for validation set is 0.734845313017124
+05:49:37 INFO	NDCG score from torchmetrics for validation set is 0.7348467350006104
+05:49:37 INFO	MRR score for validation set is 0.55859375
+05:49:37 INFO	Saving the best model
+05:49:37 INFO	Model saved as best_saved_weights.pt
+05:49:52 INFO	Epoch: 3 Total Loss: 1970.0935 | execution time 0.2527 mins
+05:49:55 INFO	NDCG score for validation set is 0.7336808574714362
+05:49:55 INFO	NDCG score from torchmetrics for validation set is 0.7336822032928467
+05:49:55 INFO	MRR score for validation set is 0.56171875
+05:50:11 INFO	Epoch: 4 Total Loss: 1969.1326 | execution time 0.2653 mins
+05:50:14 INFO	NDCG score for validation set is 0.7340336887227048
+05:50:14 INFO	NDCG score from torchmetrics for validation set is 0.7340346813201905
+05:50:14 INFO	MRR score for validation set is 0.563671875
+05:50:14 INFO	Saving the best model
+05:50:14 INFO	Model saved as best_saved_weights.pt
+05:50:29 INFO	Epoch: 5 Total Loss: 1970.7818 | execution time 0.2508 mins
+05:50:32 INFO	NDCG score for validation set is 0.7337133230884755
+05:50:32 INFO	NDCG score from torchmetrics for validation set is 0.733714246749878
+05:50:32 INFO	MRR score for validation set is 0.55625
+05:50:51 INFO	Epoch: 6 Total Loss: 1966.3549 | execution time 0.3271 mins
+05:50:54 INFO	NDCG score for validation set is 0.7334018983846619
+05:50:54 INFO	NDCG score from torchmetrics for validation set is 0.7334029197692871
+05:50:54 INFO	MRR score for validation set is 0.558203125
+05:50:54 INFO	Saving the best model
+05:50:54 INFO	Model saved as best_saved_weights.pt
+05:51:13 INFO	Epoch: 7 Total Loss: 1967.1950 | execution time 0.3074 mins
+05:51:16 INFO	NDCG score for validation set is 0.7325221382860734
+05:51:16 INFO	NDCG score from torchmetrics for validation set is 0.7325232982635498
+05:51:16 INFO	MRR score for validation set is 0.558203125
+05:51:32 INFO	Epoch: 8 Total Loss: 1965.5443 | execution time 0.2627 mins
+05:51:35 INFO	NDCG score for validation set is 0.7338302363738927
+05:51:35 INFO	NDCG score from torchmetrics for validation set is 0.7338313579559326
+05:51:35 INFO	MRR score for validation set is 0.551953125
+05:51:35 INFO	Saving the best model
+05:51:35 INFO	Model saved as best_saved_weights.pt
+05:51:52 INFO	Epoch: 9 Total Loss: 1967.1642 | execution time 0.2849 mins
+05:51:57 INFO	NDCG score for validation set is 0.7325106221418599
+05:51:57 INFO	NDCG score from torchmetrics for validation set is 0.7325119018554688
+05:51:57 INFO	MRR score for validation set is 0.561328125
+05:51:57 INFO	Choosing high confidence temporal orders
+05:52:12 INFO	Training round 1 finished 0 new training instances found
+05:52:12 INFO	Training Finished
+05:52:12 INFO	Evaluation Started
+05:52:12 INFO	Size of training data 9
+05:52:51 INFO	NDCG score for test set is 0.838275508463896
+05:52:51 INFO	NDCG score from torchmetrics for validation set is 0.8382797241210938
+05:52:51 INFO	MRR score for test set is 0.640625
+05:57:45 INFO	Creating the GATE object
+05:57:45 INFO	--------------------------------------------------------------------------------------
+05:57:45 INFO	--------------------------------------------------------------------------------------
+05:57:45 INFO	GATE initializing
+05:57:45 INFO	Data data/nba/
+05:57:45 INFO	Embedding Dim : 64
+05:57:45 INFO	Epoch : 10
+05:57:45 INFO	Learning Rate : 0.0001
+05:57:45 INFO	Batch Size : 256
+05:57:45 INFO	High Confidence Sample Ratio : 0.1
+05:57:45 INFO	Data loading

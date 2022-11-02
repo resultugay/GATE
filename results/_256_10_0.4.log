@@ -1,0 +1,1047 @@
+04:40:36 INFO	Creating the GATE object
+04:40:36 INFO	--------------------------------------------------------------------------------------
+04:40:36 INFO	--------------------------------------------------------------------------------------
+04:40:36 INFO	GATE initializing
+04:40:36 INFO	Data ../data/test/
+04:40:36 INFO	Embedding Dim : 64
+04:40:36 INFO	Epoch : 10
+04:40:36 INFO	Learning Rate : 0.0001
+04:40:36 INFO	Batch Size : 256
+04:40:36 INFO	High Confidence Sample Ratio : 0.4
+04:40:36 INFO	Data loading
+04:40:36 INFO	Data loaded
+04:40:36 INFO	GATE initialized
+04:40:36 INFO	Training Started
+04:40:36 INFO	Size of initial training data 175
+04:40:36 INFO	Training round 0 started
+04:40:36 INFO	Epoch: 0 Total Loss: 2.8807 | execution time 0.0003 mins
+04:40:36 INFO	NDCG score for validation set is 0.0303393523805022
+04:40:36 INFO	NDCG score from torchmetrics for validation set is 0.030339354649186134
+04:40:36 INFO	MRR score for validation set is 0.0234375
+04:40:36 INFO	Saving the best model
+04:40:36 INFO	Model saved as best_saved_weights.pt
+04:40:36 INFO	Epoch: 1 Total Loss: 2.4821 | execution time 0.0003 mins
+04:40:36 INFO	NDCG score for validation set is 0.029824931298907866
+04:40:36 INFO	NDCG score from torchmetrics for validation set is 0.029824933037161827
+04:40:36 INFO	MRR score for validation set is 0.021484375
+04:40:36 INFO	Saving the best model
+04:40:36 INFO	Model saved as best_saved_weights.pt
+04:40:36 INFO	Epoch: 2 Total Loss: 2.2744 | execution time 0.0002 mins
+04:40:36 INFO	NDCG score for validation set is 0.029812322351371476
+04:40:36 INFO	NDCG score from torchmetrics for validation set is 0.029812322929501534
+04:40:36 INFO	MRR score for validation set is 0.021484375
+04:40:36 INFO	Saving the best model
+04:40:36 INFO	Model saved as best_saved_weights.pt
+04:40:36 INFO	Epoch: 3 Total Loss: 2.2615 | execution time 0.0002 mins
+04:40:36 INFO	NDCG score for validation set is 0.030242622957094317
+04:40:36 INFO	NDCG score from torchmetrics for validation set is 0.03024262562394142
+04:40:36 INFO	MRR score for validation set is 0.021484375
+04:40:36 INFO	Saving the best model
+04:40:36 INFO	Model saved as best_saved_weights.pt
+04:40:36 INFO	Epoch: 4 Total Loss: 2.0585 | execution time 0.0003 mins
+04:40:36 INFO	NDCG score for validation set is 0.030283994952853697
+04:40:36 INFO	NDCG score from torchmetrics for validation set is 0.03028399869799614
+04:40:36 INFO	MRR score for validation set is 0.021484375
+04:40:36 INFO	Saving the best model
+04:40:36 INFO	Model saved as best_saved_weights.pt
+04:40:36 INFO	Epoch: 5 Total Loss: 2.1361 | execution time 0.0003 mins
+04:40:36 INFO	NDCG score for validation set is 0.03007911009981982
+04:40:36 INFO	NDCG score from torchmetrics for validation set is 0.030079111456871033
+04:40:36 INFO	MRR score for validation set is 0.021484375
+04:40:36 INFO	Epoch: 6 Total Loss: 2.0243 | execution time 0.0003 mins
+04:40:37 INFO	NDCG score for validation set is 0.029956676641388687
+04:40:37 INFO	NDCG score from torchmetrics for validation set is 0.029956679791212082
+04:40:37 INFO	MRR score for validation set is 0.021484375
+04:40:37 INFO	Saving the best model
+04:40:37 INFO	Model saved as best_saved_weights.pt
+04:40:37 INFO	Epoch: 7 Total Loss: 1.9742 | execution time 0.0003 mins
+04:40:37 INFO	NDCG score for validation set is 0.029902695698092917
+04:40:37 INFO	NDCG score from torchmetrics for validation set is 0.02990269847214222
+04:40:37 INFO	MRR score for validation set is 0.021484375
+04:40:37 INFO	Saving the best model
+04:40:37 INFO	Model saved as best_saved_weights.pt
+04:40:37 INFO	Epoch: 8 Total Loss: 1.9010 | execution time 0.0002 mins
+04:40:37 INFO	NDCG score for validation set is 0.029902695698092917
+04:40:37 INFO	NDCG score from torchmetrics for validation set is 0.02990269847214222
+04:40:37 INFO	MRR score for validation set is 0.021484375
+04:40:37 INFO	Saving the best model
+04:40:37 INFO	Model saved as best_saved_weights.pt
+04:40:37 INFO	Epoch: 9 Total Loss: 1.9533 | execution time 0.0003 mins
+04:40:37 INFO	NDCG score for validation set is 0.02971746395396608
+04:40:37 INFO	NDCG score from torchmetrics for validation set is 0.029717465862631798
+04:40:37 INFO	MRR score for validation set is 0.021484375
+04:40:37 INFO	Choosing high confidence temporal orders
+08:05:31 INFO	Creating the GATE object
+08:05:31 INFO	--------------------------------------------------------------------------------------
+08:05:31 INFO	--------------------------------------------------------------------------------------
+08:05:31 INFO	GATE initializing
+08:05:31 INFO	Data ../data/test/
+08:05:31 INFO	Embedding Dim : 64
+08:05:31 INFO	Epoch : 10
+08:05:31 INFO	Learning Rate : 0.0001
+08:05:31 INFO	Batch Size : 256
+08:05:31 INFO	High Confidence Sample Ratio : 0.4
+08:05:31 INFO	Data loading
+08:06:02 INFO	Creating the GATE object
+08:06:02 INFO	--------------------------------------------------------------------------------------
+08:06:02 INFO	--------------------------------------------------------------------------------------
+08:06:02 INFO	GATE initializing
+08:06:02 INFO	Data ../data/test/
+08:06:02 INFO	Embedding Dim : 64
+08:06:02 INFO	Epoch : 10
+08:06:02 INFO	Learning Rate : 0.0001
+08:06:02 INFO	Batch Size : 256
+08:06:02 INFO	High Confidence Sample Ratio : 0.4
+08:06:02 INFO	Data loading
+08:06:02 INFO	Data loaded
+08:06:02 INFO	GATE initialized
+08:06:02 INFO	Training Started
+08:06:02 INFO	Size of initial training data 175
+08:06:02 INFO	Training round 0 started
+08:08:25 INFO	Creating the GATE object
+08:08:25 INFO	--------------------------------------------------------------------------------------
+08:08:25 INFO	--------------------------------------------------------------------------------------
+08:08:25 INFO	GATE initializing
+08:08:25 INFO	Data ../data/test/
+08:08:25 INFO	Embedding Dim : 64
+08:08:25 INFO	Epoch : 10
+08:08:25 INFO	Learning Rate : 0.0001
+08:08:25 INFO	Batch Size : 256
+08:08:25 INFO	High Confidence Sample Ratio : 0.4
+08:08:25 INFO	Data loading
+08:08:25 INFO	Data loaded
+08:08:25 INFO	GATE initialized
+08:08:25 INFO	Training Started
+08:08:25 INFO	Size of initial training data 175
+08:08:25 INFO	Training round 0 started
+08:09:05 INFO	Creating the GATE object
+08:09:05 INFO	--------------------------------------------------------------------------------------
+08:09:05 INFO	--------------------------------------------------------------------------------------
+08:09:05 INFO	GATE initializing
+08:09:05 INFO	Data ../data/test/
+08:09:05 INFO	Embedding Dim : 64
+08:09:05 INFO	Epoch : 10
+08:09:05 INFO	Learning Rate : 0.0001
+08:09:05 INFO	Batch Size : 256
+08:09:05 INFO	High Confidence Sample Ratio : 0.4
+08:09:05 INFO	Data loading
+08:09:06 INFO	Data loaded
+08:09:06 INFO	GATE initialized
+08:09:06 INFO	Training Started
+08:09:06 INFO	Size of initial training data 175
+08:09:06 INFO	Training round 0 started
+08:10:53 INFO	Creating the GATE object
+08:10:53 INFO	--------------------------------------------------------------------------------------
+08:10:53 INFO	--------------------------------------------------------------------------------------
+08:10:53 INFO	GATE initializing
+08:10:53 INFO	Data ../data/test/
+08:10:53 INFO	Embedding Dim : 64
+08:10:53 INFO	Epoch : 10
+08:10:53 INFO	Learning Rate : 0.0001
+08:10:53 INFO	Batch Size : 256
+08:10:53 INFO	High Confidence Sample Ratio : 0.4
+08:10:53 INFO	Data loading
+08:10:53 INFO	Data loaded
+08:10:53 INFO	GATE initialized
+08:10:53 INFO	Training Started
+08:10:53 INFO	Size of initial training data 175
+08:10:53 INFO	Training round 0 started
+08:11:45 INFO	Creating the GATE object
+08:11:45 INFO	--------------------------------------------------------------------------------------
+08:11:45 INFO	--------------------------------------------------------------------------------------
+08:11:45 INFO	GATE initializing
+08:11:45 INFO	Data ../data/test/
+08:11:45 INFO	Embedding Dim : 64
+08:11:45 INFO	Epoch : 10
+08:11:45 INFO	Learning Rate : 0.0001
+08:11:45 INFO	Batch Size : 256
+08:11:45 INFO	High Confidence Sample Ratio : 0.4
+08:11:45 INFO	Data loading
+08:11:45 INFO	Data loaded
+08:11:45 INFO	GATE initialized
+08:11:45 INFO	Training Started
+08:11:45 INFO	Size of initial training data 175
+08:11:45 INFO	Training round 0 started
+08:11:45 INFO	Epoch: 0 Total Loss: 2.5041 | execution time 0.0004 mins
+08:11:45 INFO	NDCG score for validation set is 0.029076898654097707
+08:11:45 INFO	NDCG score from torchmetrics for validation set is 0.029076898470520973
+08:11:45 INFO	MRR score for validation set is 0.0234375
+08:11:45 INFO	Saving the best model
+08:11:45 INFO	Model saved as best_saved_weights.pt
+08:11:45 INFO	Epoch: 1 Total Loss: 2.5015 | execution time 0.0003 mins
+08:11:45 INFO	NDCG score for validation set is 0.029076898654097707
+08:11:45 INFO	NDCG score from torchmetrics for validation set is 0.029076898470520973
+08:11:45 INFO	MRR score for validation set is 0.0234375
+08:11:45 INFO	Saving the best model
+08:11:45 INFO	Model saved as best_saved_weights.pt
+08:11:45 INFO	Epoch: 2 Total Loss: 2.4975 | execution time 0.0002 mins
+08:11:45 INFO	NDCG score for validation set is 0.029076898654097707
+08:11:45 INFO	NDCG score from torchmetrics for validation set is 0.029076898470520973
+08:11:45 INFO	MRR score for validation set is 0.0234375
+08:11:45 INFO	Saving the best model
+08:11:45 INFO	Model saved as best_saved_weights.pt
+08:11:45 INFO	Epoch: 3 Total Loss: 2.4920 | execution time 0.0003 mins
+08:11:45 INFO	NDCG score for validation set is 0.029076898654097707
+08:11:45 INFO	NDCG score from torchmetrics for validation set is 0.029076898470520973
+08:11:45 INFO	MRR score for validation set is 0.0234375
+08:11:45 INFO	Saving the best model
+08:11:45 INFO	Model saved as best_saved_weights.pt
+08:11:45 INFO	Epoch: 4 Total Loss: 2.4913 | execution time 0.0003 mins
+08:11:45 INFO	NDCG score for validation set is 0.029076898654097707
+08:11:45 INFO	NDCG score from torchmetrics for validation set is 0.029076898470520973
+08:11:45 INFO	MRR score for validation set is 0.0234375
+08:11:45 INFO	Saving the best model
+08:11:45 INFO	Model saved as best_saved_weights.pt
+08:11:45 INFO	Epoch: 5 Total Loss: 2.4873 | execution time 0.0003 mins
+08:11:45 INFO	NDCG score for validation set is 0.029076898654097707
+08:11:45 INFO	NDCG score from torchmetrics for validation set is 0.029076898470520973
+08:11:45 INFO	MRR score for validation set is 0.0234375
+08:11:45 INFO	Saving the best model
+08:11:45 INFO	Model saved as best_saved_weights.pt
+08:11:45 INFO	Epoch: 6 Total Loss: 2.4843 | execution time 0.0003 mins
+08:11:45 INFO	NDCG score for validation set is 0.029076898654097707
+08:11:45 INFO	NDCG score from torchmetrics for validation set is 0.029076898470520973
+08:11:45 INFO	MRR score for validation set is 0.0234375
+08:11:45 INFO	Saving the best model
+08:11:45 INFO	Model saved as best_saved_weights.pt
+08:11:45 INFO	Epoch: 7 Total Loss: 2.4828 | execution time 0.0003 mins
+08:11:45 INFO	NDCG score for validation set is 0.029076898654097707
+08:11:45 INFO	NDCG score from torchmetrics for validation set is 0.029076898470520973
+08:11:45 INFO	MRR score for validation set is 0.0234375
+08:11:45 INFO	Saving the best model
+08:11:45 INFO	Model saved as best_saved_weights.pt
+08:11:45 INFO	Epoch: 8 Total Loss: 2.4806 | execution time 0.0003 mins
+08:11:45 INFO	NDCG score for validation set is 0.029076898654097707
+08:11:45 INFO	NDCG score from torchmetrics for validation set is 0.029076898470520973
+08:11:45 INFO	MRR score for validation set is 0.0234375
+08:11:45 INFO	Saving the best model
+08:11:45 INFO	Model saved as best_saved_weights.pt
+08:11:46 INFO	Epoch: 9 Total Loss: 2.4729 | execution time 0.0003 mins
+08:11:46 INFO	NDCG score for validation set is 0.029076898654097707
+08:11:46 INFO	NDCG score from torchmetrics for validation set is 0.029076898470520973
+08:11:46 INFO	MRR score for validation set is 0.0234375
+08:11:46 INFO	Saving the best model
+08:11:46 INFO	Model saved as best_saved_weights.pt
+08:11:46 INFO	Choosing high confidence temporal orders
+08:11:46 INFO	[LOG]: Training round 0 finished 175 new training instances found
+08:11:46 INFO	round=0 ndcg=0.030725419521331787 mrr=0.021484375 precision=0.6111111111111112 recall=0.5238095238095238 Fmeasure=0.5641025641025642
+08:11:46 INFO	Training round 1 started
+08:11:46 INFO	Epoch: 0 Total Loss: 1.9599 | execution time 0.0003 mins
+08:11:46 INFO	NDCG score for validation set is 0.029076898654097707
+08:11:46 INFO	NDCG score from torchmetrics for validation set is 0.029076898470520973
+08:11:46 INFO	MRR score for validation set is 0.0234375
+08:11:46 INFO	Saving the best model
+08:11:46 INFO	Model saved as best_saved_weights.pt
+08:11:46 INFO	Epoch: 1 Total Loss: 1.9625 | execution time 0.0003 mins
+08:11:46 INFO	NDCG score for validation set is 0.029076898654097707
+08:11:46 INFO	NDCG score from torchmetrics for validation set is 0.029076898470520973
+08:11:46 INFO	MRR score for validation set is 0.0234375
+08:11:46 INFO	Epoch: 2 Total Loss: 1.9554 | execution time 0.0003 mins
+08:11:46 INFO	NDCG score for validation set is 0.029076898654097707
+08:11:46 INFO	NDCG score from torchmetrics for validation set is 0.029076898470520973
+08:11:46 INFO	MRR score for validation set is 0.0234375
+08:11:46 INFO	Saving the best model
+08:11:46 INFO	Model saved as best_saved_weights.pt
+08:11:46 INFO	Epoch: 3 Total Loss: 1.9586 | execution time 0.0003 mins
+08:11:46 INFO	NDCG score for validation set is 0.029076898654097707
+08:11:46 INFO	NDCG score from torchmetrics for validation set is 0.029076898470520973
+08:11:46 INFO	MRR score for validation set is 0.0234375
+08:11:46 INFO	Epoch: 4 Total Loss: 1.9553 | execution time 0.0003 mins
+08:11:46 INFO	NDCG score for validation set is 0.029076898654097707
+08:11:46 INFO	NDCG score from torchmetrics for validation set is 0.029076898470520973
+08:11:46 INFO	MRR score for validation set is 0.0234375
+08:11:46 INFO	Saving the best model
+08:11:46 INFO	Model saved as best_saved_weights.pt
+08:11:46 INFO	Epoch: 5 Total Loss: 1.9493 | execution time 0.0003 mins
+08:11:46 INFO	NDCG score for validation set is 0.029076898654097707
+08:11:46 INFO	NDCG score from torchmetrics for validation set is 0.029076898470520973
+08:11:46 INFO	MRR score for validation set is 0.0234375
+08:11:46 INFO	Saving the best model
+08:11:46 INFO	Model saved as best_saved_weights.pt
+08:11:46 INFO	Epoch: 6 Total Loss: 1.9450 | execution time 0.0003 mins
+08:11:46 INFO	NDCG score for validation set is 0.029076898654097707
+08:11:46 INFO	NDCG score from torchmetrics for validation set is 0.029076898470520973
+08:11:46 INFO	MRR score for validation set is 0.0234375
+08:11:46 INFO	Saving the best model
+08:11:46 INFO	Model saved as best_saved_weights.pt
+08:11:46 INFO	Epoch: 7 Total Loss: 1.9417 | execution time 0.0003 mins
+08:11:46 INFO	NDCG score for validation set is 0.029076898654097707
+08:11:46 INFO	NDCG score from torchmetrics for validation set is 0.029076898470520973
+08:11:46 INFO	MRR score for validation set is 0.0234375
+08:11:46 INFO	Saving the best model
+08:11:46 INFO	Model saved as best_saved_weights.pt
+08:11:46 INFO	Epoch: 8 Total Loss: 1.9412 | execution time 0.0002 mins
+08:11:46 INFO	NDCG score for validation set is 0.029076898654097707
+08:11:46 INFO	NDCG score from torchmetrics for validation set is 0.029076898470520973
+08:11:46 INFO	MRR score for validation set is 0.0234375
+08:11:46 INFO	Saving the best model
+08:11:46 INFO	Model saved as best_saved_weights.pt
+08:11:46 INFO	Epoch: 9 Total Loss: 1.9336 | execution time 0.0003 mins
+08:11:46 INFO	NDCG score for validation set is 0.029076898654097707
+08:11:46 INFO	NDCG score from torchmetrics for validation set is 0.029076898470520973
+08:11:46 INFO	MRR score for validation set is 0.0234375
+08:11:46 INFO	Saving the best model
+08:11:46 INFO	Model saved as best_saved_weights.pt
+08:11:46 INFO	Choosing high confidence temporal orders
+08:11:46 INFO	[LOG]: Training round 1 finished 211 new training instances found
+08:11:46 INFO	round=1 ndcg=0.029824979603290558 mrr=0.021484375 precision=0.5714285714285714 recall=0.4444444444444444 Fmeasure=0.5
+08:11:46 INFO	Training round 2 started
+08:11:47 INFO	Epoch: 0 Total Loss: 1.6527 | execution time 0.0003 mins
+08:11:47 INFO	NDCG score for validation set is 0.029076898654097707
+08:11:47 INFO	NDCG score from torchmetrics for validation set is 0.029076898470520973
+08:11:47 INFO	MRR score for validation set is 0.0234375
+08:11:47 INFO	Saving the best model
+08:11:47 INFO	Model saved as best_saved_weights.pt
+08:11:47 INFO	Epoch: 1 Total Loss: 1.6577 | execution time 0.0003 mins
+08:11:47 INFO	NDCG score for validation set is 0.029076898654097707
+08:11:47 INFO	NDCG score from torchmetrics for validation set is 0.029076898470520973
+08:11:47 INFO	MRR score for validation set is 0.0234375
+08:11:47 INFO	Epoch: 2 Total Loss: 1.6489 | execution time 0.0003 mins
+08:11:47 INFO	NDCG score for validation set is 0.029076898654097707
+08:11:47 INFO	NDCG score from torchmetrics for validation set is 0.029076898470520973
+08:11:47 INFO	MRR score for validation set is 0.0234375
+08:11:47 INFO	Saving the best model
+08:11:47 INFO	Model saved as best_saved_weights.pt
+08:11:47 INFO	Epoch: 3 Total Loss: 1.6445 | execution time 0.0003 mins
+08:11:47 INFO	NDCG score for validation set is 0.029076898654097707
+08:11:47 INFO	NDCG score from torchmetrics for validation set is 0.029076898470520973
+08:11:47 INFO	MRR score for validation set is 0.0234375
+08:11:47 INFO	Saving the best model
+08:11:47 INFO	Model saved as best_saved_weights.pt
+08:11:47 INFO	Epoch: 4 Total Loss: 1.6385 | execution time 0.0003 mins
+08:11:47 INFO	NDCG score for validation set is 0.029076898654097707
+08:11:47 INFO	NDCG score from torchmetrics for validation set is 0.029076898470520973
+08:11:47 INFO	MRR score for validation set is 0.0234375
+08:11:47 INFO	Saving the best model
+08:11:47 INFO	Model saved as best_saved_weights.pt
+08:11:47 INFO	Epoch: 5 Total Loss: 1.6329 | execution time 0.0003 mins
+08:11:47 INFO	NDCG score for validation set is 0.029076898654097707
+08:11:47 INFO	NDCG score from torchmetrics for validation set is 0.029076898470520973
+08:11:47 INFO	MRR score for validation set is 0.0234375
+08:11:47 INFO	Saving the best model
+08:11:47 INFO	Model saved as best_saved_weights.pt
+08:11:47 INFO	Epoch: 6 Total Loss: 1.6371 | execution time 0.0003 mins
+08:11:47 INFO	NDCG score for validation set is 0.029076898654097707
+08:11:47 INFO	NDCG score from torchmetrics for validation set is 0.029076898470520973
+08:11:47 INFO	MRR score for validation set is 0.0234375
+08:11:47 INFO	Epoch: 7 Total Loss: 1.6321 | execution time 0.0003 mins
+08:11:47 INFO	NDCG score for validation set is 0.029076898654097707
+08:11:47 INFO	NDCG score from torchmetrics for validation set is 0.029076898470520973
+08:11:47 INFO	MRR score for validation set is 0.0234375
+08:11:47 INFO	Saving the best model
+08:11:47 INFO	Model saved as best_saved_weights.pt
+08:11:47 INFO	Epoch: 8 Total Loss: 1.6313 | execution time 0.0003 mins
+08:11:47 INFO	NDCG score for validation set is 0.029076898654097707
+08:11:47 INFO	NDCG score from torchmetrics for validation set is 0.029076898470520973
+08:11:47 INFO	MRR score for validation set is 0.0234375
+08:11:47 INFO	Saving the best model
+08:11:47 INFO	Model saved as best_saved_weights.pt
+08:11:47 INFO	Epoch: 9 Total Loss: 1.6223 | execution time 0.0003 mins
+08:11:47 INFO	NDCG score for validation set is 0.029076898654097707
+08:11:47 INFO	NDCG score from torchmetrics for validation set is 0.029076898470520973
+08:11:47 INFO	MRR score for validation set is 0.0234375
+08:11:47 INFO	Saving the best model
+08:11:47 INFO	Model saved as best_saved_weights.pt
+08:11:47 INFO	Choosing high confidence temporal orders
+08:11:47 INFO	[LOG]: Training round 2 finished 238 new training instances found
+08:11:47 INFO	round=2 ndcg=0.030470218509435654 mrr=0.025390625 precision=0.6176470588235294 recall=0.6666666666666666 Fmeasure=0.6412213740458016
+08:11:47 INFO	Training round 3 started
+08:11:48 INFO	Epoch: 0 Total Loss: 2.0104 | execution time 0.0003 mins
+08:11:48 INFO	NDCG score for validation set is 0.029076898654097707
+08:11:48 INFO	NDCG score from torchmetrics for validation set is 0.029076898470520973
+08:11:48 INFO	MRR score for validation set is 0.0234375
+08:11:48 INFO	Saving the best model
+08:11:48 INFO	Model saved as best_saved_weights.pt
+08:11:48 INFO	Epoch: 1 Total Loss: 2.0155 | execution time 0.0003 mins
+08:11:48 INFO	NDCG score for validation set is 0.029076898654097707
+08:11:48 INFO	NDCG score from torchmetrics for validation set is 0.029076898470520973
+08:11:48 INFO	MRR score for validation set is 0.0234375
+08:11:48 INFO	Epoch: 2 Total Loss: 2.0086 | execution time 0.0004 mins
+08:11:48 INFO	NDCG score for validation set is 0.029076898654097707
+08:11:48 INFO	NDCG score from torchmetrics for validation set is 0.029076898470520973
+08:11:48 INFO	MRR score for validation set is 0.0234375
+08:11:48 INFO	Saving the best model
+08:11:48 INFO	Model saved as best_saved_weights.pt
+08:11:48 INFO	Epoch: 3 Total Loss: 2.0010 | execution time 0.0004 mins
+08:11:48 INFO	NDCG score for validation set is 0.029076898654097707
+08:11:48 INFO	NDCG score from torchmetrics for validation set is 0.029076898470520973
+08:11:48 INFO	MRR score for validation set is 0.0234375
+08:11:48 INFO	Saving the best model
+08:11:48 INFO	Model saved as best_saved_weights.pt
+08:11:48 INFO	Epoch: 4 Total Loss: 1.9991 | execution time 0.0004 mins
+08:11:48 INFO	NDCG score for validation set is 0.029076898654097707
+08:11:48 INFO	NDCG score from torchmetrics for validation set is 0.029076898470520973
+08:11:48 INFO	MRR score for validation set is 0.0234375
+08:11:48 INFO	Saving the best model
+08:11:48 INFO	Model saved as best_saved_weights.pt
+08:11:48 INFO	Epoch: 5 Total Loss: 1.9869 | execution time 0.0004 mins
+08:11:48 INFO	NDCG score for validation set is 0.029076898654097707
+08:11:48 INFO	NDCG score from torchmetrics for validation set is 0.029076898470520973
+08:11:48 INFO	MRR score for validation set is 0.0234375
+08:11:48 INFO	Saving the best model
+08:11:48 INFO	Model saved as best_saved_weights.pt
+08:11:48 INFO	Epoch: 6 Total Loss: 1.9907 | execution time 0.0005 mins
+08:11:48 INFO	NDCG score for validation set is 0.029076898654097707
+08:11:48 INFO	NDCG score from torchmetrics for validation set is 0.029076898470520973
+08:11:48 INFO	MRR score for validation set is 0.0234375
+08:11:48 INFO	Epoch: 7 Total Loss: 1.9947 | execution time 0.0004 mins
+08:11:48 INFO	NDCG score for validation set is 0.029076898654097707
+08:11:48 INFO	NDCG score from torchmetrics for validation set is 0.029076898470520973
+08:11:48 INFO	MRR score for validation set is 0.0234375
+08:11:48 INFO	Epoch: 8 Total Loss: 1.9867 | execution time 0.0004 mins
+08:11:48 INFO	NDCG score for validation set is 0.029076898654097707
+08:11:48 INFO	NDCG score from torchmetrics for validation set is 0.029076898470520973
+08:11:48 INFO	MRR score for validation set is 0.0234375
+08:11:48 INFO	Saving the best model
+08:11:48 INFO	Model saved as best_saved_weights.pt
+08:11:48 INFO	Epoch: 9 Total Loss: 1.9799 | execution time 0.0004 mins
+08:11:48 INFO	NDCG score for validation set is 0.029076898654097707
+08:11:48 INFO	NDCG score from torchmetrics for validation set is 0.029076898470520973
+08:11:48 INFO	MRR score for validation set is 0.0234375
+08:11:48 INFO	Saving the best model
+08:11:48 INFO	Model saved as best_saved_weights.pt
+08:11:48 INFO	Choosing high confidence temporal orders
+08:11:48 INFO	[LOG]: Training round 3 finished 289 new training instances found
+08:11:48 INFO	round=3 ndcg=0.03054926171898842 mrr=0.025390625 precision=0.639344262295082 recall=0.6190476190476191 Fmeasure=0.6290322580645161
+08:11:48 INFO	Training round 4 started
+08:11:49 INFO	Epoch: 0 Total Loss: 1.9729 | execution time 0.0003 mins
+08:11:49 INFO	NDCG score for validation set is 0.029076898654097707
+08:11:49 INFO	NDCG score from torchmetrics for validation set is 0.029076898470520973
+08:11:49 INFO	MRR score for validation set is 0.0234375
+08:11:49 INFO	Saving the best model
+08:11:49 INFO	Model saved as best_saved_weights.pt
+08:11:49 INFO	Epoch: 1 Total Loss: 1.9734 | execution time 0.0003 mins
+08:11:49 INFO	NDCG score for validation set is 0.029076898654097707
+08:11:49 INFO	NDCG score from torchmetrics for validation set is 0.029076898470520973
+08:11:49 INFO	MRR score for validation set is 0.0234375
+08:11:49 INFO	Epoch: 2 Total Loss: 1.9672 | execution time 0.0003 mins
+08:11:49 INFO	NDCG score for validation set is 0.029076898654097707
+08:11:49 INFO	NDCG score from torchmetrics for validation set is 0.029076898470520973
+08:11:49 INFO	MRR score for validation set is 0.0234375
+08:11:49 INFO	Saving the best model
+08:11:49 INFO	Model saved as best_saved_weights.pt
+08:11:49 INFO	Epoch: 3 Total Loss: 1.9623 | execution time 0.0003 mins
+08:11:49 INFO	NDCG score for validation set is 0.029076898654097707
+08:11:49 INFO	NDCG score from torchmetrics for validation set is 0.029076898470520973
+08:11:49 INFO	MRR score for validation set is 0.0234375
+08:11:49 INFO	Saving the best model
+08:11:49 INFO	Model saved as best_saved_weights.pt
+08:11:49 INFO	Epoch: 4 Total Loss: 1.9611 | execution time 0.0003 mins
+08:11:49 INFO	NDCG score for validation set is 0.029076898654097707
+08:11:49 INFO	NDCG score from torchmetrics for validation set is 0.029076898470520973
+08:11:49 INFO	MRR score for validation set is 0.0234375
+08:11:49 INFO	Saving the best model
+08:11:49 INFO	Model saved as best_saved_weights.pt
+08:11:49 INFO	Epoch: 5 Total Loss: 1.9525 | execution time 0.0004 mins
+08:11:49 INFO	NDCG score for validation set is 0.029076898654097707
+08:11:49 INFO	NDCG score from torchmetrics for validation set is 0.029076898470520973
+08:11:49 INFO	MRR score for validation set is 0.0234375
+08:11:49 INFO	Saving the best model
+08:11:49 INFO	Model saved as best_saved_weights.pt
+08:11:49 INFO	Epoch: 6 Total Loss: 1.9506 | execution time 0.0004 mins
+08:11:49 INFO	NDCG score for validation set is 0.029076898654097707
+08:11:49 INFO	NDCG score from torchmetrics for validation set is 0.029076898470520973
+08:11:49 INFO	MRR score for validation set is 0.0234375
+08:11:49 INFO	Saving the best model
+08:11:49 INFO	Model saved as best_saved_weights.pt
+08:11:49 INFO	Epoch: 7 Total Loss: 1.9451 | execution time 0.0003 mins
+08:11:49 INFO	NDCG score for validation set is 0.029076898654097707
+08:11:49 INFO	NDCG score from torchmetrics for validation set is 0.029076898470520973
+08:11:49 INFO	MRR score for validation set is 0.0234375
+08:11:49 INFO	Saving the best model
+08:11:49 INFO	Model saved as best_saved_weights.pt
+08:11:49 INFO	Epoch: 8 Total Loss: 1.9415 | execution time 0.0004 mins
+08:11:49 INFO	NDCG score for validation set is 0.029076898654097707
+08:11:49 INFO	NDCG score from torchmetrics for validation set is 0.029076898470520973
+08:11:49 INFO	MRR score for validation set is 0.0234375
+08:11:49 INFO	Saving the best model
+08:11:49 INFO	Model saved as best_saved_weights.pt
+08:11:49 INFO	Epoch: 9 Total Loss: 1.9425 | execution time 0.0004 mins
+08:11:49 INFO	NDCG score for validation set is 0.029076898654097707
+08:11:49 INFO	NDCG score from torchmetrics for validation set is 0.029076898470520973
+08:11:49 INFO	MRR score for validation set is 0.0234375
+08:11:49 INFO	Choosing high confidence temporal orders
+08:11:49 INFO	[LOG]: Training round 4 finished 304 new training instances found
+08:11:49 INFO	round=4 ndcg=0.03054926171898842 mrr=0.025390625 precision=0.639344262295082 recall=0.6190476190476191 Fmeasure=0.6290322580645161
+08:11:49 INFO	Training round 5 started
+08:11:50 INFO	Epoch: 0 Total Loss: 1.8391 | execution time 0.0005 mins
+08:11:50 INFO	NDCG score for validation set is 0.029076898654097707
+08:11:50 INFO	NDCG score from torchmetrics for validation set is 0.029076898470520973
+08:11:50 INFO	MRR score for validation set is 0.0234375
+08:11:50 INFO	Saving the best model
+08:11:50 INFO	Model saved as best_saved_weights.pt
+08:11:50 INFO	Epoch: 1 Total Loss: 1.8282 | execution time 0.0004 mins
+08:11:50 INFO	NDCG score for validation set is 0.029076898654097707
+08:11:50 INFO	NDCG score from torchmetrics for validation set is 0.029076898470520973
+08:11:50 INFO	MRR score for validation set is 0.0234375
+08:11:50 INFO	Saving the best model
+08:11:50 INFO	Model saved as best_saved_weights.pt
+08:11:50 INFO	Epoch: 2 Total Loss: 1.8269 | execution time 0.0005 mins
+08:11:50 INFO	NDCG score for validation set is 0.029076898654097707
+08:11:50 INFO	NDCG score from torchmetrics for validation set is 0.029076898470520973
+08:11:50 INFO	MRR score for validation set is 0.0234375
+08:11:50 INFO	Saving the best model
+08:11:50 INFO	Model saved as best_saved_weights.pt
+08:11:50 INFO	Epoch: 3 Total Loss: 1.8230 | execution time 0.0005 mins
+08:11:50 INFO	NDCG score for validation set is 0.029076898654097707
+08:11:50 INFO	NDCG score from torchmetrics for validation set is 0.029076898470520973
+08:11:50 INFO	MRR score for validation set is 0.0234375
+08:11:50 INFO	Saving the best model
+08:11:50 INFO	Model saved as best_saved_weights.pt
+08:11:50 INFO	Epoch: 4 Total Loss: 1.8230 | execution time 0.0004 mins
+08:11:50 INFO	NDCG score for validation set is 0.029076898654097707
+08:11:50 INFO	NDCG score from torchmetrics for validation set is 0.029076898470520973
+08:11:50 INFO	MRR score for validation set is 0.0234375
+08:11:50 INFO	Saving the best model
+08:11:50 INFO	Model saved as best_saved_weights.pt
+08:11:50 INFO	Epoch: 5 Total Loss: 1.8079 | execution time 0.0004 mins
+08:11:50 INFO	NDCG score for validation set is 0.029076898654097707
+08:11:50 INFO	NDCG score from torchmetrics for validation set is 0.029076898470520973
+08:11:50 INFO	MRR score for validation set is 0.0234375
+08:11:50 INFO	Saving the best model
+08:11:50 INFO	Model saved as best_saved_weights.pt
+08:11:50 INFO	Epoch: 6 Total Loss: 1.8097 | execution time 0.0004 mins
+08:11:50 INFO	NDCG score for validation set is 0.029076898654097707
+08:11:50 INFO	NDCG score from torchmetrics for validation set is 0.029076898470520973
+08:11:50 INFO	MRR score for validation set is 0.0234375
+08:11:50 INFO	Epoch: 7 Total Loss: 1.8041 | execution time 0.0004 mins
+08:11:51 INFO	NDCG score for validation set is 0.029076898654097707
+08:11:51 INFO	NDCG score from torchmetrics for validation set is 0.029076898470520973
+08:11:51 INFO	MRR score for validation set is 0.0234375
+08:11:51 INFO	Saving the best model
+08:11:51 INFO	Model saved as best_saved_weights.pt
+08:11:51 INFO	Epoch: 8 Total Loss: 1.7981 | execution time 0.0003 mins
+08:11:51 INFO	NDCG score for validation set is 0.029076898654097707
+08:11:51 INFO	NDCG score from torchmetrics for validation set is 0.029076898470520973
+08:11:51 INFO	MRR score for validation set is 0.0234375
+08:11:51 INFO	Saving the best model
+08:11:51 INFO	Model saved as best_saved_weights.pt
+08:11:51 INFO	Epoch: 9 Total Loss: 1.8023 | execution time 0.0004 mins
+08:11:51 INFO	NDCG score for validation set is 0.029076898654097707
+08:11:51 INFO	NDCG score from torchmetrics for validation set is 0.029076898470520973
+08:11:51 INFO	MRR score for validation set is 0.0234375
+08:11:51 INFO	Choosing high confidence temporal orders
+08:11:51 INFO	[LOG]: Training Finished, evaluation final performance 
+08:11:51 INFO	round=5 ndcg=0.03054926171898842 mrr=0.025390625 precision=0.639344262295082 recall=0.6190476190476191 Fmeasure=0.6290322580645161
+10:46:11 INFO	Creating the GATE object
+10:46:11 INFO	--------------------------------------------------------------------------------------
+10:46:11 INFO	--------------------------------------------------------------------------------------
+10:46:11 INFO	GATE initializing
+10:46:11 INFO	Data ../data/test/
+10:46:11 INFO	Embedding Dim : 64
+10:46:11 INFO	Epoch : 10
+10:46:11 INFO	Learning Rate : 0.0001
+10:46:11 INFO	Batch Size : 256
+10:46:11 INFO	High Confidence Sample Ratio : 0.4
+10:46:11 INFO	Data loading
+10:46:11 INFO	Data loaded
+10:46:11 INFO	GATE initialized
+10:46:11 INFO	Training Started
+10:46:11 INFO	Size of initial training data 175
+10:46:11 INFO	Training round 0 started
+10:46:11 INFO	Epoch: 0 Total Loss: 2.5110 | execution time 0.0008 mins
+10:46:11 INFO	NDCG score for validation set is 0.029076898654097707
+10:46:11 INFO	NDCG score from torchmetrics for validation set is 0.029076898470520973
+10:46:11 INFO	MRR score for validation set is 0.0234375
+10:46:11 INFO	Saving the best model
+10:46:11 INFO	Model saved as best_saved_weights.pt
+10:46:11 INFO	Epoch: 1 Total Loss: 2.5225 | execution time 0.0007 mins
+10:46:11 INFO	NDCG score for validation set is 0.029076898654097707
+10:46:11 INFO	NDCG score from torchmetrics for validation set is 0.029076898470520973
+10:46:11 INFO	MRR score for validation set is 0.0234375
+10:46:11 INFO	Epoch: 2 Total Loss: 2.5084 | execution time 0.0007 mins
+10:46:11 INFO	NDCG score for validation set is 0.029076898654097707
+10:46:11 INFO	NDCG score from torchmetrics for validation set is 0.029076898470520973
+10:46:11 INFO	MRR score for validation set is 0.0234375
+10:46:11 INFO	Saving the best model
+10:46:11 INFO	Model saved as best_saved_weights.pt
+10:46:11 INFO	Epoch: 3 Total Loss: 2.5116 | execution time 0.0006 mins
+10:46:11 INFO	NDCG score for validation set is 0.029076898654097707
+10:46:11 INFO	NDCG score from torchmetrics for validation set is 0.029076898470520973
+10:46:11 INFO	MRR score for validation set is 0.0234375
+10:46:11 INFO	Epoch: 4 Total Loss: 2.5066 | execution time 0.0005 mins
+10:46:11 INFO	NDCG score for validation set is 0.029076898654097707
+10:46:11 INFO	NDCG score from torchmetrics for validation set is 0.029076898470520973
+10:46:11 INFO	MRR score for validation set is 0.0234375
+10:46:11 INFO	Saving the best model
+10:46:11 INFO	Model saved as best_saved_weights.pt
+10:46:11 INFO	Epoch: 5 Total Loss: 2.5001 | execution time 0.0005 mins
+10:46:12 INFO	NDCG score for validation set is 0.029076898654097707
+10:46:12 INFO	NDCG score from torchmetrics for validation set is 0.029076898470520973
+10:46:12 INFO	MRR score for validation set is 0.0234375
+10:46:12 INFO	Saving the best model
+10:46:12 INFO	Model saved as best_saved_weights.pt
+10:46:12 INFO	Epoch: 6 Total Loss: 2.5091 | execution time 0.0005 mins
+10:46:12 INFO	NDCG score for validation set is 0.029076898654097707
+10:46:12 INFO	NDCG score from torchmetrics for validation set is 0.029076898470520973
+10:46:12 INFO	MRR score for validation set is 0.0234375
+10:46:12 INFO	Epoch: 7 Total Loss: 2.5000 | execution time 0.0005 mins
+10:46:12 INFO	NDCG score for validation set is 0.029076898654097707
+10:46:12 INFO	NDCG score from torchmetrics for validation set is 0.029076898470520973
+10:46:12 INFO	MRR score for validation set is 0.0234375
+10:46:12 INFO	Saving the best model
+10:46:12 INFO	Model saved as best_saved_weights.pt
+10:46:12 INFO	Epoch: 8 Total Loss: 2.4983 | execution time 0.0006 mins
+10:46:12 INFO	NDCG score for validation set is 0.029076898654097707
+10:46:12 INFO	NDCG score from torchmetrics for validation set is 0.029076898470520973
+10:46:12 INFO	MRR score for validation set is 0.0234375
+10:46:12 INFO	Saving the best model
+10:46:12 INFO	Model saved as best_saved_weights.pt
+10:46:12 INFO	Epoch: 9 Total Loss: 2.4967 | execution time 0.0008 mins
+10:46:12 INFO	NDCG score for validation set is 0.029076898654097707
+10:46:12 INFO	NDCG score from torchmetrics for validation set is 0.029076898470520973
+10:46:12 INFO	MRR score for validation set is 0.0234375
+10:46:12 INFO	Saving the best model
+10:46:12 INFO	Model saved as best_saved_weights.pt
+10:46:12 INFO	Choosing high confidence temporal orders
+10:46:12 INFO	[LOG]: Training round 0 finished 175 new training instances found
+10:46:12 INFO	round=0 ndcg=0.030461132526397705 mrr=0.025390625 precision=0.6181818181818182 recall=0.5396825396825397 Fmeasure=0.576271186440678
+10:46:12 INFO	Training round 1 started
+10:46:12 INFO	Epoch: 0 Total Loss: 1.2225 | execution time 0.0004 mins
+10:46:12 INFO	NDCG score for validation set is 0.029076898654097707
+10:46:12 INFO	NDCG score from torchmetrics for validation set is 0.029076898470520973
+10:46:12 INFO	MRR score for validation set is 0.0234375
+10:46:12 INFO	Saving the best model
+10:46:12 INFO	Model saved as best_saved_weights.pt
+10:46:12 INFO	Epoch: 1 Total Loss: 1.2229 | execution time 0.0004 mins
+10:46:13 INFO	NDCG score for validation set is 0.029076898654097707
+10:46:13 INFO	NDCG score from torchmetrics for validation set is 0.029076898470520973
+10:46:13 INFO	MRR score for validation set is 0.0234375
+10:46:13 INFO	Epoch: 2 Total Loss: 1.2212 | execution time 0.0004 mins
+10:46:13 INFO	NDCG score for validation set is 0.029076898654097707
+10:46:13 INFO	NDCG score from torchmetrics for validation set is 0.029076898470520973
+10:46:13 INFO	MRR score for validation set is 0.0234375
+10:46:13 INFO	Saving the best model
+10:46:13 INFO	Model saved as best_saved_weights.pt
+10:46:13 INFO	Epoch: 3 Total Loss: 1.2221 | execution time 0.0010 mins
+10:46:13 INFO	NDCG score for validation set is 0.029076898654097707
+10:46:13 INFO	NDCG score from torchmetrics for validation set is 0.029076898470520973
+10:46:13 INFO	MRR score for validation set is 0.0234375
+10:46:13 INFO	Epoch: 4 Total Loss: 1.2198 | execution time 0.0005 mins
+10:46:13 INFO	NDCG score for validation set is 0.029076898654097707
+10:46:13 INFO	NDCG score from torchmetrics for validation set is 0.029076898470520973
+10:46:13 INFO	MRR score for validation set is 0.0234375
+10:46:13 INFO	Saving the best model
+10:46:13 INFO	Model saved as best_saved_weights.pt
+10:46:13 INFO	Epoch: 5 Total Loss: 1.2123 | execution time 0.0004 mins
+10:46:13 INFO	NDCG score for validation set is 0.029076898654097707
+10:46:13 INFO	NDCG score from torchmetrics for validation set is 0.029076898470520973
+10:46:13 INFO	MRR score for validation set is 0.0234375
+10:46:13 INFO	Saving the best model
+10:46:13 INFO	Model saved as best_saved_weights.pt
+10:46:13 INFO	Epoch: 6 Total Loss: 1.2120 | execution time 0.0006 mins
+10:46:13 INFO	NDCG score for validation set is 0.029076898654097707
+10:46:13 INFO	NDCG score from torchmetrics for validation set is 0.029076898470520973
+10:46:13 INFO	MRR score for validation set is 0.0234375
+10:46:13 INFO	Saving the best model
+10:46:13 INFO	Model saved as best_saved_weights.pt
+10:46:13 INFO	Epoch: 7 Total Loss: 1.2169 | execution time 0.0005 mins
+10:46:13 INFO	NDCG score for validation set is 0.029076898654097707
+10:46:13 INFO	NDCG score from torchmetrics for validation set is 0.029076898470520973
+10:46:13 INFO	MRR score for validation set is 0.0234375
+10:46:13 INFO	Epoch: 8 Total Loss: 1.2132 | execution time 0.0004 mins
+10:46:13 INFO	NDCG score for validation set is 0.029076898654097707
+10:46:13 INFO	NDCG score from torchmetrics for validation set is 0.029076898470520973
+10:46:13 INFO	MRR score for validation set is 0.0234375
+10:46:13 INFO	Epoch: 9 Total Loss: 1.2092 | execution time 0.0004 mins
+10:46:13 INFO	NDCG score for validation set is 0.029076898654097707
+10:46:13 INFO	NDCG score from torchmetrics for validation set is 0.029076898470520973
+10:46:13 INFO	MRR score for validation set is 0.0234375
+10:46:13 INFO	Saving the best model
+10:46:13 INFO	Model saved as best_saved_weights.pt
+10:46:13 INFO	Choosing high confidence temporal orders
+10:46:13 INFO	[LOG]: Training Finished, evaluation final performance 
+10:46:13 INFO	round=1 ndcg=0.030226701870560646 mrr=0.025390625 precision=0.6808510638297872 recall=0.5079365079365079 Fmeasure=0.5818181818181817
+12:23:24 INFO	Creating the GATE object
+12:23:24 INFO	--------------------------------------------------------------------------------------
+12:23:24 INFO	--------------------------------------------------------------------------------------
+12:23:24 INFO	GATE initializing
+12:23:24 INFO	Data ../data/test/
+12:23:24 INFO	Embedding Dim : 64
+12:23:24 INFO	Epoch : 10
+12:23:24 INFO	Learning Rate : 0.0001
+12:23:24 INFO	Batch Size : 256
+12:23:24 INFO	High Confidence Sample Ratio : 0.4
+12:23:24 INFO	Data loading
+12:23:24 INFO	Data loaded
+12:23:24 INFO	GATE initialized
+12:23:24 INFO	Training Started
+12:23:24 INFO	Size of initial training data 175
+12:23:24 INFO	Training round 0 started
+12:23:24 INFO	[LOG]: Training Finished, evaluation final performance 
+12:23:56 INFO	Creating the GATE object
+12:23:56 INFO	--------------------------------------------------------------------------------------
+12:23:56 INFO	--------------------------------------------------------------------------------------
+12:23:56 INFO	GATE initializing
+12:23:56 INFO	Data ../data/test/
+12:23:56 INFO	Embedding Dim : 64
+12:23:56 INFO	Epoch : 10
+12:23:56 INFO	Learning Rate : 0.0001
+12:23:56 INFO	Batch Size : 256
+12:23:56 INFO	High Confidence Sample Ratio : 0.4
+12:23:56 INFO	Data loading
+12:23:56 INFO	Data loaded
+12:23:56 INFO	GATE initialized
+12:23:56 INFO	Training Started
+12:23:56 INFO	Size of initial training data 175
+12:23:56 INFO	Training round 0 started
+12:23:56 INFO	[LOG]: Training Finished, evaluation final performance 
+12:28:53 INFO	Creating the GATE object
+12:28:53 INFO	--------------------------------------------------------------------------------------
+12:28:53 INFO	--------------------------------------------------------------------------------------
+12:28:53 INFO	GATE initializing
+12:28:53 INFO	Data ../data/test/
+12:28:53 INFO	Embedding Dim : 64
+12:28:53 INFO	Epoch : 10
+12:28:53 INFO	Learning Rate : 0.0001
+12:28:53 INFO	Batch Size : 256
+12:28:53 INFO	High Confidence Sample Ratio : 0.4
+12:28:53 INFO	Data loading
+12:28:53 INFO	Data loaded
+12:28:53 INFO	GATE initialized
+12:28:53 INFO	Training Started
+12:28:53 INFO	Size of initial training data 175
+12:28:53 INFO	Training round 0 started
+12:28:53 INFO	[LOG]: Training Finished, evaluation final performance 
+12:29:33 INFO	Creating the GATE object
+12:29:33 INFO	--------------------------------------------------------------------------------------
+12:29:33 INFO	--------------------------------------------------------------------------------------
+12:29:33 INFO	GATE initializing
+12:29:33 INFO	Data ../data/test/
+12:29:33 INFO	Embedding Dim : 64
+12:29:33 INFO	Epoch : 10
+12:29:33 INFO	Learning Rate : 0.0001
+12:29:33 INFO	Batch Size : 256
+12:29:33 INFO	High Confidence Sample Ratio : 0.4
+12:29:33 INFO	Data loading
+12:29:33 INFO	Data loaded
+12:29:33 INFO	GATE initialized
+12:29:33 INFO	Training Started
+12:29:33 INFO	Size of initial training data 175
+12:29:33 INFO	Training round 0 started
+12:29:33 INFO	[LOG]: Training Finished, evaluation final performance 
+12:30:31 INFO	Creating the GATE object
+12:30:31 INFO	--------------------------------------------------------------------------------------
+12:30:31 INFO	--------------------------------------------------------------------------------------
+12:30:31 INFO	GATE initializing
+12:30:31 INFO	Data ../data/test/
+12:30:31 INFO	Embedding Dim : 64
+12:30:31 INFO	Epoch : 10
+12:30:31 INFO	Learning Rate : 0.0001
+12:30:31 INFO	Batch Size : 256
+12:30:31 INFO	High Confidence Sample Ratio : 0.4
+12:30:31 INFO	Data loading
+12:30:31 INFO	Data loaded
+12:30:31 INFO	GATE initialized
+12:30:31 INFO	Training Started
+12:30:31 INFO	Size of initial training data 175
+12:30:31 INFO	Training round 0 started
+12:30:31 INFO	[LOG]: Training Finished, evaluation final performance 
+12:31:46 INFO	Creating the GATE object
+12:31:46 INFO	--------------------------------------------------------------------------------------
+12:31:46 INFO	--------------------------------------------------------------------------------------
+12:31:46 INFO	GATE initializing
+12:31:46 INFO	Data ../data/test/
+12:31:46 INFO	Embedding Dim : 64
+12:31:46 INFO	Epoch : 10
+12:31:46 INFO	Learning Rate : 0.0001
+12:31:46 INFO	Batch Size : 256
+12:31:46 INFO	High Confidence Sample Ratio : 0.4
+12:31:46 INFO	Data loading
+12:31:46 INFO	Data loaded
+12:31:46 INFO	GATE initialized
+12:31:46 INFO	Training Started
+12:31:46 INFO	Size of initial training data 175
+12:31:46 INFO	Training round 0 started
+12:31:46 INFO	[LOG]: Training Finished, evaluation final performance 
+12:31:46 INFO	round=0 ndcg=0.9149514436721802 mrr=0.7777777910232544 precision=0.7647058823529411 recall=0.6190476190476191 Fmeasure=0.6842105263157895
+12:33:12 INFO	Creating the GATE object
+12:33:12 INFO	--------------------------------------------------------------------------------------
+12:33:12 INFO	--------------------------------------------------------------------------------------
+12:33:12 INFO	GATE initializing
+12:33:12 INFO	Data ../data/test/
+12:33:12 INFO	Embedding Dim : 64
+12:33:12 INFO	Epoch : 10
+12:33:12 INFO	Learning Rate : 0.0001
+12:33:12 INFO	Batch Size : 256
+12:33:12 INFO	High Confidence Sample Ratio : 0.4
+12:33:12 INFO	Data loading
+12:33:12 INFO	Data loaded
+12:33:12 INFO	GATE initialized
+12:33:12 INFO	Training Started
+12:33:12 INFO	Size of initial training data 175
+12:33:12 INFO	Training round 0 started
+12:33:12 INFO	[LOG]: Training Finished, evaluation final performance 
+12:33:12 INFO	round=0 ndcg=0.9149514436721802 mrr=0.7777777910232544 precision=0.7647058823529411 recall=0.6190476190476191 Fmeasure=0.6842105263157895
+01:24:30 INFO	Creating the GATE object
+01:24:30 INFO	--------------------------------------------------------------------------------------
+01:24:30 INFO	--------------------------------------------------------------------------------------
+01:24:30 INFO	GATE initializing
+01:24:30 INFO	Data ../data/test/
+01:24:30 INFO	Embedding Dim : 64
+01:24:30 INFO	Epoch : 10
+01:24:30 INFO	Learning Rate : 0.0001
+01:24:30 INFO	Batch Size : 256
+01:24:30 INFO	High Confidence Sample Ratio : 0.4
+01:24:30 INFO	Data loading
+01:24:31 INFO	Data loaded
+01:24:31 INFO	GATE initialized
+01:24:31 INFO	Training Started
+01:24:31 INFO	Size of initial training data 175
+01:24:31 INFO	Training round 0 started
+01:24:31 INFO	[LOG]: Training Finished, evaluation final performance 
+01:24:31 INFO	round=0 ndcg=0.9149514436721802 mrr=0.7777777910232544 precision=0.7647058823529411 recall=0.6190476190476191 Fmeasure=0.6842105263157895
+11:52:59 INFO	Creating the GATE object
+11:52:59 INFO	--------------------------------------------------------------------------------------
+11:52:59 INFO	--------------------------------------------------------------------------------------
+11:52:59 INFO	GATE initializing
+11:52:59 INFO	Data ../data/test/
+11:52:59 INFO	Embedding Dim : 64
+11:52:59 INFO	Epoch : 10
+11:52:59 INFO	Learning Rate : 0.0001
+11:52:59 INFO	Batch Size : 256
+11:52:59 INFO	High Confidence Sample Ratio : 0.4
+11:52:59 INFO	Data loading
+11:52:59 INFO	Data loaded
+11:52:59 INFO	GATE initialized
+11:52:59 INFO	Training Started
+11:52:59 INFO	Size of initial training data 175
+11:52:59 INFO	Training round 0 started
+11:52:59 INFO	[LOG]: Training Finished, evaluation final performance 
+11:52:59 INFO	round=0 ndcg=0.9149514436721802 mrr=0.7777777910232544 precision=0.7647058823529411 recall=0.6190476190476191 Fmeasure=0.6842105263157895
+11:53:42 INFO	Creating the GATE object
+11:53:42 INFO	--------------------------------------------------------------------------------------
+11:53:42 INFO	--------------------------------------------------------------------------------------
+11:53:42 INFO	GATE initializing
+11:53:42 INFO	Data ../data/test/
+11:53:42 INFO	Embedding Dim : 64
+11:53:42 INFO	Epoch : 10
+11:53:42 INFO	Learning Rate : 0.0001
+11:53:42 INFO	Batch Size : 256
+11:53:42 INFO	High Confidence Sample Ratio : 0.4
+11:53:42 INFO	Data loading
+11:53:42 INFO	Data loaded
+11:53:42 INFO	GATE initialized
+11:53:42 INFO	Training Started
+11:53:42 INFO	Size of initial training data 175
+11:53:42 INFO	Training round 0 started
+11:53:42 INFO	[LOG]: Training Finished, evaluation final performance 
+01:01:09 INFO	Creating the GATE object
+01:01:09 INFO	--------------------------------------------------------------------------------------
+01:01:09 INFO	--------------------------------------------------------------------------------------
+01:01:09 INFO	GATE initializing
+01:01:09 INFO	Data ../data/test/
+01:01:09 INFO	Embedding Dim : 64
+01:01:09 INFO	Epoch : 10
+01:01:09 INFO	Learning Rate : 0.0001
+01:01:09 INFO	Batch Size : 256
+01:01:09 INFO	High Confidence Sample Ratio : 0.4
+01:01:09 INFO	Data loading
+01:01:09 INFO	Data loaded
+01:01:09 INFO	GATE initialized
+01:01:09 INFO	Training Started
+01:01:09 INFO	Size of initial training data 175
+01:01:09 INFO	Training round 0 started
+01:01:09 INFO	[LOG]: Training Finished, evaluation final performance 
+01:05:29 INFO	Creating the GATE object
+01:05:29 INFO	--------------------------------------------------------------------------------------
+01:05:29 INFO	--------------------------------------------------------------------------------------
+01:05:29 INFO	GATE initializing
+01:05:29 INFO	Data ../data/test/
+01:05:29 INFO	Embedding Dim : 64
+01:05:29 INFO	Epoch : 10
+01:05:29 INFO	Learning Rate : 0.0001
+01:05:29 INFO	Batch Size : 256
+01:05:29 INFO	High Confidence Sample Ratio : 0.4
+01:05:29 INFO	Data loading
+01:05:29 INFO	Data loaded
+01:05:29 INFO	GATE initialized
+01:05:29 INFO	Training Started
+01:05:29 INFO	Size of initial training data 175
+01:05:29 INFO	Training round 0 started
+01:05:29 INFO	[LOG]: Training Finished, evaluation final performance 
+02:09:46 INFO	Creating the GATE object
+02:09:46 INFO	--------------------------------------------------------------------------------------
+02:09:46 INFO	--------------------------------------------------------------------------------------
+02:09:46 INFO	GATE initializing
+02:09:46 INFO	Data ../data/test/
+02:09:46 INFO	Embedding Dim : 64
+02:09:46 INFO	Epoch : 10
+02:09:46 INFO	Learning Rate : 0.0001
+02:09:46 INFO	Batch Size : 256
+02:09:46 INFO	High Confidence Sample Ratio : 0.4
+02:09:46 INFO	Data loading
+02:09:46 INFO	Data loaded
+02:09:46 INFO	GATE initialized
+02:09:46 INFO	Training Started
+02:09:46 INFO	Size of initial training data 175
+02:09:46 INFO	Training round 0 started
+02:09:46 INFO	[LOG]: Training Finished, evaluation final performance 
+02:30:00 INFO	Creating the GATE object
+02:30:00 INFO	--------------------------------------------------------------------------------------
+02:30:00 INFO	--------------------------------------------------------------------------------------
+02:30:00 INFO	GATE initializing
+02:30:00 INFO	Data ../data/test/
+02:30:00 INFO	Embedding Dim : 64
+02:30:00 INFO	Epoch : 10
+02:30:00 INFO	Learning Rate : 0.0001
+02:30:00 INFO	Batch Size : 256
+02:30:00 INFO	High Confidence Sample Ratio : 0.4
+02:30:00 INFO	Data loading
+02:30:00 INFO	Data loaded
+02:30:00 INFO	GATE initialized
+02:30:00 INFO	Training Started
+02:30:00 INFO	Size of initial training data 175
+02:30:00 INFO	Training round 0 started
+02:30:00 INFO	[LOG]: Training Finished, evaluation final performance 
+03:40:23 INFO	Creating the GATE object
+03:40:23 INFO	--------------------------------------------------------------------------------------
+03:40:23 INFO	--------------------------------------------------------------------------------------
+03:40:23 INFO	GATE initializing
+03:40:23 INFO	Data ../data/test/
+03:40:23 INFO	Embedding Dim : 64
+03:40:23 INFO	Epoch : 10
+03:40:23 INFO	Learning Rate : 0.0001
+03:40:23 INFO	Batch Size : 256
+03:40:23 INFO	High Confidence Sample Ratio : 0.4
+03:40:23 INFO	Data loading
+03:40:23 INFO	Data loaded
+03:40:23 INFO	GATE initialized
+03:40:23 INFO	Training Started
+03:40:23 INFO	Size of initial training data 175
+03:40:23 INFO	Training round 0 started
+03:40:23 INFO	[LOG]: Training Finished, evaluation final performance 
+03:40:23 INFO	round=0 ndcg=1.2107062339782715 mrr=0.7222222089767456 precision=0.7454545454545455 recall=0.6507936507936508 Fmeasure=0.6949152542372882
+03:43:08 INFO	Creating the GATE object
+03:43:08 INFO	--------------------------------------------------------------------------------------
+03:43:08 INFO	--------------------------------------------------------------------------------------
+03:43:08 INFO	GATE initializing
+03:43:08 INFO	Data ../data/test/
+03:43:08 INFO	Embedding Dim : 64
+03:43:08 INFO	Epoch : 10
+03:43:08 INFO	Learning Rate : 0.0001
+03:43:08 INFO	Batch Size : 256
+03:43:08 INFO	High Confidence Sample Ratio : 0.4
+03:43:08 INFO	Data loading
+03:43:08 INFO	Data loaded
+03:43:08 INFO	GATE initialized
+03:43:08 INFO	Training Started
+03:43:08 INFO	Size of initial training data 175
+03:43:08 INFO	Training round 0 started
+03:43:08 INFO	Epoch: 0 Total Loss: 2.5082 | execution time 0.0008 mins
+03:43:08 INFO	NDCG score for validation set is 0.029076898654097707
+03:43:08 INFO	NDCG score from torchmetrics for validation set is 0.029076898470520973
+03:43:08 INFO	MRR score for validation set is 0.0234375
+03:43:08 INFO	Saving the best model
+03:43:08 INFO	Model saved as best_saved_weights.pt
+03:43:08 INFO	Epoch: 1 Total Loss: 2.5048 | execution time 0.0002 mins
+03:43:08 INFO	NDCG score for validation set is 0.029076898654097707
+03:43:08 INFO	NDCG score from torchmetrics for validation set is 0.029076898470520973
+03:43:08 INFO	MRR score for validation set is 0.0234375
+03:43:08 INFO	Saving the best model
+03:43:08 INFO	Model saved as best_saved_weights.pt
+03:43:08 INFO	Epoch: 2 Total Loss: 2.5029 | execution time 0.0002 mins
+03:43:08 INFO	NDCG score for validation set is 0.029076898654097707
+03:43:08 INFO	NDCG score from torchmetrics for validation set is 0.029076898470520973
+03:43:08 INFO	MRR score for validation set is 0.0234375
+03:43:08 INFO	Saving the best model
+03:43:08 INFO	Model saved as best_saved_weights.pt
+03:43:08 INFO	Epoch: 3 Total Loss: 2.5051 | execution time 0.0002 mins
+03:43:08 INFO	NDCG score for validation set is 0.029076898654097707
+03:43:08 INFO	NDCG score from torchmetrics for validation set is 0.029076898470520973
+03:43:08 INFO	MRR score for validation set is 0.0234375
+03:43:08 INFO	Epoch: 4 Total Loss: 2.4962 | execution time 0.0002 mins
+03:43:08 INFO	NDCG score for validation set is 0.029076898654097707
+03:43:08 INFO	NDCG score from torchmetrics for validation set is 0.029076898470520973
+03:43:08 INFO	MRR score for validation set is 0.0234375
+03:43:08 INFO	Saving the best model
+03:43:08 INFO	Model saved as best_saved_weights.pt
+03:43:08 INFO	Epoch: 5 Total Loss: 2.4956 | execution time 0.0002 mins
+03:43:09 INFO	NDCG score for validation set is 0.029076898654097707
+03:43:09 INFO	NDCG score from torchmetrics for validation set is 0.029076898470520973
+03:43:09 INFO	MRR score for validation set is 0.0234375
+03:43:09 INFO	Saving the best model
+03:43:09 INFO	Model saved as best_saved_weights.pt
+03:43:09 INFO	Epoch: 6 Total Loss: 2.4900 | execution time 0.0002 mins
+03:43:09 INFO	NDCG score for validation set is 0.029076898654097707
+03:43:09 INFO	NDCG score from torchmetrics for validation set is 0.029076898470520973
+03:43:09 INFO	MRR score for validation set is 0.0234375
+03:43:09 INFO	Saving the best model
+03:43:09 INFO	Model saved as best_saved_weights.pt
+03:43:09 INFO	Epoch: 7 Total Loss: 2.4906 | execution time 0.0002 mins
+03:43:09 INFO	NDCG score for validation set is 0.029076898654097707
+03:43:09 INFO	NDCG score from torchmetrics for validation set is 0.029076898470520973
+03:43:09 INFO	MRR score for validation set is 0.0234375
+03:43:09 INFO	Epoch: 8 Total Loss: 2.4955 | execution time 0.0002 mins
+03:43:09 INFO	NDCG score for validation set is 0.029076898654097707
+03:43:09 INFO	NDCG score from torchmetrics for validation set is 0.029076898470520973
+03:43:09 INFO	MRR score for validation set is 0.0234375
+03:43:09 INFO	Epoch: 9 Total Loss: 2.4896 | execution time 0.0002 mins
+03:43:09 INFO	NDCG score for validation set is 0.029076898654097707
+03:43:09 INFO	NDCG score from torchmetrics for validation set is 0.029076898470520973
+03:43:09 INFO	MRR score for validation set is 0.0234375
+03:43:09 INFO	Saving the best model
+03:43:09 INFO	Model saved as best_saved_weights.pt
+03:43:09 INFO	Choosing high confidence temporal orders
+03:43:09 INFO	[LOG]: Training round 0 finished 175 new training instances found
+03:43:09 INFO	round=0 ndcg=0.03142242878675461 mrr=0.0234375 precision=0.8333333333333334 recall=0.5555555555555556 Fmeasure=0.6666666666666667
+03:43:09 INFO	Training round 1 started
+03:43:09 INFO	Epoch: 0 Total Loss: 1.2344 | execution time 0.0002 mins
+03:43:09 INFO	NDCG score for validation set is 0.029076898654097707
+03:43:09 INFO	NDCG score from torchmetrics for validation set is 0.029076898470520973
+03:43:09 INFO	MRR score for validation set is 0.0234375
+03:43:09 INFO	Saving the best model
+03:43:09 INFO	Model saved as best_saved_weights.pt
+03:43:09 INFO	Epoch: 1 Total Loss: 1.2330 | execution time 0.0002 mins
+03:43:09 INFO	NDCG score for validation set is 0.029076898654097707
+03:43:09 INFO	NDCG score from torchmetrics for validation set is 0.029076898470520973
+03:43:09 INFO	MRR score for validation set is 0.0234375
+03:43:09 INFO	Saving the best model
+03:43:09 INFO	Model saved as best_saved_weights.pt
+03:43:09 INFO	Epoch: 2 Total Loss: 1.2328 | execution time 0.0001 mins
+03:43:09 INFO	NDCG score for validation set is 0.029076898654097707
+03:43:09 INFO	NDCG score from torchmetrics for validation set is 0.029076898470520973
+03:43:09 INFO	MRR score for validation set is 0.0234375
+03:43:09 INFO	Saving the best model
+03:43:09 INFO	Model saved as best_saved_weights.pt
+03:43:09 INFO	Epoch: 3 Total Loss: 1.2287 | execution time 0.0002 mins
+03:43:09 INFO	NDCG score for validation set is 0.029076898654097707
+03:43:09 INFO	NDCG score from torchmetrics for validation set is 0.029076898470520973
+03:43:09 INFO	MRR score for validation set is 0.0234375
+03:43:09 INFO	Saving the best model
+03:43:09 INFO	Model saved as best_saved_weights.pt
+03:43:09 INFO	Epoch: 4 Total Loss: 1.2313 | execution time 0.0002 mins
+03:43:09 INFO	NDCG score for validation set is 0.029076898654097707
+03:43:09 INFO	NDCG score from torchmetrics for validation set is 0.029076898470520973
+03:43:09 INFO	MRR score for validation set is 0.0234375
+03:43:09 INFO	Epoch: 5 Total Loss: 1.2266 | execution time 0.0002 mins
+03:43:09 INFO	NDCG score for validation set is 0.029076898654097707
+03:43:09 INFO	NDCG score from torchmetrics for validation set is 0.029076898470520973
+03:43:09 INFO	MRR score for validation set is 0.0234375
+03:43:09 INFO	Saving the best model
+03:43:09 INFO	Model saved as best_saved_weights.pt
+03:43:09 INFO	Epoch: 6 Total Loss: 1.2222 | execution time 0.0002 mins
+03:43:09 INFO	NDCG score for validation set is 0.029076898654097707
+03:43:09 INFO	NDCG score from torchmetrics for validation set is 0.029076898470520973
+03:43:09 INFO	MRR score for validation set is 0.0234375
+03:43:09 INFO	Saving the best model
+03:43:09 INFO	Model saved as best_saved_weights.pt
+03:43:09 INFO	Epoch: 7 Total Loss: 1.2208 | execution time 0.0002 mins
+03:43:09 INFO	NDCG score for validation set is 0.029076898654097707
+03:43:09 INFO	NDCG score from torchmetrics for validation set is 0.029076898470520973
+03:43:09 INFO	MRR score for validation set is 0.0234375
+03:43:09 INFO	Saving the best model
+03:43:09 INFO	Model saved as best_saved_weights.pt
+03:43:09 INFO	Epoch: 8 Total Loss: 1.2210 | execution time 0.0002 mins
+03:43:09 INFO	NDCG score for validation set is 0.029076898654097707
+03:43:09 INFO	NDCG score from torchmetrics for validation set is 0.029076898470520973
+03:43:09 INFO	MRR score for validation set is 0.0234375
+03:43:09 INFO	Epoch: 9 Total Loss: 1.2184 | execution time 0.0002 mins
+03:43:09 INFO	NDCG score for validation set is 0.029076898654097707
+03:43:09 INFO	NDCG score from torchmetrics for validation set is 0.029076898470520973
+03:43:09 INFO	MRR score for validation set is 0.0234375
+03:43:09 INFO	Saving the best model
+03:43:09 INFO	Model saved as best_saved_weights.pt
+03:43:09 INFO	Choosing high confidence temporal orders
+03:43:09 INFO	[LOG]: Training Finished, evaluation final performance 
+03:43:09 INFO	round=1 ndcg=0.031058229506015778 mrr=0.025390625 precision=0.8043478260869565 recall=0.5873015873015873 Fmeasure=0.6788990825688073
