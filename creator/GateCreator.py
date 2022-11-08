@@ -9,6 +9,7 @@ import torch.optim as optim
 import time
 import sys
 import numpy as np
+from sklearn.metrics import accuracy_score
 from sklearn.metrics import ndcg_score
 from torchmetrics.functional import retrieval_reciprocal_rank, retrieval_normalized_dcg
 
@@ -25,6 +26,9 @@ class GateCreator(Creator):
         self.device = torch.device("cuda:0" if use_cuda else "cpu")
         torch.backends.cudnn.benchmark = True
         self.model = self.model.to(self.device)
+
+        # only use for store validationT to early terminate
+        self.all_validT_attrs, self.all_validT_vals = [], []
 
     def collate_fn(self, validation_set):
         max_len = max([len(x) for x in validation_set])
@@ -63,6 +67,18 @@ class GateCreator(Creator):
                 mispredicted_embedds.append(oneTOEmbedds)
         return mispredicted_embedds
 
+
+    def evaluate(self, validationT):
+        embedds = validationT['training_embedded']
+        all_attrs = [e[0] for e in embedds]
+        all_vals_pos = [e[1] for e in embedds]
+        all_vals_neg = [e[2] for e in embedds]
+        predictions = self.predictBatch([all_attrs, all_vals_pos, all_vals_neg])
+        labels = [True for i in range(len(predictions))]
+        acc = accuracy_score(labels, predictions)
+        return acc
+
+
     def check(self, to, validation, dataProcessedMap, option, delimitor):
         sc = dataProcessedMap[to.attribute + delimitor + str(to.t0)]
         o1 = validation['data_processed'][sc[0]][sc[1]]
@@ -91,6 +107,23 @@ class GateCreator(Creator):
             return oneTOEmbedds_, [attribute, o1, o2, to.eid], to_
 
 
+    def predictBatch(self, TOEmbedds):
+        attrs = torch.tensor(TOEmbedds[0]).to(self.device)
+        attrs_emb = self.model.getAttrEmb(attrs)
+        vals_pos = torch.tensor(TOEmbedds[1]).to(self.device)
+        vals_pos_emb = self.model.getValueEmb(vals_pos)
+        vals_neg = torch.tensor(TOEmbedds[2]).to(self.device)
+        vals_neg_emb = self.model.getValueEmb(vals_neg)
+        dists_pos = np.linalg.norm(attrs_emb.detach().cpu().numpy() - vals_pos_emb.detach().cpu().numpy())
+        dists_neg = np.linalg.norm(attrs_emb.detach().cpu().numpy() - vals_neg_emb.detach().cpu().numpy())
+        predicts = []
+        for p, n in zip(dists_pos, dists_neg):
+            if p < n:
+                predicts.append(True)
+            else:
+                predicts.append(False)
+        return predicts
+
     def predictOne(self, oneTOEmbedds):
         attr = torch.tensor(oneTOEmbedds[0]).to(self.device) #oneTOEmbedds[1], oneTOEmbedds[2]
         attr_emb = self.model.getAttrEmb(attr) #self.model.x_embed2last(self.model.x_input2embed(attr))
@@ -109,6 +142,7 @@ class GateCreator(Creator):
         attr_emb = self.model.getAttrEmb(attr)
         val = torch.tensor(value_emb).to(self.device)
         val_emb = self.model.getValueEmb(val)
+        # print('One value : ', attr_emb.shape, val_emb.shape)
         dist_ = np.linalg.norm(attr_emb.detach().cpu().numpy() - val_emb.detach().cpu().numpy())
         return dist_
 
@@ -119,9 +153,18 @@ class GateCreator(Creator):
         attrs = torch.tensor(attribute_embs).to(self.device)
         attrs_emb = self.model.getAttrEmb(attrs)
         vals = torch.tensor(value_embs).to(self.device)
-        vals_emb = self.model.getAttrEmb(vals)
+        vals_emb = self.model.getValueEmb(vals)
         dist_ = np.linalg.norm(attrs_emb.detach().cpu().numpy() - vals_emb.detach().cpu().numpy(), axis=1)
-        return dist_
+        return dist_, attrs_emb, vals_emb
+        '''
+        dist_ = []
+        A = attrs_emb.detach().cpu().numpy() - vals_emb.detach().cpu().numpy()
+        for a in A:
+            dist_.append(np.linalg.norm(a))
+        #for a, b in zip(attrs_emb.detach().cpu().numpy(), vals_emb.detach().cpu().numpy()):
+            #dist_.append(np.linalg.norm(a - b))
+        return dist_, attrs_emb.detach().cpu().numpy(), vals_emb.detach().cpu().numpy()
+        '''
 
     def predictHighConf(self, oneTOEmbedds, confThreshold):
         attr = torch.tensor(oneTOEmbedds[0]).to(self.device)  # oneTOEmbedds[1], oneTOEmbedds[2]

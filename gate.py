@@ -60,6 +60,9 @@ class Gate:
     # other parameters
     ifIncrementalLearning = True
 
+    # if acc in validationT does not increase in terminT rounds, then terminate
+    terminT = 3
+
 
     def __new__(cls):
         if cls._instance is None:
@@ -99,16 +102,32 @@ class Gate:
         # few-shot, sampling 10% training data
         np.random.seed(30)
         sample_ratio = 0.5
+        numT = len(self.training['data_processed'])
         sc = np.random.choice(len(self.training['data_processed']), int(sample_ratio * len(self.training['data_processed'])), replace=False)
         _list_processed, _list_embedded = [], []
         for e in sc:
             ll = self.training['data_processed'][e]
+            # only keep temporal orders such that
             if ll[1][0] <= ll[2][0]:
                 continue
             _list_processed.append(self.training['data_processed'][e])
             _list_embedded.append(self.training['training_embedded'][e])
+
+        # validationForTrain: used for terminate the iteration
+        sc_validT = [e for e in range(numT) if e not in sc]
+        self.validationT = dict()
+        _list_processed_validT, _list_embedded_validT = [], []
+        for e in sc_validT:
+            ll = self.training['data_processed'][e]
+            if ll[0][0] <= ll[2][0]:
+                continue
+            _list_processed_validT.append(self.training['data_processed'][e])
+            _list_embedded_validT.append(self.training['training_embedded'][e])
+
         self.training['data_processed'] = _list_processed
         self.training['training_embedded'] = _list_embedded
+        self.validationT['data_processed'] = _list_processed_validT
+        self.validationT['training_embedded'] = _list_embedded_validT
 
         # varying Gamma
         sc = np.arange(len(self.training['data_processed']))
@@ -355,6 +374,8 @@ class Gate:
         GATE overflow, iteratively adopt creator and critic
         :return:
         '''
+        accValidT, countTerminT = 0, 0
+
         logging.info('Training Started')
         improved_data = self.training['training_embedded'] if self.training['training_embedded'] else [1]
         improved_data_processed = self.training['data_processed']
@@ -435,9 +456,17 @@ class Gate:
             if len(data_aug_tos) == 0 or len(data_aug_embedds) == 0:
                 break
 
+            ''' if terminate
+            '''
             if round >= MAX_ROUND:
                 break
-
+            acc_round = self.creator.evaluate(self.validationT)
+            if acc_round <= accValidT:
+                countTerminT += 1
+            else:
+                countTerminT = 0
+            if countTerminT >= self.terminT:
+                break
 
             # 7. remove data_aug_tos from validation
             #self.addstableTOsKeyMap(stableTOsMap, data_aug_tos)
@@ -598,7 +627,7 @@ class Gate:
             path = 'best_saved_weights.pt'
             model.load_state_dict(torch.load(path))
         validation_processed = validation['data_processed']
-        '''
+        
         # get all distances
         all_attrs_emb, all_vals_emb = [], []
         for index, _list in enumerate(validation_processed):
@@ -616,14 +645,17 @@ class Gate:
                 all_vals_emb.append(val_emb)
         all_attrs_emb = torch.stack(all_attrs_emb)
         all_vals_emb = torch.stack(all_vals_emb)
-        all_dists = self.creator.predictBatchValue(all_attrs_emb, all_vals_emb)
+        all_dists, encode_attrs_emb, encode_vals_emb = self.creator.predictBatchValue(all_attrs_emb, all_vals_emb)
         start = 0
-        '''
+        
         for index, _list in enumerate(validation_processed):
             attr, eid = _list[0], _list[-1]
-            #dist_timelienss = all_dists[start: start + len(_list[1])]
-            #start += len(_list[1])
-            
+            dist_timelienss = all_dists[start: start + len(_list[1])]
+            # print("Preprocess distances : ", all_dists[start: start + len(_list[1])])
+            # print("Features 1 : ", all_attrs_emb.detach().cpu().numpy()[start: start + len(_list[1]), :5])
+            # print("Features 2 : ", all_vals_emb.detach().cpu().numpy()[start: start + len(_list[1]), :5])
+            start += len(_list[1])
+            '''
             attribute_emb = validation['data_attribute_embeddings'][attr]
             attribute_emb_new = torch.cat((attribute_emb, attribute_emb), 0)
             dist_timelienss = []
@@ -635,8 +667,10 @@ class Gate:
                     context_index_emb = attr_val_emb
                 val_emb = torch.cat((context_index_emb, attr_val_emb), 0)
                 dist_ = self.creator.predictOneValue(attribute_emb_new, val_emb)
+                print(dist_, attribute_emb_new.detach().cpu().numpy()[:5], val_emb.detach().cpu().numpy()[:5])
                 dist_timelienss.append(dist_)
-            
+            '''
+
             prediction_order = self.computeValidScores(dist_timelienss, _list[1], GS, attr, eid)
             ground_truth_order = [e[0] for e in _list[1]]
 
@@ -770,7 +804,7 @@ class Gate:
         tmp_batch_val_embs = torch.stack(tmp_batch_val_embs)
         print('tmp batch', tmp_batch_attr_embs.shape, tmp_batch_val_embs.shape)
         # ML inference
-        dist_ = self.creator.predictBatchValue(tmp_batch_attr_embs, tmp_batch_val_embs)
+        dist_, _, _ = self.creator.predictBatchValue(tmp_batch_attr_embs, tmp_batch_val_embs)
         start = 0
         for index, _list in enumerate(tmp_batch_pairs):
             attr, eid = _list[0], _list[-1]
