@@ -1,0 +1,18 @@
+[
+{
+  "name": "ditto",
+  "task_type": "classification",
+  "vocab": ["0", "1"],
+  "trainset": "data/sics_literature_matcher_cleaned/train.txt",
+  "validset": "data/sics_literature_matcher_cleaned/val.txt",
+  "testset": "data/sics_literature_matcher_cleaned/test.txt"
+}, {
+  "name": "Structured/Beer",
+  "task_type": "classification",
+  "vocab": ["0", "1"],
+  "trainset": "data/sics_literature_matcher_cleaned/train.txt",
+  "validset": "data/sics_literature_matcher_cleaned/val.txt",
+  "testset": "data/sics_literature_matcher_cleaned/test.txt"
+}
+]
+

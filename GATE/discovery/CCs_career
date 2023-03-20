@@ -1,0 +1,695 @@
+data.t0.international_reputation == 5 ^ data.t1.international_reputation == 4 -> data.t0.international_reputation < data.t1.international_reputation
+data.t0.international_reputation == 1 ^ data.t1.international_reputation == 3 -> data.t0.international_reputation < data.t1.international_reputation
+data.t0.international_reputation == 5 ^ data.t1.international_reputation == 3 -> data.t0.international_reputation < data.t1.international_reputation
+data.t0.player_positions == LB ^ data.t1.player_positions == CB, LWB -> data.t0.player_positions < data.t1.player_positions
+data.t0.league_name == Scottish Championship ^ data.t1.league_name == Scottish Premiership -> data.t0.league_name < data.t1.league_name
+data.t0.player_positions == LM, RM, LW ^ data.t1.player_positions == ST -> data.t0.player_positions < data.t1.player_positions
+data.t0.league_name == nan ^ data.t1.league_name == Paraguayan Primera División -> data.t0.league_name < data.t1.league_name
+data.t0.player_positions == CAM, RM ^ data.t1.player_positions == CAM, CF, RW -> data.t0.player_positions < data.t1.player_positions
+data.t0.league_name == Russian Premier League ^ data.t1.league_name == Australian Hyundai A-League -> data.t0.league_name < data.t1.league_name
+data.t0.league_name == Australian Hyundai A-League ^ data.t1.league_name == Rep. Ireland Airtricity League -> data.t0.league_name < data.t1.league_name
+data.t0.league_name == Italian Serie A ^ data.t1.league_name == Australian Hyundai A-League -> data.t0.league_name < data.t1.league_name
+data.t0.player_positions == LB, LM ^ data.t1.player_positions == CM, CDM -> data.t0.player_positions < data.t1.player_positions
+data.t0.player_positions == ST, RW ^ data.t1.player_positions == LW, ST, RW -> data.t0.player_positions < data.t1.player_positions
+data.t0.player_positions == CDM, CM, LM ^ data.t1.player_positions == CM, CDM, LM -> data.t0.player_positions < data.t1.player_positions
+data.t0.league_name == Austrian Football Bundesliga ^ data.t1.league_name == Chinese Super League -> data.t0.league_name < data.t1.league_name
+data.t0.player_positions == LW, ST ^ data.t1.player_positions == LM, CAM -> data.t0.player_positions < data.t1.player_positions
+data.t0.player_positions == RM ^ data.t1.player_positions == RWB, RM -> data.t0.player_positions < data.t1.player_positions
+data.t0.player_positions == CB, LB, LM ^ data.t1.player_positions == CB -> data.t0.player_positions < data.t1.player_positions
+data.t0.league_name == USA Major League Soccer ^ data.t1.league_name == Japanese J. League Division 1 -> data.t0.league_name < data.t1.league_name
+data.t0.player_positions == ST, CF, RM ^ data.t1.player_positions == ST, RM -> data.t0.player_positions < data.t1.player_positions
+data.t0.player_positions == ST, CF, RW, LW ^ data.t1.player_positions == ST -> data.t0.player_positions < data.t1.player_positions
+data.t0.player_positions == LM, CAM ^ data.t1.player_positions == CAM, RM, LM -> data.t0.player_positions < data.t1.player_positions
+data.t0.player_positions == CM, RM, CAM ^ data.t1.player_positions == CDM -> data.t0.player_positions < data.t1.player_positions
+data.t0.player_positions == CAM, CM, LM ^ data.t1.player_positions == CAM, CDM, CM -> data.t0.player_positions < data.t1.player_positions
+data.t0.league_name == English League Championship ^ data.t1.league_name == Romanian Liga I -> data.t0.league_name < data.t1.league_name
+data.t0.player_positions == ST, CAM ^ data.t1.player_positions == ST, RM, LM -> data.t0.player_positions < data.t1.player_positions
+data.t0.player_positions == LB, LM ^ data.t1.player_positions == CM, LM -> data.t0.player_positions < data.t1.player_positions
+data.t0.player_positions == CAM, CF ^ data.t1.player_positions == CM, CAM -> data.t0.player_positions < data.t1.player_positions
+data.t0.player_positions == RW, CF ^ data.t1.player_positions == RW, CAM -> data.t0.player_positions < data.t1.player_positions
+data.t0.player_positions == CF, CAM ^ data.t1.player_positions == ST, RW -> data.t0.player_positions < data.t1.player_positions
+data.t0.player_positions == RB, CDM, LB ^ data.t1.player_positions == CDM, RB, LB -> data.t0.player_positions < data.t1.player_positions
+data.t0.player_positions == RB, LB, RM ^ data.t1.player_positions == RB, RWB -> data.t0.player_positions < data.t1.player_positions
+data.t0.player_positions == LM, LW ^ data.t1.player_positions == LM, LWB -> data.t0.player_positions < data.t1.player_positions
+data.t0.player_positions == CM, LM, CDM, RM ^ data.t1.player_positions == CM, CDM -> data.t0.player_positions < data.t1.player_positions
+data.t0.player_positions == RM, ST ^ data.t1.player_positions == RM, LM, RW -> data.t0.player_positions < data.t1.player_positions
+data.t0.league_name == Mexican Liga MX ^ data.t1.league_name == Paraguayan Primera División -> data.t0.league_name < data.t1.league_name
+data.t0.player_positions == CDM, CAM, CM ^ data.t1.player_positions == CDM, CM, CAM -> data.t0.player_positions < data.t1.player_positions
+data.t0.potential == 52 ^ data.t1.potential == 66 -> data.t0.potential < data.t1.potential
+data.t0.league_name == Argentina Primera División ^ data.t1.league_name == Argentinian Primera B Nacional -> data.t0.league_name < data.t1.league_name
+data.t0.player_positions == LW ^ data.t1.player_positions == CF, LW, ST -> data.t0.player_positions < data.t1.player_positions
+data.t0.player_positions == LM, RM, CAM ^ data.t1.player_positions == LM, RM, CAM, ST -> data.t0.player_positions < data.t1.player_positions
+data.t0.player_positions == CM, CDM, RM ^ data.t1.player_positions == CAM, CM -> data.t0.player_positions < data.t1.player_positions
+data.t0.player_positions == CM, CDM, RM ^ data.t1.player_positions == CM, CDM, CAM -> data.t0.player_positions < data.t1.player_positions
+data.t0.player_positions == LW, RW ^ data.t1.player_positions == LB, LM -> data.t0.player_positions < data.t1.player_positions
+data.t0.league_name == Italian Serie B ^ data.t1.league_name == Australian Hyundai A-League -> data.t0.league_name < data.t1.league_name
+data.t0.player_positions == CDM, CM, LM, CB ^ data.t1.player_positions == CDM, CM -> data.t0.player_positions < data.t1.player_positions
+data.t0.player_positions == CAM, CM, CDM ^ data.t1.player_positions == CDM, CM, CAM -> data.t0.player_positions < data.t1.player_positions
+data.t0.player_positions == LM, CAM, RM ^ data.t1.player_positions == LM, CAM, CM -> data.t0.player_positions < data.t1.player_positions
+data.t0.league_name == nan ^ data.t1.league_name == Romanian Liga I -> data.t0.league_name < data.t1.league_name
+data.t0.player_positions == CM, RM, RB ^ data.t1.player_positions == CM, CDM -> data.t0.player_positions < data.t1.player_positions
+data.t0.league_name == Russian Premier League ^ data.t1.league_name == Romanian Liga I -> data.t0.league_name < data.t1.league_name
+data.t0.player_positions == LM, CM ^ data.t1.player_positions == LM, CM, RM -> data.t0.player_positions < data.t1.player_positions
+data.t0.league_name == Australian Hyundai A-League ^ data.t1.league_name == Rest of World -> data.t0.league_name < data.t1.league_name
+data.t0.league_name == English Premier League ^ data.t1.league_name == Japanese J. League Division 1 -> data.t0.league_name < data.t1.league_name
+data.t0.player_positions == CDM, CM, CB, RB ^ data.t1.player_positions == CB, CDM -> data.t0.player_positions < data.t1.player_positions
+data.t0.league_name == Danish Superliga ^ data.t1.league_name == Finnish Veikkausliiga -> data.t0.league_name < data.t1.league_name
+data.t0.player_positions == LM, LW, CF ^ data.t1.player_positions == LM -> data.t0.player_positions < data.t1.player_positions
+data.t0.player_positions == RM, LM ^ data.t1.player_positions == CM, LM -> data.t0.player_positions < data.t1.player_positions
+data.t0.player_positions == LB, RB, CB ^ data.t1.player_positions == CB, LB, RB -> data.t0.player_positions < data.t1.player_positions
+data.t0.player_positions == LB, CB ^ data.t1.player_positions == LB, RB -> data.t0.player_positions < data.t1.player_positions
+data.t0.player_positions == CM, RM, CAM, CDM ^ data.t1.player_positions == CDM, CM -> data.t0.player_positions < data.t1.player_positions
+data.t0.player_positions == RW ^ data.t1.player_positions == CM, CAM -> data.t0.player_positions < data.t1.player_positions
+data.t0.league_name == Argentina Primera División ^ data.t1.league_name == Ecuadorian Serie A -> data.t0.league_name < data.t1.league_name
+data.t0.player_positions == CM, CAM ^ data.t1.player_positions == LM, CM, CAM -> data.t0.player_positions < data.t1.player_positions
+data.t0.player_positions == ST ^ data.t1.player_positions == RM, RW, LM -> data.t0.player_positions < data.t1.player_positions
+data.t0.league_name == Mexican Liga MX ^ data.t1.league_name == Peruvian Primera División -> data.t0.league_name < data.t1.league_name
+data.t0.league_name == Argentina Primera División ^ data.t1.league_name == Peruvian Primera División -> data.t0.league_name < data.t1.league_name
+data.t0.league_name == French Ligue 1 ^ data.t1.league_name == Romanian Liga I -> data.t0.league_name < data.t1.league_name
+data.t0.player_positions == CB, CDM, RB, LB ^ data.t1.player_positions == CB -> data.t0.player_positions < data.t1.player_positions
+data.t0.player_positions == CAM, LW ^ data.t1.player_positions == RW, RM -> data.t0.player_positions < data.t1.player_positions
+data.t0.league_name == English League Championship ^ data.t1.league_name == Korean K League Classic -> data.t0.league_name < data.t1.league_name
+data.t0.league_name == English Premier League ^ data.t1.league_name == Korean K League Classic -> data.t0.league_name < data.t1.league_name
+data.t0.league_name == Turkish Süper Lig ^ data.t1.league_name == Romanian Liga I -> data.t0.league_name < data.t1.league_name
+data.t0.player_positions == CM, CDM, CB ^ data.t1.player_positions == CDM, CB, CM -> data.t0.player_positions < data.t1.player_positions
+data.t0.player_positions == CM, CDM, CAM ^ data.t1.player_positions == CDM, CM, CB -> data.t0.player_positions < data.t1.player_positions
+data.t0.player_positions == ST ^ data.t1.player_positions == CAM, CF, ST -> data.t0.player_positions < data.t1.player_positions
+data.t0.league_name == Russian Premier League ^ data.t1.league_name == Saudi Abdul L. Jameel League -> data.t0.league_name < data.t1.league_name
+data.t0.player_positions == CM, CAM, RM, LM ^ data.t1.player_positions == CM, CDM -> data.t0.player_positions < data.t1.player_positions
+data.t0.player_positions == LM, CM, RM ^ data.t1.player_positions == CM, LM -> data.t0.player_positions < data.t1.player_positions
+data.t0.player_positions == RM, ST ^ data.t1.player_positions == RW, ST, RM -> data.t0.player_positions < data.t1.player_positions
+data.t0.player_positions == LB, LM, LWB, CM ^ data.t1.player_positions == LB -> data.t0.player_positions < data.t1.player_positions
+data.t0.player_positions == LM, CAM ^ data.t1.player_positions == CM, LM, CAM -> data.t0.player_positions < data.t1.player_positions
+data.t0.player_positions == CM, CDM, CAM ^ data.t1.player_positions == LM, CAM -> data.t0.player_positions < data.t1.player_positions
+data.t0.player_positions == CAM, LM ^ data.t1.player_positions == LM, CAM, CM -> data.t0.player_positions < data.t1.player_positions
+data.t0.player_positions == LB, CB, CDM ^ data.t1.player_positions == CB, LB -> data.t0.player_positions < data.t1.player_positions
+data.t0.player_positions == RB, CDM ^ data.t1.player_positions == CB, RB -> data.t0.player_positions < data.t1.player_positions
+data.t0.player_positions == ST, RM ^ data.t1.player_positions == LM, ST, RM -> data.t0.player_positions < data.t1.player_positions
+data.t0.player_positions == CM ^ data.t1.player_positions == CB, CM, CDM -> data.t0.player_positions < data.t1.player_positions
+data.t0.player_positions == CM, CDM, CB ^ data.t1.player_positions == CB, CM, CDM -> data.t0.player_positions < data.t1.player_positions
+data.t0.player_positions == CAM ^ data.t1.player_positions == CAM, ST, RM -> data.t0.player_positions < data.t1.player_positions
+data.t0.league_name == French Ligue 1 ^ data.t1.league_name == Chinese Super League -> data.t0.league_name < data.t1.league_name
+data.t0.league_name == Scottish Championship ^ data.t1.league_name == Rep. Ireland Airtricity League -> data.t0.league_name < data.t1.league_name
+data.t0.league_name == Scottish Championship ^ data.t1.league_name == English League One -> data.t0.league_name < data.t1.league_name
+data.t0.league_name == Japanese J. League Division 1 ^ data.t1.league_name == Chinese Super League -> data.t0.league_name < data.t1.league_name
+data.t0.league_name == Spanish Segunda División ^ data.t1.league_name == Romanian Liga I -> data.t0.league_name < data.t1.league_name
+data.t0.league_name == Spain Primera Division ^ data.t1.league_name == Romanian Liga I -> data.t0.league_name < data.t1.league_name
+data.t0.player_positions == CB, LB, ST ^ data.t1.player_positions == CB, LB -> data.t0.player_positions < data.t1.player_positions
+data.t0.player_positions == CAM, CM, CF ^ data.t1.player_positions == CAM, CDM -> data.t0.player_positions < data.t1.player_positions
+data.t0.player_positions == CAM, RM, LM ^ data.t1.player_positions == CAM, CF -> data.t0.player_positions < data.t1.player_positions
+data.t0.player_positions == CAM, RM, LM ^ data.t1.player_positions == CAM, CM, RM -> data.t0.player_positions < data.t1.player_positions
+data.t0.league_name == Holland Eredivisie ^ data.t1.league_name == Saudi Abdul L. Jameel League -> data.t0.league_name < data.t1.league_name
+data.t0.player_positions == LM, RM, CAM ^ data.t1.player_positions == CM, CDM -> data.t0.player_positions < data.t1.player_positions
+data.t0.player_positions == CB, LB, LWB ^ data.t1.player_positions == CB -> data.t0.player_positions < data.t1.player_positions
+data.t0.player_positions == CAM, RM, LM ^ data.t1.player_positions == CM, CAM -> data.t0.player_positions < data.t1.player_positions
+data.t0.player_positions == CM, RB, CDM ^ data.t1.player_positions == CDM, CM -> data.t0.player_positions < data.t1.player_positions
+data.t0.league_name == Spain Primera Division ^ data.t1.league_name == Uruguayan Primera División -> data.t0.league_name < data.t1.league_name
+data.t0.league_name == Spanish Segunda División ^ data.t1.league_name == Uruguayan Primera División -> data.t0.league_name < data.t1.league_name
+data.t0.player_positions == RB ^ data.t1.player_positions == CB, CDM -> data.t0.player_positions < data.t1.player_positions
+data.t0.player_positions == CDM, RB, CB ^ data.t1.player_positions == CB, CDM -> data.t0.player_positions < data.t1.player_positions
+data.t0.league_name == Scottish Championship ^ data.t1.league_name == English League Championship -> data.t0.league_name < data.t1.league_name
+data.t0.player_positions == ST, CAM ^ data.t1.player_positions == CAM, ST, CF -> data.t0.player_positions < data.t1.player_positions
+data.t0.player_positions == ST, CF ^ data.t1.player_positions == ST, LM, RM -> data.t0.player_positions < data.t1.player_positions
+data.t0.player_positions == CM, CDM, RM ^ data.t1.player_positions == CB, CDM, CM -> data.t0.player_positions < data.t1.player_positions
+data.t0.league_name == Italian Serie A ^ data.t1.league_name == Chinese Super League -> data.t0.league_name < data.t1.league_name
+data.t0.player_positions == CM, RB, CAM, CDM ^ data.t1.player_positions == CM, CDM -> data.t0.player_positions < data.t1.player_positions
+data.t0.player_positions == RB, RWB, RM, RW ^ data.t1.player_positions == RB, RM -> data.t0.player_positions < data.t1.player_positions
+data.t0.player_positions == ST, LW, RW ^ data.t1.player_positions == LM, RM -> data.t0.player_positions < data.t1.player_positions
+data.t0.player_positions == LM, RM, RW, ST ^ data.t1.player_positions == LM, RM -> data.t0.player_positions < data.t1.player_positions
+data.t0.player_positions == LB, RB ^ data.t1.player_positions == CB, RB, LB -> data.t0.player_positions < data.t1.player_positions
+data.t0.player_positions == RM, LM, CAM ^ data.t1.player_positions == RM, RWB -> data.t0.player_positions < data.t1.player_positions
+data.t0.player_positions == CB, LB, ST ^ data.t1.player_positions == CB -> data.t0.player_positions < data.t1.player_positions
+data.t0.player_positions == CDM, CM ^ data.t1.player_positions == CM, CAM, LM -> data.t0.player_positions < data.t1.player_positions
+data.t0.potential == 55 ^ data.t1.potential == 67 -> data.t0.potential < data.t1.potential
+data.t0.potential == 55 ^ data.t1.potential == 66 -> data.t0.potential < data.t1.potential
+data.t0.player_positions == RB, RM, LM, LB ^ data.t1.player_positions == RB, RM -> data.t0.player_positions < data.t1.player_positions
+data.t0.league_name == Argentina Primera División ^ data.t1.league_name == Paraguayan Primera División -> data.t0.league_name < data.t1.league_name
+data.t0.player_positions == RM ^ data.t1.player_positions == LM, ST, RM -> data.t0.player_positions < data.t1.player_positions
+data.t0.player_positions == RB, LB, CB ^ data.t1.player_positions == RB, CB, LB -> data.t0.player_positions < data.t1.player_positions
+data.t0.league_name == German 1. Bundesliga ^ data.t1.league_name == Colombian Liga Postobón -> data.t0.league_name < data.t1.league_name
+data.t0.league_name == nan ^ data.t1.league_name == Peruvian Primera División -> data.t0.league_name < data.t1.league_name
+data.t0.league_name == French Ligue 2 ^ data.t1.league_name == Romanian Liga I -> data.t0.league_name < data.t1.league_name
+data.t0.player_positions == CM, CAM, CDM, LM ^ data.t1.player_positions == CM, CAM, LM -> data.t0.player_positions < data.t1.player_positions
+data.t0.player_positions == LM, RM, CAM ^ data.t1.player_positions == CAM, CM -> data.t0.player_positions < data.t1.player_positions
+data.t0.player_positions == CF, CAM, LW ^ data.t1.player_positions == CAM, CM -> data.t0.player_positions < data.t1.player_positions
+data.t0.player_positions == LB, CB ^ data.t1.player_positions == LWB, LB -> data.t0.player_positions < data.t1.player_positions
+data.t0.player_positions == LM ^ data.t1.player_positions == ST, CAM, LM -> data.t0.player_positions < data.t1.player_positions
+data.t0.player_positions == CM, CDM ^ data.t1.player_positions == CM, CDM, LW -> data.t0.player_positions < data.t1.player_positions
+data.t0.player_positions == LWB, LB ^ data.t1.player_positions == LB, LWB, CB -> data.t0.player_positions < data.t1.player_positions
+data.t0.league_name == Russian Premier League ^ data.t1.league_name == Japanese J. League Division 1 -> data.t0.league_name < data.t1.league_name
+data.t0.league_name == German 2. Bundesliga ^ data.t1.league_name == Chinese Super League -> data.t0.league_name < data.t1.league_name
+data.t0.league_name == Scottish Premiership ^ data.t1.league_name == German 3. Bundesliga -> data.t0.league_name < data.t1.league_name
+data.t0.league_name == nan ^ data.t1.league_name == Ecuadorian Serie A -> data.t0.league_name < data.t1.league_name
+data.t0.player_positions == ST, LW, RW, LM ^ data.t1.player_positions == ST -> data.t0.player_positions < data.t1.player_positions
+data.t0.player_positions == LM ^ data.t1.player_positions == CAM, LM, CM -> data.t0.player_positions < data.t1.player_positions
+data.t0.league_name == Argentina Primera División ^ data.t1.league_name == Uruguayan Primera División -> data.t0.league_name < data.t1.league_name
+data.t0.league_name == nan ^ data.t1.league_name == Uruguayan Primera División -> data.t0.league_name < data.t1.league_name
+data.t0.player_positions == ST, RW, CF ^ data.t1.player_positions == RM, ST -> data.t0.player_positions < data.t1.player_positions
+data.t0.player_positions == RB, LB, CB ^ data.t1.player_positions == RB, CB, RWB -> data.t0.player_positions < data.t1.player_positions
+data.t0.player_positions == CB, RB, LB, CDM ^ data.t1.player_positions == CB -> data.t0.player_positions < data.t1.player_positions
+data.t0.player_positions == LM, CAM ^ data.t1.player_positions == CM, CAM, LM -> data.t0.player_positions < data.t1.player_positions
+data.t0.league_name == Mexican Liga MX ^ data.t1.league_name == Uruguayan Primera División -> data.t0.league_name < data.t1.league_name
+data.t0.player_positions == RW, LW, CAM ^ data.t1.player_positions == CM, CDM -> data.t0.player_positions < data.t1.player_positions
+data.t0.player_positions == RM, RB ^ data.t1.player_positions == CM, RB, RM -> data.t0.player_positions < data.t1.player_positions
+data.t0.player_positions == RM, RB, LB ^ data.t1.player_positions == CB, RB, LB -> data.t0.player_positions < data.t1.player_positions
+data.t0.player_positions == RM, CM, LM ^ data.t1.player_positions == CDM, CM -> data.t0.player_positions < data.t1.player_positions
+data.t0.player_positions == LM, CM ^ data.t1.player_positions == LB, LM -> data.t0.player_positions < data.t1.player_positions
+data.t0.player_positions == LM, CM ^ data.t1.player_positions == LM, CM, CAM -> data.t0.player_positions < data.t1.player_positions
+data.t0.player_positions == RM ^ data.t1.player_positions == ST, RM, LM -> data.t0.player_positions < data.t1.player_positions
+data.t0.player_positions == ST, RM, LM ^ data.t1.player_positions == ST, CAM, LM -> data.t0.player_positions < data.t1.player_positions
+data.t0.player_positions == LB ^ data.t1.player_positions == LWB, CB -> data.t0.player_positions < data.t1.player_positions
+data.t0.player_positions == LB, CB ^ data.t1.player_positions == LWB, CB -> data.t0.player_positions < data.t1.player_positions
+data.t0.league_name == nan ^ data.t1.league_name == Liga de Fútbol Profesional Boliviano -> data.t0.league_name < data.t1.league_name
+data.t0.league_name == USA Major League Soccer ^ data.t1.league_name == Ecuadorian Serie A -> data.t0.league_name < data.t1.league_name
+data.t0.league_name == Chilian Campeonato Nacional ^ data.t1.league_name == Ecuadorian Serie A -> data.t0.league_name < data.t1.league_name
+data.t0.player_positions == LB, CM, LM ^ data.t1.player_positions == LB, LWB -> data.t0.player_positions < data.t1.player_positions
+data.t0.player_positions == ST ^ data.t1.player_positions == CAM, RM, ST -> data.t0.player_positions < data.t1.player_positions
+data.t0.player_positions == CDM, RW, RB ^ data.t1.player_positions == RB, CDM -> data.t0.player_positions < data.t1.player_positions
+data.t0.player_positions == CDM, LM ^ data.t1.player_positions == CM, CDM -> data.t0.player_positions < data.t1.player_positions
+data.t0.player_positions == RB ^ data.t1.player_positions == RB, CB, ST -> data.t0.player_positions < data.t1.player_positions
+data.t0.player_positions == LM, CAM ^ data.t1.player_positions == RM, LM, CAM -> data.t0.player_positions < data.t1.player_positions
+data.t0.player_positions == RM, CAM, LM ^ data.t1.player_positions == RM, LM, ST -> data.t0.player_positions < data.t1.player_positions
+data.t0.player_positions == LW, CAM ^ data.t1.player_positions == ST, LW, CAM -> data.t0.player_positions < data.t1.player_positions
+data.t0.league_name == nan ^ data.t1.league_name == Korean K League Classic -> data.t0.league_name < data.t1.league_name
+data.t0.league_name == Colombian Liga Postobón ^ data.t1.league_name == Paraguayan Primera División -> data.t0.league_name < data.t1.league_name
+data.t0.league_name == USA Major League Soccer ^ data.t1.league_name == Paraguayan Primera División -> data.t0.league_name < data.t1.league_name
+data.t0.player_positions == CAM, LW ^ data.t1.player_positions == CAM, RW -> data.t0.player_positions < data.t1.player_positions
+data.t0.league_name == French Ligue 1 ^ data.t1.league_name == Australian Hyundai A-League -> data.t0.league_name < data.t1.league_name
+data.t0.player_positions == CAM, CM ^ data.t1.player_positions == CAM, CF, ST -> data.t0.player_positions < data.t1.player_positions
+data.t0.player_positions == RB, LB ^ data.t1.player_positions == CB, RWB -> data.t0.player_positions < data.t1.player_positions
+data.t0.player_positions == RB ^ data.t1.player_positions == CB, RWB -> data.t0.player_positions < data.t1.player_positions
+data.t0.player_positions == RW ^ data.t1.player_positions == RM, RB, RW -> data.t0.player_positions < data.t1.player_positions
+data.t0.league_name == Swiss Super League ^ data.t1.league_name == Mexican Liga MX -> data.t0.league_name < data.t1.league_name
+data.t0.player_positions == CAM, ST, RW ^ data.t1.player_positions == CAM, ST, LW -> data.t0.player_positions < data.t1.player_positions
+data.t0.player_positions == RW, LW ^ data.t1.player_positions == RW, LW, RM -> data.t0.player_positions < data.t1.player_positions
+data.t0.league_name == Ukrainian Premier League ^ data.t1.league_name == USA Major League Soccer -> data.t0.league_name < data.t1.league_name
+data.t0.player_positions == CAM, RW ^ data.t1.player_positions == RM, CAM -> data.t0.player_positions < data.t1.player_positions
+data.t0.league_name == French Ligue 1 ^ data.t1.league_name == Rest of World -> data.t0.league_name < data.t1.league_name
+data.t0.player_positions == RM, RB ^ data.t1.player_positions == RM, RB, LB -> data.t0.player_positions < data.t1.player_positions
+data.t0.player_positions == RM, RB ^ data.t1.player_positions == LB, RM -> data.t0.player_positions < data.t1.player_positions
+data.t0.player_positions == LB, LM ^ data.t1.player_positions == LB, LM, RB -> data.t0.player_positions < data.t1.player_positions
+data.t0.player_positions == LB, LM ^ data.t1.player_positions == LB, LWB, CB -> data.t0.player_positions < data.t1.player_positions
+data.t0.player_positions == RM, LM ^ data.t1.player_positions == RW, CF -> data.t0.player_positions < data.t1.player_positions
+data.t0.player_positions == LM ^ data.t1.player_positions == CAM, CM, LM -> data.t0.player_positions < data.t1.player_positions
+data.t0.player_positions == LW, CF ^ data.t1.player_positions == ST, LW -> data.t0.player_positions < data.t1.player_positions
+data.t0.player_positions == LW ^ data.t1.player_positions == RM, CAM -> data.t0.player_positions < data.t1.player_positions
+data.t0.player_positions == CAM ^ data.t1.player_positions == CDM, CM, CAM -> data.t0.player_positions < data.t1.player_positions
+data.t0.potential == 52 ^ data.t1.potential == 61 -> data.t0.potential < data.t1.potential
+data.t0.league_name == Swiss Super League ^ data.t1.league_name == Croatian Prva HNL -> data.t0.league_name < data.t1.league_name
+data.t0.player_positions == CAM, LM, RM ^ data.t1.player_positions == CAM, CM, RM -> data.t0.player_positions < data.t1.player_positions
+data.t0.player_positions == RM, LM ^ data.t1.player_positions == CM, LM, RM -> data.t0.player_positions < data.t1.player_positions
+data.t0.player_positions == LM, RM, CAM ^ data.t1.player_positions == CAM, CM, LM -> data.t0.player_positions < data.t1.player_positions
+data.t0.player_positions == CM, CDM, LM, RM ^ data.t1.player_positions == CM, CDM -> data.t0.player_positions < data.t1.player_positions
+data.t0.league_name == Chilian Campeonato Nacional ^ data.t1.league_name == Saudi Abdul L. Jameel League -> data.t0.league_name < data.t1.league_name
+data.t0.player_positions == RM, RB ^ data.t1.player_positions == RWB, RB, RM -> data.t0.player_positions < data.t1.player_positions
+data.t0.player_positions == RM, RB ^ data.t1.player_positions == RB, RM, RWB -> data.t0.player_positions < data.t1.player_positions
+data.t0.league_name == Swiss Super League ^ data.t1.league_name == Japanese J. League Division 1 -> data.t0.league_name < data.t1.league_name
+data.t0.player_positions == CDM, LM, CAM ^ data.t1.player_positions == CM, LM -> data.t0.player_positions < data.t1.player_positions
+data.t0.player_positions == LM, RM, ST, CAM ^ data.t1.player_positions == LM, RM, ST -> data.t0.player_positions < data.t1.player_positions
+data.t0.league_name == Ukrainian Premier League ^ data.t1.league_name == Italian Serie A -> data.t0.league_name < data.t1.league_name
+data.t0.player_positions == CB, LB, CDM ^ data.t1.player_positions == CB, CDM, LB -> data.t0.player_positions < data.t1.player_positions
+data.t0.player_positions == CB, LB, CDM ^ data.t1.player_positions == CB, RB, LB -> data.t0.player_positions < data.t1.player_positions
+data.t0.league_name == nan ^ data.t1.league_name == German 3. Bundesliga -> data.t0.league_name < data.t1.league_name
+data.t0.league_name == German 1. Bundesliga ^ data.t1.league_name == Czech Republic Gambrinus Liga -> data.t0.league_name < data.t1.league_name
+data.t0.player_positions == RW, RM ^ data.t1.player_positions == CAM, CM -> data.t0.player_positions < data.t1.player_positions
+data.t0.player_positions == ST, RW ^ data.t1.player_positions == ST, RW, LM -> data.t0.player_positions < data.t1.player_positions
+data.t0.league_name == Russian Premier League ^ data.t1.league_name == Chinese Super League -> data.t0.league_name < data.t1.league_name
+data.t0.player_positions == LM, RW ^ data.t1.player_positions == RM, LM -> data.t0.player_positions < data.t1.player_positions
+data.t0.player_positions == CM ^ data.t1.player_positions == LB, RB -> data.t0.player_positions < data.t1.player_positions
+data.t0.player_positions == RM, LM, RB ^ data.t1.player_positions == RB, RM -> data.t0.player_positions < data.t1.player_positions
+data.t0.player_positions == CM, LM, RM ^ data.t1.player_positions == CDM, CM -> data.t0.player_positions < data.t1.player_positions
+data.t0.player_positions == LW, LM, RW ^ data.t1.player_positions == LW, LM -> data.t0.player_positions < data.t1.player_positions
+data.t0.player_positions == LW, RW, ST ^ data.t1.player_positions == LW, LM -> data.t0.player_positions < data.t1.player_positions
+data.t0.player_positions == CAM, LM ^ data.t1.player_positions == LW, LM -> data.t0.player_positions < data.t1.player_positions
+data.t0.player_positions == RB, RM ^ data.t1.player_positions == CB -> data.t0.player_positions < data.t1.player_positions
+data.t0.player_positions == CAM, ST, LM ^ data.t1.player_positions == ST, LM, CAM -> data.t0.player_positions < data.t1.player_positions
+data.t0.player_positions == ST ^ data.t1.player_positions == ST, RWB -> data.t0.player_positions < data.t1.player_positions
+data.t0.player_positions == RM, CAM ^ data.t1.player_positions == CM, CDM -> data.t0.player_positions < data.t1.player_positions
+data.t0.player_positions == RM, LM, CAM ^ data.t1.player_positions == RM, RW, CM -> data.t0.player_positions < data.t1.player_positions
+data.t0.player_positions == ST, RW ^ data.t1.player_positions == RM, ST, LM -> data.t0.player_positions < data.t1.player_positions
+data.t0.player_positions == RM, ST, RW ^ data.t1.player_positions == RM, ST, LM -> data.t0.player_positions < data.t1.player_positions
+data.t0.player_positions == CF, ST, CAM ^ data.t1.player_positions == CAM, ST -> data.t0.player_positions < data.t1.player_positions
+data.t0.potential == 54 ^ data.t1.potential == 59 -> data.t0.potential < data.t1.potential
+data.t0.player_positions == CAM ^ data.t1.player_positions == CAM, LM, RW -> data.t0.player_positions < data.t1.player_positions
+data.t0.player_positions == RM, RW ^ data.t1.player_positions == RB, RM, RW -> data.t0.player_positions < data.t1.player_positions
+data.t0.player_positions == RM, LM ^ data.t1.player_positions == RB, RWB -> data.t0.player_positions < data.t1.player_positions
+data.t0.league_name == French Ligue 2 ^ data.t1.league_name == German 3. Bundesliga -> data.t0.league_name < data.t1.league_name
+data.t0.player_positions == RM ^ data.t1.player_positions == RM, CAM, CF -> data.t0.player_positions < data.t1.player_positions
+data.t0.league_name == English League Championship ^ data.t1.league_name == Chinese Super League -> data.t0.league_name < data.t1.league_name
+data.t0.player_positions == LW, LB ^ data.t1.player_positions == LB, LM -> data.t0.player_positions < data.t1.player_positions
+data.t0.player_positions == ST, CAM, RM ^ data.t1.player_positions == ST, CAM, RW -> data.t0.player_positions < data.t1.player_positions
+data.t0.player_positions == RW, ST ^ data.t1.player_positions == RM, ST, RW -> data.t0.player_positions < data.t1.player_positions
+data.t0.player_positions == RB, CM, LB ^ data.t1.player_positions == RB, LB -> data.t0.player_positions < data.t1.player_positions
+data.t0.player_positions == RM, CF, ST ^ data.t1.player_positions == RM -> data.t0.player_positions < data.t1.player_positions
+data.t0.player_positions == RM, CAM ^ data.t1.player_positions == CM, CAM, RM -> data.t0.player_positions < data.t1.player_positions
+data.t0.player_positions == RM, CAM ^ data.t1.player_positions == CM, CDM, CAM -> data.t0.player_positions < data.t1.player_positions
+data.t0.league_name == Chilian Campeonato Nacional ^ data.t1.league_name == Liga de Fútbol Profesional Boliviano -> data.t0.league_name < data.t1.league_name
+data.t0.league_name == Argentina Primera División ^ data.t1.league_name == Liga de Fútbol Profesional Boliviano -> data.t0.league_name < data.t1.league_name
+data.t0.player_positions == CAM ^ data.t1.player_positions == RM, RW -> data.t0.player_positions < data.t1.player_positions
+data.t0.player_positions == LW, ST ^ data.t1.player_positions == RW, LW, ST -> data.t0.player_positions < data.t1.player_positions
+data.t0.player_positions == LM, LW ^ data.t1.player_positions == RW, LW, LM -> data.t0.player_positions < data.t1.player_positions
+data.t0.player_positions == LM, RM ^ data.t1.player_positions == LM, RM, LWB -> data.t0.player_positions < data.t1.player_positions
+data.t0.potential == 73 ^ data.t1.potential == 86 -> data.t0.potential < data.t1.potential
+data.t0.league_name == Italian Serie B ^ data.t1.league_name == Rest of World -> data.t0.league_name < data.t1.league_name
+data.t0.player_positions == CAM, LM ^ data.t1.player_positions == CAM, RM, CF -> data.t0.player_positions < data.t1.player_positions
+data.t0.player_positions == CAM, RM, LM ^ data.t1.player_positions == CAM, RM, CF -> data.t0.player_positions < data.t1.player_positions
+data.t0.player_positions == RM, RB, LB ^ data.t1.player_positions == RB, RM -> data.t0.player_positions < data.t1.player_positions
+data.t0.player_positions == LB, RB, CDM ^ data.t1.player_positions == RB -> data.t0.player_positions < data.t1.player_positions
+data.t0.player_positions == CAM, ST ^ data.t1.player_positions == CAM, CF, CM -> data.t0.player_positions < data.t1.player_positions
+data.t0.player_positions == ST, RM, RB ^ data.t1.player_positions == ST -> data.t0.player_positions < data.t1.player_positions
+data.t0.league_name == Mexican Liga MX ^ data.t1.league_name == Australian Hyundai A-League -> data.t0.league_name < data.t1.league_name
+data.t0.league_name == Ukrainian Premier League ^ data.t1.league_name == Chinese Super League -> data.t0.league_name < data.t1.league_name
+data.t0.player_positions == LM, LB ^ data.t1.player_positions == LM, RM, LB -> data.t0.player_positions < data.t1.player_positions
+data.t0.player_positions == LB, RM, LM ^ data.t1.player_positions == LB, LM -> data.t0.player_positions < data.t1.player_positions
+data.t0.player_positions == LM, CM ^ data.t1.player_positions == LM, LB -> data.t0.player_positions < data.t1.player_positions
+data.t0.player_positions == LM, RM, CF ^ data.t1.player_positions == RM, LM -> data.t0.player_positions < data.t1.player_positions
+data.t0.player_positions == ST, CF ^ data.t1.player_positions == LM, ST -> data.t0.player_positions < data.t1.player_positions
+data.t0.player_positions == CAM, CM, RM ^ data.t1.player_positions == CAM, ST -> data.t0.player_positions < data.t1.player_positions
+data.t0.player_positions == LB, CB, LM, LWB ^ data.t1.player_positions == LB, LM -> data.t0.player_positions < data.t1.player_positions
+data.t0.player_positions == RW, RM, LW ^ data.t1.player_positions == RM, RW -> data.t0.player_positions < data.t1.player_positions
+data.t0.player_positions == LB, CB, LM, RB ^ data.t1.player_positions == LB -> data.t0.player_positions < data.t1.player_positions
+data.t0.player_positions == LB, CB, LWB ^ data.t1.player_positions == RB -> data.t0.player_positions < data.t1.player_positions
+data.t0.potential == 55 ^ data.t1.potential == 65 -> data.t0.potential < data.t1.potential
+data.t0.potential == 55 ^ data.t1.potential == 68 -> data.t0.potential < data.t1.potential
+data.t0.potential == 55 ^ data.t1.potential == 69 -> data.t0.potential < data.t1.potential
+data.t0.player_positions == CM, CAM, CDM, RM ^ data.t1.player_positions == CM, CAM, CDM -> data.t0.player_positions < data.t1.player_positions
+data.t0.player_positions == LW ^ data.t1.player_positions == LM, LW, RM -> data.t0.player_positions < data.t1.player_positions
+data.t0.player_positions == CAM ^ data.t1.player_positions == LM, LW -> data.t0.player_positions < data.t1.player_positions
+data.t0.player_positions == CAM ^ data.t1.player_positions == LM, LW, RM -> data.t0.player_positions < data.t1.player_positions
+data.t0.player_positions == CAM, CDM ^ data.t1.player_positions == ST, CAM -> data.t0.player_positions < data.t1.player_positions
+data.t0.player_positions == RB, RM, RWB ^ data.t1.player_positions == RB, RWB -> data.t0.player_positions < data.t1.player_positions
+data.t0.player_positions == LB, CB ^ data.t1.player_positions == LWB, LB, CB -> data.t0.player_positions < data.t1.player_positions
+data.t0.player_positions == LW, RW ^ data.t1.player_positions == LW, ST, RW -> data.t0.player_positions < data.t1.player_positions
+data.t0.player_positions == RB, RW ^ data.t1.player_positions == RWB -> data.t0.player_positions < data.t1.player_positions
+data.t0.player_positions == CAM, CDM, RM ^ data.t1.player_positions == CM, CDM -> data.t0.player_positions < data.t1.player_positions
+data.t0.league_name == Scottish Premiership ^ data.t1.league_name == Spain Primera Division -> data.t0.league_name < data.t1.league_name
+data.t0.league_name == Scottish Premiership ^ data.t1.league_name == Chinese Super League -> data.t0.league_name < data.t1.league_name
+data.t0.league_name == Greek Super League ^ data.t1.league_name == Chinese Super League -> data.t0.league_name < data.t1.league_name
+data.t0.player_positions == RW, RM, ST ^ data.t1.player_positions == ST, RW -> data.t0.player_positions < data.t1.player_positions
+data.t0.player_positions == CM, CAM ^ data.t1.player_positions == CB -> data.t0.player_positions < data.t1.player_positions
+data.t0.player_positions == LM, LB, CM ^ data.t1.player_positions == LM -> data.t0.player_positions < data.t1.player_positions
+data.t0.player_positions == CF, ST, LW ^ data.t1.player_positions == ST, CF -> data.t0.player_positions < data.t1.player_positions
+data.t0.player_positions == CM, CDM, RM, CAM ^ data.t1.player_positions == CM, CDM -> data.t0.player_positions < data.t1.player_positions
+data.t0.player_positions == ST, CAM, RW, LW ^ data.t1.player_positions == CAM, ST -> data.t0.player_positions < data.t1.player_positions
+data.t0.player_positions == RW, LM ^ data.t1.player_positions == RW, LW, LM -> data.t0.player_positions < data.t1.player_positions
+data.t0.player_positions == LW, LM ^ data.t1.player_positions == LM, LW, ST -> data.t0.player_positions < data.t1.player_positions
+data.t0.player_positions == RM, RW ^ data.t1.player_positions == CM, RM -> data.t0.player_positions < data.t1.player_positions
+data.t0.player_positions == CDM, CM, RB, RM ^ data.t1.player_positions == CDM, CM -> data.t0.player_positions < data.t1.player_positions
+data.t0.player_positions == RM, LM, RW, RB ^ data.t1.player_positions == RM, RB -> data.t0.player_positions < data.t1.player_positions
+data.t0.player_positions == LM, LB ^ data.t1.player_positions == LWB, LB, LM -> data.t0.player_positions < data.t1.player_positions
+data.t0.international_reputation == 2 ^ data.t1.international_reputation == 4 -> data.t0.international_reputation < data.t1.international_reputation
+data.t0.player_positions == CAM, CF ^ data.t1.player_positions == CAM, CM, CF -> data.t0.player_positions < data.t1.player_positions
+data.t0.player_positions == CDM ^ data.t1.player_positions == CM, CDM, RB -> data.t0.player_positions < data.t1.player_positions
+data.t0.player_positions == RM, LM ^ data.t1.player_positions == RM, RW, ST -> data.t0.player_positions < data.t1.player_positions
+data.t0.player_positions == LW, CAM ^ data.t1.player_positions == LW, CAM, RW -> data.t0.player_positions < data.t1.player_positions
+data.t0.player_positions == LW ^ data.t1.player_positions == LW, CAM, RW -> data.t0.player_positions < data.t1.player_positions
+data.t0.player_positions == CF, RW, CAM, ST ^ data.t1.player_positions == CAM, RM, RW -> data.t0.player_positions < data.t1.player_positions
+data.t0.player_positions == RM, CM, ST ^ data.t1.player_positions == RM, ST -> data.t0.player_positions < data.t1.player_positions
+data.t0.player_positions == CM, RM, CDM ^ data.t1.player_positions == CM, CAM, CDM -> data.t0.player_positions < data.t1.player_positions
+data.t0.league_name == Polish T-Mobile Ekstraklasa ^ data.t1.league_name == Saudi Abdul L. Jameel League -> data.t0.league_name < data.t1.league_name
+data.t0.player_positions == CAM, ST ^ data.t1.player_positions == CAM, RM -> data.t0.player_positions < data.t1.player_positions
+data.t0.player_positions == ST, CAM, LM, RM ^ data.t1.player_positions == ST, RM, LM -> data.t0.player_positions < data.t1.player_positions
+data.t0.player_positions == LM, RM ^ data.t1.player_positions == RM, RWB, LM -> data.t0.player_positions < data.t1.player_positions
+data.t0.player_positions == LM, RM ^ data.t1.player_positions == RM, LM, LW -> data.t0.player_positions < data.t1.player_positions
+data.t0.player_positions == RM ^ data.t1.player_positions == RM, LM, LW -> data.t0.player_positions < data.t1.player_positions
+data.t0.player_positions == LM ^ data.t1.player_positions == LWB, LM -> data.t0.player_positions < data.t1.player_positions
+data.t0.player_positions == CAM, LM, LW, CM ^ data.t1.player_positions == CAM, LM -> data.t0.player_positions < data.t1.player_positions
+data.t0.player_positions == RB, CAM ^ data.t1.player_positions == RB -> data.t0.player_positions < data.t1.player_positions
+data.t0.player_positions == CAM, RM, LM ^ data.t1.player_positions == CAM, RM, CM -> data.t0.player_positions < data.t1.player_positions
+data.t0.player_positions == CF, ST, LM ^ data.t1.player_positions == CF, ST, LM, CAM -> data.t0.player_positions < data.t1.player_positions
+data.t0.player_positions == LW, LM, RM, RW ^ data.t1.player_positions == ST -> data.t0.player_positions < data.t1.player_positions
+data.t0.player_positions == LW, LM, CM, RM ^ data.t1.player_positions == RB -> data.t0.player_positions < data.t1.player_positions
+data.t0.player_positions == CM, RM, LM ^ data.t1.player_positions == CM, CDM, RM -> data.t0.player_positions < data.t1.player_positions
+data.t0.player_positions == ST, RM ^ data.t1.player_positions == CF, ST, CAM -> data.t0.player_positions < data.t1.player_positions
+data.t0.player_positions == LW, CAM, RW ^ data.t1.player_positions == LM, RM -> data.t0.player_positions < data.t1.player_positions
+data.t0.league_name == Spanish Segunda División ^ data.t1.league_name == Swedish Allsvenskan -> data.t0.league_name < data.t1.league_name
+data.t0.league_name == French Ligue 1 ^ data.t1.league_name == Croatian Prva HNL -> data.t0.league_name < data.t1.league_name
+data.t0.player_positions == RWB, RM, RB ^ data.t1.player_positions == RB, RM -> data.t0.player_positions < data.t1.player_positions
+data.t0.player_positions == RWB, RM, RB ^ data.t1.player_positions == RB, RM, RWB -> data.t0.player_positions < data.t1.player_positions
+data.t0.player_positions == RB, LB ^ data.t1.player_positions == RWB -> data.t0.player_positions < data.t1.player_positions
+data.t0.player_positions == ST, LM ^ data.t1.player_positions == RM, ST, LM -> data.t0.player_positions < data.t1.player_positions
+data.t0.player_positions == CB, LB ^ data.t1.player_positions == CB, RWB -> data.t0.player_positions < data.t1.player_positions
+data.t0.player_positions == CM, LM ^ data.t1.player_positions == CM, LW, RW -> data.t0.player_positions < data.t1.player_positions
+data.t0.player_positions == CM, LW, RW ^ data.t1.player_positions == CAM, CM -> data.t0.player_positions < data.t1.player_positions
+data.t0.player_positions == LM, CAM, RM ^ data.t1.player_positions == LM, RM, CM -> data.t0.player_positions < data.t1.player_positions
+data.t0.player_positions == CAM ^ data.t1.player_positions == CM, CAM, CDM -> data.t0.player_positions < data.t1.player_positions
+data.t0.league_name == Danish Superliga ^ data.t1.league_name == Korean K League Classic -> data.t0.league_name < data.t1.league_name
+data.t0.player_positions == ST, RM ^ data.t1.player_positions == ST, CAM, LM -> data.t0.player_positions < data.t1.player_positions
+data.t0.player_positions == RM, RW ^ data.t1.player_positions == LM, RM, RW -> data.t0.player_positions < data.t1.player_positions
+data.t0.league_name == Greek Super League ^ data.t1.league_name == German 2. Bundesliga -> data.t0.league_name < data.t1.league_name
+data.t0.player_positions == LM, RM ^ data.t1.player_positions == RB, RM, LM -> data.t0.player_positions < data.t1.player_positions
+data.t0.league_name == English Premier League ^ data.t1.league_name == Romanian Liga I -> data.t0.league_name < data.t1.league_name
+data.t0.player_positions == RM, RW, CAM, LM ^ data.t1.player_positions == LM -> data.t0.player_positions < data.t1.player_positions
+data.t0.potential == 88 ^ data.t1.potential == 93 -> data.t0.potential < data.t1.potential
+data.t0.player_positions == CAM, CDM ^ data.t1.player_positions == CM, CAM, RM -> data.t0.player_positions < data.t1.player_positions
+data.t0.player_positions == CF, CAM, ST ^ data.t1.player_positions == CAM -> data.t0.player_positions < data.t1.player_positions
+data.t0.player_positions == RM, CF, ST, LM ^ data.t1.player_positions == ST -> data.t0.player_positions < data.t1.player_positions
+data.t0.player_positions == CAM ^ data.t1.player_positions == CAM, CF, CM -> data.t0.player_positions < data.t1.player_positions
+data.t0.league_name == Belgian Jupiler Pro League ^ data.t1.league_name == Uruguayan Primera División -> data.t0.league_name < data.t1.league_name
+data.t0.player_positions == LB, RB ^ data.t1.player_positions == RWB, RB -> data.t0.player_positions < data.t1.player_positions
+data.t0.player_positions == ST ^ data.t1.player_positions == LM, ST, LW -> data.t0.player_positions < data.t1.player_positions
+data.t0.potential == 54 ^ data.t1.potential == 67 -> data.t0.potential < data.t1.potential
+data.t0.league_name == Greek Super League ^ data.t1.league_name == USA Major League Soccer -> data.t0.league_name < data.t1.league_name
+data.t0.player_positions == LW ^ data.t1.player_positions == LB, LM -> data.t0.player_positions < data.t1.player_positions
+data.t0.player_positions == LB, LW ^ data.t1.player_positions == LB, LWB -> data.t0.player_positions < data.t1.player_positions
+data.t0.player_positions == RM ^ data.t1.player_positions == RB, RM, RW -> data.t0.player_positions < data.t1.player_positions
+data.t0.player_positions == RB, LB, RM, LM ^ data.t1.player_positions == RB -> data.t0.player_positions < data.t1.player_positions
+data.t0.league_name == Greek Super League ^ data.t1.league_name == Croatian Prva HNL -> data.t0.league_name < data.t1.league_name
+data.t0.player_positions == LB, RB, LM ^ data.t1.player_positions == LB, LM -> data.t0.player_positions < data.t1.player_positions
+data.t0.league_name == French Ligue 2 ^ data.t1.league_name == Australian Hyundai A-League -> data.t0.league_name < data.t1.league_name
+data.t0.player_positions == CM, CAM ^ data.t1.player_positions == CM, LB -> data.t0.player_positions < data.t1.player_positions
+data.t0.league_name == Italian Serie A ^ data.t1.league_name == Romanian Liga I -> data.t0.league_name < data.t1.league_name
+data.t0.league_name == Italian Serie B ^ data.t1.league_name == Romanian Liga I -> data.t0.league_name < data.t1.league_name
+data.t0.potential == 59 ^ data.t1.potential == 76 -> data.t0.potential < data.t1.potential
+data.t0.league_name == Spanish Segunda División ^ data.t1.league_name == Austrian Football Bundesliga -> data.t0.league_name < data.t1.league_name
+data.t0.player_positions == CDM, LB, CM ^ data.t1.player_positions == CDM, CM -> data.t0.player_positions < data.t1.player_positions
+data.t0.potential == 60 ^ data.t1.potential == 79 -> data.t0.potential < data.t1.potential
+data.t0.potential == 60 ^ data.t1.potential == 76 -> data.t0.potential < data.t1.potential
+data.t0.league_name == French Ligue 2 ^ data.t1.league_name == Rest of World -> data.t0.league_name < data.t1.league_name
+data.t0.player_positions == LM ^ data.t1.player_positions == CF, LM -> data.t0.player_positions < data.t1.player_positions
+data.t0.player_positions == LM ^ data.t1.player_positions == LB, RB -> data.t0.player_positions < data.t1.player_positions
+data.t0.league_name == German 1. Bundesliga ^ data.t1.league_name == Chilian Campeonato Nacional -> data.t0.league_name < data.t1.league_name
+data.t0.player_positions == LW, RW ^ data.t1.player_positions == LB, LW, RW -> data.t0.player_positions < data.t1.player_positions
+data.t0.player_positions == LB, RB, CB, CM ^ data.t1.player_positions == RB, CB, LB -> data.t0.player_positions < data.t1.player_positions
+data.t0.player_positions == LW, ST ^ data.t1.player_positions == RM, LM -> data.t0.player_positions < data.t1.player_positions
+data.t0.player_positions == ST ^ data.t1.player_positions == CAM, RM -> data.t0.player_positions < data.t1.player_positions
+data.t0.player_positions == ST ^ data.t1.player_positions == RW, RM -> data.t0.player_positions < data.t1.player_positions
+data.t0.league_name == Chilian Campeonato Nacional ^ data.t1.league_name == Peruvian Primera División -> data.t0.league_name < data.t1.league_name
+data.t0.league_name == Rest of World ^ data.t1.league_name == UAE Arabian Gulf League -> data.t0.league_name < data.t1.league_name
+data.t0.player_positions == CAM ^ data.t1.player_positions == CAM, RM, CF -> data.t0.player_positions < data.t1.player_positions
+data.t0.player_positions == CAM, LM, RM ^ data.t1.player_positions == CAM, CDM -> data.t0.player_positions < data.t1.player_positions
+data.t0.player_positions == LB, CB, CM ^ data.t1.player_positions == CB, LB -> data.t0.player_positions < data.t1.player_positions
+data.t0.player_positions == LM, LB ^ data.t1.player_positions == LWB, LB -> data.t0.player_positions < data.t1.player_positions
+data.t0.player_positions == CM, RM ^ data.t1.player_positions == RB -> data.t0.player_positions < data.t1.player_positions
+data.t0.player_positions == CF, LW, RW ^ data.t1.player_positions == CAM -> data.t0.player_positions < data.t1.player_positions
+data.t0.league_name == Holland Eredivisie ^ data.t1.league_name == Korean K League Classic -> data.t0.league_name < data.t1.league_name
+data.t0.league_name == English League One ^ data.t1.league_name == Turkish Süper Lig -> data.t0.league_name < data.t1.league_name
+data.t0.player_positions == RB, RM ^ data.t1.player_positions == CDM, CM -> data.t0.player_positions < data.t1.player_positions
+data.t0.player_positions == CAM ^ data.t1.player_positions == CAM, CM, RW -> data.t0.player_positions < data.t1.player_positions
+data.t0.potential == 64 ^ data.t1.potential == 80 -> data.t0.potential < data.t1.potential
+data.t0.league_name == Belgian Jupiler Pro League ^ data.t1.league_name == Chinese Super League -> data.t0.league_name < data.t1.league_name
+data.t0.player_positions == CAM, CF ^ data.t1.player_positions == LW -> data.t0.player_positions < data.t1.player_positions
+data.t0.player_positions == RB, CM ^ data.t1.player_positions == RWB, RB -> data.t0.player_positions < data.t1.player_positions
+data.t0.player_positions == RB, CM ^ data.t1.player_positions == RB, LB -> data.t0.player_positions < data.t1.player_positions
+data.t0.player_positions == LM, RM, CAM ^ data.t1.player_positions == RW, RM -> data.t0.player_positions < data.t1.player_positions
+data.t0.player_positions == CAM, LW, RW ^ data.t1.player_positions == RM, LM, CAM -> data.t0.player_positions < data.t1.player_positions
+data.t0.player_positions == CAM, RW ^ data.t1.player_positions == CM, CDM -> data.t0.player_positions < data.t1.player_positions
+data.t0.player_positions == CDM, RB, CB ^ data.t1.player_positions == CB -> data.t0.player_positions < data.t1.player_positions
+data.t0.player_positions == LM, RM, LB ^ data.t1.player_positions == RB -> data.t0.player_positions < data.t1.player_positions
+data.t0.player_positions == LM, CM, RM ^ data.t1.player_positions == CAM, LM, RM -> data.t0.player_positions < data.t1.player_positions
+data.t0.league_name == Mexican Liga MX ^ data.t1.league_name == Ecuadorian Serie A -> data.t0.league_name < data.t1.league_name
+data.t0.player_positions == LB ^ data.t1.player_positions == CDM, CM, LB -> data.t0.player_positions < data.t1.player_positions
+data.t0.player_positions == RM ^ data.t1.player_positions == RB, RW -> data.t0.player_positions < data.t1.player_positions
+data.t0.player_positions == LB, LW, RB, LM ^ data.t1.player_positions == LB, LM -> data.t0.player_positions < data.t1.player_positions
+data.t0.player_positions == CAM, ST, CF ^ data.t1.player_positions == CF, CAM, LM -> data.t0.player_positions < data.t1.player_positions
+data.t0.player_positions == CAM, RM, CM ^ data.t1.player_positions == CM, CAM, LM -> data.t0.player_positions < data.t1.player_positions
+data.t0.player_positions == ST, RM ^ data.t1.player_positions == LW, RW -> data.t0.player_positions < data.t1.player_positions
+data.t0.potential == 57 ^ data.t1.potential == 70 -> data.t0.potential < data.t1.potential
+data.t0.player_positions == RB, RWB ^ data.t1.player_positions == RB, CB, RM -> data.t0.player_positions < data.t1.player_positions
+data.t0.player_positions == LW, RW ^ data.t1.player_positions == ST, LM -> data.t0.player_positions < data.t1.player_positions
+data.t0.player_positions == RM ^ data.t1.player_positions == CM, RM, CAM -> data.t0.player_positions < data.t1.player_positions
+data.t0.player_positions == LW, CAM ^ data.t1.player_positions == RW, LW -> data.t0.player_positions < data.t1.player_positions
+data.t0.player_positions == ST, CF ^ data.t1.player_positions == ST, CAM, LM -> data.t0.player_positions < data.t1.player_positions
+data.t0.league_name == French Ligue 2 ^ data.t1.league_name == Japanese J. League Division 1 -> data.t0.league_name < data.t1.league_name
+data.t0.player_positions == RB ^ data.t1.player_positions == CB, RWB, RB -> data.t0.player_positions < data.t1.player_positions
+data.t0.player_positions == ST, RM, LM ^ data.t1.player_positions == LM, ST, RM -> data.t0.player_positions < data.t1.player_positions
+data.t0.player_positions == RB, RM, CF ^ data.t1.player_positions == RB -> data.t0.player_positions < data.t1.player_positions
+data.t0.player_positions == RB, LB ^ data.t1.player_positions == LM, LB, RB -> data.t0.player_positions < data.t1.player_positions
+data.t0.league_name == Austrian Football Bundesliga ^ data.t1.league_name == Rep. Ireland Airtricity League -> data.t0.league_name < data.t1.league_name
+data.t0.player_positions == CM, ST, LM, CAM ^ data.t1.player_positions == CM -> data.t0.player_positions < data.t1.player_positions
+data.t0.potential == 53 ^ data.t1.potential == 57 -> data.t0.potential < data.t1.potential
+data.t0.player_positions == RM, CAM ^ data.t1.player_positions == ST, RM -> data.t0.player_positions < data.t1.player_positions
+data.t0.player_positions == RW ^ data.t1.player_positions == RM, LM, RW -> data.t0.player_positions < data.t1.player_positions
+data.t0.league_name == Colombian Liga Postobón ^ data.t1.league_name == Ecuadorian Serie A -> data.t0.league_name < data.t1.league_name
+data.t0.player_positions == CM, RB, CB ^ data.t1.player_positions == CDM, CM, RB -> data.t0.player_positions < data.t1.player_positions
+data.t0.player_positions == LM, LW ^ data.t1.player_positions == LB, LM -> data.t0.player_positions < data.t1.player_positions
+data.t0.player_positions == LB, CB ^ data.t1.player_positions == CB, LB, RB -> data.t0.player_positions < data.t1.player_positions
+data.t0.player_positions == RM, CF, ST ^ data.t1.player_positions == ST, RW, LW -> data.t0.player_positions < data.t1.player_positions
+data.t0.player_positions == RM, ST, CF ^ data.t1.player_positions == ST, RW, LW -> data.t0.player_positions < data.t1.player_positions
+data.t0.player_positions == CM, CDM, RM ^ data.t1.player_positions == CM, CDM, LM -> data.t0.player_positions < data.t1.player_positions
+data.t0.player_positions == LB, LM ^ data.t1.player_positions == LM, CM, LB -> data.t0.player_positions < data.t1.player_positions
+data.t0.player_positions == LW, ST ^ data.t1.player_positions == LM, LW, ST -> data.t0.player_positions < data.t1.player_positions
+data.t0.potential == 84 ^ data.t1.potential == 91 -> data.t0.potential < data.t1.potential
+data.t0.league_name == French Ligue 2 ^ data.t1.league_name == Mexican Liga MX -> data.t0.league_name < data.t1.league_name
+data.t0.player_positions == LM, LW ^ data.t1.player_positions == LW, RW, RM -> data.t0.player_positions < data.t1.player_positions
+data.t0.player_positions == RM, ST, CM ^ data.t1.player_positions == CAM -> data.t0.player_positions < data.t1.player_positions
+data.t0.player_positions == LW, RW ^ data.t1.player_positions == ST, LM, RM -> data.t0.player_positions < data.t1.player_positions
+data.t0.player_positions == ST, CAM ^ data.t1.player_positions == RM, CAM -> data.t0.player_positions < data.t1.player_positions
+data.t0.player_positions == ST, RM, CM ^ data.t1.player_positions == ST -> data.t0.player_positions < data.t1.player_positions
+data.t0.player_positions == LW, LM, RW ^ data.t1.player_positions == RM, LM -> data.t0.player_positions < data.t1.player_positions
+data.t0.league_name == Colombian Liga Postobón ^ data.t1.league_name == Liga de Fútbol Profesional Boliviano -> data.t0.league_name < data.t1.league_name
+data.t0.player_positions == RB ^ data.t1.player_positions == RB, RWB, LB -> data.t0.player_positions < data.t1.player_positions
+data.t0.player_positions == RB ^ data.t1.player_positions == RWB, RB, LWB -> data.t0.player_positions < data.t1.player_positions
+data.t0.player_positions == LB ^ data.t1.player_positions == LB, LWB, CDM -> data.t0.player_positions < data.t1.player_positions
+data.t0.player_positions == RM, LM, CAM, RB ^ data.t1.player_positions == RB -> data.t0.player_positions < data.t1.player_positions
+data.t0.player_positions == LB, RB, RM ^ data.t1.player_positions == LB, LM -> data.t0.player_positions < data.t1.player_positions
+data.t0.player_positions == CM, LM, CDM ^ data.t1.player_positions == CM, CDM, LB -> data.t0.player_positions < data.t1.player_positions
+data.t0.league_name == Spanish Segunda División ^ data.t1.league_name == Liga de Fútbol Profesional Boliviano -> data.t0.league_name < data.t1.league_name
+data.t0.player_positions == LW, CAM ^ data.t1.player_positions == LW, LM -> data.t0.player_positions < data.t1.player_positions
+data.t0.potential == 65 ^ data.t1.potential == 83 -> data.t0.potential < data.t1.potential
+data.t0.potential == 65 ^ data.t1.potential == 82 -> data.t0.potential < data.t1.potential
+data.t0.player_positions == LW, RW, CF ^ data.t1.player_positions == CF, ST, CAM -> data.t0.player_positions < data.t1.player_positions
+data.t0.player_positions == RM, RW, CF ^ data.t1.player_positions == RM -> data.t0.player_positions < data.t1.player_positions
+data.t0.player_positions == RM, CAM, LM ^ data.t1.player_positions == CAM, CF, RM -> data.t0.player_positions < data.t1.player_positions
+data.t0.player_positions == CAM, CF, RM ^ data.t1.player_positions == CAM, ST, CM -> data.t0.player_positions < data.t1.player_positions
+data.t0.player_positions == CAM ^ data.t1.player_positions == LW, LM, CAM -> data.t0.player_positions < data.t1.player_positions
+data.t0.player_positions == LB, RB ^ data.t1.player_positions == LB, RM -> data.t0.player_positions < data.t1.player_positions
+data.t0.potential == 57 ^ data.t1.potential == 71 -> data.t0.potential < data.t1.potential
+data.t0.player_positions == CF, LM ^ data.t1.player_positions == ST -> data.t0.player_positions < data.t1.player_positions
+data.t0.player_positions == LM, RM ^ data.t1.player_positions == CAM, CM, LM -> data.t0.player_positions < data.t1.player_positions
+data.t0.player_positions == LB, RB, RM ^ data.t1.player_positions == RB, RWB -> data.t0.player_positions < data.t1.player_positions
+data.t0.player_positions == CM ^ data.t1.player_positions == RB, CB -> data.t0.player_positions < data.t1.player_positions
+data.t0.player_positions == CM, RB, CAM ^ data.t1.player_positions == CDM, RB -> data.t0.player_positions < data.t1.player_positions
+data.t0.player_positions == RW, ST, LW ^ data.t1.player_positions == RM, RW, ST -> data.t0.player_positions < data.t1.player_positions
+data.t0.player_positions == ST, CAM ^ data.t1.player_positions == RM, ST, CAM -> data.t0.player_positions < data.t1.player_positions
+data.t0.player_positions == LM, RM, ST ^ data.t1.player_positions == LM, CAM, RM -> data.t0.player_positions < data.t1.player_positions
+data.t0.player_positions == RB ^ data.t1.player_positions == CM, CB, RB -> data.t0.player_positions < data.t1.player_positions
+data.t0.player_positions == RM, RW, LM, RB ^ data.t1.player_positions == RM -> data.t0.player_positions < data.t1.player_positions
+data.t0.player_positions == CM, CDM, RM ^ data.t1.player_positions == CDM, CM, CB -> data.t0.player_positions < data.t1.player_positions
+data.t0.potential == 58 ^ data.t1.potential == 73 -> data.t0.potential < data.t1.potential
+data.t0.potential == 58 ^ data.t1.potential == 72 -> data.t0.potential < data.t1.potential
+data.t0.player_positions == LWB, LM ^ data.t1.player_positions == LB, LWB -> data.t0.player_positions < data.t1.player_positions
+data.t0.player_positions == LM, LW ^ data.t1.player_positions == LM, LW, LB -> data.t0.player_positions < data.t1.player_positions
+data.t0.player_positions == RW ^ data.t1.player_positions == RW, CAM, CF -> data.t0.player_positions < data.t1.player_positions
+data.t0.player_positions == CM, CAM ^ data.t1.player_positions == CAM, RM, CM -> data.t0.player_positions < data.t1.player_positions
+data.t0.potential == 64 ^ data.t1.potential == 83 -> data.t0.potential < data.t1.potential
+data.t0.potential == 64 ^ data.t1.potential == 82 -> data.t0.potential < data.t1.potential
+data.t0.league_name == Austrian Football Bundesliga ^ data.t1.league_name == Korean K League Classic -> data.t0.league_name < data.t1.league_name
+data.t0.league_name == Spain Primera Division ^ data.t1.league_name == English League One -> data.t0.league_name < data.t1.league_name
+data.t0.player_positions == RB, RM, CDM ^ data.t1.player_positions == RB, RWB -> data.t0.player_positions < data.t1.player_positions
+data.t0.player_positions == ST, LM, CAM, CM ^ data.t1.player_positions == ST -> data.t0.player_positions < data.t1.player_positions
+data.t0.player_positions == ST, RM, CAM, CM ^ data.t1.player_positions == ST -> data.t0.player_positions < data.t1.player_positions
+data.t0.player_positions == ST, RM ^ data.t1.player_positions == ST, RM, LM, CF -> data.t0.player_positions < data.t1.player_positions
+data.t0.player_positions == CDM, CM, LM, RM ^ data.t1.player_positions == CDM, CM -> data.t0.player_positions < data.t1.player_positions
+data.t0.player_positions == CAM, RM ^ data.t1.player_positions == RM, CAM, CM -> data.t0.player_positions < data.t1.player_positions
+data.t0.potential == 56 ^ data.t1.potential == 70 -> data.t0.potential < data.t1.potential
+data.t0.potential == 56 ^ data.t1.potential == 74 -> data.t0.potential < data.t1.potential
+data.t0.player_positions == RB ^ data.t1.player_positions == RWB, RW -> data.t0.player_positions < data.t1.player_positions
+data.t0.player_positions == RM, LM, CAM ^ data.t1.player_positions == RB, RM -> data.t0.player_positions < data.t1.player_positions
+data.t0.player_positions == LB ^ data.t1.player_positions == CM, LM, LB -> data.t0.player_positions < data.t1.player_positions
+data.t0.player_positions == LB ^ data.t1.player_positions == RB, RWB -> data.t0.player_positions < data.t1.player_positions
+data.t0.player_positions == CM, LM, RM ^ data.t1.player_positions == LM -> data.t0.player_positions < data.t1.player_positions
+data.t0.league_name == Colombian Liga Postobón ^ data.t1.league_name == Chinese Super League -> data.t0.league_name < data.t1.league_name
+data.t0.league_name == Mexican Liga MX ^ data.t1.league_name == Liga de Fútbol Profesional Boliviano -> data.t0.league_name < data.t1.league_name
+data.t0.potential == 64 ^ data.t1.potential == 78 -> data.t0.potential < data.t1.potential
+data.t0.potential == 69 ^ data.t1.potential == 84 -> data.t0.potential < data.t1.potential
+data.t0.potential == 56 ^ data.t1.potential == 67 -> data.t0.potential < data.t1.potential
+data.t0.potential == 56 ^ data.t1.potential == 68 -> data.t0.potential < data.t1.potential
+data.t0.player_positions == CDM, RB, CB, CM ^ data.t1.player_positions == CDM, CM -> data.t0.player_positions < data.t1.player_positions
+data.t0.player_positions == CAM ^ data.t1.player_positions == LM, ST, CAM -> data.t0.player_positions < data.t1.player_positions
+data.t0.player_positions == LM ^ data.t1.player_positions == RB -> data.t0.player_positions < data.t1.player_positions
+data.t0.player_positions == ST, RW ^ data.t1.player_positions == RM, LM, ST -> data.t0.player_positions < data.t1.player_positions
+data.t0.player_positions == CB, LM ^ data.t1.player_positions == CB, LB -> data.t0.player_positions < data.t1.player_positions
+data.t0.league_name == Belgian Jupiler Pro League ^ data.t1.league_name == Finnish Veikkausliiga -> data.t0.league_name < data.t1.league_name
+data.t0.potential == 64 ^ data.t1.potential == 81 -> data.t0.potential < data.t1.potential
+data.t0.player_positions == RM, LM ^ data.t1.player_positions == LB, LM -> data.t0.player_positions < data.t1.player_positions
+data.t0.player_positions == RW, LW ^ data.t1.player_positions == RW, ST, LW -> data.t0.player_positions < data.t1.player_positions
+data.t0.player_positions == LW, ST, RW ^ data.t1.player_positions == LM, ST, RM -> data.t0.player_positions < data.t1.player_positions
+data.t0.player_positions == CAM, CM, RM ^ data.t1.player_positions == CDM, CM -> data.t0.player_positions < data.t1.player_positions
+data.t0.player_positions == LM, RM, ST, RB ^ data.t1.player_positions == LM, RM, ST -> data.t0.player_positions < data.t1.player_positions
+data.t0.player_positions == CM ^ data.t1.player_positions == CDM, RB, CM -> data.t0.player_positions < data.t1.player_positions
+data.t0.player_positions == RB, CDM, RM ^ data.t1.player_positions == LB, RB -> data.t0.player_positions < data.t1.player_positions
+data.t0.player_positions == LM, ST ^ data.t1.player_positions == ST, LM, LW -> data.t0.player_positions < data.t1.player_positions
+data.t0.potential == 59 ^ data.t1.potential == 75 -> data.t0.potential < data.t1.potential
+data.t0.potential == 66 ^ data.t1.potential == 83 -> data.t0.potential < data.t1.potential
+data.t0.potential == 66 ^ data.t1.potential == 85 -> data.t0.potential < data.t1.potential
+data.t0.league_name == Portuguese Liga ZON SAGRES ^ data.t1.league_name == Ecuadorian Serie A -> data.t0.league_name < data.t1.league_name
+data.t0.player_positions == RM, LM ^ data.t1.player_positions == RM, CM, ST -> data.t0.player_positions < data.t1.player_positions
+data.t0.player_positions == RM, LM ^ data.t1.player_positions == CM, RWB -> data.t0.player_positions < data.t1.player_positions
+data.t0.player_positions == RM, CM, ST ^ data.t1.player_positions == RM -> data.t0.player_positions < data.t1.player_positions
+data.t0.player_positions == CM, CDM, LM, LB ^ data.t1.player_positions == CM, CDM -> data.t0.player_positions < data.t1.player_positions
+data.t0.player_positions == CM ^ data.t1.player_positions == CF, ST -> data.t0.player_positions < data.t1.player_positions
+data.t0.player_positions == RB, CM ^ data.t1.player_positions == RB, RWB -> data.t0.player_positions < data.t1.player_positions
+data.t0.potential == 63 ^ data.t1.potential == 79 -> data.t0.potential < data.t1.potential
+data.t0.player_positions == ST, LM, CAM ^ data.t1.player_positions == ST, RM, LM -> data.t0.player_positions < data.t1.player_positions
+data.t0.player_positions == CAM, CF ^ data.t1.player_positions == CM, LM -> data.t0.player_positions < data.t1.player_positions
+data.t0.potential == 71 ^ data.t1.potential == 86 -> data.t0.potential < data.t1.potential
+data.t0.league_name == Swedish Allsvenskan ^ data.t1.league_name == Czech Republic Gambrinus Liga -> data.t0.league_name < data.t1.league_name
+data.t0.player_positions == CDM, CM, CAM ^ data.t1.player_positions == CDM, CM, CB -> data.t0.player_positions < data.t1.player_positions
+data.t0.player_positions == RM ^ data.t1.player_positions == CAM, ST -> data.t0.player_positions < data.t1.player_positions
+data.t0.potential == 58 ^ data.t1.potential == 79 -> data.t0.potential < data.t1.potential
+data.t0.player_positions == CAM, CM, CDM, LM ^ data.t1.player_positions == CAM, CM, CDM -> data.t0.player_positions < data.t1.player_positions
+data.t0.player_positions == RB, RM, CDM ^ data.t1.player_positions == RB, CB, CDM -> data.t0.player_positions < data.t1.player_positions
+data.t0.player_positions == RM ^ data.t1.player_positions == LB, LM -> data.t0.player_positions < data.t1.player_positions
+data.t0.player_positions == LB, CM ^ data.t1.player_positions == LB, CB -> data.t0.player_positions < data.t1.player_positions
+data.t0.potential == 67 ^ data.t1.potential == 84 -> data.t0.potential < data.t1.potential
+data.t0.player_positions == ST, RW ^ data.t1.player_positions == RM, CAM -> data.t0.player_positions < data.t1.player_positions
+data.t0.potential == 71 ^ data.t1.potential == 88 -> data.t0.potential < data.t1.potential
+data.t0.player_positions == LB, CM, LM, LW ^ data.t1.player_positions == LB -> data.t0.player_positions < data.t1.player_positions
+data.t0.potential == 58 ^ data.t1.potential == 74 -> data.t0.potential < data.t1.potential
+data.t0.potential == 58 ^ data.t1.potential == 75 -> data.t0.potential < data.t1.potential
+data.t0.player_positions == LM, LB ^ data.t1.player_positions == CB, LB -> data.t0.player_positions < data.t1.player_positions
+data.t0.potential == 56 ^ data.t1.potential == 69 -> data.t0.potential < data.t1.potential
+data.t0.player_positions == CM, LM, RM ^ data.t1.player_positions == CM, CAM -> data.t0.player_positions < data.t1.player_positions
+data.t0.player_positions == CAM ^ data.t1.player_positions == RM, CAM, CM -> data.t0.player_positions < data.t1.player_positions
+data.t0.potential == 62 ^ data.t1.potential == 79 -> data.t0.potential < data.t1.potential
+data.t0.potential == 60 ^ data.t1.potential == 77 -> data.t0.potential < data.t1.potential
+data.t0.player_positions == RB, LB, CM ^ data.t1.player_positions == LB, RB -> data.t0.player_positions < data.t1.player_positions
+data.t0.potential == 61 ^ data.t1.potential == 76 -> data.t0.potential < data.t1.potential
+data.t0.player_positions == CM, RB ^ data.t1.player_positions == CAM, LM, CM -> data.t0.player_positions < data.t1.player_positions
+data.t0.player_positions == CM, RW, LW ^ data.t1.player_positions == RM, CM -> data.t0.player_positions < data.t1.player_positions
+data.t0.potential == 53 ^ data.t1.potential == 60 -> data.t0.potential < data.t1.potential
+data.t0.player_positions == LM, LW ^ data.t1.player_positions == LB -> data.t0.player_positions < data.t1.player_positions
+data.t0.player_positions == CAM, CF ^ data.t1.player_positions == CAM, CM, LM -> data.t0.player_positions < data.t1.player_positions
+data.t0.player_positions == CAM, LM ^ data.t1.player_positions == CDM, CM -> data.t0.player_positions < data.t1.player_positions
+data.t0.potential == 55 ^ data.t1.potential == 70 -> data.t0.potential < data.t1.potential
+data.t0.player_positions == CF ^ data.t1.player_positions == ST, CF -> data.t0.player_positions < data.t1.player_positions
+data.t0.potential == 76 ^ data.t1.potential == 90 -> data.t0.potential < data.t1.potential
+data.t0.potential == 76 ^ data.t1.potential == 89 -> data.t0.potential < data.t1.potential
+data.t0.potential == 56 ^ data.t1.potential == 75 -> data.t0.potential < data.t1.potential
+data.t0.potential == 56 ^ data.t1.potential == 73 -> data.t0.potential < data.t1.potential
+data.t0.potential == 56 ^ data.t1.potential == 71 -> data.t0.potential < data.t1.potential
+data.t0.player_positions == LM, CAM ^ data.t1.player_positions == CAM, CM, CDM -> data.t0.player_positions < data.t1.player_positions
+data.t0.player_positions == RM, ST ^ data.t1.player_positions == RM, CM -> data.t0.player_positions < data.t1.player_positions
+data.t0.player_positions == LM ^ data.t1.player_positions == CM, CDM, LM -> data.t0.player_positions < data.t1.player_positions
+data.t0.player_positions == RM ^ data.t1.player_positions == RW, LW, LM -> data.t0.player_positions < data.t1.player_positions
+data.t0.potential == 81 ^ data.t1.potential == 90 -> data.t0.potential < data.t1.potential
+data.t0.player_positions == CB, CM, CDM, RB ^ data.t1.player_positions == CB -> data.t0.player_positions < data.t1.player_positions
+data.t0.potential == 56 ^ data.t1.potential == 72 -> data.t0.potential < data.t1.potential
+data.t0.league_name == English League One ^ data.t1.league_name == German 3. Bundesliga -> data.t0.league_name < data.t1.league_name
+data.t0.player_positions == CM, CDM, CAM, CF ^ data.t1.player_positions == CM, CDM -> data.t0.player_positions < data.t1.player_positions
+data.t0.potential == 57 ^ data.t1.potential == 73 -> data.t0.potential < data.t1.potential
+data.t0.potential == 57 ^ data.t1.potential == 77 -> data.t0.potential < data.t1.potential
+data.t0.potential == 57 ^ data.t1.potential == 72 -> data.t0.potential < data.t1.potential
+data.t0.league_name == Czech Republic Gambrinus Liga ^ data.t1.league_name == Romanian Liga I -> data.t0.league_name < data.t1.league_name
+data.t0.player_positions == RB, RW, RWB, RM ^ data.t1.player_positions == RB, LB -> data.t0.player_positions < data.t1.player_positions
+data.t0.player_positions == LM ^ data.t1.player_positions == LB, LWB -> data.t0.player_positions < data.t1.player_positions
+data.t0.potential == 68 ^ data.t1.potential == 85 -> data.t0.potential < data.t1.potential
+data.t0.player_positions == RW, ST ^ data.t1.player_positions == ST, RW, LW -> data.t0.player_positions < data.t1.player_positions
+data.t0.player_positions == CDM, CM, RM ^ data.t1.player_positions == CDM, RB, CM -> data.t0.player_positions < data.t1.player_positions
+data.t0.player_positions == LW, RW ^ data.t1.player_positions == CM, CAM, LM -> data.t0.player_positions < data.t1.player_positions
+data.t0.player_positions == CM ^ data.t1.player_positions == CM, CDM, CAM, RM -> data.t0.player_positions < data.t1.player_positions
+data.t0.potential == 54 ^ data.t1.potential == 68 -> data.t0.potential < data.t1.potential
+data.t0.player_positions == CAM, ST ^ data.t1.player_positions == RM, LM -> data.t0.player_positions < data.t1.player_positions
+data.t0.league_name == Italian Serie A ^ data.t1.league_name == Ecuadorian Serie A -> data.t0.league_name < data.t1.league_name
+data.t0.player_positions == RM, LM, LW, RW ^ data.t1.player_positions == RM, LM, CAM -> data.t0.player_positions < data.t1.player_positions
+data.t0.player_positions == RWB, RB, RM ^ data.t1.player_positions == RB, RWB -> data.t0.player_positions < data.t1.player_positions
+data.t0.player_positions == RW, ST, LW ^ data.t1.player_positions == RM, LM, ST -> data.t0.player_positions < data.t1.player_positions
+data.t0.potential == 68 ^ data.t1.potential == 86 -> data.t0.potential < data.t1.potential
+data.t0.potential == 63 ^ data.t1.potential == 80 -> data.t0.potential < data.t1.potential
+data.t0.player_positions == CAM, CM ^ data.t1.player_positions == RM, CAM, LM -> data.t0.player_positions < data.t1.player_positions
+data.t0.player_positions == CDM, RB ^ data.t1.player_positions == CDM, RB, CM -> data.t0.player_positions < data.t1.player_positions
+data.t0.potential == 71 ^ data.t1.potential == 87 -> data.t0.potential < data.t1.potential
+data.t0.potential == 67 ^ data.t1.potential == 87 -> data.t0.potential < data.t1.potential
+data.t0.potential == 67 ^ data.t1.potential == 89 -> data.t0.potential < data.t1.potential
+data.t0.player_positions == RM ^ data.t1.player_positions == RM, ST, RW -> data.t0.player_positions < data.t1.player_positions
+data.t0.player_positions == RM ^ data.t1.player_positions == RB, CM -> data.t0.player_positions < data.t1.player_positions
+data.t0.potential == 55 ^ data.t1.potential == 72 -> data.t0.potential < data.t1.potential
+data.t0.potential == 55 ^ data.t1.potential == 71 -> data.t0.potential < data.t1.potential
+data.t0.potential == 62 ^ data.t1.potential == 82 -> data.t0.potential < data.t1.potential
+data.t0.potential == 63 ^ data.t1.potential == 82 -> data.t0.potential < data.t1.potential
+data.t0.player_positions == ST, CF, LW, RW ^ data.t1.player_positions == ST -> data.t0.player_positions < data.t1.player_positions
+data.t0.player_positions == CAM, CM, RW ^ data.t1.player_positions == CAM, RM -> data.t0.player_positions < data.t1.player_positions
+data.t0.player_positions == RM ^ data.t1.player_positions == CAM, CM, RM -> data.t0.player_positions < data.t1.player_positions
+data.t0.league_name == Colombian Liga Postobón ^ data.t1.league_name == Peruvian Primera División -> data.t0.league_name < data.t1.league_name
+data.t0.league_name == Colombian Liga Postobón ^ data.t1.league_name == English Premier League -> data.t0.league_name < data.t1.league_name
+data.t0.league_name == Colombian Liga Postobón ^ data.t1.league_name == Finnish Veikkausliiga -> data.t0.league_name < data.t1.league_name
+data.t0.player_positions == CAM ^ data.t1.player_positions == LM, CAM, LW -> data.t0.player_positions < data.t1.player_positions
+data.t0.player_positions == CAM, LB ^ data.t1.player_positions == LB -> data.t0.player_positions < data.t1.player_positions
+data.t0.player_positions == LM ^ data.t1.player_positions == LM, LW, CM -> data.t0.player_positions < data.t1.player_positions
+data.t0.league_name == Argentina Primera División ^ data.t1.league_name == Japanese J. League Division 1 -> data.t0.league_name < data.t1.league_name
+data.t0.player_positions == CAM, CF ^ data.t1.player_positions == RM, CAM -> data.t0.player_positions < data.t1.player_positions
+data.t0.league_name == Argentina Primera División ^ data.t1.league_name == French Ligue 2 -> data.t0.league_name < data.t1.league_name
+data.t0.potential == 66 ^ data.t1.potential == 84 -> data.t0.potential < data.t1.potential
+data.t0.league_name == Italian Serie B ^ data.t1.league_name == Croatian Prva HNL -> data.t0.league_name < data.t1.league_name
+data.t0.player_positions == ST ^ data.t1.player_positions == LB -> data.t0.player_positions < data.t1.player_positions
+data.t0.potential == 57 ^ data.t1.potential == 74 -> data.t0.potential < data.t1.potential
+data.t0.potential == 57 ^ data.t1.potential == 75 -> data.t0.potential < data.t1.potential
+data.t0.potential == 73 ^ data.t1.potential == 87 -> data.t0.potential < data.t1.potential
+data.t0.player_positions == RB, LB ^ data.t1.player_positions == RB, LB, LWB -> data.t0.player_positions < data.t1.player_positions
+data.t0.potential == 65 ^ data.t1.potential == 86 -> data.t0.potential < data.t1.potential
+data.t0.potential == 65 ^ data.t1.potential == 84 -> data.t0.potential < data.t1.potential
+data.t0.player_positions == RWB, RB, RM, LWB ^ data.t1.player_positions == LB -> data.t0.player_positions < data.t1.player_positions
+data.t0.player_positions == CAM, LW ^ data.t1.player_positions == LB, CM -> data.t0.player_positions < data.t1.player_positions
+data.t0.player_positions == LM ^ data.t1.player_positions == RW, LW, ST -> data.t0.player_positions < data.t1.player_positions
+data.t0.potential == 67 ^ data.t1.potential == 86 -> data.t0.potential < data.t1.potential
+data.t0.player_positions == CAM, LM, CM ^ data.t1.player_positions == RM, CAM -> data.t0.player_positions < data.t1.player_positions
+data.t0.player_positions == CAM, CF ^ data.t1.player_positions == CDM, CM -> data.t0.player_positions < data.t1.player_positions
+data.t0.potential == 54 ^ data.t1.potential == 69 -> data.t0.potential < data.t1.potential
+data.t0.player_positions == ST ^ data.t1.player_positions == CM, CDM -> data.t0.player_positions < data.t1.player_positions
+data.t0.player_positions == LB ^ data.t1.player_positions == LWB, LW -> data.t0.player_positions < data.t1.player_positions
+data.t0.league_name == Chilian Campeonato Nacional ^ data.t1.league_name == Uruguayan Primera División -> data.t0.league_name < data.t1.league_name
+data.t0.potential == 57 ^ data.t1.potential == 78 -> data.t0.potential < data.t1.potential
+data.t0.league_name == Argentina Primera División ^ data.t1.league_name == Romanian Liga I -> data.t0.league_name < data.t1.league_name
+data.t0.player_positions == LM, LB, CM ^ data.t1.player_positions == CM -> data.t0.player_positions < data.t1.player_positions
+data.t0.player_positions == LM, LW, LB ^ data.t1.player_positions == LB, LWB -> data.t0.player_positions < data.t1.player_positions
+data.t0.potential == 61 ^ data.t1.potential == 78 -> data.t0.potential < data.t1.potential
+data.t0.player_positions == CM, RB, CDM, LB ^ data.t1.player_positions == CM, CDM -> data.t0.player_positions < data.t1.player_positions
+data.t0.player_positions == CM, CDM, LB, RB ^ data.t1.player_positions == CM, CDM -> data.t0.player_positions < data.t1.player_positions
+data.t0.player_positions == LM, LB ^ data.t1.player_positions == RB -> data.t0.player_positions < data.t1.player_positions
+data.t0.potential == 59 ^ data.t1.potential == 77 -> data.t0.potential < data.t1.potential
+data.t0.potential == 55 ^ data.t1.potential == 73 -> data.t0.potential < data.t1.potential
+data.t0.player_positions == CAM, ST, LM, RM ^ data.t1.player_positions == CAM, RM -> data.t0.player_positions < data.t1.player_positions
+data.t0.potential == 58 ^ data.t1.potential == 76 -> data.t0.potential < data.t1.potential
+data.t0.potential == 61 ^ data.t1.potential == 79 -> data.t0.potential < data.t1.potential
+data.t0.potential == 63 ^ data.t1.potential == 81 -> data.t0.potential < data.t1.potential
+data.t0.potential == 63 ^ data.t1.potential == 83 -> data.t0.potential < data.t1.potential
+data.t0.player_positions == CDM ^ data.t1.player_positions == CB, LB -> data.t0.player_positions < data.t1.player_positions
+data.t0.player_positions == LM, CM ^ data.t1.player_positions == RW, LW -> data.t0.player_positions < data.t1.player_positions
+data.t0.league_name == Colombian Liga Postobón ^ data.t1.league_name == Holland Eredivisie -> data.t0.league_name < data.t1.league_name
+data.t0.player_positions == LM, CAM, RM ^ data.t1.player_positions == LW, RW -> data.t0.player_positions < data.t1.player_positions
+data.t0.potential == 54 ^ data.t1.potential == 72 -> data.t0.potential < data.t1.potential
+data.t0.player_positions == CAM, CM, RW ^ data.t1.player_positions == CM, CDM -> data.t0.player_positions < data.t1.player_positions
+data.t0.player_positions == LB ^ data.t1.player_positions == CB, CDM, LB -> data.t0.player_positions < data.t1.player_positions
+data.t0.player_positions == ST, RW ^ data.t1.player_positions == LM, RM -> data.t0.player_positions < data.t1.player_positions
+data.t0.player_positions == CAM, LM ^ data.t1.player_positions == CAM, ST, LM -> data.t0.player_positions < data.t1.player_positions
+data.t0.league_name == English League Two ^ data.t1.league_name == Finnish Veikkausliiga -> data.t0.league_name < data.t1.league_name
+data.t0.potential == 62 ^ data.t1.potential == 84 -> data.t0.potential < data.t1.potential
+data.t0.player_positions == RM, CM ^ data.t1.player_positions == RWB, RB, RM -> data.t0.player_positions < data.t1.player_positions
+data.t0.player_positions == CM ^ data.t1.player_positions == RW -> data.t0.player_positions < data.t1.player_positions
+data.t0.league_name == Colombian Liga Postobón ^ data.t1.league_name == Scottish Premiership -> data.t0.league_name < data.t1.league_name
+data.t0.player_positions == LW, RW, RM, LM ^ data.t1.player_positions == LW, RW -> data.t0.player_positions < data.t1.player_positions
+data.t0.player_positions == LB, LM, LW, LWB ^ data.t1.player_positions == LB -> data.t0.player_positions < data.t1.player_positions
+data.t0.player_positions == CM, CAM, ST ^ data.t1.player_positions == CM, CAM, LW -> data.t0.player_positions < data.t1.player_positions
+data.t0.player_positions == CB, ST ^ data.t1.player_positions == CB, LB -> data.t0.player_positions < data.t1.player_positions
+data.t0.player_positions == LM ^ data.t1.player_positions == CM, RM -> data.t0.player_positions < data.t1.player_positions
+data.t0.player_positions == LB, CM ^ data.t1.player_positions == LM, LB -> data.t0.player_positions < data.t1.player_positions
+data.t0.player_positions == RM, RB ^ data.t1.player_positions == RM, LM, LB -> data.t0.player_positions < data.t1.player_positions
+data.t0.player_positions == CAM ^ data.t1.player_positions == CM, CDM, RM -> data.t0.player_positions < data.t1.player_positions
+data.t0.player_positions == RB, CM ^ data.t1.player_positions == CM, RB, RM -> data.t0.player_positions < data.t1.player_positions
+data.t0.player_positions == CAM, RM, LM ^ data.t1.player_positions == CAM, CM, LM -> data.t0.player_positions < data.t1.player_positions
+data.t0.player_positions == ST ^ data.t1.player_positions == LB, LM -> data.t0.player_positions < data.t1.player_positions
+data.t0.player_positions == RW, RM, RB ^ data.t1.player_positions == RB, RM -> data.t0.player_positions < data.t1.player_positions
+data.t0.player_positions == CM, RM, RB ^ data.t1.player_positions == CM, RB, RM -> data.t0.player_positions < data.t1.player_positions
+data.t0.player_positions == RM, CAM ^ data.t1.player_positions == LW, RW -> data.t0.player_positions < data.t1.player_positions
+data.t0.league_name == Chilian Campeonato Nacional ^ data.t1.league_name == Paraguayan Primera División -> data.t0.league_name < data.t1.league_name
+data.t0.player_positions == RM ^ data.t1.player_positions == LW, LM, RM -> data.t0.player_positions < data.t1.player_positions
+data.t0.player_positions == RM, LM ^ data.t1.player_positions == RM, CM, CAM -> data.t0.player_positions < data.t1.player_positions
+data.t0.potential == 66 ^ data.t1.potential == 86 -> data.t0.potential < data.t1.potential
+data.t0.player_positions == RM ^ data.t1.player_positions == RM, CM, RB -> data.t0.player_positions < data.t1.player_positions
+data.t0.player_positions == CB ^ data.t1.player_positions == RB, RWB -> data.t0.player_positions < data.t1.player_positions
+data.t0.player_positions == ST ^ data.t1.player_positions == RB, LB -> data.t0.player_positions < data.t1.player_positions
+data.t0.league_name == Belgian Jupiler Pro League ^ data.t1.league_name == Ukrainian Premier League -> data.t0.league_name < data.t1.league_name
+data.t0.player_positions == ST ^ data.t1.player_positions == LM, LW -> data.t0.player_positions < data.t1.player_positions
+data.t0.player_positions == ST ^ data.t1.player_positions == LM, CM -> data.t0.player_positions < data.t1.player_positions
+data.t0.player_positions == CM, LM, RM ^ data.t1.player_positions == CM, RWB -> data.t0.player_positions < data.t1.player_positions
+data.t0.player_positions == LW ^ data.t1.player_positions == LM, LB, LW -> data.t0.player_positions < data.t1.player_positions
+data.t0.player_positions == ST ^ data.t1.player_positions == CAM, CM, LM -> data.t0.player_positions < data.t1.player_positions
+data.t0.player_positions == RW ^ data.t1.player_positions == LB -> data.t0.player_positions < data.t1.player_positions
+data.t0.league_name == Campeonato Brasileiro Série A ^ data.t1.league_name == nan -> data.t0.league_name < data.t1.league_name
+data.t0.league_name == Campeonato Brasileiro Série B ^ data.t1.league_name == Campeonato Brasileiro Série A -> data.t0.league_name < data.t1.league_name
+data.t0.player_positions == GK ^ data.t1.player_positions == CB -> data.t0.player_positions < data.t1.player_positions
+data.t0.player_positions == CF, ST, RW ^ data.t1.player_positions == ST, CF, RW -> data.t0.player_positions < data.t1.player_positions
+data.t0.player_positions == CB, RB ^ data.t1.player_positions == ST, CB, RB -> data.t0.player_positions < data.t1.player_positions
+data.t0.player_positions == LM ^ data.t1.player_positions == CDM, CM -> data.t0.player_positions < data.t1.player_positions
+data.t0.player_positions == CDM, CB ^ data.t1.player_positions == LB -> data.t0.player_positions < data.t1.player_positions

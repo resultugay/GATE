@@ -1,0 +1,989 @@
+data.t0.id == 85424 ^ data.t1.id == 85421 ^ data.t0.potential == 72 ^ data.t1.potential == 84 -> data.t0.potential < data.t1.potential
+data.t0.id == 85133 ^ data.t1.id == 85130 ^ data.t0.potential == 72 ^ data.t1.potential == 84 -> data.t0.potential < data.t1.potential
+data.t0.id == 51127 ^ data.t1.id == 51122 ^ data.t0.player_positions == LB, CDM ^ data.t1.player_positions == LB -> data.t0.player_positions < data.t1.player_positions
+data.t0.id == 92776 ^ data.t1.id == 92774 ^ data.t0.player_positions == LB, CDM ^ data.t1.player_positions == LB -> data.t0.player_positions < data.t1.player_positions
+data.t0.id == 7832 ^ data.t1.id == 7831 ^ data.t0.player_positions == LM, CAM, RM ^ data.t1.player_positions == RM, LM, CAM -> data.t0.player_positions < data.t1.player_positions
+data.t0.id == 17815 ^ data.t1.id == 17814 ^ data.t0.player_positions == LM, CAM, RM ^ data.t1.player_positions == RM, LM, CAM -> data.t0.player_positions < data.t1.player_positions
+data.t0.id == 28822 ^ data.t1.id == 28819 ^ data.t0.league_name == Swiss Super League ^ data.t1.league_name == Turkish Süper Lig -> data.t0.league_name < data.t1.league_name
+data.t0.id == 46930 ^ data.t1.id == 46927 ^ data.t0.league_name == Swiss Super League ^ data.t1.league_name == Turkish Süper Lig -> data.t0.league_name < data.t1.league_name
+data.t0.id == 50263 ^ data.t1.id == 50260 ^ data.t0.league_name == Austrian Football Bundesliga ^ data.t1.league_name == Italian Serie A -> data.t0.league_name < data.t1.league_name
+data.t0.id == 27030 ^ data.t1.id == 27027 ^ data.t0.league_name == Austrian Football Bundesliga ^ data.t1.league_name == Italian Serie A -> data.t0.league_name < data.t1.league_name
+data.t0.id == 28714 ^ data.t1.id == 28709 ^ data.t0.league_name == Austrian Football Bundesliga ^ data.t1.league_name == Italian Serie A -> data.t0.league_name < data.t1.league_name
+data.t0.id == 6959 ^ data.t1.id == 6958 ^ data.t0.player_positions == CAM, RM ^ data.t1.player_positions == CAM, CM, RM -> data.t0.player_positions < data.t1.player_positions
+data.t0.id == 33385 ^ data.t1.id == 33380 ^ data.t0.player_positions == CAM, RM ^ data.t1.player_positions == CAM, CM, RM -> data.t0.player_positions < data.t1.player_positions
+data.t0.id == 31414 ^ data.t1.id == 31408 ^ data.t0.player_positions == RM, CM ^ data.t1.player_positions == CM, CDM -> data.t0.player_positions < data.t1.player_positions
+data.t0.id == 31413 ^ data.t1.id == 31410 ^ data.t0.player_positions == RM, CM ^ data.t1.player_positions == CM, CDM -> data.t0.player_positions < data.t1.player_positions
+data.t0.id == 19179 ^ data.t1.id == 19177 ^ data.t0.player_positions == RM, CM ^ data.t1.player_positions == CM, CDM -> data.t0.player_positions < data.t1.player_positions
+data.t0.id == 64274 ^ data.t1.id == 64270 ^ data.t0.league_name == Swiss Super League ^ data.t1.league_name == nan -> data.t0.league_name < data.t1.league_name
+data.t0.id == 28944 ^ data.t1.id == 28943 ^ data.t0.league_name == Swiss Super League ^ data.t1.league_name == nan -> data.t0.league_name < data.t1.league_name
+data.t0.id == 74499 ^ data.t1.id == 74498 ^ data.t0.potential == 88 ^ data.t1.potential == 89 -> data.t0.potential < data.t1.potential
+data.t0.id == 43891 ^ data.t1.id == 43889 ^ data.t0.potential == 88 ^ data.t1.potential == 89 -> data.t0.potential < data.t1.potential
+data.t0.id == 9772 ^ data.t1.id == 9771 ^ data.t0.potential == 88 ^ data.t1.potential == 89 -> data.t0.potential < data.t1.potential
+data.t0.id == 8484 ^ data.t1.id == 8481 ^ data.t0.potential == 83 ^ data.t1.potential == 75 -> data.t0.potential < data.t1.potential
+data.t0.id == 8484 ^ data.t1.id == 8480 ^ data.t0.potential == 83 ^ data.t1.potential == 75 -> data.t0.potential < data.t1.potential
+data.t0.id == 41933 ^ data.t1.id == 41930 ^ data.t0.potential == 83 ^ data.t1.potential == 75 -> data.t0.potential < data.t1.potential
+data.t0.id == 36988 ^ data.t1.id == 36986 ^ data.t0.potential == 83 ^ data.t1.potential == 75 -> data.t0.potential < data.t1.potential
+data.t0.id == 41135 ^ data.t1.id == 41130 ^ data.t0.potential == 83 ^ data.t1.potential == 75 -> data.t0.potential < data.t1.potential
+data.t0.id == 88273 ^ data.t1.id == 88270 ^ data.t0.potential == 57 ^ data.t1.potential == 65 -> data.t0.potential < data.t1.potential
+data.t0.id == 68652 ^ data.t1.id == 68650 ^ data.t0.potential == 57 ^ data.t1.potential == 65 -> data.t0.potential < data.t1.potential
+data.t0.id == 35602 ^ data.t1.id == 35596 ^ data.t0.player_positions == ST ^ data.t1.player_positions == CAM, CF, ST -> data.t0.player_positions < data.t1.player_positions
+data.t0.id == 32577 ^ data.t1.id == 32573 ^ data.t0.player_positions == ST ^ data.t1.player_positions == CAM, CF, ST -> data.t0.player_positions < data.t1.player_positions
+data.t0.id == 49804 ^ data.t1.id == 49800 ^ data.t0.league_name == Polish T-Mobile Ekstraklasa ^ data.t1.league_name == nan -> data.t0.league_name < data.t1.league_name
+data.t0.id == 44060 ^ data.t1.id == 44058 ^ data.t0.league_name == Polish T-Mobile Ekstraklasa ^ data.t1.league_name == nan -> data.t0.league_name < data.t1.league_name
+data.t0.id == 32736 ^ data.t1.id == 32731 ^ data.t0.league_name == Polish T-Mobile Ekstraklasa ^ data.t1.league_name == nan -> data.t0.league_name < data.t1.league_name
+data.t0.id == 97127 ^ data.t1.id == 97126 ^ data.t0.league_name == Polish T-Mobile Ekstraklasa ^ data.t1.league_name == nan -> data.t0.league_name < data.t1.league_name
+data.t0.id == 93182 ^ data.t1.id == 93181 ^ data.t0.league_name == Polish T-Mobile Ekstraklasa ^ data.t1.league_name == nan -> data.t0.league_name < data.t1.league_name
+data.t0.id == 49805 ^ data.t1.id == 49800 ^ data.t0.league_name == Polish T-Mobile Ekstraklasa ^ data.t1.league_name == nan -> data.t0.league_name < data.t1.league_name
+data.t0.id == 51105 ^ data.t1.id == 51104 ^ data.t0.league_name == Swedish Allsvenskan ^ data.t1.league_name == German 2. Bundesliga -> data.t0.league_name < data.t1.league_name
+data.t0.id == 51105 ^ data.t1.id == 51103 ^ data.t0.league_name == Swedish Allsvenskan ^ data.t1.league_name == German 2. Bundesliga -> data.t0.league_name < data.t1.league_name
+data.t0.id == 21905 ^ data.t1.id == 21904 ^ data.t0.league_name == Russian Premier League ^ data.t1.league_name == nan -> data.t0.league_name < data.t1.league_name
+data.t0.id == 17829 ^ data.t1.id == 17827 ^ data.t0.league_name == Russian Premier League ^ data.t1.league_name == nan -> data.t0.league_name < data.t1.league_name
+data.t0.id == 70001 ^ data.t1.id == 69997 ^ data.t0.league_name == Russian Premier League ^ data.t1.league_name == nan -> data.t0.league_name < data.t1.league_name
+data.t0.id == 21905 ^ data.t1.id == 21904 ^ data.t0.league_name == Russian Premier League ^ data.t1.league_name == nan -> data.t0.league_name < data.t1.league_name
+data.t0.id == 9849 ^ data.t1.id == 9846 ^ data.t0.league_name == Russian Premier League ^ data.t1.league_name == nan -> data.t0.league_name < data.t1.league_name
+data.t0.id == 21964 ^ data.t1.id == 21962 ^ data.t0.league_name == Russian Premier League ^ data.t1.league_name == nan -> data.t0.league_name < data.t1.league_name
+data.t0.id == 61638 ^ data.t1.id == 61634 ^ data.t0.league_name == Russian Premier League ^ data.t1.league_name == nan -> data.t0.league_name < data.t1.league_name
+data.t0.id == 43227 ^ data.t1.id == 43226 ^ data.t0.league_name == Russian Premier League ^ data.t1.league_name == nan -> data.t0.league_name < data.t1.league_name
+data.t0.id == 5989 ^ data.t1.id == 5987 ^ data.t0.league_name == Russian Premier League ^ data.t1.league_name == nan -> data.t0.league_name < data.t1.league_name
+data.t0.id == 21805 ^ data.t1.id == 21804 ^ data.t0.league_name == Russian Premier League ^ data.t1.league_name == nan -> data.t0.league_name < data.t1.league_name
+data.t0.id == 21966 ^ data.t1.id == 21961 ^ data.t0.league_name == Russian Premier League ^ data.t1.league_name == nan -> data.t0.league_name < data.t1.league_name
+data.t0.id == 20297 ^ data.t1.id == 20293 ^ data.t0.league_name == Russian Premier League ^ data.t1.league_name == nan -> data.t0.league_name < data.t1.league_name
+data.t0.id == 17829 ^ data.t1.id == 17826 ^ data.t0.league_name == Russian Premier League ^ data.t1.league_name == nan -> data.t0.league_name < data.t1.league_name
+data.t0.id == 27327 ^ data.t1.id == 27326 ^ data.t0.potential == 91 ^ data.t1.potential == 89 -> data.t0.potential < data.t1.potential
+data.t0.id == 85621 ^ data.t1.id == 85619 ^ data.t0.potential == 91 ^ data.t1.potential == 89 -> data.t0.potential < data.t1.potential
+data.t0.id == 47210 ^ data.t1.id == 47208 ^ data.t0.league_name == Italian Serie A ^ data.t1.league_name == USA Major League Soccer -> data.t0.league_name < data.t1.league_name
+data.t0.id == 11353 ^ data.t1.id == 11351 ^ data.t0.league_name == Italian Serie A ^ data.t1.league_name == USA Major League Soccer -> data.t0.league_name < data.t1.league_name
+data.t0.id == 33168 ^ data.t1.id == 33165 ^ data.t0.league_name == Italian Serie A ^ data.t1.league_name == USA Major League Soccer -> data.t0.league_name < data.t1.league_name
+data.t0.id == 2822 ^ data.t1.id == 2819 ^ data.t0.league_name == Italian Serie A ^ data.t1.league_name == USA Major League Soccer -> data.t0.league_name < data.t1.league_name
+data.t0.id == 7932 ^ data.t1.id == 7929 ^ data.t0.league_name == Italian Serie A ^ data.t1.league_name == USA Major League Soccer -> data.t0.league_name < data.t1.league_name
+data.t0.id == 33170 ^ data.t1.id == 33165 ^ data.t0.league_name == Italian Serie A ^ data.t1.league_name == USA Major League Soccer -> data.t0.league_name < data.t1.league_name
+data.t0.id == 47209 ^ data.t1.id == 47208 ^ data.t0.league_name == Italian Serie A ^ data.t1.league_name == USA Major League Soccer -> data.t0.league_name < data.t1.league_name
+data.t0.id == 70348 ^ data.t1.id == 70347 ^ data.t0.league_name == Italian Serie A ^ data.t1.league_name == USA Major League Soccer -> data.t0.league_name < data.t1.league_name
+data.t0.id == 1127 ^ data.t1.id == 1125 ^ data.t0.player_positions == CAM, CDM ^ data.t1.player_positions == CAM -> data.t0.player_positions < data.t1.player_positions
+data.t0.id == 46912 ^ data.t1.id == 46907 ^ data.t0.player_positions == CAM, CDM ^ data.t1.player_positions == CAM -> data.t0.player_positions < data.t1.player_positions
+data.t0.id == 71119 ^ data.t1.id == 71116 ^ data.t0.player_positions == CAM, CDM ^ data.t1.player_positions == CAM -> data.t0.player_positions < data.t1.player_positions
+data.t0.id == 15783 ^ data.t1.id == 15782 ^ data.t0.player_positions == CAM, CDM ^ data.t1.player_positions == CAM -> data.t0.player_positions < data.t1.player_positions
+data.t0.id == 69470 ^ data.t1.id == 69468 ^ data.t0.league_name == Spain Primera Division ^ data.t1.league_name == Saudi Abdul L. Jameel League -> data.t0.league_name < data.t1.league_name
+data.t0.id == 17726 ^ data.t1.id == 17725 ^ data.t0.league_name == Spain Primera Division ^ data.t1.league_name == Saudi Abdul L. Jameel League -> data.t0.league_name < data.t1.league_name
+data.t0.id == 34139 ^ data.t1.id == 34137 ^ data.t0.player_positions == LW, LM ^ data.t1.player_positions == LM, ST -> data.t0.player_positions < data.t1.player_positions
+data.t0.id == 39664 ^ data.t1.id == 39661 ^ data.t0.player_positions == LW, LM ^ data.t1.player_positions == LM, ST -> data.t0.player_positions < data.t1.player_positions
+data.t0.id == 3738 ^ data.t1.id == 3737 ^ data.t0.league_name == Belgian Jupiler Pro League ^ data.t1.league_name == Mexican Liga MX -> data.t0.league_name < data.t1.league_name
+data.t0.id == 3738 ^ data.t1.id == 3736 ^ data.t0.league_name == Belgian Jupiler Pro League ^ data.t1.league_name == Mexican Liga MX -> data.t0.league_name < data.t1.league_name
+data.t0.id == 3739 ^ data.t1.id == 3737 ^ data.t0.league_name == Belgian Jupiler Pro League ^ data.t1.league_name == Mexican Liga MX -> data.t0.league_name < data.t1.league_name
+data.t0.id == 57514 ^ data.t1.id == 57512 ^ data.t0.player_positions == LM, ST, RM ^ data.t1.player_positions == RM, LM -> data.t0.player_positions < data.t1.player_positions
+data.t0.id == 17728 ^ data.t1.id == 17726 ^ data.t0.player_positions == LM, ST, RM ^ data.t1.player_positions == RM, LM -> data.t0.player_positions < data.t1.player_positions
+data.t0.id == 16 ^ data.t1.id == 14 ^ data.t0.league_name == Spain Primera Division ^ data.t1.league_name == Japanese J. League Division 1 -> data.t0.league_name < data.t1.league_name
+data.t0.id == 6720 ^ data.t1.id == 6715 ^ data.t0.league_name == Spain Primera Division ^ data.t1.league_name == Japanese J. League Division 1 -> data.t0.league_name < data.t1.league_name
+data.t0.id == 978 ^ data.t1.id == 975 ^ data.t0.league_name == Spain Primera Division ^ data.t1.league_name == Japanese J. League Division 1 -> data.t0.league_name < data.t1.league_name
+data.t0.id == 52253 ^ data.t1.id == 52249 ^ data.t0.player_positions == CM ^ data.t1.player_positions == CDM, CAM, CM -> data.t0.player_positions < data.t1.player_positions
+data.t0.id == 52253 ^ data.t1.id == 52250 ^ data.t0.player_positions == CM ^ data.t1.player_positions == CDM, CAM, CM -> data.t0.player_positions < data.t1.player_positions
+data.t0.id == 77298 ^ data.t1.id == 77297 ^ data.t0.potential == 58 ^ data.t1.potential == 65 -> data.t0.potential < data.t1.potential
+data.t0.id == 4459 ^ data.t1.id == 4456 ^ data.t0.potential == 58 ^ data.t1.potential == 65 -> data.t0.potential < data.t1.potential
+data.t0.id == 53129 ^ data.t1.id == 53124 ^ data.t0.league_name == German 1. Bundesliga ^ data.t1.league_name == Portuguese Liga ZON SAGRES -> data.t0.league_name < data.t1.league_name
+data.t0.id == 62320 ^ data.t1.id == 62318 ^ data.t0.league_name == German 1. Bundesliga ^ data.t1.league_name == Portuguese Liga ZON SAGRES -> data.t0.league_name < data.t1.league_name
+data.t0.id == 69000 ^ data.t1.id == 68997 ^ data.t0.player_positions == RB, LB ^ data.t1.player_positions == CB, RB -> data.t0.player_positions < data.t1.player_positions
+data.t0.id == 18988 ^ data.t1.id == 18984 ^ data.t0.player_positions == RB, LB ^ data.t1.player_positions == CB, RB -> data.t0.player_positions < data.t1.player_positions
+data.t0.id == 69000 ^ data.t1.id == 68996 ^ data.t0.player_positions == RB, LB ^ data.t1.player_positions == CB, RB -> data.t0.player_positions < data.t1.player_positions
+data.t0.id == 66465 ^ data.t1.id == 66464 ^ data.t0.league_name == English League Two ^ data.t1.league_name == Rep. Ireland Airtricity League -> data.t0.league_name < data.t1.league_name
+data.t0.id == 9142 ^ data.t1.id == 9141 ^ data.t0.league_name == English League Two ^ data.t1.league_name == Rep. Ireland Airtricity League -> data.t0.league_name < data.t1.league_name
+data.t0.id == 16963 ^ data.t1.id == 16960 ^ data.t0.league_name == English League Two ^ data.t1.league_name == Rep. Ireland Airtricity League -> data.t0.league_name < data.t1.league_name
+data.t0.id == 67184 ^ data.t1.id == 67183 ^ data.t0.league_name == English League Two ^ data.t1.league_name == Rep. Ireland Airtricity League -> data.t0.league_name < data.t1.league_name
+data.t0.id == 18523 ^ data.t1.id == 18521 ^ data.t0.league_name == English League Two ^ data.t1.league_name == Rep. Ireland Airtricity League -> data.t0.league_name < data.t1.league_name
+data.t0.id == 36440 ^ data.t1.id == 36437 ^ data.t0.league_name == English League Two ^ data.t1.league_name == Rep. Ireland Airtricity League -> data.t0.league_name < data.t1.league_name
+data.t0.id == 5206 ^ data.t1.id == 5200 ^ data.t0.league_name == English League Two ^ data.t1.league_name == Rep. Ireland Airtricity League -> data.t0.league_name < data.t1.league_name
+data.t0.id == 58719 ^ data.t1.id == 58716 ^ data.t0.league_name == Argentina Primera División ^ data.t1.league_name == Ecuadorian Serie A -> data.t0.league_name < data.t1.league_name
+data.t0.id == 45552 ^ data.t1.id == 45551 ^ data.t0.league_name == Argentina Primera División ^ data.t1.league_name == Ecuadorian Serie A -> data.t0.league_name < data.t1.league_name
+data.t0.id == 93144 ^ data.t1.id == 93140 ^ data.t0.league_name == Argentina Primera División ^ data.t1.league_name == Ecuadorian Serie A -> data.t0.league_name < data.t1.league_name
+data.t0.id == 62440 ^ data.t1.id == 62436 ^ data.t0.potential == 74 ^ data.t1.potential == 85 -> data.t0.potential < data.t1.potential
+data.t0.id == 42102 ^ data.t1.id == 42098 ^ data.t0.potential == 74 ^ data.t1.potential == 85 -> data.t0.potential < data.t1.potential
+data.t0.id == 91900 ^ data.t1.id == 91898 ^ data.t0.international_reputation == 1 ^ data.t1.international_reputation == 3 -> data.t0.international_reputation < data.t1.international_reputation
+data.t0.id == 69409 ^ data.t1.id == 69405 ^ data.t0.international_reputation == 1 ^ data.t1.international_reputation == 3 -> data.t0.international_reputation < data.t1.international_reputation
+data.t0.id == 27204 ^ data.t1.id == 27199 ^ data.t0.international_reputation == 1 ^ data.t1.international_reputation == 3 -> data.t0.international_reputation < data.t1.international_reputation
+data.t0.id == 66816 ^ data.t1.id == 66813 ^ data.t0.international_reputation == 1 ^ data.t1.international_reputation == 3 -> data.t0.international_reputation < data.t1.international_reputation
+data.t0.id == 34432 ^ data.t1.id == 34427 ^ data.t0.international_reputation == 1 ^ data.t1.international_reputation == 3 -> data.t0.international_reputation < data.t1.international_reputation
+data.t0.id == 43891 ^ data.t1.id == 43886 ^ data.t0.international_reputation == 1 ^ data.t1.international_reputation == 3 -> data.t0.international_reputation < data.t1.international_reputation
+data.t0.id == 47690 ^ data.t1.id == 47686 ^ data.t0.international_reputation == 1 ^ data.t1.international_reputation == 3 -> data.t0.international_reputation < data.t1.international_reputation
+data.t0.id == 91900 ^ data.t1.id == 91897 ^ data.t0.international_reputation == 1 ^ data.t1.international_reputation == 3 -> data.t0.international_reputation < data.t1.international_reputation
+data.t0.id == 34431 ^ data.t1.id == 34428 ^ data.t0.international_reputation == 1 ^ data.t1.international_reputation == 3 -> data.t0.international_reputation < data.t1.international_reputation
+data.t0.id == 53531 ^ data.t1.id == 53527 ^ data.t0.international_reputation == 1 ^ data.t1.international_reputation == 3 -> data.t0.international_reputation < data.t1.international_reputation
+data.t0.id == 78429 ^ data.t1.id == 78425 ^ data.t0.international_reputation == 1 ^ data.t1.international_reputation == 3 -> data.t0.international_reputation < data.t1.international_reputation
+data.t0.id == 45603 ^ data.t1.id == 45600 ^ data.t0.international_reputation == 1 ^ data.t1.international_reputation == 3 -> data.t0.international_reputation < data.t1.international_reputation
+data.t0.id == 36488 ^ data.t1.id == 36482 ^ data.t0.international_reputation == 1 ^ data.t1.international_reputation == 3 -> data.t0.international_reputation < data.t1.international_reputation
+data.t0.id == 61468 ^ data.t1.id == 61465 ^ data.t0.international_reputation == 1 ^ data.t1.international_reputation == 3 -> data.t0.international_reputation < data.t1.international_reputation
+data.t0.id == 53557 ^ data.t1.id == 53552 ^ data.t0.international_reputation == 1 ^ data.t1.international_reputation == 3 -> data.t0.international_reputation < data.t1.international_reputation
+data.t0.id == 50004 ^ data.t1.id == 50001 ^ data.t0.international_reputation == 1 ^ data.t1.international_reputation == 3 -> data.t0.international_reputation < data.t1.international_reputation
+data.t0.id == 55974 ^ data.t1.id == 55969 ^ data.t0.international_reputation == 1 ^ data.t1.international_reputation == 3 -> data.t0.international_reputation < data.t1.international_reputation
+data.t0.id == 47692 ^ data.t1.id == 47686 ^ data.t0.international_reputation == 1 ^ data.t1.international_reputation == 3 -> data.t0.international_reputation < data.t1.international_reputation
+data.t0.id == 39492 ^ data.t1.id == 39488 ^ data.t0.international_reputation == 1 ^ data.t1.international_reputation == 3 -> data.t0.international_reputation < data.t1.international_reputation
+data.t0.id == 61468 ^ data.t1.id == 61462 ^ data.t0.international_reputation == 1 ^ data.t1.international_reputation == 3 -> data.t0.international_reputation < data.t1.international_reputation
+data.t0.id == 94182 ^ data.t1.id == 94179 ^ data.t0.international_reputation == 1 ^ data.t1.international_reputation == 3 -> data.t0.international_reputation < data.t1.international_reputation
+data.t0.id == 48883 ^ data.t1.id == 48879 ^ data.t0.international_reputation == 1 ^ data.t1.international_reputation == 3 -> data.t0.international_reputation < data.t1.international_reputation
+data.t0.id == 86069 ^ data.t1.id == 86065 ^ data.t0.international_reputation == 1 ^ data.t1.international_reputation == 3 -> data.t0.international_reputation < data.t1.international_reputation
+data.t0.id == 47825 ^ data.t1.id == 47821 ^ data.t0.international_reputation == 1 ^ data.t1.international_reputation == 3 -> data.t0.international_reputation < data.t1.international_reputation
+data.t0.id == 54166 ^ data.t1.id == 54162 ^ data.t0.international_reputation == 1 ^ data.t1.international_reputation == 3 -> data.t0.international_reputation < data.t1.international_reputation
+data.t0.id == 72670 ^ data.t1.id == 72669 ^ data.t0.player_positions == LB, CDM, CM ^ data.t1.player_positions == LB, CDM -> data.t0.player_positions < data.t1.player_positions
+data.t0.id == 72670 ^ data.t1.id == 72668 ^ data.t0.player_positions == LB, CDM, CM ^ data.t1.player_positions == LB, CDM -> data.t0.player_positions < data.t1.player_positions
+data.t0.id == 50746 ^ data.t1.id == 50742 ^ data.t0.potential == 74 ^ data.t1.potential == 87 -> data.t0.potential < data.t1.potential
+data.t0.id == 53451 ^ data.t1.id == 53449 ^ data.t0.potential == 74 ^ data.t1.potential == 87 -> data.t0.potential < data.t1.potential
+data.t0.id == 96433 ^ data.t1.id == 96431 ^ data.t0.league_name == Austrian Football Bundesliga ^ data.t1.league_name == German 3. Bundesliga -> data.t0.league_name < data.t1.league_name
+data.t0.id == 50485 ^ data.t1.id == 50484 ^ data.t0.league_name == Austrian Football Bundesliga ^ data.t1.league_name == German 3. Bundesliga -> data.t0.league_name < data.t1.league_name
+data.t0.id == 62018 ^ data.t1.id == 62017 ^ data.t0.league_name == Austrian Football Bundesliga ^ data.t1.league_name == German 3. Bundesliga -> data.t0.league_name < data.t1.league_name
+data.t0.id == 50485 ^ data.t1.id == 50481 ^ data.t0.league_name == Austrian Football Bundesliga ^ data.t1.league_name == German 3. Bundesliga -> data.t0.league_name < data.t1.league_name
+data.t0.id == 45684 ^ data.t1.id == 45683 ^ data.t0.player_positions == CAM, RW, CM ^ data.t1.player_positions == CAM, RW -> data.t0.player_positions < data.t1.player_positions
+data.t0.id == 45684 ^ data.t1.id == 45683 ^ data.t0.player_positions == CAM, RW, CM ^ data.t1.player_positions == CAM, RW -> data.t0.player_positions < data.t1.player_positions
+data.t0.id == 30536 ^ data.t1.id == 30534 ^ data.t0.player_positions == LM, CM ^ data.t1.player_positions == CAM, LM, CM -> data.t0.player_positions < data.t1.player_positions
+data.t0.id == 27773 ^ data.t1.id == 27771 ^ data.t0.player_positions == LM, CM ^ data.t1.player_positions == CAM, LM, CM -> data.t0.player_positions < data.t1.player_positions
+data.t0.id == 73821 ^ data.t1.id == 73818 ^ data.t0.player_positions == RM, LM ^ data.t1.player_positions == CAM, CM -> data.t0.player_positions < data.t1.player_positions
+data.t0.id == 50158 ^ data.t1.id == 50154 ^ data.t0.player_positions == RM, LM ^ data.t1.player_positions == CAM, CM -> data.t0.player_positions < data.t1.player_positions
+data.t0.id == 55095 ^ data.t1.id == 55090 ^ data.t0.league_name == Belgian Jupiler Pro League ^ data.t1.league_name == Chinese Super League -> data.t0.league_name < data.t1.league_name
+data.t0.id == 46660 ^ data.t1.id == 46658 ^ data.t0.league_name == Belgian Jupiler Pro League ^ data.t1.league_name == Chinese Super League -> data.t0.league_name < data.t1.league_name
+data.t0.id == 46659 ^ data.t1.id == 46658 ^ data.t0.league_name == Belgian Jupiler Pro League ^ data.t1.league_name == Chinese Super League -> data.t0.league_name < data.t1.league_name
+data.t0.id == 17362 ^ data.t1.id == 17361 ^ data.t0.player_positions == RB, RM, CB ^ data.t1.player_positions == RB, RM -> data.t0.player_positions < data.t1.player_positions
+data.t0.id == 28976 ^ data.t1.id == 28972 ^ data.t0.player_positions == RB, RM, CB ^ data.t1.player_positions == RB, RM -> data.t0.player_positions < data.t1.player_positions
+data.t0.id == 62754 ^ data.t1.id == 62751 ^ data.t0.player_positions == ST ^ data.t1.player_positions == LM, ST -> data.t0.player_positions < data.t1.player_positions
+data.t0.id == 57223 ^ data.t1.id == 57218 ^ data.t0.player_positions == ST ^ data.t1.player_positions == LM, ST -> data.t0.player_positions < data.t1.player_positions
+data.t0.id == 95652 ^ data.t1.id == 95650 ^ data.t0.player_positions == ST ^ data.t1.player_positions == LM, ST -> data.t0.player_positions < data.t1.player_positions
+data.t0.id == 51256 ^ data.t1.id == 51253 ^ data.t0.league_name == Italian Serie B ^ data.t1.league_name == USA Major League Soccer -> data.t0.league_name < data.t1.league_name
+data.t0.id == 60822 ^ data.t1.id == 60819 ^ data.t0.league_name == Italian Serie B ^ data.t1.league_name == USA Major League Soccer -> data.t0.league_name < data.t1.league_name
+data.t0.id == 51257 ^ data.t1.id == 51253 ^ data.t0.league_name == Italian Serie B ^ data.t1.league_name == USA Major League Soccer -> data.t0.league_name < data.t1.league_name
+data.t0.id == 19588 ^ data.t1.id == 19584 ^ data.t0.player_positions == RM, ST ^ data.t1.player_positions == RM, RB -> data.t0.player_positions < data.t1.player_positions
+data.t0.id == 19588 ^ data.t1.id == 19585 ^ data.t0.player_positions == RM, ST ^ data.t1.player_positions == RM, RB -> data.t0.player_positions < data.t1.player_positions
+data.t0.id == 95856 ^ data.t1.id == 95853 ^ data.t0.potential == 67 ^ data.t1.potential == 82 -> data.t0.potential < data.t1.potential
+data.t0.id == 67656 ^ data.t1.id == 67650 ^ data.t0.potential == 67 ^ data.t1.potential == 82 -> data.t0.potential < data.t1.potential
+data.t0.id == 49317 ^ data.t1.id == 49312 ^ data.t0.potential == 63 ^ data.t1.potential == 74 -> data.t0.potential < data.t1.potential
+data.t0.id == 74024 ^ data.t1.id == 74020 ^ data.t0.potential == 63 ^ data.t1.potential == 74 -> data.t0.potential < data.t1.potential
+data.t0.id == 70311 ^ data.t1.id == 70306 ^ data.t0.potential == 63 ^ data.t1.potential == 74 -> data.t0.potential < data.t1.potential
+data.t0.id == 20228 ^ data.t1.id == 20227 ^ data.t0.player_positions == RB ^ data.t1.player_positions == CB, RB -> data.t0.player_positions < data.t1.player_positions
+data.t0.id == 14796 ^ data.t1.id == 14792 ^ data.t0.player_positions == RB ^ data.t1.player_positions == CB, RB -> data.t0.player_positions < data.t1.player_positions
+data.t0.id == 12889 ^ data.t1.id == 12888 ^ data.t0.player_positions == RB ^ data.t1.player_positions == CB, RB -> data.t0.player_positions < data.t1.player_positions
+data.t0.id == 70481 ^ data.t1.id == 70476 ^ data.t0.player_positions == RB ^ data.t1.player_positions == CB, RB -> data.t0.player_positions < data.t1.player_positions
+data.t0.id == 87508 ^ data.t1.id == 87505 ^ data.t0.player_positions == RB ^ data.t1.player_positions == CB, RB -> data.t0.player_positions < data.t1.player_positions
+data.t0.id == 66644 ^ data.t1.id == 66642 ^ data.t0.player_positions == RB ^ data.t1.player_positions == CB, RB -> data.t0.player_positions < data.t1.player_positions
+data.t0.id == 16717 ^ data.t1.id == 16714 ^ data.t0.player_positions == RB ^ data.t1.player_positions == CB, RB -> data.t0.player_positions < data.t1.player_positions
+data.t0.id == 50406 ^ data.t1.id == 50401 ^ data.t0.player_positions == RB ^ data.t1.player_positions == RB, RWB, LB -> data.t0.player_positions < data.t1.player_positions
+data.t0.id == 38123 ^ data.t1.id == 38120 ^ data.t0.player_positions == RB ^ data.t1.player_positions == RB, RWB, LB -> data.t0.player_positions < data.t1.player_positions
+data.t0.id == 39805 ^ data.t1.id == 39804 ^ data.t0.player_positions == RB ^ data.t1.player_positions == RB, RWB, LB -> data.t0.player_positions < data.t1.player_positions
+data.t0.id == 99604 ^ data.t1.id == 99601 ^ data.t0.league_name == English League One ^ data.t1.league_name == USA Major League Soccer -> data.t0.league_name < data.t1.league_name
+data.t0.id == 99604 ^ data.t1.id == 99602 ^ data.t0.league_name == English League One ^ data.t1.league_name == USA Major League Soccer -> data.t0.league_name < data.t1.league_name
+data.t0.id == 41367 ^ data.t1.id == 41366 ^ data.t0.player_positions == LM ^ data.t1.player_positions == LM, RW -> data.t0.player_positions < data.t1.player_positions
+data.t0.id == 69102 ^ data.t1.id == 69097 ^ data.t0.player_positions == LM ^ data.t1.player_positions == LM, RW -> data.t0.player_positions < data.t1.player_positions
+data.t0.id == 69102 ^ data.t1.id == 69100 ^ data.t0.player_positions == LM ^ data.t1.player_positions == LM, RW -> data.t0.player_positions < data.t1.player_positions
+data.t0.id == 70801 ^ data.t1.id == 70800 ^ data.t0.player_positions == CAM, RM, LM ^ data.t1.player_positions == CAM, CM, LM -> data.t0.player_positions < data.t1.player_positions
+data.t0.id == 70801 ^ data.t1.id == 70800 ^ data.t0.player_positions == CAM, RM, LM ^ data.t1.player_positions == CAM, CM, LM -> data.t0.player_positions < data.t1.player_positions
+data.t0.id == 11791 ^ data.t1.id == 11790 ^ data.t0.player_positions == LM, RM ^ data.t1.player_positions == LM, LB -> data.t0.player_positions < data.t1.player_positions
+data.t0.id == 39539 ^ data.t1.id == 39534 ^ data.t0.player_positions == LM, RM ^ data.t1.player_positions == LM, LB -> data.t0.player_positions < data.t1.player_positions
+data.t0.id == 1370 ^ data.t1.id == 1366 ^ data.t0.potential == 57 ^ data.t1.potential == 61 -> data.t0.potential < data.t1.potential
+data.t0.id == 157 ^ data.t1.id == 156 ^ data.t0.potential == 57 ^ data.t1.potential == 61 -> data.t0.potential < data.t1.potential
+data.t0.id == 64076 ^ data.t1.id == 64072 ^ data.t0.potential == 57 ^ data.t1.potential == 61 -> data.t0.potential < data.t1.potential
+data.t0.id == 57223 ^ data.t1.id == 57222 ^ data.t0.player_positions == ST, LM ^ data.t1.player_positions == LM, ST -> data.t0.player_positions < data.t1.player_positions
+data.t0.id == 61184 ^ data.t1.id == 61182 ^ data.t0.player_positions == ST, LM ^ data.t1.player_positions == LM, ST -> data.t0.player_positions < data.t1.player_positions
+data.t0.id == 73973 ^ data.t1.id == 73971 ^ data.t0.player_positions == ST, LM ^ data.t1.player_positions == LM, ST -> data.t0.player_positions < data.t1.player_positions
+data.t0.id == 37587 ^ data.t1.id == 37586 ^ data.t0.player_positions == ST, LM ^ data.t1.player_positions == LM, ST -> data.t0.player_positions < data.t1.player_positions
+data.t0.id == 68853 ^ data.t1.id == 68852 ^ data.t0.league_name == Argentina Primera División ^ data.t1.league_name == Uruguayan Primera División -> data.t0.league_name < data.t1.league_name
+data.t0.id == 78433 ^ data.t1.id == 78431 ^ data.t0.league_name == Argentina Primera División ^ data.t1.league_name == Uruguayan Primera División -> data.t0.league_name < data.t1.league_name
+data.t0.id == 99762 ^ data.t1.id == 99760 ^ data.t0.potential == 59 ^ data.t1.potential == 68 -> data.t0.potential < data.t1.potential
+data.t0.id == 22226 ^ data.t1.id == 22224 ^ data.t0.potential == 59 ^ data.t1.potential == 68 -> data.t0.potential < data.t1.potential
+data.t0.id == 35692 ^ data.t1.id == 35691 ^ data.t0.player_positions == RM, LM ^ data.t1.player_positions == CAM, RM, LM -> data.t0.player_positions < data.t1.player_positions
+data.t0.id == 35692 ^ data.t1.id == 35689 ^ data.t0.player_positions == RM, LM ^ data.t1.player_positions == CAM, RM, LM -> data.t0.player_positions < data.t1.player_positions
+data.t0.id == 4133 ^ data.t1.id == 4131 ^ data.t0.league_name == Argentina Primera División ^ data.t1.league_name == Argentinian Primera B Nacional -> data.t0.league_name < data.t1.league_name
+data.t0.id == 23290 ^ data.t1.id == 23287 ^ data.t0.league_name == Argentina Primera División ^ data.t1.league_name == Argentinian Primera B Nacional -> data.t0.league_name < data.t1.league_name
+data.t0.id == 59688 ^ data.t1.id == 59687 ^ data.t0.league_name == Argentina Primera División ^ data.t1.league_name == Argentinian Primera B Nacional -> data.t0.league_name < data.t1.league_name
+data.t0.id == 59688 ^ data.t1.id == 59686 ^ data.t0.league_name == Argentina Primera División ^ data.t1.league_name == Argentinian Primera B Nacional -> data.t0.league_name < data.t1.league_name
+data.t0.id == 88842 ^ data.t1.id == 88840 ^ data.t0.league_name == Russian Premier League ^ data.t1.league_name == Belgian Jupiler Pro League -> data.t0.league_name < data.t1.league_name
+data.t0.id == 27875 ^ data.t1.id == 27873 ^ data.t0.league_name == Russian Premier League ^ data.t1.league_name == Belgian Jupiler Pro League -> data.t0.league_name < data.t1.league_name
+data.t0.id == 89616 ^ data.t1.id == 89615 ^ data.t0.player_positions == CB ^ data.t1.player_positions == CB, RB, CDM -> data.t0.player_positions < data.t1.player_positions
+data.t0.id == 72653 ^ data.t1.id == 72647 ^ data.t0.player_positions == CB ^ data.t1.player_positions == CB, RB, CDM -> data.t0.player_positions < data.t1.player_positions
+data.t0.id == 42361 ^ data.t1.id == 42358 ^ data.t0.player_positions == RM ^ data.t1.player_positions == RM, ST, LM -> data.t0.player_positions < data.t1.player_positions
+data.t0.id == 66947 ^ data.t1.id == 66946 ^ data.t0.player_positions == RM ^ data.t1.player_positions == RM, ST, LM -> data.t0.player_positions < data.t1.player_positions
+data.t0.id == 82173 ^ data.t1.id == 82168 ^ data.t0.league_name == English League Championship ^ data.t1.league_name == Greek Super League -> data.t0.league_name < data.t1.league_name
+data.t0.id == 43334 ^ data.t1.id == 43332 ^ data.t0.league_name == English League Championship ^ data.t1.league_name == Greek Super League -> data.t0.league_name < data.t1.league_name
+data.t0.id == 26059 ^ data.t1.id == 26057 ^ data.t0.player_positions == ST, CF ^ data.t1.player_positions == ST, CAM -> data.t0.player_positions < data.t1.player_positions
+data.t0.id == 12294 ^ data.t1.id == 12293 ^ data.t0.player_positions == ST, CF ^ data.t1.player_positions == ST, CAM -> data.t0.player_positions < data.t1.player_positions
+data.t0.id == 74521 ^ data.t1.id == 74516 ^ data.t0.player_positions == ST, CF ^ data.t1.player_positions == ST, CAM -> data.t0.player_positions < data.t1.player_positions
+data.t0.id == 74520 ^ data.t1.id == 74518 ^ data.t0.player_positions == ST, CF ^ data.t1.player_positions == ST, CAM -> data.t0.player_positions < data.t1.player_positions
+data.t0.id == 74521 ^ data.t1.id == 74518 ^ data.t0.player_positions == ST, CF ^ data.t1.player_positions == ST, CAM -> data.t0.player_positions < data.t1.player_positions
+data.t0.id == 12294 ^ data.t1.id == 12290 ^ data.t0.player_positions == ST, CF ^ data.t1.player_positions == ST, CAM -> data.t0.player_positions < data.t1.player_positions
+data.t0.id == 81878 ^ data.t1.id == 81875 ^ data.t0.league_name == Holland Eredivisie ^ data.t1.league_name == Italian Serie A -> data.t0.league_name < data.t1.league_name
+data.t0.id == 81878 ^ data.t1.id == 81877 ^ data.t0.league_name == Holland Eredivisie ^ data.t1.league_name == Italian Serie A -> data.t0.league_name < data.t1.league_name
+data.t0.id == 47326 ^ data.t1.id == 47324 ^ data.t0.league_name == Holland Eredivisie ^ data.t1.league_name == Italian Serie A -> data.t0.league_name < data.t1.league_name
+data.t0.id == 68169 ^ data.t1.id == 68168 ^ data.t0.league_name == Holland Eredivisie ^ data.t1.league_name == Italian Serie A -> data.t0.league_name < data.t1.league_name
+data.t0.id == 48582 ^ data.t1.id == 48577 ^ data.t0.league_name == Holland Eredivisie ^ data.t1.league_name == Italian Serie A -> data.t0.league_name < data.t1.league_name
+data.t0.id == 71346 ^ data.t1.id == 71344 ^ data.t0.league_name == Holland Eredivisie ^ data.t1.league_name == Italian Serie A -> data.t0.league_name < data.t1.league_name
+data.t0.id == 94525 ^ data.t1.id == 94522 ^ data.t0.league_name == Holland Eredivisie ^ data.t1.league_name == Italian Serie A -> data.t0.league_name < data.t1.league_name
+data.t0.id == 11933 ^ data.t1.id == 11931 ^ data.t0.league_name == Holland Eredivisie ^ data.t1.league_name == Italian Serie A -> data.t0.league_name < data.t1.league_name
+data.t0.id == 48496 ^ data.t1.id == 48493 ^ data.t0.league_name == German 2. Bundesliga ^ data.t1.league_name == Norwegian Eliteserien -> data.t0.league_name < data.t1.league_name
+data.t0.id == 40208 ^ data.t1.id == 40205 ^ data.t0.league_name == German 2. Bundesliga ^ data.t1.league_name == Norwegian Eliteserien -> data.t0.league_name < data.t1.league_name
+data.t0.id == 37706 ^ data.t1.id == 37703 ^ data.t0.league_name == German 2. Bundesliga ^ data.t1.league_name == Norwegian Eliteserien -> data.t0.league_name < data.t1.league_name
+data.t0.id == 89824 ^ data.t1.id == 89821 ^ data.t0.league_name == Campeonato Brasileiro Série B ^ data.t1.league_name == Campeonato Brasileiro Série A -> data.t0.league_name < data.t1.league_name
+data.t0.id == 83840 ^ data.t1.id == 83837 ^ data.t0.league_name == Campeonato Brasileiro Série B ^ data.t1.league_name == Campeonato Brasileiro Série A -> data.t0.league_name < data.t1.league_name
+data.t0.id == 83866 ^ data.t1.id == 83862 ^ data.t0.league_name == Campeonato Brasileiro Série B ^ data.t1.league_name == Campeonato Brasileiro Série A -> data.t0.league_name < data.t1.league_name
+data.t0.id == 48431 ^ data.t1.id == 48429 ^ data.t0.player_positions == CDM, CM, RB, LB ^ data.t1.player_positions == LB, CDM -> data.t0.player_positions < data.t1.player_positions
+data.t0.id == 48431 ^ data.t1.id == 48429 ^ data.t0.player_positions == CDM, CM, RB, LB ^ data.t1.player_positions == LB, CDM -> data.t0.player_positions < data.t1.player_positions
+data.t0.id == 66929 ^ data.t1.id == 66928 ^ data.t0.league_name == Greek Super League ^ data.t1.league_name == Spanish Segunda División -> data.t0.league_name < data.t1.league_name
+data.t0.id == 13329 ^ data.t1.id == 13326 ^ data.t0.league_name == Greek Super League ^ data.t1.league_name == Spanish Segunda División -> data.t0.league_name < data.t1.league_name
+data.t0.id == 3308 ^ data.t1.id == 3306 ^ data.t0.league_name == Greek Super League ^ data.t1.league_name == Spanish Segunda División -> data.t0.league_name < data.t1.league_name
+data.t0.id == 35601 ^ data.t1.id == 35597 ^ data.t0.player_positions == ST ^ data.t1.player_positions == ST, RW, RM -> data.t0.player_positions < data.t1.player_positions
+data.t0.id == 35600 ^ data.t1.id == 35597 ^ data.t0.player_positions == ST ^ data.t1.player_positions == ST, RW, RM -> data.t0.player_positions < data.t1.player_positions
+data.t0.id == 63833 ^ data.t1.id == 63829 ^ data.t0.player_positions == ST ^ data.t1.player_positions == ST, RW, RM -> data.t0.player_positions < data.t1.player_positions
+data.t0.id == 6004 ^ data.t1.id == 6000 ^ data.t0.player_positions == ST ^ data.t1.player_positions == ST, RW, RM -> data.t0.player_positions < data.t1.player_positions
+data.t0.id == 38279 ^ data.t1.id == 38277 ^ data.t0.league_name == Turkish Süper Lig ^ data.t1.league_name == Swedish Allsvenskan -> data.t0.league_name < data.t1.league_name
+data.t0.id == 19219 ^ data.t1.id == 19216 ^ data.t0.league_name == Turkish Süper Lig ^ data.t1.league_name == Swedish Allsvenskan -> data.t0.league_name < data.t1.league_name
+data.t0.id == 6578 ^ data.t1.id == 6575 ^ data.t0.league_name == Turkish Süper Lig ^ data.t1.league_name == Swedish Allsvenskan -> data.t0.league_name < data.t1.league_name
+data.t0.id == 31660 ^ data.t1.id == 31657 ^ data.t0.league_name == Turkish Süper Lig ^ data.t1.league_name == Swedish Allsvenskan -> data.t0.league_name < data.t1.league_name
+data.t0.id == 91670 ^ data.t1.id == 91668 ^ data.t0.potential == 71 ^ data.t1.potential == 81 -> data.t0.potential < data.t1.potential
+data.t0.id == 69243 ^ data.t1.id == 69239 ^ data.t0.potential == 71 ^ data.t1.potential == 81 -> data.t0.potential < data.t1.potential
+data.t0.id == 80577 ^ data.t1.id == 80573 ^ data.t0.potential == 71 ^ data.t1.potential == 81 -> data.t0.potential < data.t1.potential
+data.t0.id == 1533 ^ data.t1.id == 1532 ^ data.t0.player_positions == ST, RW ^ data.t1.player_positions == LW, ST, RW -> data.t0.player_positions < data.t1.player_positions
+data.t0.id == 71707 ^ data.t1.id == 71703 ^ data.t0.player_positions == ST, RW ^ data.t1.player_positions == LW, ST, RW -> data.t0.player_positions < data.t1.player_positions
+data.t0.id == 31978 ^ data.t1.id == 31973 ^ data.t0.player_positions == CAM, CM, RM ^ data.t1.player_positions == RM, CM -> data.t0.player_positions < data.t1.player_positions
+data.t0.id == 31977 ^ data.t1.id == 31973 ^ data.t0.player_positions == CAM, CM, RM ^ data.t1.player_positions == RM, CM -> data.t0.player_positions < data.t1.player_positions
+data.t0.id == 21002 ^ data.t1.id == 20999 ^ data.t0.player_positions == CM, CDM ^ data.t1.player_positions == CDM, CB -> data.t0.player_positions < data.t1.player_positions
+data.t0.id == 99704 ^ data.t1.id == 99702 ^ data.t0.player_positions == CM, CDM ^ data.t1.player_positions == CDM, CB -> data.t0.player_positions < data.t1.player_positions
+data.t0.id == 41001 ^ data.t1.id == 40997 ^ data.t0.player_positions == CM, CDM ^ data.t1.player_positions == CDM, CB -> data.t0.player_positions < data.t1.player_positions
+data.t0.id == 65792 ^ data.t1.id == 65790 ^ data.t0.player_positions == CM, CAM ^ data.t1.player_positions == LM, CM -> data.t0.player_positions < data.t1.player_positions
+data.t0.id == 82656 ^ data.t1.id == 82652 ^ data.t0.player_positions == CM, CAM ^ data.t1.player_positions == LM, CM -> data.t0.player_positions < data.t1.player_positions
+data.t0.id == 35295 ^ data.t1.id == 35294 ^ data.t0.player_positions == CM, CAM ^ data.t1.player_positions == LM, CM -> data.t0.player_positions < data.t1.player_positions
+data.t0.id == 41295 ^ data.t1.id == 41293 ^ data.t0.player_positions == RB, RM, CDM ^ data.t1.player_positions == RB -> data.t0.player_positions < data.t1.player_positions
+data.t0.id == 41295 ^ data.t1.id == 41292 ^ data.t0.player_positions == RB, RM, CDM ^ data.t1.player_positions == RB -> data.t0.player_positions < data.t1.player_positions
+data.t0.id == 69046 ^ data.t1.id == 69044 ^ data.t0.potential == 88 ^ data.t1.potential == 93 -> data.t0.potential < data.t1.potential
+data.t0.id == 27758 ^ data.t1.id == 27754 ^ data.t0.potential == 88 ^ data.t1.potential == 93 -> data.t0.potential < data.t1.potential
+data.t0.id == 68762 ^ data.t1.id == 68757 ^ data.t0.player_positions == RM, CAM ^ data.t1.player_positions == RW, RM -> data.t0.player_positions < data.t1.player_positions
+data.t0.id == 68762 ^ data.t1.id == 68758 ^ data.t0.player_positions == RM, CAM ^ data.t1.player_positions == RW, RM -> data.t0.player_positions < data.t1.player_positions
+data.t0.id == 81413 ^ data.t1.id == 81409 ^ data.t0.player_positions == CAM ^ data.t1.player_positions == CAM, CM, LW -> data.t0.player_positions < data.t1.player_positions
+data.t0.id == 78204 ^ data.t1.id == 78199 ^ data.t0.player_positions == CAM ^ data.t1.player_positions == CAM, CM, LW -> data.t0.player_positions < data.t1.player_positions
+data.t0.id == 48095 ^ data.t1.id == 48091 ^ data.t0.player_positions == CDM, CM, RB, RM ^ data.t1.player_positions == CDM, CM, RM -> data.t0.player_positions < data.t1.player_positions
+data.t0.id == 48094 ^ data.t1.id == 48091 ^ data.t0.player_positions == CDM, CM, RB, RM ^ data.t1.player_positions == CDM, CM, RM -> data.t0.player_positions < data.t1.player_positions
+data.t0.id == 30990 ^ data.t1.id == 30987 ^ data.t0.league_name == Belgian Jupiler Pro League ^ data.t1.league_name == Danish Superliga -> data.t0.league_name < data.t1.league_name
+data.t0.id == 53756 ^ data.t1.id == 53754 ^ data.t0.league_name == Belgian Jupiler Pro League ^ data.t1.league_name == Danish Superliga -> data.t0.league_name < data.t1.league_name
+data.t0.id == 10278 ^ data.t1.id == 10273 ^ data.t0.player_positions == RM, ST ^ data.t1.player_positions == ST, CAM, RM -> data.t0.player_positions < data.t1.player_positions
+data.t0.id == 10278 ^ data.t1.id == 10276 ^ data.t0.player_positions == RM, ST ^ data.t1.player_positions == ST, CAM, RM -> data.t0.player_positions < data.t1.player_positions
+data.t0.id == 6932 ^ data.t1.id == 6929 ^ data.t0.player_positions == CM ^ data.t1.player_positions == CDM, CM, CAM -> data.t0.player_positions < data.t1.player_positions
+data.t0.id == 6932 ^ data.t1.id == 6930 ^ data.t0.player_positions == CM ^ data.t1.player_positions == CDM, CM, CAM -> data.t0.player_positions < data.t1.player_positions
+data.t0.id == 101570 ^ data.t1.id == 101568 ^ data.t0.player_positions == CM ^ data.t1.player_positions == CDM, CM, CAM -> data.t0.player_positions < data.t1.player_positions
+data.t0.id == 53384 ^ data.t1.id == 53383 ^ data.t0.player_positions == CDM, CB, CM ^ data.t1.player_positions == CDM, CM, CB -> data.t0.player_positions < data.t1.player_positions
+data.t0.id == 53384 ^ data.t1.id == 53382 ^ data.t0.player_positions == CDM, CB, CM ^ data.t1.player_positions == CDM, CM, CB -> data.t0.player_positions < data.t1.player_positions
+data.t0.id == 12731 ^ data.t1.id == 12728 ^ data.t0.potential == 61 ^ data.t1.potential == 58 -> data.t0.potential < data.t1.potential
+data.t0.id == 22145 ^ data.t1.id == 22144 ^ data.t0.potential == 61 ^ data.t1.potential == 58 -> data.t0.potential < data.t1.potential
+data.t0.id == 161 ^ data.t1.id == 158 ^ data.t0.potential == 61 ^ data.t1.potential == 58 -> data.t0.potential < data.t1.potential
+data.t0.id == 39459 ^ data.t1.id == 39458 ^ data.t0.potential == 61 ^ data.t1.potential == 58 -> data.t0.potential < data.t1.potential
+data.t0.id == 75886 ^ data.t1.id == 75885 ^ data.t0.league_name == German 2. Bundesliga ^ data.t1.league_name == Turkish Süper Lig -> data.t0.league_name < data.t1.league_name
+data.t0.id == 44662 ^ data.t1.id == 44660 ^ data.t0.league_name == German 2. Bundesliga ^ data.t1.league_name == Turkish Süper Lig -> data.t0.league_name < data.t1.league_name
+data.t0.id == 41162 ^ data.t1.id == 41161 ^ data.t0.league_name == German 2. Bundesliga ^ data.t1.league_name == Turkish Süper Lig -> data.t0.league_name < data.t1.league_name
+data.t0.id == 30077 ^ data.t1.id == 30074 ^ data.t0.league_name == Italian Serie B ^ data.t1.league_name == Polish T-Mobile Ekstraklasa -> data.t0.league_name < data.t1.league_name
+data.t0.id == 63871 ^ data.t1.id == 63867 ^ data.t0.league_name == Italian Serie B ^ data.t1.league_name == Polish T-Mobile Ekstraklasa -> data.t0.league_name < data.t1.league_name
+data.t0.id == 7887 ^ data.t1.id == 7886 ^ data.t0.league_name == Holland Eredivisie ^ data.t1.league_name == Saudi Abdul L. Jameel League -> data.t0.league_name < data.t1.league_name
+data.t0.id == 35469 ^ data.t1.id == 35466 ^ data.t0.league_name == Holland Eredivisie ^ data.t1.league_name == Saudi Abdul L. Jameel League -> data.t0.league_name < data.t1.league_name
+data.t0.id == 36164 ^ data.t1.id == 36163 ^ data.t0.league_name == Holland Eredivisie ^ data.t1.league_name == Saudi Abdul L. Jameel League -> data.t0.league_name < data.t1.league_name
+data.t0.id == 35469 ^ data.t1.id == 35468 ^ data.t0.league_name == Holland Eredivisie ^ data.t1.league_name == Saudi Abdul L. Jameel League -> data.t0.league_name < data.t1.league_name
+data.t0.id == 60760 ^ data.t1.id == 60756 ^ data.t0.potential == 86 ^ data.t1.potential == 79 -> data.t0.potential < data.t1.potential
+data.t0.id == 85342 ^ data.t1.id == 85339 ^ data.t0.potential == 86 ^ data.t1.potential == 79 -> data.t0.potential < data.t1.potential
+data.t0.id == 45590 ^ data.t1.id == 45585 ^ data.t0.potential == 86 ^ data.t1.potential == 79 -> data.t0.potential < data.t1.potential
+data.t0.id == 23609 ^ data.t1.id == 23605 ^ data.t0.player_positions == LB, RB ^ data.t1.player_positions == LB, LM, RB -> data.t0.player_positions < data.t1.player_positions
+data.t0.id == 9862 ^ data.t1.id == 9859 ^ data.t0.player_positions == LB, RB ^ data.t1.player_positions == LB, LM, RB -> data.t0.player_positions < data.t1.player_positions
+data.t0.id == 37665 ^ data.t1.id == 37661 ^ data.t0.potential == 84 ^ data.t1.potential == 76 -> data.t0.potential < data.t1.potential
+data.t0.id == 41422 ^ data.t1.id == 41419 ^ data.t0.potential == 84 ^ data.t1.potential == 76 -> data.t0.potential < data.t1.potential
+data.t0.id == 14063 ^ data.t1.id == 14060 ^ data.t0.potential == 84 ^ data.t1.potential == 76 -> data.t0.potential < data.t1.potential
+data.t0.id == 37707 ^ data.t1.id == 37704 ^ data.t0.player_positions == ST, RM ^ data.t1.player_positions == ST, LW -> data.t0.player_positions < data.t1.player_positions
+data.t0.id == 45095 ^ data.t1.id == 45091 ^ data.t0.player_positions == ST, RM ^ data.t1.player_positions == ST, LW -> data.t0.player_positions < data.t1.player_positions
+data.t0.id == 17527 ^ data.t1.id == 17521 ^ data.t0.league_name == Italian Serie A ^ data.t1.league_name == Greek Super League -> data.t0.league_name < data.t1.league_name
+data.t0.id == 68224 ^ data.t1.id == 68223 ^ data.t0.league_name == Italian Serie A ^ data.t1.league_name == Greek Super League -> data.t0.league_name < data.t1.league_name
+data.t0.id == 30894 ^ data.t1.id == 30892 ^ data.t0.league_name == Italian Serie A ^ data.t1.league_name == Greek Super League -> data.t0.league_name < data.t1.league_name
+data.t0.id == 64879 ^ data.t1.id == 64875 ^ data.t0.league_name == Greek Super League ^ data.t1.league_name == Belgian Jupiler Pro League -> data.t0.league_name < data.t1.league_name
+data.t0.id == 84811 ^ data.t1.id == 84806 ^ data.t0.league_name == Greek Super League ^ data.t1.league_name == Belgian Jupiler Pro League -> data.t0.league_name < data.t1.league_name
+data.t0.id == 13244 ^ data.t1.id == 13242 ^ data.t0.league_name == Greek Super League ^ data.t1.league_name == Belgian Jupiler Pro League -> data.t0.league_name < data.t1.league_name
+data.t0.id == 1896 ^ data.t1.id == 1891 ^ data.t0.league_name == English Premier League ^ data.t1.league_name == nan -> data.t0.league_name < data.t1.league_name
+data.t0.id == 85907 ^ data.t1.id == 85906 ^ data.t0.league_name == English Premier League ^ data.t1.league_name == nan -> data.t0.league_name < data.t1.league_name
+data.t0.id == 8621 ^ data.t1.id == 8616 ^ data.t0.league_name == English Premier League ^ data.t1.league_name == nan -> data.t0.league_name < data.t1.league_name
+data.t0.id == 68875 ^ data.t1.id == 68874 ^ data.t0.league_name == English Premier League ^ data.t1.league_name == nan -> data.t0.league_name < data.t1.league_name
+data.t0.id == 5373 ^ data.t1.id == 5368 ^ data.t0.league_name == USA Major League Soccer ^ data.t1.league_name == Finnish Veikkausliiga -> data.t0.league_name < data.t1.league_name
+data.t0.id == 56424 ^ data.t1.id == 56422 ^ data.t0.league_name == USA Major League Soccer ^ data.t1.league_name == Finnish Veikkausliiga -> data.t0.league_name < data.t1.league_name
+data.t0.id == 10533 ^ data.t1.id == 10530 ^ data.t0.league_name == Spain Primera Division ^ data.t1.league_name == USA Major League Soccer -> data.t0.league_name < data.t1.league_name
+data.t0.id == 27812 ^ data.t1.id == 27810 ^ data.t0.league_name == Spain Primera Division ^ data.t1.league_name == USA Major League Soccer -> data.t0.league_name < data.t1.league_name
+data.t0.id == 2822 ^ data.t1.id == 2820 ^ data.t0.league_name == Spain Primera Division ^ data.t1.league_name == USA Major League Soccer -> data.t0.league_name < data.t1.league_name
+data.t0.id == 54212 ^ data.t1.id == 54208 ^ data.t0.league_name == Spain Primera Division ^ data.t1.league_name == USA Major League Soccer -> data.t0.league_name < data.t1.league_name
+data.t0.id == 753 ^ data.t1.id == 751 ^ data.t0.league_name == Spain Primera Division ^ data.t1.league_name == USA Major League Soccer -> data.t0.league_name < data.t1.league_name
+data.t0.id == 92504 ^ data.t1.id == 92501 ^ data.t0.league_name == Spain Primera Division ^ data.t1.league_name == USA Major League Soccer -> data.t0.league_name < data.t1.league_name
+data.t0.id == 47543 ^ data.t1.id == 47541 ^ data.t0.league_name == Turkish Süper Lig ^ data.t1.league_name == French Ligue 2 -> data.t0.league_name < data.t1.league_name
+data.t0.id == 17918 ^ data.t1.id == 17915 ^ data.t0.league_name == Turkish Süper Lig ^ data.t1.league_name == French Ligue 2 -> data.t0.league_name < data.t1.league_name
+data.t0.id == 47543 ^ data.t1.id == 47541 ^ data.t0.league_name == Turkish Süper Lig ^ data.t1.league_name == French Ligue 2 -> data.t0.league_name < data.t1.league_name
+data.t0.id == 9631 ^ data.t1.id == 9626 ^ data.t0.league_name == English League Championship ^ data.t1.league_name == nan -> data.t0.league_name < data.t1.league_name
+data.t0.id == 24955 ^ data.t1.id == 24954 ^ data.t0.league_name == English League Championship ^ data.t1.league_name == nan -> data.t0.league_name < data.t1.league_name
+data.t0.id == 52253 ^ data.t1.id == 52251 ^ data.t0.league_name == English League Championship ^ data.t1.league_name == nan -> data.t0.league_name < data.t1.league_name
+data.t0.id == 9612 ^ data.t1.id == 9606 ^ data.t0.league_name == English League Championship ^ data.t1.league_name == nan -> data.t0.league_name < data.t1.league_name
+data.t0.id == 16148 ^ data.t1.id == 16146 ^ data.t0.league_name == English League Championship ^ data.t1.league_name == nan -> data.t0.league_name < data.t1.league_name
+data.t0.id == 94948 ^ data.t1.id == 94945 ^ data.t0.player_positions == CM, ST ^ data.t1.player_positions == CDM, CM -> data.t0.player_positions < data.t1.player_positions
+data.t0.id == 26634 ^ data.t1.id == 26632 ^ data.t0.player_positions == CM, ST ^ data.t1.player_positions == CDM, CM -> data.t0.player_positions < data.t1.player_positions
+data.t0.id == 9400 ^ data.t1.id == 9398 ^ data.t0.player_positions == RB, CDM ^ data.t1.player_positions == CDM, RB -> data.t0.player_positions < data.t1.player_positions
+data.t0.id == 25036 ^ data.t1.id == 25032 ^ data.t0.player_positions == RB, CDM ^ data.t1.player_positions == CDM, RB -> data.t0.player_positions < data.t1.player_positions
+data.t0.id == 21367 ^ data.t1.id == 21364 ^ data.t0.player_positions == RB, CDM ^ data.t1.player_positions == CDM, RB -> data.t0.player_positions < data.t1.player_positions
+data.t0.id == 24334 ^ data.t1.id == 24332 ^ data.t0.player_positions == LB ^ data.t1.player_positions == LB, LM, LWB -> data.t0.player_positions < data.t1.player_positions
+data.t0.id == 20068 ^ data.t1.id == 20067 ^ data.t0.player_positions == LB ^ data.t1.player_positions == LB, LM, LWB -> data.t0.player_positions < data.t1.player_positions
+data.t0.id == 40166 ^ data.t1.id == 40164 ^ data.t0.player_positions == LB ^ data.t1.player_positions == LB, LM, LWB -> data.t0.player_positions < data.t1.player_positions
+data.t0.id == 33931 ^ data.t1.id == 33928 ^ data.t0.player_positions == LB ^ data.t1.player_positions == LB, LM, LWB -> data.t0.player_positions < data.t1.player_positions
+data.t0.id == 54512 ^ data.t1.id == 54506 ^ data.t0.league_name == Swedish Allsvenskan ^ data.t1.league_name == Polish T-Mobile Ekstraklasa -> data.t0.league_name < data.t1.league_name
+data.t0.id == 20279 ^ data.t1.id == 20277 ^ data.t0.league_name == Swedish Allsvenskan ^ data.t1.league_name == Polish T-Mobile Ekstraklasa -> data.t0.league_name < data.t1.league_name
+data.t0.id == 20329 ^ data.t1.id == 20328 ^ data.t0.player_positions == CF, ST, CAM ^ data.t1.player_positions == CF, ST -> data.t0.player_positions < data.t1.player_positions
+data.t0.id == 20329 ^ data.t1.id == 20328 ^ data.t0.player_positions == CF, ST, CAM ^ data.t1.player_positions == CF, ST -> data.t0.player_positions < data.t1.player_positions
+data.t0.id == 31098 ^ data.t1.id == 31094 ^ data.t0.potential == 81 ^ data.t1.potential == 75 -> data.t0.potential < data.t1.potential
+data.t0.id == 41135 ^ data.t1.id == 41134 ^ data.t0.potential == 81 ^ data.t1.potential == 75 -> data.t0.potential < data.t1.potential
+data.t0.id == 48057 ^ data.t1.id == 48053 ^ data.t0.potential == 81 ^ data.t1.potential == 75 -> data.t0.potential < data.t1.potential
+data.t0.id == 101561 ^ data.t1.id == 101559 ^ data.t0.potential == 81 ^ data.t1.potential == 75 -> data.t0.potential < data.t1.potential
+data.t0.id == 26095 ^ data.t1.id == 26092 ^ data.t0.potential == 81 ^ data.t1.potential == 75 -> data.t0.potential < data.t1.potential
+data.t0.id == 59342 ^ data.t1.id == 59338 ^ data.t0.player_positions == CAM ^ data.t1.player_positions == CM, CDM -> data.t0.player_positions < data.t1.player_positions
+data.t0.id == 59115 ^ data.t1.id == 59109 ^ data.t0.player_positions == CAM ^ data.t1.player_positions == CM, CDM -> data.t0.player_positions < data.t1.player_positions
+data.t0.id == 68059 ^ data.t1.id == 68054 ^ data.t0.player_positions == CAM ^ data.t1.player_positions == CM, CDM -> data.t0.player_positions < data.t1.player_positions
+data.t0.id == 68849 ^ data.t1.id == 68848 ^ data.t0.player_positions == CDM, RB ^ data.t1.player_positions == CDM, CM, RB -> data.t0.player_positions < data.t1.player_positions
+data.t0.id == 55636 ^ data.t1.id == 55635 ^ data.t0.player_positions == CDM, RB ^ data.t1.player_positions == CDM, CM, RB -> data.t0.player_positions < data.t1.player_positions
+data.t0.id == 62763 ^ data.t1.id == 62759 ^ data.t0.player_positions == LM, RM ^ data.t1.player_positions == CAM, RM, LM -> data.t0.player_positions < data.t1.player_positions
+data.t0.id == 2592 ^ data.t1.id == 2589 ^ data.t0.player_positions == LM, RM ^ data.t1.player_positions == CAM, RM, LM -> data.t0.player_positions < data.t1.player_positions
+data.t0.id == 11526 ^ data.t1.id == 11522 ^ data.t0.player_positions == CM, RM ^ data.t1.player_positions == CM, CDM -> data.t0.player_positions < data.t1.player_positions
+data.t0.id == 22830 ^ data.t1.id == 22829 ^ data.t0.player_positions == CM, RM ^ data.t1.player_positions == CM, CDM -> data.t0.player_positions < data.t1.player_positions
+data.t0.id == 8769 ^ data.t1.id == 8766 ^ data.t0.player_positions == CM, RM ^ data.t1.player_positions == CM, CDM -> data.t0.player_positions < data.t1.player_positions
+data.t0.id == 19387 ^ data.t1.id == 19383 ^ data.t0.player_positions == CM, RM ^ data.t1.player_positions == CM, CDM -> data.t0.player_positions < data.t1.player_positions
+data.t0.id == 65737 ^ data.t1.id == 65735 ^ data.t0.player_positions == CM, RM ^ data.t1.player_positions == CM, CDM -> data.t0.player_positions < data.t1.player_positions
+data.t0.id == 63050 ^ data.t1.id == 63044 ^ data.t0.player_positions == LW ^ data.t1.player_positions == LM, RM -> data.t0.player_positions < data.t1.player_positions
+data.t0.id == 63049 ^ data.t1.id == 63044 ^ data.t0.player_positions == LW ^ data.t1.player_positions == LM, RM -> data.t0.player_positions < data.t1.player_positions
+data.t0.id == 22394 ^ data.t1.id == 22393 ^ data.t0.player_positions == CAM, CM ^ data.t1.player_positions == CAM, CM, LW -> data.t0.player_positions < data.t1.player_positions
+data.t0.id == 78204 ^ data.t1.id == 78202 ^ data.t0.player_positions == CAM, CM ^ data.t1.player_positions == CAM, CM, LW -> data.t0.player_positions < data.t1.player_positions
+data.t0.id == 14212 ^ data.t1.id == 14209 ^ data.t0.league_name == Turkish Süper Lig ^ data.t1.league_name == nan -> data.t0.league_name < data.t1.league_name
+data.t0.id == 14213 ^ data.t1.id == 14209 ^ data.t0.league_name == Turkish Süper Lig ^ data.t1.league_name == nan -> data.t0.league_name < data.t1.league_name
+data.t0.id == 2443 ^ data.t1.id == 2438 ^ data.t0.league_name == Turkish Süper Lig ^ data.t1.league_name == nan -> data.t0.league_name < data.t1.league_name
+data.t0.id == 33689 ^ data.t1.id == 33685 ^ data.t0.potential == 83 ^ data.t1.potential == 73 -> data.t0.potential < data.t1.potential
+data.t0.id == 49608 ^ data.t1.id == 49603 ^ data.t0.potential == 83 ^ data.t1.potential == 73 -> data.t0.potential < data.t1.potential
+data.t0.id == 81123 ^ data.t1.id == 81120 ^ data.t0.potential == 83 ^ data.t1.potential == 73 -> data.t0.potential < data.t1.potential
+data.t0.id == 20661 ^ data.t1.id == 20658 ^ data.t0.league_name == French Ligue 1 ^ data.t1.league_name == Rest of World -> data.t0.league_name < data.t1.league_name
+data.t0.id == 32156 ^ data.t1.id == 32151 ^ data.t0.league_name == French Ligue 1 ^ data.t1.league_name == Rest of World -> data.t0.league_name < data.t1.league_name
+data.t0.id == 39130 ^ data.t1.id == 39128 ^ data.t0.player_positions == ST, RM, CAM ^ data.t1.player_positions == ST, CAM, RM -> data.t0.player_positions < data.t1.player_positions
+data.t0.id == 10278 ^ data.t1.id == 10277 ^ data.t0.player_positions == ST, RM, CAM ^ data.t1.player_positions == ST, CAM, RM -> data.t0.player_positions < data.t1.player_positions
+data.t0.id == 13718 ^ data.t1.id == 13715 ^ data.t0.potential == 92 ^ data.t1.potential == 87 -> data.t0.potential < data.t1.potential
+data.t0.id == 31756 ^ data.t1.id == 31755 ^ data.t0.potential == 92 ^ data.t1.potential == 87 -> data.t0.potential < data.t1.potential
+data.t0.id == 45078 ^ data.t1.id == 45077 ^ data.t0.player_positions == CAM, LM, CM ^ data.t1.player_positions == CAM, CM -> data.t0.player_positions < data.t1.player_positions
+data.t0.id == 29866 ^ data.t1.id == 29861 ^ data.t0.player_positions == CAM, LM, CM ^ data.t1.player_positions == CAM, CM -> data.t0.player_positions < data.t1.player_positions
+data.t0.id == 31034 ^ data.t1.id == 31031 ^ data.t0.league_name == Scottish Premiership ^ data.t1.league_name == German 3. Bundesliga -> data.t0.league_name < data.t1.league_name
+data.t0.id == 11083 ^ data.t1.id == 11082 ^ data.t0.league_name == Scottish Premiership ^ data.t1.league_name == German 3. Bundesliga -> data.t0.league_name < data.t1.league_name
+data.t0.id == 89777 ^ data.t1.id == 89776 ^ data.t0.player_positions == CDM, CM, CAM ^ data.t1.player_positions == CM, CDM -> data.t0.player_positions < data.t1.player_positions
+data.t0.id == 30318 ^ data.t1.id == 30317 ^ data.t0.player_positions == CDM, CM, CAM ^ data.t1.player_positions == CM, CDM -> data.t0.player_positions < data.t1.player_positions
+data.t0.id == 18307 ^ data.t1.id == 18306 ^ data.t0.player_positions == CDM, CM, CAM ^ data.t1.player_positions == CM, CDM -> data.t0.player_positions < data.t1.player_positions
+data.t0.id == 69598 ^ data.t1.id == 69594 ^ data.t0.league_name == Italian Serie B ^ data.t1.league_name == French Ligue 1 -> data.t0.league_name < data.t1.league_name
+data.t0.id == 69596 ^ data.t1.id == 69594 ^ data.t0.league_name == Italian Serie B ^ data.t1.league_name == French Ligue 1 -> data.t0.league_name < data.t1.league_name
+data.t0.id == 39442 ^ data.t1.id == 39438 ^ data.t0.league_name == Italian Serie B ^ data.t1.league_name == French Ligue 1 -> data.t0.league_name < data.t1.league_name
+data.t0.id == 59534 ^ data.t1.id == 59529 ^ data.t0.potential == 72 ^ data.t1.potential == 81 -> data.t0.potential < data.t1.potential
+data.t0.id == 74268 ^ data.t1.id == 74267 ^ data.t0.potential == 72 ^ data.t1.potential == 81 -> data.t0.potential < data.t1.potential
+data.t0.id == 83780 ^ data.t1.id == 83779 ^ data.t0.potential == 72 ^ data.t1.potential == 81 -> data.t0.potential < data.t1.potential
+data.t0.id == 99353 ^ data.t1.id == 99350 ^ data.t0.potential == 72 ^ data.t1.potential == 81 -> data.t0.potential < data.t1.potential
+data.t0.id == 66533 ^ data.t1.id == 66529 ^ data.t0.potential == 72 ^ data.t1.potential == 81 -> data.t0.potential < data.t1.potential
+data.t0.id == 50829 ^ data.t1.id == 50825 ^ data.t0.potential == 72 ^ data.t1.potential == 81 -> data.t0.potential < data.t1.potential
+data.t0.id == 79864 ^ data.t1.id == 79860 ^ data.t0.potential == 72 ^ data.t1.potential == 81 -> data.t0.potential < data.t1.potential
+data.t0.id == 60847 ^ data.t1.id == 60842 ^ data.t0.league_name == German 2. Bundesliga ^ data.t1.league_name == USA Major League Soccer -> data.t0.league_name < data.t1.league_name
+data.t0.id == 60846 ^ data.t1.id == 60843 ^ data.t0.league_name == German 2. Bundesliga ^ data.t1.league_name == USA Major League Soccer -> data.t0.league_name < data.t1.league_name
+data.t0.id == 46839 ^ data.t1.id == 46837 ^ data.t0.league_name == German 2. Bundesliga ^ data.t1.league_name == USA Major League Soccer -> data.t0.league_name < data.t1.league_name
+data.t0.id == 47195 ^ data.t1.id == 47193 ^ data.t0.league_name == German 2. Bundesliga ^ data.t1.league_name == USA Major League Soccer -> data.t0.league_name < data.t1.league_name
+data.t0.id == 44273 ^ data.t1.id == 44269 ^ data.t0.league_name == German 2. Bundesliga ^ data.t1.league_name == USA Major League Soccer -> data.t0.league_name < data.t1.league_name
+data.t0.id == 53196 ^ data.t1.id == 53193 ^ data.t0.league_name == French Ligue 2 ^ data.t1.league_name == Spanish Segunda División -> data.t0.league_name < data.t1.league_name
+data.t0.id == 53196 ^ data.t1.id == 53192 ^ data.t0.league_name == French Ligue 2 ^ data.t1.league_name == Spanish Segunda División -> data.t0.league_name < data.t1.league_name
+data.t0.id == 64076 ^ data.t1.id == 64073 ^ data.t0.player_positions == CB, CM ^ data.t1.player_positions == CB -> data.t0.player_positions < data.t1.player_positions
+data.t0.id == 15389 ^ data.t1.id == 15388 ^ data.t0.player_positions == CB, CM ^ data.t1.player_positions == CB -> data.t0.player_positions < data.t1.player_positions
+data.t0.id == 85431 ^ data.t1.id == 85429 ^ data.t0.player_positions == CB, CM ^ data.t1.player_positions == CB -> data.t0.player_positions < data.t1.player_positions
+data.t0.id == 85432 ^ data.t1.id == 85430 ^ data.t0.player_positions == CB, CM ^ data.t1.player_positions == CB -> data.t0.player_positions < data.t1.player_positions
+data.t0.id == 33724 ^ data.t1.id == 33723 ^ data.t0.player_positions == CB, CM ^ data.t1.player_positions == CB -> data.t0.player_positions < data.t1.player_positions
+data.t0.id == 26552 ^ data.t1.id == 26548 ^ data.t0.league_name == Swedish Allsvenskan ^ data.t1.league_name == Japanese J. League Division 1 -> data.t0.league_name < data.t1.league_name
+data.t0.id == 26552 ^ data.t1.id == 26549 ^ data.t0.league_name == Swedish Allsvenskan ^ data.t1.league_name == Japanese J. League Division 1 -> data.t0.league_name < data.t1.league_name
+data.t0.id == 33266 ^ data.t1.id == 33265 ^ data.t0.player_positions == LB, RB, LWB ^ data.t1.player_positions == LWB, RWB -> data.t0.player_positions < data.t1.player_positions
+data.t0.id == 33266 ^ data.t1.id == 33265 ^ data.t0.player_positions == LB, RB, LWB ^ data.t1.player_positions == LWB, RWB -> data.t0.player_positions < data.t1.player_positions
+data.t0.id == 35552 ^ data.t1.id == 35549 ^ data.t0.player_positions == CDM, CM, RB ^ data.t1.player_positions == CDM, CM -> data.t0.player_positions < data.t1.player_positions
+data.t0.id == 56816 ^ data.t1.id == 56813 ^ data.t0.player_positions == CDM, CM, RB ^ data.t1.player_positions == CDM, CM -> data.t0.player_positions < data.t1.player_positions
+data.t0.id == 74414 ^ data.t1.id == 74411 ^ data.t0.player_positions == CM, LM, CDM ^ data.t1.player_positions == CM, CDM -> data.t0.player_positions < data.t1.player_positions
+data.t0.id == 74414 ^ data.t1.id == 74412 ^ data.t0.player_positions == CM, LM, CDM ^ data.t1.player_positions == CM, CDM -> data.t0.player_positions < data.t1.player_positions
+data.t0.id == 49781 ^ data.t1.id == 49777 ^ data.t0.league_name == Portuguese Liga ZON SAGRES ^ data.t1.league_name == Rest of World -> data.t0.league_name < data.t1.league_name
+data.t0.id == 51509 ^ data.t1.id == 51505 ^ data.t0.league_name == Portuguese Liga ZON SAGRES ^ data.t1.league_name == Rest of World -> data.t0.league_name < data.t1.league_name
+data.t0.id == 23482 ^ data.t1.id == 23481 ^ data.t0.player_positions == LB, LWB ^ data.t1.player_positions == LWB, LB -> data.t0.player_positions < data.t1.player_positions
+data.t0.id == 51882 ^ data.t1.id == 51880 ^ data.t0.player_positions == LB, LWB ^ data.t1.player_positions == LWB, LB -> data.t0.player_positions < data.t1.player_positions
+data.t0.id == 26474 ^ data.t1.id == 26472 ^ data.t0.player_positions == RM, CAM ^ data.t1.player_positions == RM, LM -> data.t0.player_positions < data.t1.player_positions
+data.t0.id == 26473 ^ data.t1.id == 26472 ^ data.t0.player_positions == RM, CAM ^ data.t1.player_positions == RM, LM -> data.t0.player_positions < data.t1.player_positions
+data.t0.id == 43819 ^ data.t1.id == 43818 ^ data.t0.player_positions == RB, LB ^ data.t1.player_positions == RB, CB, LB -> data.t0.player_positions < data.t1.player_positions
+data.t0.id == 48458 ^ data.t1.id == 48457 ^ data.t0.player_positions == RB, LB ^ data.t1.player_positions == RB, CB, LB -> data.t0.player_positions < data.t1.player_positions
+data.t0.id == 59790 ^ data.t1.id == 59786 ^ data.t0.player_positions == LM ^ data.t1.player_positions == CM, LM -> data.t0.player_positions < data.t1.player_positions
+data.t0.id == 39323 ^ data.t1.id == 39321 ^ data.t0.player_positions == LM ^ data.t1.player_positions == CM, LM -> data.t0.player_positions < data.t1.player_positions
+data.t0.id == 14331 ^ data.t1.id == 14328 ^ data.t0.potential == 86 ^ data.t1.potential == 81 -> data.t0.potential < data.t1.potential
+data.t0.id == 8037 ^ data.t1.id == 8035 ^ data.t0.potential == 86 ^ data.t1.potential == 81 -> data.t0.potential < data.t1.potential
+data.t0.id == 42215 ^ data.t1.id == 42210 ^ data.t0.potential == 86 ^ data.t1.potential == 81 -> data.t0.potential < data.t1.potential
+data.t0.id == 31738 ^ data.t1.id == 31737 ^ data.t0.player_positions == ST, LM ^ data.t1.player_positions == ST, RW, LW -> data.t0.player_positions < data.t1.player_positions
+data.t0.id == 31738 ^ data.t1.id == 31737 ^ data.t0.player_positions == ST, LM ^ data.t1.player_positions == ST, RW, LW -> data.t0.player_positions < data.t1.player_positions
+data.t0.id == 25990 ^ data.t1.id == 25988 ^ data.t0.league_name == English League One ^ data.t1.league_name == Swedish Allsvenskan -> data.t0.league_name < data.t1.league_name
+data.t0.id == 75422 ^ data.t1.id == 75419 ^ data.t0.league_name == English League One ^ data.t1.league_name == Swedish Allsvenskan -> data.t0.league_name < data.t1.league_name
+data.t0.id == 75423 ^ data.t1.id == 75421 ^ data.t0.league_name == English League One ^ data.t1.league_name == Swedish Allsvenskan -> data.t0.league_name < data.t1.league_name
+data.t0.id == 28378 ^ data.t1.id == 28375 ^ data.t0.player_positions == LW, CM ^ data.t1.player_positions == CAM, LW, CM -> data.t0.player_positions < data.t1.player_positions
+data.t0.id == 28379 ^ data.t1.id == 28376 ^ data.t0.player_positions == LW, CM ^ data.t1.player_positions == CAM, LW, CM -> data.t0.player_positions < data.t1.player_positions
+data.t0.id == 31315 ^ data.t1.id == 31314 ^ data.t0.league_name == Chilian Campeonato Nacional ^ data.t1.league_name == nan -> data.t0.league_name < data.t1.league_name
+data.t0.id == 79198 ^ data.t1.id == 79196 ^ data.t0.league_name == Chilian Campeonato Nacional ^ data.t1.league_name == nan -> data.t0.league_name < data.t1.league_name
+data.t0.id == 10321 ^ data.t1.id == 10315 ^ data.t0.player_positions == LM, CM ^ data.t1.player_positions == CAM, LM -> data.t0.player_positions < data.t1.player_positions
+data.t0.id == 30887 ^ data.t1.id == 30882 ^ data.t0.player_positions == LM, CM ^ data.t1.player_positions == CAM, LM -> data.t0.player_positions < data.t1.player_positions
+data.t0.id == 47235 ^ data.t1.id == 47233 ^ data.t0.league_name == Spain Primera Division ^ data.t1.league_name == Chinese Super League -> data.t0.league_name < data.t1.league_name
+data.t0.id == 44421 ^ data.t1.id == 44416 ^ data.t0.league_name == Spain Primera Division ^ data.t1.league_name == Chinese Super League -> data.t0.league_name < data.t1.league_name
+data.t0.id == 4037 ^ data.t1.id == 4035 ^ data.t0.league_name == Spain Primera Division ^ data.t1.league_name == Chinese Super League -> data.t0.league_name < data.t1.league_name
+data.t0.id == 4038 ^ data.t1.id == 4034 ^ data.t0.league_name == Spain Primera Division ^ data.t1.league_name == Chinese Super League -> data.t0.league_name < data.t1.league_name
+data.t0.id == 59231 ^ data.t1.id == 59227 ^ data.t0.league_name == Argentina Primera División ^ data.t1.league_name == Spanish Segunda División -> data.t0.league_name < data.t1.league_name
+data.t0.id == 59276 ^ data.t1.id == 59272 ^ data.t0.league_name == Argentina Primera División ^ data.t1.league_name == Spanish Segunda División -> data.t0.league_name < data.t1.league_name
+data.t0.id == 81670 ^ data.t1.id == 81669 ^ data.t0.league_name == Argentina Primera División ^ data.t1.league_name == Spanish Segunda División -> data.t0.league_name < data.t1.league_name
+data.t0.id == 8147 ^ data.t1.id == 8144 ^ data.t0.league_name == Argentina Primera División ^ data.t1.league_name == Spanish Segunda División -> data.t0.league_name < data.t1.league_name
+data.t0.id == 90566 ^ data.t1.id == 90563 ^ data.t0.player_positions == RM ^ data.t1.player_positions == RWB, RM -> data.t0.player_positions < data.t1.player_positions
+data.t0.id == 71841 ^ data.t1.id == 71839 ^ data.t0.player_positions == RM ^ data.t1.player_positions == RWB, RM -> data.t0.player_positions < data.t1.player_positions
+data.t0.id == 63336 ^ data.t1.id == 63333 ^ data.t0.league_name == Argentina Primera División ^ data.t1.league_name == Paraguayan Primera División -> data.t0.league_name < data.t1.league_name
+data.t0.id == 42893 ^ data.t1.id == 42891 ^ data.t0.league_name == Argentina Primera División ^ data.t1.league_name == Paraguayan Primera División -> data.t0.league_name < data.t1.league_name
+data.t0.id == 71424 ^ data.t1.id == 71418 ^ data.t0.league_name == Argentina Primera División ^ data.t1.league_name == Paraguayan Primera División -> data.t0.league_name < data.t1.league_name
+data.t0.id == 43929 ^ data.t1.id == 43928 ^ data.t0.league_name == Argentina Primera División ^ data.t1.league_name == Paraguayan Primera División -> data.t0.league_name < data.t1.league_name
+data.t0.id == 78062 ^ data.t1.id == 78061 ^ data.t0.league_name == Argentina Primera División ^ data.t1.league_name == Paraguayan Primera División -> data.t0.league_name < data.t1.league_name
+data.t0.id == 13723 ^ data.t1.id == 13721 ^ data.t0.league_name == Mexican Liga MX ^ data.t1.league_name == Uruguayan Primera División -> data.t0.league_name < data.t1.league_name
+data.t0.id == 80708 ^ data.t1.id == 80706 ^ data.t0.league_name == Mexican Liga MX ^ data.t1.league_name == Uruguayan Primera División -> data.t0.league_name < data.t1.league_name
+data.t0.id == 49221 ^ data.t1.id == 49216 ^ data.t0.league_name == Mexican Liga MX ^ data.t1.league_name == Uruguayan Primera División -> data.t0.league_name < data.t1.league_name
+data.t0.id == 6791 ^ data.t1.id == 6787 ^ data.t0.league_name == English Premier League ^ data.t1.league_name == Swiss Super League -> data.t0.league_name < data.t1.league_name
+data.t0.id == 60532 ^ data.t1.id == 60531 ^ data.t0.league_name == English Premier League ^ data.t1.league_name == Swiss Super League -> data.t0.league_name < data.t1.league_name
+data.t0.id == 79999 ^ data.t1.id == 79998 ^ data.t0.player_positions == RW, ST, LW ^ data.t1.player_positions == RM, LM -> data.t0.player_positions < data.t1.player_positions
+data.t0.id == 55224 ^ data.t1.id == 55222 ^ data.t0.player_positions == RW, ST, LW ^ data.t1.player_positions == RM, LM -> data.t0.player_positions < data.t1.player_positions
+data.t0.id == 55224 ^ data.t1.id == 55223 ^ data.t0.player_positions == RW, ST, LW ^ data.t1.player_positions == RM, LM -> data.t0.player_positions < data.t1.player_positions
+data.t0.id == 36031 ^ data.t1.id == 36030 ^ data.t0.player_positions == RM ^ data.t1.player_positions == RM, RWB -> data.t0.player_positions < data.t1.player_positions
+data.t0.id == 102565 ^ data.t1.id == 102563 ^ data.t0.player_positions == RM ^ data.t1.player_positions == RM, RWB -> data.t0.player_positions < data.t1.player_positions
+data.t0.id == 42065 ^ data.t1.id == 42063 ^ data.t0.player_positions == CM, LM ^ data.t1.player_positions == CM, CDM -> data.t0.player_positions < data.t1.player_positions
+data.t0.id == 35510 ^ data.t1.id == 35507 ^ data.t0.player_positions == CM, LM ^ data.t1.player_positions == CM, CDM -> data.t0.player_positions < data.t1.player_positions
+data.t0.id == 61051 ^ data.t1.id == 61046 ^ data.t0.player_positions == CM, LM ^ data.t1.player_positions == CM, CDM -> data.t0.player_positions < data.t1.player_positions
+data.t0.id == 39841 ^ data.t1.id == 39836 ^ data.t0.player_positions == CM, LM ^ data.t1.player_positions == CM, CDM -> data.t0.player_positions < data.t1.player_positions
+data.t0.id == 14219 ^ data.t1.id == 14218 ^ data.t0.player_positions == CM, LM ^ data.t1.player_positions == CM, CDM -> data.t0.player_positions < data.t1.player_positions
+data.t0.id == 14864 ^ data.t1.id == 14861 ^ data.t0.player_positions == CM, CAM ^ data.t1.player_positions == CM, CAM, CDM -> data.t0.player_positions < data.t1.player_positions
+data.t0.id == 24581 ^ data.t1.id == 24580 ^ data.t0.player_positions == CM, CAM ^ data.t1.player_positions == CM, CAM, CDM -> data.t0.player_positions < data.t1.player_positions
+data.t0.id == 90031 ^ data.t1.id == 90027 ^ data.t0.player_positions == CM, CAM ^ data.t1.player_positions == CM, CAM, CDM -> data.t0.player_positions < data.t1.player_positions
+data.t0.id == 19343 ^ data.t1.id == 19342 ^ data.t0.player_positions == CM, CAM ^ data.t1.player_positions == CM, CAM, CDM -> data.t0.player_positions < data.t1.player_positions
+data.t0.id == 24246 ^ data.t1.id == 24242 ^ data.t0.player_positions == CM, CAM ^ data.t1.player_positions == CM, CAM, CDM -> data.t0.player_positions < data.t1.player_positions
+data.t0.id == 21051 ^ data.t1.id == 21049 ^ data.t0.player_positions == CB, CDM, CM ^ data.t1.player_positions == CB -> data.t0.player_positions < data.t1.player_positions
+data.t0.id == 13819 ^ data.t1.id == 13815 ^ data.t0.player_positions == CB, CDM, CM ^ data.t1.player_positions == CB -> data.t0.player_positions < data.t1.player_positions
+data.t0.id == 85672 ^ data.t1.id == 85670 ^ data.t0.player_positions == RM, CM ^ data.t1.player_positions == RM, LM -> data.t0.player_positions < data.t1.player_positions
+data.t0.id == 63078 ^ data.t1.id == 63074 ^ data.t0.player_positions == RM, CM ^ data.t1.player_positions == RM, LM -> data.t0.player_positions < data.t1.player_positions
+data.t0.id == 43724 ^ data.t1.id == 43723 ^ data.t0.player_positions == CAM, CM ^ data.t1.player_positions == CAM, CF, CM -> data.t0.player_positions < data.t1.player_positions
+data.t0.id == 29867 ^ data.t1.id == 29864 ^ data.t0.player_positions == CAM, CM ^ data.t1.player_positions == CAM, CF, CM -> data.t0.player_positions < data.t1.player_positions
+data.t0.id == 28944 ^ data.t1.id == 28941 ^ data.t0.league_name == German 1. Bundesliga ^ data.t1.league_name == nan -> data.t0.league_name < data.t1.league_name
+data.t0.id == 28944 ^ data.t1.id == 28940 ^ data.t0.league_name == German 1. Bundesliga ^ data.t1.league_name == nan -> data.t0.league_name < data.t1.league_name
+data.t0.id == 27364 ^ data.t1.id == 27359 ^ data.t0.league_name == German 1. Bundesliga ^ data.t1.league_name == nan -> data.t0.league_name < data.t1.league_name
+data.t0.id == 27364 ^ data.t1.id == 27361 ^ data.t0.league_name == German 1. Bundesliga ^ data.t1.league_name == nan -> data.t0.league_name < data.t1.league_name
+data.t0.id == 28139 ^ data.t1.id == 28135 ^ data.t0.player_positions == CF, CAM ^ data.t1.player_positions == ST -> data.t0.player_positions < data.t1.player_positions
+data.t0.id == 15302 ^ data.t1.id == 15296 ^ data.t0.player_positions == CF, CAM ^ data.t1.player_positions == ST -> data.t0.player_positions < data.t1.player_positions
+data.t0.id == 25179 ^ data.t1.id == 25174 ^ data.t0.league_name == Scottish Premiership ^ data.t1.league_name == Australian Hyundai A-League -> data.t0.league_name < data.t1.league_name
+data.t0.id == 6259 ^ data.t1.id == 6258 ^ data.t0.league_name == Scottish Premiership ^ data.t1.league_name == Australian Hyundai A-League -> data.t0.league_name < data.t1.league_name
+data.t0.id == 53674 ^ data.t1.id == 53670 ^ data.t0.league_name == Portuguese Liga ZON SAGRES ^ data.t1.league_name == German 2. Bundesliga -> data.t0.league_name < data.t1.league_name
+data.t0.id == 22439 ^ data.t1.id == 22438 ^ data.t0.league_name == Portuguese Liga ZON SAGRES ^ data.t1.league_name == German 2. Bundesliga -> data.t0.league_name < data.t1.league_name
+data.t0.id == 25426 ^ data.t1.id == 25424 ^ data.t0.potential == 91 ^ data.t1.potential == 85 -> data.t0.potential < data.t1.potential
+data.t0.id == 25426 ^ data.t1.id == 25424 ^ data.t0.potential == 91 ^ data.t1.potential == 85 -> data.t0.potential < data.t1.potential
+data.t0.id == 23846 ^ data.t1.id == 23843 ^ data.t0.league_name == Greek Super League ^ data.t1.league_name == Turkish Süper Lig -> data.t0.league_name < data.t1.league_name
+data.t0.id == 23661 ^ data.t1.id == 23657 ^ data.t0.league_name == Greek Super League ^ data.t1.league_name == Turkish Süper Lig -> data.t0.league_name < data.t1.league_name
+data.t0.id == 26202 ^ data.t1.id == 26197 ^ data.t0.league_name == Greek Super League ^ data.t1.league_name == Turkish Süper Lig -> data.t0.league_name < data.t1.league_name
+data.t0.id == 33579 ^ data.t1.id == 33576 ^ data.t0.league_name == Greek Super League ^ data.t1.league_name == Turkish Süper Lig -> data.t0.league_name < data.t1.league_name
+data.t0.id == 23662 ^ data.t1.id == 23656 ^ data.t0.league_name == Greek Super League ^ data.t1.league_name == Turkish Süper Lig -> data.t0.league_name < data.t1.league_name
+data.t0.id == 46993 ^ data.t1.id == 46992 ^ data.t0.league_name == Greek Super League ^ data.t1.league_name == Turkish Süper Lig -> data.t0.league_name < data.t1.league_name
+data.t0.id == 27162 ^ data.t1.id == 27158 ^ data.t0.player_positions == LB ^ data.t1.player_positions == LB, LM, RB -> data.t0.player_positions < data.t1.player_positions
+data.t0.id == 85593 ^ data.t1.id == 85590 ^ data.t0.player_positions == LB ^ data.t1.player_positions == LB, LM, RB -> data.t0.player_positions < data.t1.player_positions
+data.t0.id == 98729 ^ data.t1.id == 98728 ^ data.t0.player_positions == LB ^ data.t1.player_positions == LB, LM, RB -> data.t0.player_positions < data.t1.player_positions
+data.t0.id == 69157 ^ data.t1.id == 69156 ^ data.t0.league_name == Portuguese Liga ZON SAGRES ^ data.t1.league_name == nan -> data.t0.league_name < data.t1.league_name
+data.t0.id == 50582 ^ data.t1.id == 50578 ^ data.t0.league_name == Portuguese Liga ZON SAGRES ^ data.t1.league_name == nan -> data.t0.league_name < data.t1.league_name
+data.t0.id == 64276 ^ data.t1.id == 64275 ^ data.t0.league_name == Portuguese Liga ZON SAGRES ^ data.t1.league_name == nan -> data.t0.league_name < data.t1.league_name
+data.t0.id == 29143 ^ data.t1.id == 29141 ^ data.t0.potential == 58 ^ data.t1.potential == 66 -> data.t0.potential < data.t1.potential
+data.t0.id == 28480 ^ data.t1.id == 28477 ^ data.t0.potential == 58 ^ data.t1.potential == 66 -> data.t0.potential < data.t1.potential
+data.t0.id == 47247 ^ data.t1.id == 47244 ^ data.t0.player_positions == CAM, CM ^ data.t1.player_positions == CDM, CM -> data.t0.player_positions < data.t1.player_positions
+data.t0.id == 65915 ^ data.t1.id == 65909 ^ data.t0.player_positions == CAM, CM ^ data.t1.player_positions == CDM, CM -> data.t0.player_positions < data.t1.player_positions
+data.t0.id == 58322 ^ data.t1.id == 58321 ^ data.t0.league_name == Colombian Liga Postobón ^ data.t1.league_name == Saudi Abdul L. Jameel League -> data.t0.league_name < data.t1.league_name
+data.t0.id == 66690 ^ data.t1.id == 66686 ^ data.t0.league_name == Colombian Liga Postobón ^ data.t1.league_name == Saudi Abdul L. Jameel League -> data.t0.league_name < data.t1.league_name
+data.t0.id == 35173 ^ data.t1.id == 35167 ^ data.t0.league_name == Colombian Liga Postobón ^ data.t1.league_name == Saudi Abdul L. Jameel League -> data.t0.league_name < data.t1.league_name
+data.t0.id == 31381 ^ data.t1.id == 31376 ^ data.t0.player_positions == CAM, CM ^ data.t1.player_positions == CM, CDM, CAM -> data.t0.player_positions < data.t1.player_positions
+data.t0.id == 14565 ^ data.t1.id == 14563 ^ data.t0.player_positions == CAM, CM ^ data.t1.player_positions == CM, CDM, CAM -> data.t0.player_positions < data.t1.player_positions
+data.t0.id == 66341 ^ data.t1.id == 66337 ^ data.t0.player_positions == CAM, CM ^ data.t1.player_positions == CM, CDM, CAM -> data.t0.player_positions < data.t1.player_positions
+data.t0.id == 76622 ^ data.t1.id == 76618 ^ data.t0.player_positions == CAM, CM ^ data.t1.player_positions == CM, CDM, CAM -> data.t0.player_positions < data.t1.player_positions
+data.t0.id == 18207 ^ data.t1.id == 18205 ^ data.t0.player_positions == RM ^ data.t1.player_positions == CAM, LM -> data.t0.player_positions < data.t1.player_positions
+data.t0.id == 68967 ^ data.t1.id == 68962 ^ data.t0.player_positions == RM ^ data.t1.player_positions == CAM, LM -> data.t0.player_positions < data.t1.player_positions
+data.t0.id == 46945 ^ data.t1.id == 46942 ^ data.t0.player_positions == LB ^ data.t1.player_positions == CB -> data.t0.player_positions < data.t1.player_positions
+data.t0.id == 46947 ^ data.t1.id == 46941 ^ data.t0.player_positions == LB ^ data.t1.player_positions == CB -> data.t0.player_positions < data.t1.player_positions
+data.t0.id == 90784 ^ data.t1.id == 90782 ^ data.t0.player_positions == LB ^ data.t1.player_positions == CB -> data.t0.player_positions < data.t1.player_positions
+data.t0.id == 70591 ^ data.t1.id == 70586 ^ data.t0.player_positions == LB ^ data.t1.player_positions == CB -> data.t0.player_positions < data.t1.player_positions
+data.t0.id == 23891 ^ data.t1.id == 23887 ^ data.t0.player_positions == LB ^ data.t1.player_positions == CB -> data.t0.player_positions < data.t1.player_positions
+data.t0.id == 75967 ^ data.t1.id == 75963 ^ data.t0.player_positions == LB ^ data.t1.player_positions == CB -> data.t0.player_positions < data.t1.player_positions
+data.t0.id == 36338 ^ data.t1.id == 36333 ^ data.t0.player_positions == LB ^ data.t1.player_positions == CB -> data.t0.player_positions < data.t1.player_positions
+data.t0.id == 60891 ^ data.t1.id == 60887 ^ data.t0.league_name == Holland Eredivisie ^ data.t1.league_name == Scottish Premiership -> data.t0.league_name < data.t1.league_name
+data.t0.id == 48779 ^ data.t1.id == 48777 ^ data.t0.league_name == Holland Eredivisie ^ data.t1.league_name == Scottish Premiership -> data.t0.league_name < data.t1.league_name
+data.t0.id == 67074 ^ data.t1.id == 67068 ^ data.t0.potential == 62 ^ data.t1.potential == 84 -> data.t0.potential < data.t1.potential
+data.t0.id == 67072 ^ data.t1.id == 67068 ^ data.t0.potential == 62 ^ data.t1.potential == 84 -> data.t0.potential < data.t1.potential
+data.t0.id == 38632 ^ data.t1.id == 38631 ^ data.t0.player_positions == CDM, CB ^ data.t1.player_positions == CDM, CB, CM -> data.t0.player_positions < data.t1.player_positions
+data.t0.id == 47004 ^ data.t1.id == 47003 ^ data.t0.player_positions == CDM, CB ^ data.t1.player_positions == CDM, CB, CM -> data.t0.player_positions < data.t1.player_positions
+data.t0.id == 96716 ^ data.t1.id == 96714 ^ data.t0.player_positions == CDM, CB ^ data.t1.player_positions == CDM, CB, CM -> data.t0.player_positions < data.t1.player_positions
+data.t0.id == 80603 ^ data.t1.id == 80601 ^ data.t0.player_positions == CDM, CB ^ data.t1.player_positions == CDM, CB, CM -> data.t0.player_positions < data.t1.player_positions
+data.t0.id == 58370 ^ data.t1.id == 58366 ^ data.t0.league_name == Italian Serie B ^ data.t1.league_name == Spain Primera Division -> data.t0.league_name < data.t1.league_name
+data.t0.id == 26929 ^ data.t1.id == 26924 ^ data.t0.league_name == Italian Serie B ^ data.t1.league_name == Spain Primera Division -> data.t0.league_name < data.t1.league_name
+data.t0.id == 63983 ^ data.t1.id == 63982 ^ data.t0.player_positions == RM ^ data.t1.player_positions == RM, RW -> data.t0.player_positions < data.t1.player_positions
+data.t0.id == 42360 ^ data.t1.id == 42357 ^ data.t0.player_positions == RM ^ data.t1.player_positions == RM, RW -> data.t0.player_positions < data.t1.player_positions
+data.t0.id == 1720 ^ data.t1.id == 1719 ^ data.t0.player_positions == RM ^ data.t1.player_positions == RM, RW -> data.t0.player_positions < data.t1.player_positions
+data.t0.id == 73490 ^ data.t1.id == 73488 ^ data.t0.player_positions == RM ^ data.t1.player_positions == RM, RW -> data.t0.player_positions < data.t1.player_positions
+data.t0.id == 25410 ^ data.t1.id == 25408 ^ data.t0.player_positions == RM ^ data.t1.player_positions == RM, RW -> data.t0.player_positions < data.t1.player_positions
+data.t0.id == 73490 ^ data.t1.id == 73489 ^ data.t0.player_positions == RM ^ data.t1.player_positions == RM, RW -> data.t0.player_positions < data.t1.player_positions
+data.t0.id == 41917 ^ data.t1.id == 41916 ^ data.t0.player_positions == RM ^ data.t1.player_positions == RM, RW -> data.t0.player_positions < data.t1.player_positions
+data.t0.id == 26348 ^ data.t1.id == 26342 ^ data.t0.player_positions == RM ^ data.t1.player_positions == RM, RW -> data.t0.player_positions < data.t1.player_positions
+data.t0.id == 36591 ^ data.t1.id == 36589 ^ data.t0.player_positions == RM ^ data.t1.player_positions == RM, RW -> data.t0.player_positions < data.t1.player_positions
+data.t0.id == 55253 ^ data.t1.id == 55252 ^ data.t0.player_positions == RM ^ data.t1.player_positions == RM, RW -> data.t0.player_positions < data.t1.player_positions
+data.t0.id == 28149 ^ data.t1.id == 28145 ^ data.t0.player_positions == CB, RB, CDM ^ data.t1.player_positions == CDM, CB -> data.t0.player_positions < data.t1.player_positions
+data.t0.id == 38633 ^ data.t1.id == 38628 ^ data.t0.player_positions == CB, RB, CDM ^ data.t1.player_positions == CDM, CB -> data.t0.player_positions < data.t1.player_positions
+data.t0.id == 52094 ^ data.t1.id == 52089 ^ data.t0.potential == 81 ^ data.t1.potential == 88 -> data.t0.potential < data.t1.potential
+data.t0.id == 76615 ^ data.t1.id == 76611 ^ data.t0.potential == 81 ^ data.t1.potential == 88 -> data.t0.potential < data.t1.potential
+data.t0.id == 63554 ^ data.t1.id == 63553 ^ data.t0.player_positions == CAM, LM ^ data.t1.player_positions == CAM, CM -> data.t0.player_positions < data.t1.player_positions
+data.t0.id == 47287 ^ data.t1.id == 47285 ^ data.t0.player_positions == CAM, LM ^ data.t1.player_positions == CAM, CM -> data.t0.player_positions < data.t1.player_positions
+data.t0.id == 85801 ^ data.t1.id == 85798 ^ data.t0.player_positions == CAM ^ data.t1.player_positions == LM, RM -> data.t0.player_positions < data.t1.player_positions
+data.t0.id == 95429 ^ data.t1.id == 95426 ^ data.t0.player_positions == CAM ^ data.t1.player_positions == LM, RM -> data.t0.player_positions < data.t1.player_positions
+data.t0.id == 41530 ^ data.t1.id == 41528 ^ data.t0.league_name == German 2. Bundesliga ^ data.t1.league_name == Mexican Liga MX -> data.t0.league_name < data.t1.league_name
+data.t0.id == 41531 ^ data.t1.id == 41529 ^ data.t0.league_name == German 2. Bundesliga ^ data.t1.league_name == Mexican Liga MX -> data.t0.league_name < data.t1.league_name
+data.t0.id == 98615 ^ data.t1.id == 98612 ^ data.t0.league_name == Russian Premier League ^ data.t1.league_name == Greek Super League -> data.t0.league_name < data.t1.league_name
+data.t0.id == 21559 ^ data.t1.id == 21555 ^ data.t0.league_name == Russian Premier League ^ data.t1.league_name == Greek Super League -> data.t0.league_name < data.t1.league_name
+data.t0.id == 54510 ^ data.t1.id == 54507 ^ data.t0.player_positions == ST, LM ^ data.t1.player_positions == LW, ST, RW -> data.t0.player_positions < data.t1.player_positions
+data.t0.id == 55152 ^ data.t1.id == 55149 ^ data.t0.player_positions == ST, LM ^ data.t1.player_positions == LW, ST, RW -> data.t0.player_positions < data.t1.player_positions
+data.t0.id == 45761 ^ data.t1.id == 45757 ^ data.t0.potential == 59 ^ data.t1.potential == 73 -> data.t0.potential < data.t1.potential
+data.t0.id == 62115 ^ data.t1.id == 62112 ^ data.t0.potential == 59 ^ data.t1.potential == 73 -> data.t0.potential < data.t1.potential
+data.t0.id == 70590 ^ data.t1.id == 70586 ^ data.t0.potential == 59 ^ data.t1.potential == 73 -> data.t0.potential < data.t1.potential
+data.t0.id == 70055 ^ data.t1.id == 70054 ^ data.t0.player_positions == RW ^ data.t1.player_positions == CAM, RW -> data.t0.player_positions < data.t1.player_positions
+data.t0.id == 91266 ^ data.t1.id == 91264 ^ data.t0.player_positions == RW ^ data.t1.player_positions == CAM, RW -> data.t0.player_positions < data.t1.player_positions
+data.t0.id == 42795 ^ data.t1.id == 42794 ^ data.t0.player_positions == RB, RWB, RM ^ data.t1.player_positions == RB, RWB -> data.t0.player_positions < data.t1.player_positions
+data.t0.id == 61247 ^ data.t1.id == 61246 ^ data.t0.player_positions == RB, RWB, RM ^ data.t1.player_positions == RB, RWB -> data.t0.player_positions < data.t1.player_positions
+data.t0.id == 34817 ^ data.t1.id == 34815 ^ data.t0.player_positions == CDM, CAM ^ data.t1.player_positions == CM, CDM -> data.t0.player_positions < data.t1.player_positions
+data.t0.id == 79657 ^ data.t1.id == 79655 ^ data.t0.player_positions == CDM, CAM ^ data.t1.player_positions == CM, CDM -> data.t0.player_positions < data.t1.player_positions
+data.t0.id == 59600 ^ data.t1.id == 59594 ^ data.t0.player_positions == ST ^ data.t1.player_positions == LM, ST, RM -> data.t0.player_positions < data.t1.player_positions
+data.t0.id == 93934 ^ data.t1.id == 93932 ^ data.t0.player_positions == ST ^ data.t1.player_positions == LM, ST, RM -> data.t0.player_positions < data.t1.player_positions
+data.t0.id == 80857 ^ data.t1.id == 80854 ^ data.t0.player_positions == LB ^ data.t1.player_positions == LB, CM -> data.t0.player_positions < data.t1.player_positions
+data.t0.id == 80856 ^ data.t1.id == 80854 ^ data.t0.player_positions == LB ^ data.t1.player_positions == LB, CM -> data.t0.player_positions < data.t1.player_positions
+data.t0.id == 58704 ^ data.t1.id == 58703 ^ data.t0.player_positions == LB ^ data.t1.player_positions == LB, CM -> data.t0.player_positions < data.t1.player_positions
+data.t0.id == 42318 ^ data.t1.id == 42316 ^ data.t0.player_positions == LB ^ data.t1.player_positions == LB, CM -> data.t0.player_positions < data.t1.player_positions
+data.t0.id == 1736 ^ data.t1.id == 1734 ^ data.t0.player_positions == RW, LW ^ data.t1.player_positions == RM, ST -> data.t0.player_positions < data.t1.player_positions
+data.t0.id == 31240 ^ data.t1.id == 31237 ^ data.t0.player_positions == RW, LW ^ data.t1.player_positions == RM, ST -> data.t0.player_positions < data.t1.player_positions
+data.t0.id == 25522 ^ data.t1.id == 25521 ^ data.t0.league_name == Spain Primera Division ^ data.t1.league_name == Rest of World -> data.t0.league_name < data.t1.league_name
+data.t0.id == 61938 ^ data.t1.id == 61937 ^ data.t0.league_name == Spain Primera Division ^ data.t1.league_name == Rest of World -> data.t0.league_name < data.t1.league_name
+data.t0.id == 60425 ^ data.t1.id == 60421 ^ data.t0.potential == 57 ^ data.t1.potential == 66 -> data.t0.potential < data.t1.potential
+data.t0.id == 45000 ^ data.t1.id == 44994 ^ data.t0.potential == 57 ^ data.t1.potential == 66 -> data.t0.potential < data.t1.potential
+data.t0.id == 70349 ^ data.t1.id == 70347 ^ data.t0.player_positions == LB, LM ^ data.t1.player_positions == LB, LWB, LM -> data.t0.player_positions < data.t1.player_positions
+data.t0.id == 73337 ^ data.t1.id == 73335 ^ data.t0.player_positions == LB, LM ^ data.t1.player_positions == LB, LWB, LM -> data.t0.player_positions < data.t1.player_positions
+data.t0.id == 75722 ^ data.t1.id == 75721 ^ data.t0.player_positions == LB, LM ^ data.t1.player_positions == LB, LWB, LM -> data.t0.player_positions < data.t1.player_positions
+data.t0.id == 70349 ^ data.t1.id == 70346 ^ data.t0.player_positions == LB, LM ^ data.t1.player_positions == LB, LWB, LM -> data.t0.player_positions < data.t1.player_positions
+data.t0.id == 57001 ^ data.t1.id == 56996 ^ data.t0.league_name == Colombian Liga Postobón ^ data.t1.league_name == Portuguese Liga ZON SAGRES -> data.t0.league_name < data.t1.league_name
+data.t0.id == 57001 ^ data.t1.id == 56995 ^ data.t0.league_name == Colombian Liga Postobón ^ data.t1.league_name == Portuguese Liga ZON SAGRES -> data.t0.league_name < data.t1.league_name
+data.t0.id == 7176 ^ data.t1.id == 7172 ^ data.t0.player_positions == CAM ^ data.t1.player_positions == CB -> data.t0.player_positions < data.t1.player_positions
+data.t0.id == 93597 ^ data.t1.id == 93594 ^ data.t0.player_positions == CAM ^ data.t1.player_positions == CB -> data.t0.player_positions < data.t1.player_positions
+data.t0.id == 21740 ^ data.t1.id == 21737 ^ data.t0.potential == 56 ^ data.t1.potential == 64 -> data.t0.potential < data.t1.potential
+data.t0.id == 57347 ^ data.t1.id == 57345 ^ data.t0.potential == 56 ^ data.t1.potential == 64 -> data.t0.potential < data.t1.potential
+data.t0.id == 68530 ^ data.t1.id == 68528 ^ data.t0.league_name == nan ^ data.t1.league_name == Romanian Liga I -> data.t0.league_name < data.t1.league_name
+data.t0.id == 15673 ^ data.t1.id == 15669 ^ data.t0.league_name == nan ^ data.t1.league_name == Romanian Liga I -> data.t0.league_name < data.t1.league_name
+data.t0.id == 87292 ^ data.t1.id == 87291 ^ data.t0.player_positions == CDM, CM ^ data.t1.player_positions == CM, CB -> data.t0.player_positions < data.t1.player_positions
+data.t0.id == 42586 ^ data.t1.id == 42585 ^ data.t0.player_positions == CDM, CM ^ data.t1.player_positions == CM, CB -> data.t0.player_positions < data.t1.player_positions
+data.t0.id == 48555 ^ data.t1.id == 48553 ^ data.t0.league_name == Ukrainian Premier League ^ data.t1.league_name == English Premier League -> data.t0.league_name < data.t1.league_name
+data.t0.id == 48554 ^ data.t1.id == 48553 ^ data.t0.league_name == Ukrainian Premier League ^ data.t1.league_name == English Premier League -> data.t0.league_name < data.t1.league_name
+data.t0.id == 43703 ^ data.t1.id == 43700 ^ data.t0.league_name == Ukrainian Premier League ^ data.t1.league_name == English Premier League -> data.t0.league_name < data.t1.league_name
+data.t0.id == 26227 ^ data.t1.id == 26222 ^ data.t0.league_name == French Ligue 1 ^ data.t1.league_name == Croatian Prva HNL -> data.t0.league_name < data.t1.league_name
+data.t0.id == 26225 ^ data.t1.id == 26222 ^ data.t0.league_name == French Ligue 1 ^ data.t1.league_name == Croatian Prva HNL -> data.t0.league_name < data.t1.league_name
+data.t0.id == 33810 ^ data.t1.id == 33809 ^ data.t0.player_positions == LM, CM ^ data.t1.player_positions == LM, LW, CM -> data.t0.player_positions < data.t1.player_positions
+data.t0.id == 33810 ^ data.t1.id == 33808 ^ data.t0.player_positions == LM, CM ^ data.t1.player_positions == LM, LW, CM -> data.t0.player_positions < data.t1.player_positions
+data.t0.id == 58698 ^ data.t1.id == 58697 ^ data.t0.player_positions == CM, CDM, RM ^ data.t1.player_positions == CM, CDM -> data.t0.player_positions < data.t1.player_positions
+data.t0.id == 33795 ^ data.t1.id == 33794 ^ data.t0.player_positions == CM, CDM, RM ^ data.t1.player_positions == CM, CDM -> data.t0.player_positions < data.t1.player_positions
+data.t0.id == 26615 ^ data.t1.id == 26614 ^ data.t0.player_positions == CM, CDM, RM ^ data.t1.player_positions == CM, CDM -> data.t0.player_positions < data.t1.player_positions
+data.t0.id == 71497 ^ data.t1.id == 71496 ^ data.t0.player_positions == CB, CDM, CM ^ data.t1.player_positions == CDM, CB, CM -> data.t0.player_positions < data.t1.player_positions
+data.t0.id == 29790 ^ data.t1.id == 29787 ^ data.t0.player_positions == CB, CDM, CM ^ data.t1.player_positions == CDM, CB, CM -> data.t0.player_positions < data.t1.player_positions
+data.t0.id == 60913 ^ data.t1.id == 60912 ^ data.t0.league_name == Swedish Allsvenskan ^ data.t1.league_name == Saudi Abdul L. Jameel League -> data.t0.league_name < data.t1.league_name
+data.t0.id == 60913 ^ data.t1.id == 60911 ^ data.t0.league_name == Swedish Allsvenskan ^ data.t1.league_name == Saudi Abdul L. Jameel League -> data.t0.league_name < data.t1.league_name
+data.t0.id == 12714 ^ data.t1.id == 12712 ^ data.t0.player_positions == RB, RM ^ data.t1.player_positions == RB, RM, RWB -> data.t0.player_positions < data.t1.player_positions
+data.t0.id == 44388 ^ data.t1.id == 44385 ^ data.t0.player_positions == RB, RM ^ data.t1.player_positions == RB, RM, RWB -> data.t0.player_positions < data.t1.player_positions
+data.t0.id == 20000 ^ data.t1.id == 19999 ^ data.t0.player_positions == RB, RM ^ data.t1.player_positions == RB, RM, RWB -> data.t0.player_positions < data.t1.player_positions
+data.t0.id == 49460 ^ data.t1.id == 49456 ^ data.t0.league_name == Australian Hyundai A-League ^ data.t1.league_name == Saudi Abdul L. Jameel League -> data.t0.league_name < data.t1.league_name
+data.t0.id == 49461 ^ data.t1.id == 49456 ^ data.t0.league_name == Australian Hyundai A-League ^ data.t1.league_name == Saudi Abdul L. Jameel League -> data.t0.league_name < data.t1.league_name
+data.t0.id == 38431 ^ data.t1.id == 38430 ^ data.t0.league_name == Australian Hyundai A-League ^ data.t1.league_name == Saudi Abdul L. Jameel League -> data.t0.league_name < data.t1.league_name
+data.t0.id == 49461 ^ data.t1.id == 49459 ^ data.t0.league_name == Australian Hyundai A-League ^ data.t1.league_name == Saudi Abdul L. Jameel League -> data.t0.league_name < data.t1.league_name
+data.t0.id == 35295 ^ data.t1.id == 35291 ^ data.t0.league_name == Australian Hyundai A-League ^ data.t1.league_name == Saudi Abdul L. Jameel League -> data.t0.league_name < data.t1.league_name
+data.t0.id == 31854 ^ data.t1.id == 31849 ^ data.t0.player_positions == ST, RM ^ data.t1.player_positions == LW, ST, LM -> data.t0.player_positions < data.t1.player_positions
+data.t0.id == 59681 ^ data.t1.id == 59678 ^ data.t0.player_positions == ST, RM ^ data.t1.player_positions == LW, ST, LM -> data.t0.player_positions < data.t1.player_positions
+data.t0.id == 42464 ^ data.t1.id == 42462 ^ data.t0.player_positions == RW, LW, CAM ^ data.t1.player_positions == ST, RM -> data.t0.player_positions < data.t1.player_positions
+data.t0.id == 42464 ^ data.t1.id == 42462 ^ data.t0.player_positions == RW, LW, CAM ^ data.t1.player_positions == ST, RM -> data.t0.player_positions < data.t1.player_positions
+data.t0.id == 16608 ^ data.t1.id == 16605 ^ data.t0.league_name == German 1. Bundesliga ^ data.t1.league_name == Japanese J. League Division 1 -> data.t0.league_name < data.t1.league_name
+data.t0.id == 10447 ^ data.t1.id == 10442 ^ data.t0.league_name == German 1. Bundesliga ^ data.t1.league_name == Japanese J. League Division 1 -> data.t0.league_name < data.t1.league_name
+data.t0.id == 26856 ^ data.t1.id == 26852 ^ data.t0.league_name == German 1. Bundesliga ^ data.t1.league_name == Japanese J. League Division 1 -> data.t0.league_name < data.t1.league_name
+data.t0.id == 26899 ^ data.t1.id == 26895 ^ data.t0.league_name == German 1. Bundesliga ^ data.t1.league_name == Korean K League Classic -> data.t0.league_name < data.t1.league_name
+data.t0.id == 55492 ^ data.t1.id == 55487 ^ data.t0.league_name == German 1. Bundesliga ^ data.t1.league_name == Korean K League Classic -> data.t0.league_name < data.t1.league_name
+data.t0.id == 17260 ^ data.t1.id == 17256 ^ data.t0.league_name == nan ^ data.t1.league_name == Chinese Super League -> data.t0.league_name < data.t1.league_name
+data.t0.id == 68621 ^ data.t1.id == 68619 ^ data.t0.league_name == nan ^ data.t1.league_name == Chinese Super League -> data.t0.league_name < data.t1.league_name
+data.t0.id == 73608 ^ data.t1.id == 73604 ^ data.t0.league_name == nan ^ data.t1.league_name == Chinese Super League -> data.t0.league_name < data.t1.league_name
+data.t0.id == 22216 ^ data.t1.id == 22213 ^ data.t0.league_name == nan ^ data.t1.league_name == Chinese Super League -> data.t0.league_name < data.t1.league_name
+data.t0.id == 18954 ^ data.t1.id == 18951 ^ data.t0.league_name == nan ^ data.t1.league_name == Chinese Super League -> data.t0.league_name < data.t1.league_name
+data.t0.id == 4789 ^ data.t1.id == 4786 ^ data.t0.player_positions == LB, CB ^ data.t1.player_positions == LB, LWB -> data.t0.player_positions < data.t1.player_positions
+data.t0.id == 46595 ^ data.t1.id == 46590 ^ data.t0.player_positions == LB, CB ^ data.t1.player_positions == LB, LWB -> data.t0.player_positions < data.t1.player_positions
+data.t0.id == 61157 ^ data.t1.id == 61155 ^ data.t0.player_positions == LB, RM ^ data.t1.player_positions == LB -> data.t0.player_positions < data.t1.player_positions
+data.t0.id == 5456 ^ data.t1.id == 5454 ^ data.t0.player_positions == LB, RM ^ data.t1.player_positions == LB -> data.t0.player_positions < data.t1.player_positions
+data.t0.id == 61157 ^ data.t1.id == 61154 ^ data.t0.player_positions == LB, RM ^ data.t1.player_positions == LB -> data.t0.player_positions < data.t1.player_positions
+data.t0.id == 60587 ^ data.t1.id == 60585 ^ data.t0.player_positions == CM, CDM, CAM ^ data.t1.player_positions == CM, RM, LM -> data.t0.player_positions < data.t1.player_positions
+data.t0.id == 60587 ^ data.t1.id == 60586 ^ data.t0.player_positions == CM, CDM, CAM ^ data.t1.player_positions == CM, RM, LM -> data.t0.player_positions < data.t1.player_positions
+data.t0.id == 60135 ^ data.t1.id == 60133 ^ data.t0.league_name == French Ligue 1 ^ data.t1.league_name == Mexican Liga MX -> data.t0.league_name < data.t1.league_name
+data.t0.id == 36818 ^ data.t1.id == 36813 ^ data.t0.league_name == French Ligue 1 ^ data.t1.league_name == Mexican Liga MX -> data.t0.league_name < data.t1.league_name
+data.t0.id == 75036 ^ data.t1.id == 75032 ^ data.t0.potential == 58 ^ data.t1.potential == 71 -> data.t0.potential < data.t1.potential
+data.t0.id == 74058 ^ data.t1.id == 74052 ^ data.t0.potential == 58 ^ data.t1.potential == 71 -> data.t0.potential < data.t1.potential
+data.t0.id == 55928 ^ data.t1.id == 55925 ^ data.t0.player_positions == CM ^ data.t1.player_positions == CDM, CB -> data.t0.player_positions < data.t1.player_positions
+data.t0.id == 2940 ^ data.t1.id == 2938 ^ data.t0.player_positions == CM ^ data.t1.player_positions == CDM, CB -> data.t0.player_positions < data.t1.player_positions
+data.t0.id == 55928 ^ data.t1.id == 55927 ^ data.t0.league_name == Norwegian Eliteserien ^ data.t1.league_name == Saudi Abdul L. Jameel League -> data.t0.league_name < data.t1.league_name
+data.t0.id == 55928 ^ data.t1.id == 55925 ^ data.t0.league_name == Norwegian Eliteserien ^ data.t1.league_name == Saudi Abdul L. Jameel League -> data.t0.league_name < data.t1.league_name
+data.t0.id == 37907 ^ data.t1.id == 37901 ^ data.t0.league_name == Norwegian Eliteserien ^ data.t1.league_name == Saudi Abdul L. Jameel League -> data.t0.league_name < data.t1.league_name
+data.t0.id == 37907 ^ data.t1.id == 37902 ^ data.t0.league_name == Norwegian Eliteserien ^ data.t1.league_name == Saudi Abdul L. Jameel League -> data.t0.league_name < data.t1.league_name
+data.t0.id == 60886 ^ data.t1.id == 60883 ^ data.t0.player_positions == RB, CB ^ data.t1.player_positions == CB, LB, RB -> data.t0.player_positions < data.t1.player_positions
+data.t0.id == 22275 ^ data.t1.id == 22272 ^ data.t0.player_positions == RB, CB ^ data.t1.player_positions == CB, LB, RB -> data.t0.player_positions < data.t1.player_positions
+data.t0.id == 90303 ^ data.t1.id == 90300 ^ data.t0.player_positions == CDM ^ data.t1.player_positions == CB, CDM -> data.t0.player_positions < data.t1.player_positions
+data.t0.id == 31891 ^ data.t1.id == 31889 ^ data.t0.player_positions == CDM ^ data.t1.player_positions == CB, CDM -> data.t0.player_positions < data.t1.player_positions
+data.t0.id == 39689 ^ data.t1.id == 39685 ^ data.t0.player_positions == CDM ^ data.t1.player_positions == CB, CDM -> data.t0.player_positions < data.t1.player_positions
+data.t0.id == 2693 ^ data.t1.id == 2692 ^ data.t0.player_positions == CDM ^ data.t1.player_positions == CB, CDM -> data.t0.player_positions < data.t1.player_positions
+data.t0.id == 76940 ^ data.t1.id == 76937 ^ data.t0.player_positions == CDM ^ data.t1.player_positions == CB, CDM -> data.t0.player_positions < data.t1.player_positions
+data.t0.id == 2693 ^ data.t1.id == 2691 ^ data.t0.player_positions == CDM ^ data.t1.player_positions == CB, CDM -> data.t0.player_positions < data.t1.player_positions
+data.t0.id == 63282 ^ data.t1.id == 63280 ^ data.t0.league_name == Portuguese Liga ZON SAGRES ^ data.t1.league_name == Romanian Liga I -> data.t0.league_name < data.t1.league_name
+data.t0.id == 26168 ^ data.t1.id == 26167 ^ data.t0.league_name == Portuguese Liga ZON SAGRES ^ data.t1.league_name == Romanian Liga I -> data.t0.league_name < data.t1.league_name
+data.t0.id == 44177 ^ data.t1.id == 44173 ^ data.t0.league_name == Portuguese Liga ZON SAGRES ^ data.t1.league_name == Romanian Liga I -> data.t0.league_name < data.t1.league_name
+data.t0.id == 54854 ^ data.t1.id == 54852 ^ data.t0.league_name == German 1. Bundesliga ^ data.t1.league_name == Mexican Liga MX -> data.t0.league_name < data.t1.league_name
+data.t0.id == 35529 ^ data.t1.id == 35524 ^ data.t0.league_name == German 1. Bundesliga ^ data.t1.league_name == Mexican Liga MX -> data.t0.league_name < data.t1.league_name
+data.t0.id == 35528 ^ data.t1.id == 35526 ^ data.t0.league_name == German 1. Bundesliga ^ data.t1.league_name == Mexican Liga MX -> data.t0.league_name < data.t1.league_name
+data.t0.id == 45505 ^ data.t1.id == 45502 ^ data.t0.league_name == German 1. Bundesliga ^ data.t1.league_name == Mexican Liga MX -> data.t0.league_name < data.t1.league_name
+data.t0.id == 25866 ^ data.t1.id == 25862 ^ data.t0.player_positions == RB ^ data.t1.player_positions == RWB, RB -> data.t0.player_positions < data.t1.player_positions
+data.t0.id == 56246 ^ data.t1.id == 56245 ^ data.t0.player_positions == RB ^ data.t1.player_positions == RWB, RB -> data.t0.player_positions < data.t1.player_positions
+data.t0.id == 39807 ^ data.t1.id == 39803 ^ data.t0.player_positions == RB ^ data.t1.player_positions == RWB, RB -> data.t0.player_positions < data.t1.player_positions
+data.t0.id == 56246 ^ data.t1.id == 56243 ^ data.t0.player_positions == RB ^ data.t1.player_positions == RWB, RB -> data.t0.player_positions < data.t1.player_positions
+data.t0.id == 9903 ^ data.t1.id == 9899 ^ data.t0.player_positions == CM ^ data.t1.player_positions == CDM, CM, CB -> data.t0.player_positions < data.t1.player_positions
+data.t0.id == 9903 ^ data.t1.id == 9898 ^ data.t0.player_positions == CM ^ data.t1.player_positions == CDM, CM, CB -> data.t0.player_positions < data.t1.player_positions
+data.t0.id == 89487 ^ data.t1.id == 89484 ^ data.t0.player_positions == CM ^ data.t1.player_positions == CDM, CM, CB -> data.t0.player_positions < data.t1.player_positions
+data.t0.id == 34222 ^ data.t1.id == 34221 ^ data.t0.player_positions == CAM, ST ^ data.t1.player_positions == ST, CAM -> data.t0.player_positions < data.t1.player_positions
+data.t0.id == 1587 ^ data.t1.id == 1586 ^ data.t0.player_positions == CAM, ST ^ data.t1.player_positions == ST, CAM -> data.t0.player_positions < data.t1.player_positions
+data.t0.id == 38773 ^ data.t1.id == 38772 ^ data.t0.player_positions == RM, ST, LM ^ data.t1.player_positions == ST, RM -> data.t0.player_positions < data.t1.player_positions
+data.t0.id == 27829 ^ data.t1.id == 27828 ^ data.t0.player_positions == RM, ST, LM ^ data.t1.player_positions == ST, RM -> data.t0.player_positions < data.t1.player_positions
+data.t0.id == 40848 ^ data.t1.id == 40847 ^ data.t0.player_positions == CM, CDM, CB ^ data.t1.player_positions == CDM, CM, CB -> data.t0.player_positions < data.t1.player_positions
+data.t0.id == 58997 ^ data.t1.id == 58994 ^ data.t0.player_positions == CM, CDM, CB ^ data.t1.player_positions == CDM, CM, CB -> data.t0.player_positions < data.t1.player_positions
+data.t0.id == 86546 ^ data.t1.id == 86543 ^ data.t0.league_name == Finnish Veikkausliiga ^ data.t1.league_name == Rest of World -> data.t0.league_name < data.t1.league_name
+data.t0.id == 99153 ^ data.t1.id == 99152 ^ data.t0.league_name == Finnish Veikkausliiga ^ data.t1.league_name == Rest of World -> data.t0.league_name < data.t1.league_name
+data.t0.id == 52452 ^ data.t1.id == 52450 ^ data.t0.player_positions == LM, RM ^ data.t1.player_positions == LM, CAM -> data.t0.player_positions < data.t1.player_positions
+data.t0.id == 72990 ^ data.t1.id == 72986 ^ data.t0.player_positions == LM, RM ^ data.t1.player_positions == LM, CAM -> data.t0.player_positions < data.t1.player_positions
+data.t0.id == 79938 ^ data.t1.id == 79935 ^ data.t0.player_positions == LM, ST ^ data.t1.player_positions == LW, ST -> data.t0.player_positions < data.t1.player_positions
+data.t0.id == 79938 ^ data.t1.id == 79937 ^ data.t0.player_positions == LM, ST ^ data.t1.player_positions == LW, ST -> data.t0.player_positions < data.t1.player_positions
+data.t0.id == 84371 ^ data.t1.id == 84369 ^ data.t0.player_positions == ST, RW ^ data.t1.player_positions == ST, LM -> data.t0.player_positions < data.t1.player_positions
+data.t0.id == 12910 ^ data.t1.id == 12906 ^ data.t0.player_positions == ST, RW ^ data.t1.player_positions == ST, LM -> data.t0.player_positions < data.t1.player_positions
+data.t0.id == 38454 ^ data.t1.id == 38452 ^ data.t0.player_positions == ST, RW ^ data.t1.player_positions == ST, LM -> data.t0.player_positions < data.t1.player_positions
+data.t0.id == 8628 ^ data.t1.id == 8625 ^ data.t0.league_name == English League Championship ^ data.t1.league_name == Australian Hyundai A-League -> data.t0.league_name < data.t1.league_name
+data.t0.id == 5234 ^ data.t1.id == 5233 ^ data.t0.league_name == English League Championship ^ data.t1.league_name == Australian Hyundai A-League -> data.t0.league_name < data.t1.league_name
+data.t0.id == 6259 ^ data.t1.id == 6256 ^ data.t0.league_name == English League Championship ^ data.t1.league_name == Australian Hyundai A-League -> data.t0.league_name < data.t1.league_name
+data.t0.id == 24788 ^ data.t1.id == 24786 ^ data.t0.league_name == English League Championship ^ data.t1.league_name == Australian Hyundai A-League -> data.t0.league_name < data.t1.league_name
+data.t0.id == 85749 ^ data.t1.id == 85746 ^ data.t0.league_name == French Ligue 1 ^ data.t1.league_name == Spanish Segunda División -> data.t0.league_name < data.t1.league_name
+data.t0.id == 30985 ^ data.t1.id == 30981 ^ data.t0.league_name == French Ligue 1 ^ data.t1.league_name == Spanish Segunda División -> data.t0.league_name < data.t1.league_name
+data.t0.id == 53196 ^ data.t1.id == 53194 ^ data.t0.league_name == French Ligue 1 ^ data.t1.league_name == Spanish Segunda División -> data.t0.league_name < data.t1.league_name
+data.t0.id == 65639 ^ data.t1.id == 65636 ^ data.t0.league_name == French Ligue 1 ^ data.t1.league_name == Spanish Segunda División -> data.t0.league_name < data.t1.league_name
+data.t0.id == 18404 ^ data.t1.id == 18403 ^ data.t0.league_name == German 1. Bundesliga ^ data.t1.league_name == Turkish Süper Lig -> data.t0.league_name < data.t1.league_name
+data.t0.id == 61424 ^ data.t1.id == 61420 ^ data.t0.league_name == German 1. Bundesliga ^ data.t1.league_name == Turkish Süper Lig -> data.t0.league_name < data.t1.league_name
+data.t0.id == 14900 ^ data.t1.id == 14897 ^ data.t0.league_name == German 1. Bundesliga ^ data.t1.league_name == Turkish Süper Lig -> data.t0.league_name < data.t1.league_name
+data.t0.id == 42411 ^ data.t1.id == 42408 ^ data.t0.league_name == German 1. Bundesliga ^ data.t1.league_name == Turkish Süper Lig -> data.t0.league_name < data.t1.league_name
+data.t0.id == 18354 ^ data.t1.id == 18353 ^ data.t0.league_name == German 1. Bundesliga ^ data.t1.league_name == Turkish Süper Lig -> data.t0.league_name < data.t1.league_name
+data.t0.id == 20612 ^ data.t1.id == 20609 ^ data.t0.league_name == German 1. Bundesliga ^ data.t1.league_name == Turkish Süper Lig -> data.t0.league_name < data.t1.league_name
+data.t0.id == 11849 ^ data.t1.id == 11845 ^ data.t0.league_name == German 1. Bundesliga ^ data.t1.league_name == Turkish Süper Lig -> data.t0.league_name < data.t1.league_name
+data.t0.id == 81756 ^ data.t1.id == 81754 ^ data.t0.player_positions == RB ^ data.t1.player_positions == RB, RWB, RM -> data.t0.player_positions < data.t1.player_positions
+data.t0.id == 99979 ^ data.t1.id == 99977 ^ data.t0.player_positions == RB ^ data.t1.player_positions == RB, RWB, RM -> data.t0.player_positions < data.t1.player_positions
+data.t0.id == 54303 ^ data.t1.id == 54301 ^ data.t0.player_positions == CDM ^ data.t1.player_positions == CM, CDM, CAM -> data.t0.player_positions < data.t1.player_positions
+data.t0.id == 80155 ^ data.t1.id == 80151 ^ data.t0.player_positions == CDM ^ data.t1.player_positions == CM, CDM, CAM -> data.t0.player_positions < data.t1.player_positions
+data.t0.id == 56842 ^ data.t1.id == 56836 ^ data.t0.player_positions == RW, ST ^ data.t1.player_positions == ST, RW -> data.t0.player_positions < data.t1.player_positions
+data.t0.id == 86068 ^ data.t1.id == 86067 ^ data.t0.player_positions == RW, ST ^ data.t1.player_positions == ST, RW -> data.t0.player_positions < data.t1.player_positions
+data.t0.id == 14229 ^ data.t1.id == 14228 ^ data.t0.league_name == Russian Premier League ^ data.t1.league_name == Portuguese Liga ZON SAGRES -> data.t0.league_name < data.t1.league_name
+data.t0.id == 40758 ^ data.t1.id == 40754 ^ data.t0.league_name == Russian Premier League ^ data.t1.league_name == Portuguese Liga ZON SAGRES -> data.t0.league_name < data.t1.league_name
+data.t0.id == 73855 ^ data.t1.id == 73851 ^ data.t0.player_positions == CAM ^ data.t1.player_positions == LM -> data.t0.player_positions < data.t1.player_positions
+data.t0.id == 43703 ^ data.t1.id == 43698 ^ data.t0.player_positions == CAM ^ data.t1.player_positions == LM -> data.t0.player_positions < data.t1.player_positions
+data.t0.id == 45582 ^ data.t1.id == 45579 ^ data.t0.player_positions == CAM ^ data.t1.player_positions == LM -> data.t0.player_positions < data.t1.player_positions
+data.t0.id == 24181 ^ data.t1.id == 24179 ^ data.t0.league_name == Australian Hyundai A-League ^ data.t1.league_name == German 3. Bundesliga -> data.t0.league_name < data.t1.league_name
+data.t0.id == 73779 ^ data.t1.id == 73775 ^ data.t0.league_name == Australian Hyundai A-League ^ data.t1.league_name == German 3. Bundesliga -> data.t0.league_name < data.t1.league_name
+data.t0.id == 22781 ^ data.t1.id == 22780 ^ data.t0.player_positions == LM, CM ^ data.t1.player_positions == CM, LM -> data.t0.player_positions < data.t1.player_positions
+data.t0.id == 15857 ^ data.t1.id == 15854 ^ data.t0.player_positions == LM, CM ^ data.t1.player_positions == CM, LM -> data.t0.player_positions < data.t1.player_positions
+data.t0.id == 64048 ^ data.t1.id == 64044 ^ data.t0.player_positions == RM, RW, CAM ^ data.t1.player_positions == RM, LM -> data.t0.player_positions < data.t1.player_positions
+data.t0.id == 29149 ^ data.t1.id == 29146 ^ data.t0.player_positions == RM, RW, CAM ^ data.t1.player_positions == RM, LM -> data.t0.player_positions < data.t1.player_positions
+data.t0.id == 42922 ^ data.t1.id == 42920 ^ data.t0.player_positions == LM, CAM ^ data.t1.player_positions == LM, CAM, ST -> data.t0.player_positions < data.t1.player_positions
+data.t0.id == 3196 ^ data.t1.id == 3195 ^ data.t0.player_positions == LM, CAM ^ data.t1.player_positions == LM, CAM, ST -> data.t0.player_positions < data.t1.player_positions
+data.t0.id == 40425 ^ data.t1.id == 40424 ^ data.t0.player_positions == LM, CAM ^ data.t1.player_positions == LM, CAM, ST -> data.t0.player_positions < data.t1.player_positions
+data.t0.id == 65188 ^ data.t1.id == 65187 ^ data.t0.league_name == Holland Eredivisie ^ data.t1.league_name == nan -> data.t0.league_name < data.t1.league_name
+data.t0.id == 12665 ^ data.t1.id == 12662 ^ data.t0.league_name == Holland Eredivisie ^ data.t1.league_name == nan -> data.t0.league_name < data.t1.league_name
+data.t0.id == 60448 ^ data.t1.id == 60445 ^ data.t0.player_positions == CAM ^ data.t1.player_positions == CM, CAM, RM -> data.t0.player_positions < data.t1.player_positions
+data.t0.id == 47074 ^ data.t1.id == 47069 ^ data.t0.player_positions == CAM ^ data.t1.player_positions == CM, CAM, RM -> data.t0.player_positions < data.t1.player_positions
+data.t0.id == 71120 ^ data.t1.id == 71119 ^ data.t0.player_positions == CAM ^ data.t1.player_positions == CM, CAM, RM -> data.t0.player_positions < data.t1.player_positions
+data.t0.id == 60448 ^ data.t1.id == 60444 ^ data.t0.player_positions == CAM ^ data.t1.player_positions == CM, CAM, RM -> data.t0.player_positions < data.t1.player_positions
+data.t0.id == 48763 ^ data.t1.id == 48762 ^ data.t0.player_positions == LM, RM ^ data.t1.player_positions == ST, LM, RB -> data.t0.player_positions < data.t1.player_positions
+data.t0.id == 48764 ^ data.t1.id == 48762 ^ data.t0.player_positions == LM, RM ^ data.t1.player_positions == ST, LM, RB -> data.t0.player_positions < data.t1.player_positions
+data.t0.id == 81092 ^ data.t1.id == 81089 ^ data.t0.player_positions == LM, RM, ST ^ data.t1.player_positions == LM -> data.t0.player_positions < data.t1.player_positions
+data.t0.id == 56190 ^ data.t1.id == 56186 ^ data.t0.player_positions == LM, RM, ST ^ data.t1.player_positions == LM -> data.t0.player_positions < data.t1.player_positions
+data.t0.id == 34868 ^ data.t1.id == 34867 ^ data.t0.league_name == German 1. Bundesliga ^ data.t1.league_name == Italian Serie B -> data.t0.league_name < data.t1.league_name
+data.t0.id == 31772 ^ data.t1.id == 31767 ^ data.t0.league_name == German 1. Bundesliga ^ data.t1.league_name == Italian Serie B -> data.t0.league_name < data.t1.league_name
+data.t0.id == 77461 ^ data.t1.id == 77456 ^ data.t0.league_name == French Ligue 2 ^ data.t1.league_name == English League Championship -> data.t0.league_name < data.t1.league_name
+data.t0.id == 46638 ^ data.t1.id == 46636 ^ data.t0.league_name == French Ligue 2 ^ data.t1.league_name == English League Championship -> data.t0.league_name < data.t1.league_name
+data.t0.id == 49408 ^ data.t1.id == 49406 ^ data.t0.league_name == French Ligue 2 ^ data.t1.league_name == English League Championship -> data.t0.league_name < data.t1.league_name
+data.t0.id == 97673 ^ data.t1.id == 97670 ^ data.t0.player_positions == RM ^ data.t1.player_positions == CAM, ST -> data.t0.player_positions < data.t1.player_positions
+data.t0.id == 66690 ^ data.t1.id == 66686 ^ data.t0.player_positions == RM ^ data.t1.player_positions == CAM, ST -> data.t0.player_positions < data.t1.player_positions
+data.t0.id == 64102 ^ data.t1.id == 64100 ^ data.t0.player_positions == ST ^ data.t1.player_positions == LW, ST -> data.t0.player_positions < data.t1.player_positions
+data.t0.id == 52991 ^ data.t1.id == 52987 ^ data.t0.player_positions == ST ^ data.t1.player_positions == LW, ST -> data.t0.player_positions < data.t1.player_positions
+data.t0.id == 78276 ^ data.t1.id == 78275 ^ data.t0.player_positions == CAM, RW, RM ^ data.t1.player_positions == CAM, LM -> data.t0.player_positions < data.t1.player_positions
+data.t0.id == 78276 ^ data.t1.id == 78275 ^ data.t0.player_positions == CAM, RW, RM ^ data.t1.player_positions == CAM, LM -> data.t0.player_positions < data.t1.player_positions
+data.t0.id == 37868 ^ data.t1.id == 37867 ^ data.t0.player_positions == LB ^ data.t1.player_positions == LWB, LB -> data.t0.player_positions < data.t1.player_positions
+data.t0.id == 11099 ^ data.t1.id == 11094 ^ data.t0.player_positions == LB ^ data.t1.player_positions == LWB, LB -> data.t0.player_positions < data.t1.player_positions
+data.t0.id == 37868 ^ data.t1.id == 37862 ^ data.t0.player_positions == LB ^ data.t1.player_positions == LWB, LB -> data.t0.player_positions < data.t1.player_positions
+data.t0.id == 24453 ^ data.t1.id == 24450 ^ data.t0.league_name == Polish T-Mobile Ekstraklasa ^ data.t1.league_name == USA Major League Soccer -> data.t0.league_name < data.t1.league_name
+data.t0.id == 73194 ^ data.t1.id == 73192 ^ data.t0.league_name == Polish T-Mobile Ekstraklasa ^ data.t1.league_name == USA Major League Soccer -> data.t0.league_name < data.t1.league_name
+data.t0.id == 12857 ^ data.t1.id == 12853 ^ data.t0.player_positions == RM, RW ^ data.t1.player_positions == RW, LW, ST -> data.t0.player_positions < data.t1.player_positions
+data.t0.id == 12857 ^ data.t1.id == 12852 ^ data.t0.player_positions == RM, RW ^ data.t1.player_positions == RW, LW, ST -> data.t0.player_positions < data.t1.player_positions
+data.t0.id == 61724 ^ data.t1.id == 61720 ^ data.t0.player_positions == CAM, LW ^ data.t1.player_positions == LB, CM -> data.t0.player_positions < data.t1.player_positions
+data.t0.id == 61724 ^ data.t1.id == 61721 ^ data.t0.player_positions == CAM, LW ^ data.t1.player_positions == LB, CM -> data.t0.player_positions < data.t1.player_positions
+data.t0.id == 63871 ^ data.t1.id == 63868 ^ data.t0.league_name == Swiss Super League ^ data.t1.league_name == Polish T-Mobile Ekstraklasa -> data.t0.league_name < data.t1.league_name
+data.t0.id == 80301 ^ data.t1.id == 80300 ^ data.t0.league_name == Swiss Super League ^ data.t1.league_name == Polish T-Mobile Ekstraklasa -> data.t0.league_name < data.t1.league_name
+data.t0.id == 33488 ^ data.t1.id == 33486 ^ data.t0.league_name == English League Championship ^ data.t1.league_name == Rep. Ireland Airtricity League -> data.t0.league_name < data.t1.league_name
+data.t0.id == 79805 ^ data.t1.id == 79803 ^ data.t0.league_name == English League Championship ^ data.t1.league_name == Rep. Ireland Airtricity League -> data.t0.league_name < data.t1.league_name
+data.t0.id == 76805 ^ data.t1.id == 76804 ^ data.t0.league_name == English League Championship ^ data.t1.league_name == Rep. Ireland Airtricity League -> data.t0.league_name < data.t1.league_name
+data.t0.id == 27781 ^ data.t1.id == 27779 ^ data.t0.league_name == Spanish Segunda División ^ data.t1.league_name == Romanian Liga I -> data.t0.league_name < data.t1.league_name
+data.t0.id == 64043 ^ data.t1.id == 64041 ^ data.t0.league_name == Spanish Segunda División ^ data.t1.league_name == Romanian Liga I -> data.t0.league_name < data.t1.league_name
+data.t0.id == 25276 ^ data.t1.id == 25275 ^ data.t0.league_name == French Ligue 1 ^ data.t1.league_name == Chinese Super League -> data.t0.league_name < data.t1.league_name
+data.t0.id == 39533 ^ data.t1.id == 39529 ^ data.t0.league_name == French Ligue 1 ^ data.t1.league_name == Chinese Super League -> data.t0.league_name < data.t1.league_name
+data.t0.id == 39494 ^ data.t1.id == 39493 ^ data.t0.player_positions == RW ^ data.t1.player_positions == RM, RW -> data.t0.player_positions < data.t1.player_positions
+data.t0.id == 51369 ^ data.t1.id == 51365 ^ data.t0.player_positions == RW ^ data.t1.player_positions == RM, RW -> data.t0.player_positions < data.t1.player_positions
+data.t0.id == 24352 ^ data.t1.id == 24347 ^ data.t0.player_positions == LW, CAM ^ data.t1.player_positions == CAM, LW -> data.t0.player_positions < data.t1.player_positions
+data.t0.id == 104128 ^ data.t1.id == 104127 ^ data.t0.player_positions == LW, CAM ^ data.t1.player_positions == CAM, LW -> data.t0.player_positions < data.t1.player_positions
+data.t0.id == 81071 ^ data.t1.id == 81070 ^ data.t0.player_positions == LM, RM, LWB ^ data.t1.player_positions == LM, LWB -> data.t0.player_positions < data.t1.player_positions
+data.t0.id == 81071 ^ data.t1.id == 81069 ^ data.t0.player_positions == LM, RM, LWB ^ data.t1.player_positions == LM, LWB -> data.t0.player_positions < data.t1.player_positions
+data.t0.id == 41347 ^ data.t1.id == 41344 ^ data.t0.league_name == Swiss Super League ^ data.t1.league_name == Spain Primera Division -> data.t0.league_name < data.t1.league_name
+data.t0.id == 82126 ^ data.t1.id == 82123 ^ data.t0.league_name == Swiss Super League ^ data.t1.league_name == Spain Primera Division -> data.t0.league_name < data.t1.league_name
+data.t0.id == 39442 ^ data.t1.id == 39439 ^ data.t0.player_positions == CM, LM, CDM ^ data.t1.player_positions == CM, CDM, CAM -> data.t0.player_positions < data.t1.player_positions
+data.t0.id == 26737 ^ data.t1.id == 26734 ^ data.t0.player_positions == CM, LM, CDM ^ data.t1.player_positions == CM, CDM, CAM -> data.t0.player_positions < data.t1.player_positions
+data.t0.id == 34824 ^ data.t1.id == 34819 ^ data.t0.league_name == Polish T-Mobile Ekstraklasa ^ data.t1.league_name == Italian Serie A -> data.t0.league_name < data.t1.league_name
+data.t0.id == 60380 ^ data.t1.id == 60376 ^ data.t0.league_name == Polish T-Mobile Ekstraklasa ^ data.t1.league_name == Italian Serie A -> data.t0.league_name < data.t1.league_name
+data.t0.id == 34822 ^ data.t1.id == 34819 ^ data.t0.league_name == Polish T-Mobile Ekstraklasa ^ data.t1.league_name == Italian Serie A -> data.t0.league_name < data.t1.league_name
+data.t0.id == 78088 ^ data.t1.id == 78084 ^ data.t0.league_name == Polish T-Mobile Ekstraklasa ^ data.t1.league_name == Italian Serie A -> data.t0.league_name < data.t1.league_name
+data.t0.id == 20110 ^ data.t1.id == 20106 ^ data.t0.potential == 73 ^ data.t1.potential == 86 -> data.t0.potential < data.t1.potential
+data.t0.id == 93761 ^ data.t1.id == 93758 ^ data.t0.potential == 73 ^ data.t1.potential == 86 -> data.t0.potential < data.t1.potential
+data.t0.id == 53370 ^ data.t1.id == 53364 ^ data.t0.player_positions == CM, LM ^ data.t1.player_positions == CDM, CM -> data.t0.player_positions < data.t1.player_positions
+data.t0.id == 12839 ^ data.t1.id == 12835 ^ data.t0.player_positions == CM, LM ^ data.t1.player_positions == CDM, CM -> data.t0.player_positions < data.t1.player_positions
+data.t0.id == 97894 ^ data.t1.id == 97893 ^ data.t0.player_positions == LW ^ data.t1.player_positions == RW, LW -> data.t0.player_positions < data.t1.player_positions
+data.t0.id == 62479 ^ data.t1.id == 62475 ^ data.t0.player_positions == LW ^ data.t1.player_positions == RW, LW -> data.t0.player_positions < data.t1.player_positions
+data.t0.id == 81861 ^ data.t1.id == 81859 ^ data.t0.player_positions == LW ^ data.t1.player_positions == RW, LW -> data.t0.player_positions < data.t1.player_positions
+data.t0.id == 82671 ^ data.t1.id == 82669 ^ data.t0.player_positions == LB, RB ^ data.t1.player_positions == RB, RM -> data.t0.player_positions < data.t1.player_positions
+data.t0.id == 78351 ^ data.t1.id == 78348 ^ data.t0.player_positions == LB, RB ^ data.t1.player_positions == RB, RM -> data.t0.player_positions < data.t1.player_positions
+data.t0.id == 20397 ^ data.t1.id == 20393 ^ data.t0.player_positions == CM, CAM ^ data.t1.player_positions == CM, CDM, CAM -> data.t0.player_positions < data.t1.player_positions
+data.t0.id == 37891 ^ data.t1.id == 37890 ^ data.t0.player_positions == CM, CAM ^ data.t1.player_positions == CM, CDM, CAM -> data.t0.player_positions < data.t1.player_positions
+data.t0.id == 20396 ^ data.t1.id == 20392 ^ data.t0.player_positions == CM, CAM ^ data.t1.player_positions == CM, CDM, CAM -> data.t0.player_positions < data.t1.player_positions
+data.t0.id == 82398 ^ data.t1.id == 82396 ^ data.t0.player_positions == CM, CAM ^ data.t1.player_positions == CM, CDM, CAM -> data.t0.player_positions < data.t1.player_positions
+data.t0.id == 95530 ^ data.t1.id == 95527 ^ data.t0.player_positions == CM, CAM ^ data.t1.player_positions == CM, CDM, CAM -> data.t0.player_positions < data.t1.player_positions
+data.t0.id == 19717 ^ data.t1.id == 19712 ^ data.t0.player_positions == CM, CAM ^ data.t1.player_positions == CM, CDM, CAM -> data.t0.player_positions < data.t1.player_positions
+data.t0.id == 76112 ^ data.t1.id == 76110 ^ data.t0.player_positions == RM, ST ^ data.t1.player_positions == RW, ST -> data.t0.player_positions < data.t1.player_positions
+data.t0.id == 9784 ^ data.t1.id == 9780 ^ data.t0.player_positions == RM, ST ^ data.t1.player_positions == RW, ST -> data.t0.player_positions < data.t1.player_positions
+data.t0.id == 8932 ^ data.t1.id == 8927 ^ data.t0.player_positions == RB ^ data.t1.player_positions == CB, CDM -> data.t0.player_positions < data.t1.player_positions
+data.t0.id == 87897 ^ data.t1.id == 87893 ^ data.t0.player_positions == RB ^ data.t1.player_positions == CB, CDM -> data.t0.player_positions < data.t1.player_positions
+data.t0.id == 32361 ^ data.t1.id == 32357 ^ data.t0.player_positions == CAM, LM, RM ^ data.t1.player_positions == CAM, CM -> data.t0.player_positions < data.t1.player_positions
+data.t0.id == 86211 ^ data.t1.id == 86209 ^ data.t0.player_positions == CAM, LM, RM ^ data.t1.player_positions == CAM, CM -> data.t0.player_positions < data.t1.player_positions
+data.t0.id == 51677 ^ data.t1.id == 51674 ^ data.t0.player_positions == CAM, LM, RM ^ data.t1.player_positions == CAM, CM -> data.t0.player_positions < data.t1.player_positions
+data.t0.id == 76187 ^ data.t1.id == 76185 ^ data.t0.league_name == Danish Superliga ^ data.t1.league_name == Polish T-Mobile Ekstraklasa -> data.t0.league_name < data.t1.league_name
+data.t0.id == 773 ^ data.t1.id == 772 ^ data.t0.league_name == Danish Superliga ^ data.t1.league_name == Polish T-Mobile Ekstraklasa -> data.t0.league_name < data.t1.league_name
+data.t0.id == 773 ^ data.t1.id == 769 ^ data.t0.league_name == Danish Superliga ^ data.t1.league_name == Polish T-Mobile Ekstraklasa -> data.t0.league_name < data.t1.league_name
+data.t0.id == 69275 ^ data.t1.id == 69274 ^ data.t0.player_positions == RB, CB ^ data.t1.player_positions == RB, CB, RWB -> data.t0.player_positions < data.t1.player_positions
+data.t0.id == 42022 ^ data.t1.id == 42021 ^ data.t0.player_positions == RB, CB ^ data.t1.player_positions == RB, CB, RWB -> data.t0.player_positions < data.t1.player_positions
+data.t0.id == 53868 ^ data.t1.id == 53863 ^ data.t0.league_name == Colombian Liga Postobón ^ data.t1.league_name == Paraguayan Primera División -> data.t0.league_name < data.t1.league_name
+data.t0.id == 86481 ^ data.t1.id == 86479 ^ data.t0.league_name == Colombian Liga Postobón ^ data.t1.league_name == Paraguayan Primera División -> data.t0.league_name < data.t1.league_name
+data.t0.id == 34145 ^ data.t1.id == 34143 ^ data.t0.player_positions == RM ^ data.t1.player_positions == CM, RM, CAM -> data.t0.player_positions < data.t1.player_positions
+data.t0.id == 63785 ^ data.t1.id == 63780 ^ data.t0.player_positions == RM ^ data.t1.player_positions == CM, RM, CAM -> data.t0.player_positions < data.t1.player_positions
+data.t0.id == 80608 ^ data.t1.id == 80606 ^ data.t0.league_name == French Ligue 1 ^ data.t1.league_name == Saudi Abdul L. Jameel League -> data.t0.league_name < data.t1.league_name
+data.t0.id == 55953 ^ data.t1.id == 55952 ^ data.t0.league_name == French Ligue 1 ^ data.t1.league_name == Saudi Abdul L. Jameel League -> data.t0.league_name < data.t1.league_name
+data.t0.id == 43294 ^ data.t1.id == 43293 ^ data.t0.league_name == French Ligue 1 ^ data.t1.league_name == Saudi Abdul L. Jameel League -> data.t0.league_name < data.t1.league_name
+data.t0.id == 87195 ^ data.t1.id == 87192 ^ data.t0.player_positions == CDM ^ data.t1.player_positions == CB, CDM, CM -> data.t0.player_positions < data.t1.player_positions
+data.t0.id == 6154 ^ data.t1.id == 6149 ^ data.t0.player_positions == CDM ^ data.t1.player_positions == CB, CDM, CM -> data.t0.player_positions < data.t1.player_positions
+data.t0.id == 97376 ^ data.t1.id == 97375 ^ data.t0.player_positions == CDM ^ data.t1.player_positions == CB, CDM, CM -> data.t0.player_positions < data.t1.player_positions
+data.t0.id == 79921 ^ data.t1.id == 79917 ^ data.t0.potential == 79 ^ data.t1.potential == 91 -> data.t0.potential < data.t1.potential
+data.t0.id == 40225 ^ data.t1.id == 40220 ^ data.t0.potential == 79 ^ data.t1.potential == 91 -> data.t0.potential < data.t1.potential
+data.t0.id == 40224 ^ data.t1.id == 40220 ^ data.t0.potential == 79 ^ data.t1.potential == 91 -> data.t0.potential < data.t1.potential
+data.t0.id == 33131 ^ data.t1.id == 33128 ^ data.t0.league_name == Italian Serie A ^ data.t1.league_name == Chinese Super League -> data.t0.league_name < data.t1.league_name
+data.t0.id == 68832 ^ data.t1.id == 68828 ^ data.t0.league_name == Italian Serie A ^ data.t1.league_name == Chinese Super League -> data.t0.league_name < data.t1.league_name
+data.t0.id == 71490 ^ data.t1.id == 71486 ^ data.t0.player_positions == CAM, CF ^ data.t1.player_positions == CAM, CM -> data.t0.player_positions < data.t1.player_positions
+data.t0.id == 41280 ^ data.t1.id == 41274 ^ data.t0.player_positions == CAM, CF ^ data.t1.player_positions == CAM, CM -> data.t0.player_positions < data.t1.player_positions
+data.t0.id == 46803 ^ data.t1.id == 46801 ^ data.t0.league_name == Russian Premier League ^ data.t1.league_name == Turkish Süper Lig -> data.t0.league_name < data.t1.league_name
+data.t0.id == 18868 ^ data.t1.id == 18865 ^ data.t0.league_name == Russian Premier League ^ data.t1.league_name == Turkish Süper Lig -> data.t0.league_name < data.t1.league_name
+data.t0.id == 28823 ^ data.t1.id == 28820 ^ data.t0.league_name == Swiss Super League ^ data.t1.league_name == Australian Hyundai A-League -> data.t0.league_name < data.t1.league_name
+data.t0.id == 3447 ^ data.t1.id == 3444 ^ data.t0.league_name == Swiss Super League ^ data.t1.league_name == Australian Hyundai A-League -> data.t0.league_name < data.t1.league_name
+data.t0.id == 31588 ^ data.t1.id == 31586 ^ data.t0.player_positions == CAM, LM, RM ^ data.t1.player_positions == CAM, CDM -> data.t0.player_positions < data.t1.player_positions
+data.t0.id == 31588 ^ data.t1.id == 31587 ^ data.t0.player_positions == CAM, LM, RM ^ data.t1.player_positions == CAM, CDM -> data.t0.player_positions < data.t1.player_positions
+data.t0.id == 74412 ^ data.t1.id == 74408 ^ data.t0.potential == 55 ^ data.t1.potential == 62 -> data.t0.potential < data.t1.potential
+data.t0.id == 81349 ^ data.t1.id == 81345 ^ data.t0.potential == 55 ^ data.t1.potential == 62 -> data.t0.potential < data.t1.potential
+data.t0.id == 56475 ^ data.t1.id == 56472 ^ data.t0.league_name == Swiss Super League ^ data.t1.league_name == Swedish Allsvenskan -> data.t0.league_name < data.t1.league_name
+data.t0.id == 27356 ^ data.t1.id == 27355 ^ data.t0.league_name == Swiss Super League ^ data.t1.league_name == Swedish Allsvenskan -> data.t0.league_name < data.t1.league_name
+data.t0.id == 50252 ^ data.t1.id == 50250 ^ data.t0.player_positions == CAM, LM ^ data.t1.player_positions == CAM, LW, CM -> data.t0.player_positions < data.t1.player_positions
+data.t0.id == 50252 ^ data.t1.id == 50250 ^ data.t0.player_positions == CAM, LM ^ data.t1.player_positions == CAM, LW, CM -> data.t0.player_positions < data.t1.player_positions
+data.t0.id == 11883 ^ data.t1.id == 11880 ^ data.t0.player_positions == ST, RW ^ data.t1.player_positions == ST, LW, RW -> data.t0.player_positions < data.t1.player_positions
+data.t0.id == 86069 ^ data.t1.id == 86068 ^ data.t0.player_positions == ST, RW ^ data.t1.player_positions == ST, LW, RW -> data.t0.player_positions < data.t1.player_positions
+data.t0.id == 42700 ^ data.t1.id == 42694 ^ data.t0.league_name == Mexican Liga MX ^ data.t1.league_name == Liga de Fútbol Profesional Boliviano -> data.t0.league_name < data.t1.league_name
+data.t0.id == 42700 ^ data.t1.id == 42695 ^ data.t0.league_name == Mexican Liga MX ^ data.t1.league_name == Liga de Fútbol Profesional Boliviano -> data.t0.league_name < data.t1.league_name
+data.t0.id == 53878 ^ data.t1.id == 53876 ^ data.t0.league_name == English League One ^ data.t1.league_name == French Ligue 2 -> data.t0.league_name < data.t1.league_name
+data.t0.id == 23130 ^ data.t1.id == 23129 ^ data.t0.league_name == English League One ^ data.t1.league_name == French Ligue 2 -> data.t0.league_name < data.t1.league_name
+data.t0.id == 65501 ^ data.t1.id == 65497 ^ data.t0.league_name == Colombian Liga Postobón ^ data.t1.league_name == English Premier League -> data.t0.league_name < data.t1.league_name
+data.t0.id == 56816 ^ data.t1.id == 56812 ^ data.t0.league_name == Colombian Liga Postobón ^ data.t1.league_name == English Premier League -> data.t0.league_name < data.t1.league_name
+data.t0.id == 45949 ^ data.t1.id == 45947 ^ data.t0.league_name == English Premier League ^ data.t1.league_name == Swedish Allsvenskan -> data.t0.league_name < data.t1.league_name
+data.t0.id == 30198 ^ data.t1.id == 30197 ^ data.t0.league_name == English Premier League ^ data.t1.league_name == Swedish Allsvenskan -> data.t0.league_name < data.t1.league_name
+data.t0.id == 839 ^ data.t1.id == 838 ^ data.t0.league_name == English Premier League ^ data.t1.league_name == Swedish Allsvenskan -> data.t0.league_name < data.t1.league_name
+data.t0.id == 13220 ^ data.t1.id == 13218 ^ data.t0.league_name == Spanish Segunda División ^ data.t1.league_name == Turkish Süper Lig -> data.t0.league_name < data.t1.league_name
+data.t0.id == 84781 ^ data.t1.id == 84780 ^ data.t0.league_name == Spanish Segunda División ^ data.t1.league_name == Turkish Süper Lig -> data.t0.league_name < data.t1.league_name
+data.t0.id == 71026 ^ data.t1.id == 71020 ^ data.t0.league_name == Spanish Segunda División ^ data.t1.league_name == Turkish Süper Lig -> data.t0.league_name < data.t1.league_name
+data.t0.id == 46154 ^ data.t1.id == 46151 ^ data.t0.league_name == Holland Eredivisie ^ data.t1.league_name == Japanese J. League Division 1 -> data.t0.league_name < data.t1.league_name
+data.t0.id == 46154 ^ data.t1.id == 46152 ^ data.t0.league_name == Holland Eredivisie ^ data.t1.league_name == Japanese J. League Division 1 -> data.t0.league_name < data.t1.league_name
+data.t0.id == 72256 ^ data.t1.id == 72253 ^ data.t0.player_positions == RW, CM ^ data.t1.player_positions == CM, CDM -> data.t0.player_positions < data.t1.player_positions
+data.t0.id == 72257 ^ data.t1.id == 72254 ^ data.t0.player_positions == RW, CM ^ data.t1.player_positions == CM, CDM -> data.t0.player_positions < data.t1.player_positions
+data.t0.id == 18751 ^ data.t1.id == 18747 ^ data.t0.player_positions == RM, ST, LM ^ data.t1.player_positions == RM, LM -> data.t0.player_positions < data.t1.player_positions
+data.t0.id == 34691 ^ data.t1.id == 34690 ^ data.t0.player_positions == RM, ST, LM ^ data.t1.player_positions == RM, LM -> data.t0.player_positions < data.t1.player_positions
+data.t0.id == 99950 ^ data.t1.id == 99947 ^ data.t0.potential == 64 ^ data.t1.potential == 75 -> data.t0.potential < data.t1.potential
+data.t0.id == 78390 ^ data.t1.id == 78387 ^ data.t0.potential == 64 ^ data.t1.potential == 75 -> data.t0.potential < data.t1.potential
+data.t0.id == 20354 ^ data.t1.id == 20350 ^ data.t0.player_positions == RM ^ data.t1.player_positions == LW, RW -> data.t0.player_positions < data.t1.player_positions
+data.t0.id == 97838 ^ data.t1.id == 97835 ^ data.t0.player_positions == RM ^ data.t1.player_positions == LW, RW -> data.t0.player_positions < data.t1.player_positions
+data.t0.id == 63964 ^ data.t1.id == 63963 ^ data.t0.league_name == Austrian Football Bundesliga ^ data.t1.league_name == Chilian Campeonato Nacional -> data.t0.league_name < data.t1.league_name
+data.t0.id == 63964 ^ data.t1.id == 63963 ^ data.t0.league_name == Austrian Football Bundesliga ^ data.t1.league_name == Chilian Campeonato Nacional -> data.t0.league_name < data.t1.league_name
+data.t0.id == 6923 ^ data.t1.id == 6922 ^ data.t0.potential == 94 ^ data.t1.potential == 93 -> data.t0.potential < data.t1.potential
+data.t0.id == 6923 ^ data.t1.id == 6921 ^ data.t0.potential == 94 ^ data.t1.potential == 93 -> data.t0.potential < data.t1.potential
+data.t0.id == 56137 ^ data.t1.id == 56132 ^ data.t0.player_positions == CB, CM, CDM ^ data.t1.player_positions == CDM, CM -> data.t0.player_positions < data.t1.player_positions
+data.t0.id == 56138 ^ data.t1.id == 56133 ^ data.t0.player_positions == CB, CM, CDM ^ data.t1.player_positions == CDM, CM -> data.t0.player_positions < data.t1.player_positions
+data.t0.id == 56136 ^ data.t1.id == 56132 ^ data.t0.player_positions == CB, CM, CDM ^ data.t1.player_positions == CDM, CM -> data.t0.player_positions < data.t1.player_positions
+data.t0.id == 80149 ^ data.t1.id == 80146 ^ data.t0.player_positions == RB ^ data.t1.player_positions == RWB, RB, CB -> data.t0.player_positions < data.t1.player_positions
+data.t0.id == 70479 ^ data.t1.id == 70476 ^ data.t0.player_positions == RB ^ data.t1.player_positions == RWB, RB, CB -> data.t0.player_positions < data.t1.player_positions
+data.t0.id == 80140 ^ data.t1.id == 80136 ^ data.t0.potential == 59 ^ data.t1.potential == 60 -> data.t0.potential < data.t1.potential
+data.t0.id == 3779 ^ data.t1.id == 3778 ^ data.t0.potential == 59 ^ data.t1.potential == 60 -> data.t0.potential < data.t1.potential
+data.t0.id == 77078 ^ data.t1.id == 77076 ^ data.t0.player_positions == LW, CAM ^ data.t1.player_positions == LM -> data.t0.player_positions < data.t1.player_positions
+data.t0.id == 37966 ^ data.t1.id == 37961 ^ data.t0.player_positions == LW, CAM ^ data.t1.player_positions == LM -> data.t0.player_positions < data.t1.player_positions
+data.t0.id == 3732 ^ data.t1.id == 3731 ^ data.t0.league_name == nan ^ data.t1.league_name == Paraguayan Primera División -> data.t0.league_name < data.t1.league_name
+data.t0.id == 48923 ^ data.t1.id == 48920 ^ data.t0.league_name == nan ^ data.t1.league_name == Paraguayan Primera División -> data.t0.league_name < data.t1.league_name
+data.t0.id == 61736 ^ data.t1.id == 61735 ^ data.t0.league_name == nan ^ data.t1.league_name == Paraguayan Primera División -> data.t0.league_name < data.t1.league_name
+data.t0.id == 56726 ^ data.t1.id == 56723 ^ data.t0.potential == 65 ^ data.t1.potential == 74 -> data.t0.potential < data.t1.potential
+data.t0.id == 19146 ^ data.t1.id == 19142 ^ data.t0.potential == 65 ^ data.t1.potential == 74 -> data.t0.potential < data.t1.potential
+data.t0.id == 71400 ^ data.t1.id == 71396 ^ data.t0.potential == 65 ^ data.t1.potential == 74 -> data.t0.potential < data.t1.potential
+data.t0.id == 57616 ^ data.t1.id == 57615 ^ data.t0.league_name == Spanish Segunda División ^ data.t1.league_name == Colombian Liga Postobón -> data.t0.league_name < data.t1.league_name
+data.t0.id == 66539 ^ data.t1.id == 66538 ^ data.t0.league_name == Spanish Segunda División ^ data.t1.league_name == Colombian Liga Postobón -> data.t0.league_name < data.t1.league_name
+data.t0.id == 47844 ^ data.t1.id == 47841 ^ data.t0.league_name == Holland Eredivisie ^ data.t1.league_name == Polish T-Mobile Ekstraklasa -> data.t0.league_name < data.t1.league_name
+data.t0.id == 74680 ^ data.t1.id == 74677 ^ data.t0.league_name == Holland Eredivisie ^ data.t1.league_name == Polish T-Mobile Ekstraklasa -> data.t0.league_name < data.t1.league_name
+data.t0.id == 6966 ^ data.t1.id == 6964 ^ data.t0.player_positions == LM, CAM, CM ^ data.t1.player_positions == CM, CDM -> data.t0.player_positions < data.t1.player_positions
+data.t0.id == 56461 ^ data.t1.id == 56460 ^ data.t0.player_positions == LM, CAM, CM ^ data.t1.player_positions == CM, CDM -> data.t0.player_positions < data.t1.player_positions
+data.t0.id == 80307 ^ data.t1.id == 80306 ^ data.t0.potential == 87 ^ data.t1.potential == 81 -> data.t0.potential < data.t1.potential
+data.t0.id == 26646 ^ data.t1.id == 26642 ^ data.t0.potential == 87 ^ data.t1.potential == 81 -> data.t0.potential < data.t1.potential
+data.t0.id == 80307 ^ data.t1.id == 80306 ^ data.t0.potential == 87 ^ data.t1.potential == 81 -> data.t0.potential < data.t1.potential
+data.t0.id == 99950 ^ data.t1.id == 99947 ^ data.t0.player_positions == CAM, CDM ^ data.t1.player_positions == CAM, CM -> data.t0.player_positions < data.t1.player_positions
+data.t0.id == 99950 ^ data.t1.id == 99948 ^ data.t0.player_positions == CAM, CDM ^ data.t1.player_positions == CAM, CM -> data.t0.player_positions < data.t1.player_positions
+data.t0.id == 72202 ^ data.t1.id == 72199 ^ data.t0.potential == 62 ^ data.t1.potential == 72 -> data.t0.potential < data.t1.potential
+data.t0.id == 71019 ^ data.t1.id == 71016 ^ data.t0.potential == 62 ^ data.t1.potential == 72 -> data.t0.potential < data.t1.potential
+data.t0.id == 90510 ^ data.t1.id == 90507 ^ data.t0.potential == 62 ^ data.t1.potential == 72 -> data.t0.potential < data.t1.potential
+data.t0.id == 23958 ^ data.t1.id == 23954 ^ data.t0.league_name == Russian Premier League ^ data.t1.league_name == Chinese Super League -> data.t0.league_name < data.t1.league_name
+data.t0.id == 23957 ^ data.t1.id == 23954 ^ data.t0.league_name == Russian Premier League ^ data.t1.league_name == Chinese Super League -> data.t0.league_name < data.t1.league_name
+data.t0.id == 16928 ^ data.t1.id == 16926 ^ data.t0.league_name == Russian Premier League ^ data.t1.league_name == Chinese Super League -> data.t0.league_name < data.t1.league_name
+data.t0.id == 39090 ^ data.t1.id == 39086 ^ data.t0.league_name == Russian Premier League ^ data.t1.league_name == Chinese Super League -> data.t0.league_name < data.t1.league_name
+data.t0.id == 34759 ^ data.t1.id == 34757 ^ data.t0.player_positions == ST, LM, RM ^ data.t1.player_positions == ST, RM -> data.t0.player_positions < data.t1.player_positions
+data.t0.id == 32771 ^ data.t1.id == 32767 ^ data.t0.player_positions == ST, LM, RM ^ data.t1.player_positions == ST, RM -> data.t0.player_positions < data.t1.player_positions
+data.t0.id == 43780 ^ data.t1.id == 43775 ^ data.t0.league_name == Italian Serie B ^ data.t1.league_name == nan -> data.t0.league_name < data.t1.league_name
+data.t0.id == 43780 ^ data.t1.id == 43777 ^ data.t0.league_name == Italian Serie B ^ data.t1.league_name == nan -> data.t0.league_name < data.t1.league_name
+data.t0.id == 75562 ^ data.t1.id == 75559 ^ data.t0.player_positions == RB, LB ^ data.t1.player_positions == LB, LWB, RB -> data.t0.player_positions < data.t1.player_positions
+data.t0.id == 88024 ^ data.t1.id == 88022 ^ data.t0.player_positions == RB, LB ^ data.t1.player_positions == LB, LWB, RB -> data.t0.player_positions < data.t1.player_positions
+data.t0.id == 66094 ^ data.t1.id == 66090 ^ data.t0.potential == 67 ^ data.t1.potential == 79 -> data.t0.potential < data.t1.potential
+data.t0.id == 69210 ^ data.t1.id == 69207 ^ data.t0.potential == 67 ^ data.t1.potential == 79 -> data.t0.potential < data.t1.potential
+data.t0.id == 25925 ^ data.t1.id == 25922 ^ data.t0.player_positions == LW, RW ^ data.t1.player_positions == LM, LW, RM -> data.t0.player_positions < data.t1.player_positions
+data.t0.id == 76103 ^ data.t1.id == 76101 ^ data.t0.player_positions == LW, RW ^ data.t1.player_positions == LM, LW, RM -> data.t0.player_positions < data.t1.player_positions
+data.t0.id == 82084 ^ data.t1.id == 82083 ^ data.t0.player_positions == LW, RW ^ data.t1.player_positions == LM, LW, RM -> data.t0.player_positions < data.t1.player_positions
+data.t0.id == 50034 ^ data.t1.id == 50030 ^ data.t0.player_positions == RM ^ data.t1.player_positions == RM, LM, RW -> data.t0.player_positions < data.t1.player_positions
+data.t0.id == 32662 ^ data.t1.id == 32661 ^ data.t0.player_positions == RM ^ data.t1.player_positions == RM, LM, RW -> data.t0.player_positions < data.t1.player_positions
+data.t0.id == 68875 ^ data.t1.id == 68871 ^ data.t0.league_name == Norwegian Eliteserien ^ data.t1.league_name == nan -> data.t0.league_name < data.t1.league_name
+data.t0.id == 74766 ^ data.t1.id == 74763 ^ data.t0.league_name == Norwegian Eliteserien ^ data.t1.league_name == nan -> data.t0.league_name < data.t1.league_name
+data.t0.id == 96106 ^ data.t1.id == 96103 ^ data.t0.league_name == Norwegian Eliteserien ^ data.t1.league_name == Russian Premier League -> data.t0.league_name < data.t1.league_name
+data.t0.id == 26009 ^ data.t1.id == 26006 ^ data.t0.league_name == Norwegian Eliteserien ^ data.t1.league_name == Russian Premier League -> data.t0.league_name < data.t1.league_name
+data.t0.id == 72811 ^ data.t1.id == 72808 ^ data.t0.player_positions == CAM ^ data.t1.player_positions == LM, CAM -> data.t0.player_positions < data.t1.player_positions
+data.t0.id == 72811 ^ data.t1.id == 72809 ^ data.t0.player_positions == CAM ^ data.t1.player_positions == LM, CAM -> data.t0.player_positions < data.t1.player_positions
+data.t0.id == 90140 ^ data.t1.id == 90136 ^ data.t0.player_positions == CAM ^ data.t1.player_positions == LM, CAM -> data.t0.player_positions < data.t1.player_positions
+data.t0.id == 51954 ^ data.t1.id == 51949 ^ data.t0.player_positions == ST, LM, RM ^ data.t1.player_positions == RM, ST -> data.t0.player_positions < data.t1.player_positions
+data.t0.id == 66559 ^ data.t1.id == 66558 ^ data.t0.player_positions == ST, LM, RM ^ data.t1.player_positions == RM, ST -> data.t0.player_positions < data.t1.player_positions
+data.t0.id == 72826 ^ data.t1.id == 72822 ^ data.t0.potential == 71 ^ data.t1.potential == 82 -> data.t0.potential < data.t1.potential
+data.t0.id == 34474 ^ data.t1.id == 34471 ^ data.t0.potential == 71 ^ data.t1.potential == 82 -> data.t0.potential < data.t1.potential
+data.t0.id == 9573 ^ data.t1.id == 9568 ^ data.t0.potential == 59 ^ data.t1.potential == 58 -> data.t0.potential < data.t1.potential
+data.t0.id == 24685 ^ data.t1.id == 24683 ^ data.t0.potential == 59 ^ data.t1.potential == 58 -> data.t0.potential < data.t1.potential
+data.t0.id == 2881 ^ data.t1.id == 2878 ^ data.t0.potential == 59 ^ data.t1.potential == 58 -> data.t0.potential < data.t1.potential
+data.t0.id == 48457 ^ data.t1.id == 48453 ^ data.t0.potential == 59 ^ data.t1.potential == 58 -> data.t0.potential < data.t1.potential
+data.t0.id == 2881 ^ data.t1.id == 2877 ^ data.t0.potential == 59 ^ data.t1.potential == 58 -> data.t0.potential < data.t1.potential
+data.t0.id == 40585 ^ data.t1.id == 40581 ^ data.t0.player_positions == RB ^ data.t1.player_positions == RWB, RB, RM -> data.t0.player_positions < data.t1.player_positions
+data.t0.id == 40583 ^ data.t1.id == 40581 ^ data.t0.player_positions == RB ^ data.t1.player_positions == RWB, RB, RM -> data.t0.player_positions < data.t1.player_positions
+data.t0.id == 64370 ^ data.t1.id == 64369 ^ data.t0.league_name == Belgian Jupiler Pro League ^ data.t1.league_name == Romanian Liga I -> data.t0.league_name < data.t1.league_name
+data.t0.id == 100016 ^ data.t1.id == 100015 ^ data.t0.league_name == Belgian Jupiler Pro League ^ data.t1.league_name == Romanian Liga I -> data.t0.league_name < data.t1.league_name
+data.t0.id == 88058 ^ data.t1.id == 88057 ^ data.t0.player_positions == CM, RM ^ data.t1.player_positions == CM, CAM, CF -> data.t0.player_positions < data.t1.player_positions
+data.t0.id == 88058 ^ data.t1.id == 88056 ^ data.t0.player_positions == CM, RM ^ data.t1.player_positions == CM, CAM, CF -> data.t0.player_positions < data.t1.player_positions
+data.t0.id == 50646 ^ data.t1.id == 50644 ^ data.t0.player_positions == CDM, CM, CAM ^ data.t1.player_positions == CAM, CDM, CM -> data.t0.player_positions < data.t1.player_positions
+data.t0.id == 50645 ^ data.t1.id == 50644 ^ data.t0.player_positions == CDM, CM, CAM ^ data.t1.player_positions == CAM, CDM, CM -> data.t0.player_positions < data.t1.player_positions
+data.t0.id == 31699 ^ data.t1.id == 31698 ^ data.t0.player_positions == LB, LM, LWB ^ data.t1.player_positions == LB, LWB -> data.t0.player_positions < data.t1.player_positions
+data.t0.id == 40167 ^ data.t1.id == 40165 ^ data.t0.player_positions == LB, LM, LWB ^ data.t1.player_positions == LB, LWB -> data.t0.player_positions < data.t1.player_positions
+data.t0.id == 25225 ^ data.t1.id == 25220 ^ data.t0.player_positions == RB, RWB, CB ^ data.t1.player_positions == RB -> data.t0.player_positions < data.t1.player_positions
+data.t0.id == 22651 ^ data.t1.id == 22650 ^ data.t0.player_positions == RB, RWB, CB ^ data.t1.player_positions == RB -> data.t0.player_positions < data.t1.player_positions
+data.t0.id == 60737 ^ data.t1.id == 60735 ^ data.t0.player_positions == RB, RWB, CB ^ data.t1.player_positions == RB -> data.t0.player_positions < data.t1.player_positions
+data.t0.id == 13931 ^ data.t1.id == 13928 ^ data.t0.player_positions == RB, LB, CB ^ data.t1.player_positions == CB, RB -> data.t0.player_positions < data.t1.player_positions
+data.t0.id == 77559 ^ data.t1.id == 77556 ^ data.t0.player_positions == RB, LB, CB ^ data.t1.player_positions == CB, RB -> data.t0.player_positions < data.t1.player_positions
+data.t0.id == 52813 ^ data.t1.id == 52808 ^ data.t0.potential == 59 ^ data.t1.potential == 72 -> data.t0.potential < data.t1.potential
+data.t0.id == 75336 ^ data.t1.id == 75331 ^ data.t0.potential == 59 ^ data.t1.potential == 72 -> data.t0.potential < data.t1.potential
+data.t0.id == 66593 ^ data.t1.id == 66590 ^ data.t0.player_positions == CB, CDM, LB ^ data.t1.player_positions == CB, LB -> data.t0.player_positions < data.t1.player_positions
+data.t0.id == 12220 ^ data.t1.id == 12217 ^ data.t0.player_positions == CB, CDM, LB ^ data.t1.player_positions == CB, LB -> data.t0.player_positions < data.t1.player_positions
+data.t0.id == 25926 ^ data.t1.id == 25925 ^ data.t0.player_positions == LM, LW, RM ^ data.t1.player_positions == RM, LM -> data.t0.player_positions < data.t1.player_positions
+data.t0.id == 76775 ^ data.t1.id == 76774 ^ data.t0.player_positions == LM, LW, RM ^ data.t1.player_positions == RM, LM -> data.t0.player_positions < data.t1.player_positions
+data.t0.id == 56790 ^ data.t1.id == 56788 ^ data.t0.league_name == Colombian Liga Postobón ^ data.t1.league_name == Peruvian Primera División -> data.t0.league_name < data.t1.league_name
+data.t0.id == 56790 ^ data.t1.id == 56787 ^ data.t0.league_name == Colombian Liga Postobón ^ data.t1.league_name == Peruvian Primera División -> data.t0.league_name < data.t1.league_name
+data.t0.id == 21071 ^ data.t1.id == 21068 ^ data.t0.league_name == Polish T-Mobile Ekstraklasa ^ data.t1.league_name == Rest of World -> data.t0.league_name < data.t1.league_name
+data.t0.id == 56335 ^ data.t1.id == 56334 ^ data.t0.league_name == Polish T-Mobile Ekstraklasa ^ data.t1.league_name == Rest of World -> data.t0.league_name < data.t1.league_name
+data.t0.id == 27576 ^ data.t1.id == 27571 ^ data.t0.potential == 91 ^ data.t1.potential == 83 -> data.t0.potential < data.t1.potential
+data.t0.id == 12858 ^ data.t1.id == 12853 ^ data.t0.potential == 91 ^ data.t1.potential == 83 -> data.t0.potential < data.t1.potential
+data.t0.id == 89117 ^ data.t1.id == 89115 ^ data.t0.player_positions == RB, RM ^ data.t1.player_positions == LM, RM, RB -> data.t0.player_positions < data.t1.player_positions
+data.t0.id == 89118 ^ data.t1.id == 89115 ^ data.t0.player_positions == RB, RM ^ data.t1.player_positions == LM, RM, RB -> data.t0.player_positions < data.t1.player_positions
+data.t0.id == 28839 ^ data.t1.id == 28833 ^ data.t0.player_positions == LB, LM ^ data.t1.player_positions == LWB, LB -> data.t0.player_positions < data.t1.player_positions
+data.t0.id == 73338 ^ data.t1.id == 73335 ^ data.t0.player_positions == LB, LM ^ data.t1.player_positions == LWB, LB -> data.t0.player_positions < data.t1.player_positions
+data.t0.id == 3101 ^ data.t1.id == 3099 ^ data.t0.player_positions == RM, LM ^ data.t1.player_positions == LM, CAM, RM -> data.t0.player_positions < data.t1.player_positions
+data.t0.id == 73551 ^ data.t1.id == 73549 ^ data.t0.player_positions == RM, LM ^ data.t1.player_positions == LM, CAM, RM -> data.t0.player_positions < data.t1.player_positions
+data.t0.id == 26592 ^ data.t1.id == 26591 ^ data.t0.player_positions == ST, LM ^ data.t1.player_positions == ST, CAM -> data.t0.player_positions < data.t1.player_positions
+data.t0.id == 16730 ^ data.t1.id == 16726 ^ data.t0.player_positions == ST, LM ^ data.t1.player_positions == ST, CAM -> data.t0.player_positions < data.t1.player_positions
+data.t0.id == 61361 ^ data.t1.id == 61355 ^ data.t0.potential == 65 ^ data.t1.potential == 84 -> data.t0.potential < data.t1.potential
+data.t0.id == 82239 ^ data.t1.id == 82235 ^ data.t0.potential == 65 ^ data.t1.potential == 84 -> data.t0.potential < data.t1.potential
+data.t0.id == 39998 ^ data.t1.id == 39994 ^ data.t0.potential == 61 ^ data.t1.potential == 70 -> data.t0.potential < data.t1.potential
+data.t0.id == 56251 ^ data.t1.id == 56247 ^ data.t0.potential == 61 ^ data.t1.potential == 70 -> data.t0.potential < data.t1.potential
+data.t0.id == 61409 ^ data.t1.id == 61408 ^ data.t0.player_positions == RM, LM, CAM ^ data.t1.player_positions == CAM, RM, LM -> data.t0.player_positions < data.t1.player_positions
+data.t0.id == 61409 ^ data.t1.id == 61408 ^ data.t0.player_positions == RM, LM, CAM ^ data.t1.player_positions == CAM, RM, LM -> data.t0.player_positions < data.t1.player_positions
+data.t0.id == 9800 ^ data.t1.id == 9795 ^ data.t0.league_name == Mexican Liga MX ^ data.t1.league_name == Norwegian Eliteserien -> data.t0.league_name < data.t1.league_name
+data.t0.id == 9800 ^ data.t1.id == 9796 ^ data.t0.league_name == Mexican Liga MX ^ data.t1.league_name == Norwegian Eliteserien -> data.t0.league_name < data.t1.league_name
+data.t0.id == 76700 ^ data.t1.id == 76696 ^ data.t0.player_positions == LM ^ data.t1.player_positions == CAM, LM, RM -> data.t0.player_positions < data.t1.player_positions
+data.t0.id == 76700 ^ data.t1.id == 76697 ^ data.t0.player_positions == LM ^ data.t1.player_positions == CAM, LM, RM -> data.t0.player_positions < data.t1.player_positions
+data.t0.id == 7827 ^ data.t1.id == 7824 ^ data.t0.league_name == German 1. Bundesliga ^ data.t1.league_name == Australian Hyundai A-League -> data.t0.league_name < data.t1.league_name
+data.t0.id == 7828 ^ data.t1.id == 7824 ^ data.t0.league_name == German 1. Bundesliga ^ data.t1.league_name == Australian Hyundai A-League -> data.t0.league_name < data.t1.league_name
+data.t0.id == 28817 ^ data.t1.id == 28816 ^ data.t0.league_name == Spanish Segunda División ^ data.t1.league_name == Polish T-Mobile Ekstraklasa -> data.t0.league_name < data.t1.league_name
+data.t0.id == 11248 ^ data.t1.id == 11243 ^ data.t0.league_name == Spanish Segunda División ^ data.t1.league_name == Polish T-Mobile Ekstraklasa -> data.t0.league_name < data.t1.league_name
+data.t0.id == 95183 ^ data.t1.id == 95181 ^ data.t0.league_name == Spanish Segunda División ^ data.t1.league_name == Polish T-Mobile Ekstraklasa -> data.t0.league_name < data.t1.league_name
+data.t0.id == 97596 ^ data.t1.id == 97594 ^ data.t0.league_name == Greek Super League ^ data.t1.league_name == Swedish Allsvenskan -> data.t0.league_name < data.t1.league_name
+data.t0.id == 13838 ^ data.t1.id == 13836 ^ data.t0.league_name == Greek Super League ^ data.t1.league_name == Swedish Allsvenskan -> data.t0.league_name < data.t1.league_name
+data.t0.id == 11067 ^ data.t1.id == 11064 ^ data.t0.player_positions == RB, CB, LB ^ data.t1.player_positions == RB -> data.t0.player_positions < data.t1.player_positions
+data.t0.id == 47140 ^ data.t1.id == 47134 ^ data.t0.player_positions == RB, CB, LB ^ data.t1.player_positions == RB -> data.t0.player_positions < data.t1.player_positions
+data.t0.id == 29022 ^ data.t1.id == 29020 ^ data.t0.league_name == Russian Premier League ^ data.t1.league_name == USA Major League Soccer -> data.t0.league_name < data.t1.league_name
+data.t0.id == 33422 ^ data.t1.id == 33418 ^ data.t0.league_name == Russian Premier League ^ data.t1.league_name == USA Major League Soccer -> data.t0.league_name < data.t1.league_name
+data.t0.id == 87855 ^ data.t1.id == 87852 ^ data.t0.player_positions == LB, RB ^ data.t1.player_positions == LB, RB, LM -> data.t0.player_positions < data.t1.player_positions
+data.t0.id == 87855 ^ data.t1.id == 87853 ^ data.t0.player_positions == LB, RB ^ data.t1.player_positions == LB, RB, LM -> data.t0.player_positions < data.t1.player_positions
+data.t0.id == 81792 ^ data.t1.id == 81789 ^ data.t0.player_positions == ST ^ data.t1.player_positions == LM, RM, ST -> data.t0.player_positions < data.t1.player_positions
+data.t0.id == 66032 ^ data.t1.id == 66030 ^ data.t0.player_positions == ST ^ data.t1.player_positions == LM, RM, ST -> data.t0.player_positions < data.t1.player_positions
+data.t0.id == 50699 ^ data.t1.id == 50695 ^ data.t0.player_positions == CAM, CM ^ data.t1.player_positions == CM, CAM, CDM -> data.t0.player_positions < data.t1.player_positions
+data.t0.id == 79583 ^ data.t1.id == 79581 ^ data.t0.player_positions == CAM, CM ^ data.t1.player_positions == CM, CAM, CDM -> data.t0.player_positions < data.t1.player_positions
+data.t0.id == 18483 ^ data.t1.id == 18482 ^ data.t0.player_positions == CAM, CM ^ data.t1.player_positions == CM, CAM, CDM -> data.t0.player_positions < data.t1.player_positions
+data.t0.id == 33774 ^ data.t1.id == 33772 ^ data.t0.potential == 89 ^ data.t1.potential == 82 -> data.t0.potential < data.t1.potential
+data.t0.id == 95648 ^ data.t1.id == 95646 ^ data.t0.potential == 89 ^ data.t1.potential == 82 -> data.t0.potential < data.t1.potential
+data.t0.id == 53816 ^ data.t1.id == 53814 ^ data.t0.player_positions == LM, LB ^ data.t1.player_positions == LB, LWB -> data.t0.player_positions < data.t1.player_positions
+data.t0.id == 22996 ^ data.t1.id == 22992 ^ data.t0.player_positions == LM, LB ^ data.t1.player_positions == LB, LWB -> data.t0.player_positions < data.t1.player_positions
+data.t0.id == 35032 ^ data.t1.id == 35031 ^ data.t0.player_positions == LM, RM ^ data.t1.player_positions == CM, LM -> data.t0.player_positions < data.t1.player_positions
+data.t0.id == 51157 ^ data.t1.id == 51153 ^ data.t0.player_positions == LM, RM ^ data.t1.player_positions == CM, LM -> data.t0.player_positions < data.t1.player_positions
+data.t0.id == 30524 ^ data.t1.id == 30520 ^ data.t0.player_positions == CM, CDM ^ data.t1.player_positions == CB, CDM -> data.t0.player_positions < data.t1.player_positions
+data.t0.id == 75881 ^ data.t1.id == 75878 ^ data.t0.player_positions == CM, CDM ^ data.t1.player_positions == CB, CDM -> data.t0.player_positions < data.t1.player_positions
+data.t0.id == 67876 ^ data.t1.id == 67875 ^ data.t0.player_positions == LM, ST, RM ^ data.t1.player_positions == LM, RM, ST -> data.t0.player_positions < data.t1.player_positions
+data.t0.id == 46057 ^ data.t1.id == 46054 ^ data.t0.player_positions == LM, ST, RM ^ data.t1.player_positions == LM, RM, ST -> data.t0.player_positions < data.t1.player_positions
+data.t0.id == 72922 ^ data.t1.id == 72920 ^ data.t0.player_positions == LM, RM ^ data.t1.player_positions == LM, LW, ST -> data.t0.player_positions < data.t1.player_positions
+data.t0.id == 72922 ^ data.t1.id == 72919 ^ data.t0.player_positions == LM, RM ^ data.t1.player_positions == LM, LW, ST -> data.t0.player_positions < data.t1.player_positions
+data.t0.id == 36249 ^ data.t1.id == 36248 ^ data.t0.potential == 59 ^ data.t1.potential == 63 -> data.t0.potential < data.t1.potential
+data.t0.id == 17472 ^ data.t1.id == 17467 ^ data.t0.potential == 59 ^ data.t1.potential == 63 -> data.t0.potential < data.t1.potential
+data.t0.id == 10949 ^ data.t1.id == 10948 ^ data.t0.player_positions == LB, LWB, CB ^ data.t1.player_positions == LB, LWB -> data.t0.player_positions < data.t1.player_positions
+data.t0.id == 10949 ^ data.t1.id == 10948 ^ data.t0.player_positions == LB, LWB, CB ^ data.t1.player_positions == LB, LWB -> data.t0.player_positions < data.t1.player_positions
+data.t0.id == 87181 ^ data.t1.id == 87177 ^ data.t0.player_positions == RB, CB, LB ^ data.t1.player_positions == CB -> data.t0.player_positions < data.t1.player_positions
+data.t0.id == 3050 ^ data.t1.id == 3048 ^ data.t0.player_positions == RB, CB, LB ^ data.t1.player_positions == CB -> data.t0.player_positions < data.t1.player_positions
+data.t0.id == 46845 ^ data.t1.id == 46840 ^ data.t0.player_positions == LB ^ data.t1.player_positions == CB, LWB -> data.t0.player_positions < data.t1.player_positions
+data.t0.id == 289 ^ data.t1.id == 287 ^ data.t0.player_positions == LB ^ data.t1.player_positions == CB, LWB -> data.t0.player_positions < data.t1.player_positions
+data.t0.id == 33519 ^ data.t1.id == 33514 ^ data.t0.player_positions == LB ^ data.t1.player_positions == CB, LWB -> data.t0.player_positions < data.t1.player_positions
+data.t0.id == 46846 ^ data.t1.id == 46842 ^ data.t0.player_positions == LB ^ data.t1.player_positions == CB, LWB -> data.t0.player_positions < data.t1.player_positions
+data.t0.id == 28610 ^ data.t1.id == 28608 ^ data.t0.potential == 92 ^ data.t1.potential == 93 -> data.t0.potential < data.t1.potential
+data.t0.id == 92809 ^ data.t1.id == 92808 ^ data.t0.potential == 92 ^ data.t1.potential == 93 -> data.t0.potential < data.t1.potential
+data.t0.id == 64180 ^ data.t1.id == 64176 ^ data.t0.player_positions == RM ^ data.t1.player_positions == RB -> data.t0.player_positions < data.t1.player_positions
+data.t0.id == 64181 ^ data.t1.id == 64176 ^ data.t0.player_positions == RM ^ data.t1.player_positions == RB -> data.t0.player_positions < data.t1.player_positions
+data.t0.id == 19490 ^ data.t1.id == 19489 ^ data.t0.player_positions == CAM, LM ^ data.t1.player_positions == CAM, LM, LW -> data.t0.player_positions < data.t1.player_positions
+data.t0.id == 19525 ^ data.t1.id == 19522 ^ data.t0.player_positions == CAM, LM ^ data.t1.player_positions == CAM, LM, LW -> data.t0.player_positions < data.t1.player_positions

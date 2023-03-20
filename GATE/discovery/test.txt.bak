@@ -1,0 +1,3 @@
+data.t0.pts == 6 ^ data.t1.pts == 1 -> data.t0.pts < data.t1.pts
+data.t0.pts == 13 ^ data.t1.pts == 6 -> data.t0.pts < data.t1.pts
+data.t0.pts == 10 ^ data.t1.pts == 5 -> data.t0.pts < data.t1.pts

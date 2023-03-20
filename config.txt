@@ -1,6 +1,0 @@
---creator Gate
---data data/nba/
---epoch 10
---lr 0.0001
---batch_size 256
---high_conf_sample_ratio 0.1

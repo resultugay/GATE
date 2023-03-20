@@ -1,0 +1,4 @@
+data.t0.player_weight == 104 ^ data.t1.player_weight == 115 -> data.t0.player_weight < data.t1.player_weight
+data.t0.team_abbreviation == CHH ^ data.t1.team_abbreviation == NOH -> data.t0.team_abbreviation < data.t1.team_abbreviation
+data.t0.player_weight == 107 ^ data.t1.player_weight == 113 -> data.t0.player_weight < data.t1.player_weight
+data.t0.player_weight == 72 ^ data.t1.player_weight == 79 -> data.t0.player_weight < data.t1.player_weight

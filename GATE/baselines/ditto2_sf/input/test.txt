@@ -1,0 +1,400 @@
+中国人民公安大学犯罪学系	中国人民公安大学犯罪学系	1
+中国人民公安大学犯罪学系	南京师范大学马克思主义学院	1
+中国人民公安大学犯罪学系	独立行政法人国立病院機構（京都医療センター臨床研究センター）	1
+中国人民公安大学犯罪学系	UNIVERSITY OF MASSACHUSETTS  AT AMHERST	1
+中国人民公安大学犯罪学系	UNIVERSITY OF ILLINOIS - URBANA CHAMPAIG	1
+中国人民公安大学犯罪学系	Université de Reims - Champagne -Ardenne	1
+中国人民公安大学犯罪学系	Scripps Research Institute	1
+中国人民公安大学犯罪学系	Mercury Data Systems, Inc.	1
+中国人民公安大学犯罪学系	GEORGETOWN UNIVERSITY	1
+中国人民公安大学犯罪学系	dTEC Systems L.L.C.	1
+中国人民公安大学犯罪学系	中国人民公安大学犯罪学学院	1
+中国人民公安大学犯罪学系	独立行政法人国立病院機構 東京医療センター(臨床研究センター)	1
+中国人民公安大学犯罪学系	北京师范大学马克思主义学院	1
+中国人民公安大学犯罪学系	UNIVERSITY OF MASSACHUSETTS - AMHERST	1
+中国人民公安大学犯罪学系	UNIVERSITY OF ILLINOIS, URBANA-CHAMPAGNE	1
+中国人民公安大学犯罪学系	Université de Reims Champagne - Ardenne	1
+中国人民公安大学犯罪学系	SCRIPPS RESEARCH INSTITUTE, THE	1
+中国人民公安大学犯罪学系	Mercury Data Systems	1
+中国人民公安大学犯罪学系	GEORGETOWN UNIVERSITY (THE)	1
+中国人民公安大学犯罪学系	dTEC Systems, LLC	1
+南京师范大学马克思主义学院	中国人民公安大学犯罪学系	1
+南京师范大学马克思主义学院	南京师范大学马克思主义学院	1
+南京师范大学马克思主义学院	独立行政法人国立病院機構（京都医療センター臨床研究センター）	1
+南京师范大学马克思主义学院	UNIVERSITY OF MASSACHUSETTS  AT AMHERST	1
+南京师范大学马克思主义学院	UNIVERSITY OF ILLINOIS - URBANA CHAMPAIG	1
+南京师范大学马克思主义学院	Université de Reims - Champagne -Ardenne	1
+南京师范大学马克思主义学院	Scripps Research Institute	1
+南京师范大学马克思主义学院	Mercury Data Systems, Inc.	1
+南京师范大学马克思主义学院	GEORGETOWN UNIVERSITY	1
+南京师范大学马克思主义学院	dTEC Systems L.L.C.	1
+南京师范大学马克思主义学院	中国人民公安大学犯罪学学院	1
+南京师范大学马克思主义学院	独立行政法人国立病院機構 東京医療センター(臨床研究センター)	1
+南京师范大学马克思主义学院	北京师范大学马克思主义学院	1
+南京师范大学马克思主义学院	UNIVERSITY OF MASSACHUSETTS - AMHERST	1
+南京师范大学马克思主义学院	UNIVERSITY OF ILLINOIS, URBANA-CHAMPAGNE	1
+南京师范大学马克思主义学院	Université de Reims Champagne - Ardenne	1
+南京师范大学马克思主义学院	SCRIPPS RESEARCH INSTITUTE, THE	1
+南京师范大学马克思主义学院	Mercury Data Systems	1
+南京师范大学马克思主义学院	GEORGETOWN UNIVERSITY (THE)	1
+南京师范大学马克思主义学院	dTEC Systems, LLC	1
+独立行政法人国立病院機構（京都医療センター臨床研究センター）	中国人民公安大学犯罪学系	1
+独立行政法人国立病院機構（京都医療センター臨床研究センター）	南京师范大学马克思主义学院	1
+独立行政法人国立病院機構（京都医療センター臨床研究センター）	独立行政法人国立病院機構（京都医療センター臨床研究センター）	1
+独立行政法人国立病院機構（京都医療センター臨床研究センター）	UNIVERSITY OF MASSACHUSETTS  AT AMHERST	1
+独立行政法人国立病院機構（京都医療センター臨床研究センター）	UNIVERSITY OF ILLINOIS - URBANA CHAMPAIG	1
+独立行政法人国立病院機構（京都医療センター臨床研究センター）	Université de Reims - Champagne -Ardenne	1
+独立行政法人国立病院機構（京都医療センター臨床研究センター）	Scripps Research Institute	1
+独立行政法人国立病院機構（京都医療センター臨床研究センター）	Mercury Data Systems, Inc.	1
+独立行政法人国立病院機構（京都医療センター臨床研究センター）	GEORGETOWN UNIVERSITY	1
+独立行政法人国立病院機構（京都医療センター臨床研究センター）	dTEC Systems L.L.C.	1
+独立行政法人国立病院機構（京都医療センター臨床研究センター）	中国人民公安大学犯罪学学院	1
+独立行政法人国立病院機構（京都医療センター臨床研究センター）	独立行政法人国立病院機構 東京医療センター(臨床研究センター)	1
+独立行政法人国立病院機構（京都医療センター臨床研究センター）	北京师范大学马克思主义学院	1
+独立行政法人国立病院機構（京都医療センター臨床研究センター）	UNIVERSITY OF MASSACHUSETTS - AMHERST	1
+独立行政法人国立病院機構（京都医療センター臨床研究センター）	UNIVERSITY OF ILLINOIS, URBANA-CHAMPAGNE	1
+独立行政法人国立病院機構（京都医療センター臨床研究センター）	Université de Reims Champagne - Ardenne	1
+独立行政法人国立病院機構（京都医療センター臨床研究センター）	SCRIPPS RESEARCH INSTITUTE, THE	1
+独立行政法人国立病院機構（京都医療センター臨床研究センター）	Mercury Data Systems	1
+独立行政法人国立病院機構（京都医療センター臨床研究センター）	GEORGETOWN UNIVERSITY (THE)	1
+独立行政法人国立病院機構（京都医療センター臨床研究センター）	dTEC Systems, LLC	1
+UNIVERSITY OF MASSACHUSETTS  AT AMHERST	中国人民公安大学犯罪学系	1
+UNIVERSITY OF MASSACHUSETTS  AT AMHERST	南京师范大学马克思主义学院	1
+UNIVERSITY OF MASSACHUSETTS  AT AMHERST	独立行政法人国立病院機構（京都医療センター臨床研究センター）	1
+UNIVERSITY OF MASSACHUSETTS  AT AMHERST	UNIVERSITY OF MASSACHUSETTS  AT AMHERST	1
+UNIVERSITY OF MASSACHUSETTS  AT AMHERST	UNIVERSITY OF ILLINOIS - URBANA CHAMPAIG	1
+UNIVERSITY OF MASSACHUSETTS  AT AMHERST	Université de Reims - Champagne -Ardenne	1
+UNIVERSITY OF MASSACHUSETTS  AT AMHERST	Scripps Research Institute	1
+UNIVERSITY OF MASSACHUSETTS  AT AMHERST	Mercury Data Systems, Inc.	1
+UNIVERSITY OF MASSACHUSETTS  AT AMHERST	GEORGETOWN UNIVERSITY	1
+UNIVERSITY OF MASSACHUSETTS  AT AMHERST	dTEC Systems L.L.C.	1
+UNIVERSITY OF MASSACHUSETTS  AT AMHERST	中国人民公安大学犯罪学学院	1
+UNIVERSITY OF MASSACHUSETTS  AT AMHERST	独立行政法人国立病院機構 東京医療センター(臨床研究センター)	1
+UNIVERSITY OF MASSACHUSETTS  AT AMHERST	北京师范大学马克思主义学院	1
+UNIVERSITY OF MASSACHUSETTS  AT AMHERST	UNIVERSITY OF MASSACHUSETTS - AMHERST	1
+UNIVERSITY OF MASSACHUSETTS  AT AMHERST	UNIVERSITY OF ILLINOIS, URBANA-CHAMPAGNE	1
+UNIVERSITY OF MASSACHUSETTS  AT AMHERST	Université de Reims Champagne - Ardenne	1
+UNIVERSITY OF MASSACHUSETTS  AT AMHERST	SCRIPPS RESEARCH INSTITUTE, THE	1
+UNIVERSITY OF MASSACHUSETTS  AT AMHERST	Mercury Data Systems	1
+UNIVERSITY OF MASSACHUSETTS  AT AMHERST	GEORGETOWN UNIVERSITY (THE)	1
+UNIVERSITY OF MASSACHUSETTS  AT AMHERST	dTEC Systems, LLC	1
+UNIVERSITY OF ILLINOIS - URBANA CHAMPAIG	中国人民公安大学犯罪学系	1
+UNIVERSITY OF ILLINOIS - URBANA CHAMPAIG	南京师范大学马克思主义学院	1
+UNIVERSITY OF ILLINOIS - URBANA CHAMPAIG	独立行政法人国立病院機構（京都医療センター臨床研究センター）	1
+UNIVERSITY OF ILLINOIS - URBANA CHAMPAIG	UNIVERSITY OF MASSACHUSETTS  AT AMHERST	1
+UNIVERSITY OF ILLINOIS - URBANA CHAMPAIG	UNIVERSITY OF ILLINOIS - URBANA CHAMPAIG	1
+UNIVERSITY OF ILLINOIS - URBANA CHAMPAIG	Université de Reims - Champagne -Ardenne	1
+UNIVERSITY OF ILLINOIS - URBANA CHAMPAIG	Scripps Research Institute	1
+UNIVERSITY OF ILLINOIS - URBANA CHAMPAIG	Mercury Data Systems, Inc.	1
+UNIVERSITY OF ILLINOIS - URBANA CHAMPAIG	GEORGETOWN UNIVERSITY	1
+UNIVERSITY OF ILLINOIS - URBANA CHAMPAIG	dTEC Systems L.L.C.	1
+UNIVERSITY OF ILLINOIS - URBANA CHAMPAIG	中国人民公安大学犯罪学学院	1
+UNIVERSITY OF ILLINOIS - URBANA CHAMPAIG	独立行政法人国立病院機構 東京医療センター(臨床研究センター)	1
+UNIVERSITY OF ILLINOIS - URBANA CHAMPAIG	北京师范大学马克思主义学院	1
+UNIVERSITY OF ILLINOIS - URBANA CHAMPAIG	UNIVERSITY OF MASSACHUSETTS - AMHERST	1
+UNIVERSITY OF ILLINOIS - URBANA CHAMPAIG	UNIVERSITY OF ILLINOIS, URBANA-CHAMPAGNE	1
+UNIVERSITY OF ILLINOIS - URBANA CHAMPAIG	Université de Reims Champagne - Ardenne	1
+UNIVERSITY OF ILLINOIS - URBANA CHAMPAIG	SCRIPPS RESEARCH INSTITUTE, THE	1
+UNIVERSITY OF ILLINOIS - URBANA CHAMPAIG	Mercury Data Systems	1
+UNIVERSITY OF ILLINOIS - URBANA CHAMPAIG	GEORGETOWN UNIVERSITY (THE)	1
+UNIVERSITY OF ILLINOIS - URBANA CHAMPAIG	dTEC Systems, LLC	1
+Université de Reims - Champagne -Ardenne	中国人民公安大学犯罪学系	1
+Université de Reims - Champagne -Ardenne	南京师范大学马克思主义学院	1
+Université de Reims - Champagne -Ardenne	独立行政法人国立病院機構（京都医療センター臨床研究センター）	1
+Université de Reims - Champagne -Ardenne	UNIVERSITY OF MASSACHUSETTS  AT AMHERST	1
+Université de Reims - Champagne -Ardenne	UNIVERSITY OF ILLINOIS - URBANA CHAMPAIG	1
+Université de Reims - Champagne -Ardenne	Université de Reims - Champagne -Ardenne	1
+Université de Reims - Champagne -Ardenne	Scripps Research Institute	1
+Université de Reims - Champagne -Ardenne	Mercury Data Systems, Inc.	1
+Université de Reims - Champagne -Ardenne	GEORGETOWN UNIVERSITY	1
+Université de Reims - Champagne -Ardenne	dTEC Systems L.L.C.	1
+Université de Reims - Champagne -Ardenne	中国人民公安大学犯罪学学院	1
+Université de Reims - Champagne -Ardenne	独立行政法人国立病院機構 東京医療センター(臨床研究センター)	1
+Université de Reims - Champagne -Ardenne	北京师范大学马克思主义学院	1
+Université de Reims - Champagne -Ardenne	UNIVERSITY OF MASSACHUSETTS - AMHERST	1
+Université de Reims - Champagne -Ardenne	UNIVERSITY OF ILLINOIS, URBANA-CHAMPAGNE	1
+Université de Reims - Champagne -Ardenne	Université de Reims Champagne - Ardenne	1
+Université de Reims - Champagne -Ardenne	SCRIPPS RESEARCH INSTITUTE, THE	1
+Université de Reims - Champagne -Ardenne	Mercury Data Systems	1
+Université de Reims - Champagne -Ardenne	GEORGETOWN UNIVERSITY (THE)	1
+Université de Reims - Champagne -Ardenne	dTEC Systems, LLC	1
+Scripps Research Institute	中国人民公安大学犯罪学系	1
+Scripps Research Institute	南京师范大学马克思主义学院	1
+Scripps Research Institute	独立行政法人国立病院機構（京都医療センター臨床研究センター）	1
+Scripps Research Institute	UNIVERSITY OF MASSACHUSETTS  AT AMHERST	1
+Scripps Research Institute	UNIVERSITY OF ILLINOIS - URBANA CHAMPAIG	1
+Scripps Research Institute	Université de Reims - Champagne -Ardenne	1
+Scripps Research Institute	Scripps Research Institute	1
+Scripps Research Institute	Mercury Data Systems, Inc.	1
+Scripps Research Institute	GEORGETOWN UNIVERSITY	1
+Scripps Research Institute	dTEC Systems L.L.C.	1
+Scripps Research Institute	中国人民公安大学犯罪学学院	1
+Scripps Research Institute	独立行政法人国立病院機構 東京医療センター(臨床研究センター)	1
+Scripps Research Institute	北京师范大学马克思主义学院	1
+Scripps Research Institute	UNIVERSITY OF MASSACHUSETTS - AMHERST	1
+Scripps Research Institute	UNIVERSITY OF ILLINOIS, URBANA-CHAMPAGNE	1
+Scripps Research Institute	Université de Reims Champagne - Ardenne	1
+Scripps Research Institute	SCRIPPS RESEARCH INSTITUTE, THE	1
+Scripps Research Institute	Mercury Data Systems	1
+Scripps Research Institute	GEORGETOWN UNIVERSITY (THE)	1
+Scripps Research Institute	dTEC Systems, LLC	1
+Mercury Data Systems, Inc.	中国人民公安大学犯罪学系	1
+Mercury Data Systems, Inc.	南京师范大学马克思主义学院	1
+Mercury Data Systems, Inc.	独立行政法人国立病院機構（京都医療センター臨床研究センター）	1
+Mercury Data Systems, Inc.	UNIVERSITY OF MASSACHUSETTS  AT AMHERST	1
+Mercury Data Systems, Inc.	UNIVERSITY OF ILLINOIS - URBANA CHAMPAIG	1
+Mercury Data Systems, Inc.	Université de Reims - Champagne -Ardenne	1
+Mercury Data Systems, Inc.	Scripps Research Institute	1
+Mercury Data Systems, Inc.	Mercury Data Systems, Inc.	1
+Mercury Data Systems, Inc.	GEORGETOWN UNIVERSITY	1
+Mercury Data Systems, Inc.	dTEC Systems L.L.C.	1
+Mercury Data Systems, Inc.	中国人民公安大学犯罪学学院	1
+Mercury Data Systems, Inc.	独立行政法人国立病院機構 東京医療センター(臨床研究センター)	1
+Mercury Data Systems, Inc.	北京师范大学马克思主义学院	1
+Mercury Data Systems, Inc.	UNIVERSITY OF MASSACHUSETTS - AMHERST	1
+Mercury Data Systems, Inc.	UNIVERSITY OF ILLINOIS, URBANA-CHAMPAGNE	1
+Mercury Data Systems, Inc.	Université de Reims Champagne - Ardenne	1
+Mercury Data Systems, Inc.	SCRIPPS RESEARCH INSTITUTE, THE	1
+Mercury Data Systems, Inc.	Mercury Data Systems	1
+Mercury Data Systems, Inc.	GEORGETOWN UNIVERSITY (THE)	1
+Mercury Data Systems, Inc.	dTEC Systems, LLC	1
+GEORGETOWN UNIVERSITY	中国人民公安大学犯罪学系	1
+GEORGETOWN UNIVERSITY	南京师范大学马克思主义学院	1
+GEORGETOWN UNIVERSITY	独立行政法人国立病院機構（京都医療センター臨床研究センター）	1
+GEORGETOWN UNIVERSITY	UNIVERSITY OF MASSACHUSETTS  AT AMHERST	1
+GEORGETOWN UNIVERSITY	UNIVERSITY OF ILLINOIS - URBANA CHAMPAIG	1
+GEORGETOWN UNIVERSITY	Université de Reims - Champagne -Ardenne	1
+GEORGETOWN UNIVERSITY	Scripps Research Institute	1
+GEORGETOWN UNIVERSITY	Mercury Data Systems, Inc.	1
+GEORGETOWN UNIVERSITY	GEORGETOWN UNIVERSITY	1
+GEORGETOWN UNIVERSITY	dTEC Systems L.L.C.	1
+GEORGETOWN UNIVERSITY	中国人民公安大学犯罪学学院	1
+GEORGETOWN UNIVERSITY	独立行政法人国立病院機構 東京医療センター(臨床研究センター)	1
+GEORGETOWN UNIVERSITY	北京师范大学马克思主义学院	1
+GEORGETOWN UNIVERSITY	UNIVERSITY OF MASSACHUSETTS - AMHERST	1
+GEORGETOWN UNIVERSITY	UNIVERSITY OF ILLINOIS, URBANA-CHAMPAGNE	1
+GEORGETOWN UNIVERSITY	Université de Reims Champagne - Ardenne	1
+GEORGETOWN UNIVERSITY	SCRIPPS RESEARCH INSTITUTE, THE	1
+GEORGETOWN UNIVERSITY	Mercury Data Systems	1
+GEORGETOWN UNIVERSITY	GEORGETOWN UNIVERSITY (THE)	1
+GEORGETOWN UNIVERSITY	dTEC Systems, LLC	1
+dTEC Systems L.L.C.	中国人民公安大学犯罪学系	1
+dTEC Systems L.L.C.	南京师范大学马克思主义学院	1
+dTEC Systems L.L.C.	独立行政法人国立病院機構（京都医療センター臨床研究センター）	1
+dTEC Systems L.L.C.	UNIVERSITY OF MASSACHUSETTS  AT AMHERST	1
+dTEC Systems L.L.C.	UNIVERSITY OF ILLINOIS - URBANA CHAMPAIG	1
+dTEC Systems L.L.C.	Université de Reims - Champagne -Ardenne	1
+dTEC Systems L.L.C.	Scripps Research Institute	1
+dTEC Systems L.L.C.	Mercury Data Systems, Inc.	1
+dTEC Systems L.L.C.	GEORGETOWN UNIVERSITY	1
+dTEC Systems L.L.C.	dTEC Systems L.L.C.	1
+dTEC Systems L.L.C.	中国人民公安大学犯罪学学院	1
+dTEC Systems L.L.C.	独立行政法人国立病院機構 東京医療センター(臨床研究センター)	1
+dTEC Systems L.L.C.	北京师范大学马克思主义学院	1
+dTEC Systems L.L.C.	UNIVERSITY OF MASSACHUSETTS - AMHERST	1
+dTEC Systems L.L.C.	UNIVERSITY OF ILLINOIS, URBANA-CHAMPAGNE	1
+dTEC Systems L.L.C.	Université de Reims Champagne - Ardenne	1
+dTEC Systems L.L.C.	SCRIPPS RESEARCH INSTITUTE, THE	1
+dTEC Systems L.L.C.	Mercury Data Systems	1
+dTEC Systems L.L.C.	GEORGETOWN UNIVERSITY (THE)	1
+dTEC Systems L.L.C.	dTEC Systems, LLC	1
+中国人民公安大学犯罪学学院	中国人民公安大学犯罪学系	1
+中国人民公安大学犯罪学学院	南京师范大学马克思主义学院	1
+中国人民公安大学犯罪学学院	独立行政法人国立病院機構（京都医療センター臨床研究センター）	1
+中国人民公安大学犯罪学学院	UNIVERSITY OF MASSACHUSETTS  AT AMHERST	1
+中国人民公安大学犯罪学学院	UNIVERSITY OF ILLINOIS - URBANA CHAMPAIG	1
+中国人民公安大学犯罪学学院	Université de Reims - Champagne -Ardenne	1
+中国人民公安大学犯罪学学院	Scripps Research Institute	1
+中国人民公安大学犯罪学学院	Mercury Data Systems, Inc.	1
+中国人民公安大学犯罪学学院	GEORGETOWN UNIVERSITY	1
+中国人民公安大学犯罪学学院	dTEC Systems L.L.C.	1
+中国人民公安大学犯罪学学院	中国人民公安大学犯罪学学院	1
+中国人民公安大学犯罪学学院	独立行政法人国立病院機構 東京医療センター(臨床研究センター)	1
+中国人民公安大学犯罪学学院	北京师范大学马克思主义学院	1
+中国人民公安大学犯罪学学院	UNIVERSITY OF MASSACHUSETTS - AMHERST	1
+中国人民公安大学犯罪学学院	UNIVERSITY OF ILLINOIS, URBANA-CHAMPAGNE	1
+中国人民公安大学犯罪学学院	Université de Reims Champagne - Ardenne	1
+中国人民公安大学犯罪学学院	SCRIPPS RESEARCH INSTITUTE, THE	1
+中国人民公安大学犯罪学学院	Mercury Data Systems	1
+中国人民公安大学犯罪学学院	GEORGETOWN UNIVERSITY (THE)	1
+中国人民公安大学犯罪学学院	dTEC Systems, LLC	1
+独立行政法人国立病院機構 東京医療センター(臨床研究センター)	中国人民公安大学犯罪学系	1
+独立行政法人国立病院機構 東京医療センター(臨床研究センター)	南京师范大学马克思主义学院	1
+独立行政法人国立病院機構 東京医療センター(臨床研究センター)	独立行政法人国立病院機構（京都医療センター臨床研究センター）	1
+独立行政法人国立病院機構 東京医療センター(臨床研究センター)	UNIVERSITY OF MASSACHUSETTS  AT AMHERST	1
+独立行政法人国立病院機構 東京医療センター(臨床研究センター)	UNIVERSITY OF ILLINOIS - URBANA CHAMPAIG	1
+独立行政法人国立病院機構 東京医療センター(臨床研究センター)	Université de Reims - Champagne -Ardenne	1
+独立行政法人国立病院機構 東京医療センター(臨床研究センター)	Scripps Research Institute	1
+独立行政法人国立病院機構 東京医療センター(臨床研究センター)	Mercury Data Systems, Inc.	1
+独立行政法人国立病院機構 東京医療センター(臨床研究センター)	GEORGETOWN UNIVERSITY	1
+独立行政法人国立病院機構 東京医療センター(臨床研究センター)	dTEC Systems L.L.C.	1
+独立行政法人国立病院機構 東京医療センター(臨床研究センター)	中国人民公安大学犯罪学学院	1
+独立行政法人国立病院機構 東京医療センター(臨床研究センター)	独立行政法人国立病院機構 東京医療センター(臨床研究センター)	1
+独立行政法人国立病院機構 東京医療センター(臨床研究センター)	北京师范大学马克思主义学院	1
+独立行政法人国立病院機構 東京医療センター(臨床研究センター)	UNIVERSITY OF MASSACHUSETTS - AMHERST	1
+独立行政法人国立病院機構 東京医療センター(臨床研究センター)	UNIVERSITY OF ILLINOIS, URBANA-CHAMPAGNE	1
+独立行政法人国立病院機構 東京医療センター(臨床研究センター)	Université de Reims Champagne - Ardenne	1
+独立行政法人国立病院機構 東京医療センター(臨床研究センター)	SCRIPPS RESEARCH INSTITUTE, THE	1
+独立行政法人国立病院機構 東京医療センター(臨床研究センター)	Mercury Data Systems	1
+独立行政法人国立病院機構 東京医療センター(臨床研究センター)	GEORGETOWN UNIVERSITY (THE)	1
+独立行政法人国立病院機構 東京医療センター(臨床研究センター)	dTEC Systems, LLC	1
+北京师范大学马克思主义学院	中国人民公安大学犯罪学系	1
+北京师范大学马克思主义学院	南京师范大学马克思主义学院	1
+北京师范大学马克思主义学院	独立行政法人国立病院機構（京都医療センター臨床研究センター）	1
+北京师范大学马克思主义学院	UNIVERSITY OF MASSACHUSETTS  AT AMHERST	1
+北京师范大学马克思主义学院	UNIVERSITY OF ILLINOIS - URBANA CHAMPAIG	1
+北京师范大学马克思主义学院	Université de Reims - Champagne -Ardenne	1
+北京师范大学马克思主义学院	Scripps Research Institute	1
+北京师范大学马克思主义学院	Mercury Data Systems, Inc.	1
+北京师范大学马克思主义学院	GEORGETOWN UNIVERSITY	1
+北京师范大学马克思主义学院	dTEC Systems L.L.C.	1
+北京师范大学马克思主义学院	中国人民公安大学犯罪学学院	1
+北京师范大学马克思主义学院	独立行政法人国立病院機構 東京医療センター(臨床研究センター)	1
+北京师范大学马克思主义学院	北京师范大学马克思主义学院	1
+北京师范大学马克思主义学院	UNIVERSITY OF MASSACHUSETTS - AMHERST	1
+北京师范大学马克思主义学院	UNIVERSITY OF ILLINOIS, URBANA-CHAMPAGNE	1
+北京师范大学马克思主义学院	Université de Reims Champagne - Ardenne	1
+北京师范大学马克思主义学院	SCRIPPS RESEARCH INSTITUTE, THE	1
+北京师范大学马克思主义学院	Mercury Data Systems	1
+北京师范大学马克思主义学院	GEORGETOWN UNIVERSITY (THE)	1
+北京师范大学马克思主义学院	dTEC Systems, LLC	1
+UNIVERSITY OF MASSACHUSETTS - AMHERST	中国人民公安大学犯罪学系	1
+UNIVERSITY OF MASSACHUSETTS - AMHERST	南京师范大学马克思主义学院	1
+UNIVERSITY OF MASSACHUSETTS - AMHERST	独立行政法人国立病院機構（京都医療センター臨床研究センター）	1
+UNIVERSITY OF MASSACHUSETTS - AMHERST	UNIVERSITY OF MASSACHUSETTS  AT AMHERST	1
+UNIVERSITY OF MASSACHUSETTS - AMHERST	UNIVERSITY OF ILLINOIS - URBANA CHAMPAIG	1
+UNIVERSITY OF MASSACHUSETTS - AMHERST	Université de Reims - Champagne -Ardenne	1
+UNIVERSITY OF MASSACHUSETTS - AMHERST	Scripps Research Institute	1
+UNIVERSITY OF MASSACHUSETTS - AMHERST	Mercury Data Systems, Inc.	1
+UNIVERSITY OF MASSACHUSETTS - AMHERST	GEORGETOWN UNIVERSITY	1
+UNIVERSITY OF MASSACHUSETTS - AMHERST	dTEC Systems L.L.C.	1
+UNIVERSITY OF MASSACHUSETTS - AMHERST	中国人民公安大学犯罪学学院	1
+UNIVERSITY OF MASSACHUSETTS - AMHERST	独立行政法人国立病院機構 東京医療センター(臨床研究センター)	1
+UNIVERSITY OF MASSACHUSETTS - AMHERST	北京师范大学马克思主义学院	1
+UNIVERSITY OF MASSACHUSETTS - AMHERST	UNIVERSITY OF MASSACHUSETTS - AMHERST	1
+UNIVERSITY OF MASSACHUSETTS - AMHERST	UNIVERSITY OF ILLINOIS, URBANA-CHAMPAGNE	1
+UNIVERSITY OF MASSACHUSETTS - AMHERST	Université de Reims Champagne - Ardenne	1
+UNIVERSITY OF MASSACHUSETTS - AMHERST	SCRIPPS RESEARCH INSTITUTE, THE	1
+UNIVERSITY OF MASSACHUSETTS - AMHERST	Mercury Data Systems	1
+UNIVERSITY OF MASSACHUSETTS - AMHERST	GEORGETOWN UNIVERSITY (THE)	1
+UNIVERSITY OF MASSACHUSETTS - AMHERST	dTEC Systems, LLC	1
+UNIVERSITY OF ILLINOIS, URBANA-CHAMPAGNE	中国人民公安大学犯罪学系	1
+UNIVERSITY OF ILLINOIS, URBANA-CHAMPAGNE	南京师范大学马克思主义学院	1
+UNIVERSITY OF ILLINOIS, URBANA-CHAMPAGNE	独立行政法人国立病院機構（京都医療センター臨床研究センター）	1
+UNIVERSITY OF ILLINOIS, URBANA-CHAMPAGNE	UNIVERSITY OF MASSACHUSETTS  AT AMHERST	1
+UNIVERSITY OF ILLINOIS, URBANA-CHAMPAGNE	UNIVERSITY OF ILLINOIS - URBANA CHAMPAIG	1
+UNIVERSITY OF ILLINOIS, URBANA-CHAMPAGNE	Université de Reims - Champagne -Ardenne	1
+UNIVERSITY OF ILLINOIS, URBANA-CHAMPAGNE	Scripps Research Institute	1
+UNIVERSITY OF ILLINOIS, URBANA-CHAMPAGNE	Mercury Data Systems, Inc.	1
+UNIVERSITY OF ILLINOIS, URBANA-CHAMPAGNE	GEORGETOWN UNIVERSITY	1
+UNIVERSITY OF ILLINOIS, URBANA-CHAMPAGNE	dTEC Systems L.L.C.	1
+UNIVERSITY OF ILLINOIS, URBANA-CHAMPAGNE	中国人民公安大学犯罪学学院	1
+UNIVERSITY OF ILLINOIS, URBANA-CHAMPAGNE	独立行政法人国立病院機構 東京医療センター(臨床研究センター)	1
+UNIVERSITY OF ILLINOIS, URBANA-CHAMPAGNE	北京师范大学马克思主义学院	1
+UNIVERSITY OF ILLINOIS, URBANA-CHAMPAGNE	UNIVERSITY OF MASSACHUSETTS - AMHERST	1
+UNIVERSITY OF ILLINOIS, URBANA-CHAMPAGNE	UNIVERSITY OF ILLINOIS, URBANA-CHAMPAGNE	1
+UNIVERSITY OF ILLINOIS, URBANA-CHAMPAGNE	Université de Reims Champagne - Ardenne	1
+UNIVERSITY OF ILLINOIS, URBANA-CHAMPAGNE	SCRIPPS RESEARCH INSTITUTE, THE	1
+UNIVERSITY OF ILLINOIS, URBANA-CHAMPAGNE	Mercury Data Systems	1
+UNIVERSITY OF ILLINOIS, URBANA-CHAMPAGNE	GEORGETOWN UNIVERSITY (THE)	1
+UNIVERSITY OF ILLINOIS, URBANA-CHAMPAGNE	dTEC Systems, LLC	1
+Université de Reims Champagne - Ardenne	中国人民公安大学犯罪学系	1
+Université de Reims Champagne - Ardenne	南京师范大学马克思主义学院	1
+Université de Reims Champagne - Ardenne	独立行政法人国立病院機構（京都医療センター臨床研究センター）	1
+Université de Reims Champagne - Ardenne	UNIVERSITY OF MASSACHUSETTS  AT AMHERST	1
+Université de Reims Champagne - Ardenne	UNIVERSITY OF ILLINOIS - URBANA CHAMPAIG	1
+Université de Reims Champagne - Ardenne	Université de Reims - Champagne -Ardenne	1
+Université de Reims Champagne - Ardenne	Scripps Research Institute	1
+Université de Reims Champagne - Ardenne	Mercury Data Systems, Inc.	1
+Université de Reims Champagne - Ardenne	GEORGETOWN UNIVERSITY	1
+Université de Reims Champagne - Ardenne	dTEC Systems L.L.C.	1
+Université de Reims Champagne - Ardenne	中国人民公安大学犯罪学学院	1
+Université de Reims Champagne - Ardenne	独立行政法人国立病院機構 東京医療センター(臨床研究センター)	1
+Université de Reims Champagne - Ardenne	北京师范大学马克思主义学院	1
+Université de Reims Champagne - Ardenne	UNIVERSITY OF MASSACHUSETTS - AMHERST	1
+Université de Reims Champagne - Ardenne	UNIVERSITY OF ILLINOIS, URBANA-CHAMPAGNE	1
+Université de Reims Champagne - Ardenne	Université de Reims Champagne - Ardenne	1
+Université de Reims Champagne - Ardenne	SCRIPPS RESEARCH INSTITUTE, THE	1
+Université de Reims Champagne - Ardenne	Mercury Data Systems	1
+Université de Reims Champagne - Ardenne	GEORGETOWN UNIVERSITY (THE)	1
+Université de Reims Champagne - Ardenne	dTEC Systems, LLC	1
+SCRIPPS RESEARCH INSTITUTE, THE	中国人民公安大学犯罪学系	1
+SCRIPPS RESEARCH INSTITUTE, THE	南京师范大学马克思主义学院	1
+SCRIPPS RESEARCH INSTITUTE, THE	独立行政法人国立病院機構（京都医療センター臨床研究センター）	1
+SCRIPPS RESEARCH INSTITUTE, THE	UNIVERSITY OF MASSACHUSETTS  AT AMHERST	1
+SCRIPPS RESEARCH INSTITUTE, THE	UNIVERSITY OF ILLINOIS - URBANA CHAMPAIG	1
+SCRIPPS RESEARCH INSTITUTE, THE	Université de Reims - Champagne -Ardenne	1
+SCRIPPS RESEARCH INSTITUTE, THE	Scripps Research Institute	1
+SCRIPPS RESEARCH INSTITUTE, THE	Mercury Data Systems, Inc.	1
+SCRIPPS RESEARCH INSTITUTE, THE	GEORGETOWN UNIVERSITY	1
+SCRIPPS RESEARCH INSTITUTE, THE	dTEC Systems L.L.C.	1
+SCRIPPS RESEARCH INSTITUTE, THE	中国人民公安大学犯罪学学院	1
+SCRIPPS RESEARCH INSTITUTE, THE	独立行政法人国立病院機構 東京医療センター(臨床研究センター)	1
+SCRIPPS RESEARCH INSTITUTE, THE	北京师范大学马克思主义学院	1
+SCRIPPS RESEARCH INSTITUTE, THE	UNIVERSITY OF MASSACHUSETTS - AMHERST	1
+SCRIPPS RESEARCH INSTITUTE, THE	UNIVERSITY OF ILLINOIS, URBANA-CHAMPAGNE	1
+SCRIPPS RESEARCH INSTITUTE, THE	Université de Reims Champagne - Ardenne	1
+SCRIPPS RESEARCH INSTITUTE, THE	SCRIPPS RESEARCH INSTITUTE, THE	1
+SCRIPPS RESEARCH INSTITUTE, THE	Mercury Data Systems	1
+SCRIPPS RESEARCH INSTITUTE, THE	GEORGETOWN UNIVERSITY (THE)	1
+SCRIPPS RESEARCH INSTITUTE, THE	dTEC Systems, LLC	1
+Mercury Data Systems	中国人民公安大学犯罪学系	1
+Mercury Data Systems	南京师范大学马克思主义学院	1
+Mercury Data Systems	独立行政法人国立病院機構（京都医療センター臨床研究センター）	1
+Mercury Data Systems	UNIVERSITY OF MASSACHUSETTS  AT AMHERST	1
+Mercury Data Systems	UNIVERSITY OF ILLINOIS - URBANA CHAMPAIG	1
+Mercury Data Systems	Université de Reims - Champagne -Ardenne	1
+Mercury Data Systems	Scripps Research Institute	1
+Mercury Data Systems	Mercury Data Systems, Inc.	1
+Mercury Data Systems	GEORGETOWN UNIVERSITY	1
+Mercury Data Systems	dTEC Systems L.L.C.	1
+Mercury Data Systems	中国人民公安大学犯罪学学院	1
+Mercury Data Systems	独立行政法人国立病院機構 東京医療センター(臨床研究センター)	1
+Mercury Data Systems	北京师范大学马克思主义学院	1
+Mercury Data Systems	UNIVERSITY OF MASSACHUSETTS - AMHERST	1
+Mercury Data Systems	UNIVERSITY OF ILLINOIS, URBANA-CHAMPAGNE	1
+Mercury Data Systems	Université de Reims Champagne - Ardenne	1
+Mercury Data Systems	SCRIPPS RESEARCH INSTITUTE, THE	1
+Mercury Data Systems	Mercury Data Systems	1
+Mercury Data Systems	GEORGETOWN UNIVERSITY (THE)	1
+Mercury Data Systems	dTEC Systems, LLC	1
+GEORGETOWN UNIVERSITY (THE)	中国人民公安大学犯罪学系	1
+GEORGETOWN UNIVERSITY (THE)	南京师范大学马克思主义学院	1
+GEORGETOWN UNIVERSITY (THE)	独立行政法人国立病院機構（京都医療センター臨床研究センター）	1
+GEORGETOWN UNIVERSITY (THE)	UNIVERSITY OF MASSACHUSETTS  AT AMHERST	1
+GEORGETOWN UNIVERSITY (THE)	UNIVERSITY OF ILLINOIS - URBANA CHAMPAIG	1
+GEORGETOWN UNIVERSITY (THE)	Université de Reims - Champagne -Ardenne	1
+GEORGETOWN UNIVERSITY (THE)	Scripps Research Institute	1
+GEORGETOWN UNIVERSITY (THE)	Mercury Data Systems, Inc.	1
+GEORGETOWN UNIVERSITY (THE)	GEORGETOWN UNIVERSITY	1
+GEORGETOWN UNIVERSITY (THE)	dTEC Systems L.L.C.	1
+GEORGETOWN UNIVERSITY (THE)	中国人民公安大学犯罪学学院	1
+GEORGETOWN UNIVERSITY (THE)	独立行政法人国立病院機構 東京医療センター(臨床研究センター)	1
+GEORGETOWN UNIVERSITY (THE)	北京师范大学马克思主义学院	1
+GEORGETOWN UNIVERSITY (THE)	UNIVERSITY OF MASSACHUSETTS - AMHERST	1
+GEORGETOWN UNIVERSITY (THE)	UNIVERSITY OF ILLINOIS, URBANA-CHAMPAGNE	1
+GEORGETOWN UNIVERSITY (THE)	Université de Reims Champagne - Ardenne	1
+GEORGETOWN UNIVERSITY (THE)	SCRIPPS RESEARCH INSTITUTE, THE	1
+GEORGETOWN UNIVERSITY (THE)	Mercury Data Systems	1
+GEORGETOWN UNIVERSITY (THE)	GEORGETOWN UNIVERSITY (THE)	1
+GEORGETOWN UNIVERSITY (THE)	dTEC Systems, LLC	1
+dTEC Systems, LLC	中国人民公安大学犯罪学系	1
+dTEC Systems, LLC	南京师范大学马克思主义学院	1
+dTEC Systems, LLC	独立行政法人国立病院機構（京都医療センター臨床研究センター）	1
+dTEC Systems, LLC	UNIVERSITY OF MASSACHUSETTS  AT AMHERST	1
+dTEC Systems, LLC	UNIVERSITY OF ILLINOIS - URBANA CHAMPAIG	1
+dTEC Systems, LLC	Université de Reims - Champagne -Ardenne	1
+dTEC Systems, LLC	Scripps Research Institute	1
+dTEC Systems, LLC	Mercury Data Systems, Inc.	1
+dTEC Systems, LLC	GEORGETOWN UNIVERSITY	1
+dTEC Systems, LLC	dTEC Systems L.L.C.	1
+dTEC Systems, LLC	中国人民公安大学犯罪学学院	1
+dTEC Systems, LLC	独立行政法人国立病院機構 東京医療センター(臨床研究センター)	1
+dTEC Systems, LLC	北京师范大学马克思主义学院	1
+dTEC Systems, LLC	UNIVERSITY OF MASSACHUSETTS - AMHERST	1
+dTEC Systems, LLC	UNIVERSITY OF ILLINOIS, URBANA-CHAMPAGNE	1
+dTEC Systems, LLC	Université de Reims Champagne - Ardenne	1
+dTEC Systems, LLC	SCRIPPS RESEARCH INSTITUTE, THE	1
+dTEC Systems, LLC	Mercury Data Systems	1
+dTEC Systems, LLC	GEORGETOWN UNIVERSITY (THE)	1
+dTEC Systems, LLC	dTEC Systems, LLC	1

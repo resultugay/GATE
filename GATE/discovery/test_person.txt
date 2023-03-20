@@ -1,0 +1,296 @@
+data.t0.LN == mia ^ data.t1.LN == mia_changed -> data.t0.LN < data.t1.LN
+data.t0.status == involved ^ data.t1.status == retired -> data.t0.status < data.t1.status
+data.t0.kids == 0 ^ data.t1.kids == 3 -> data.t0.kids < data.t1.kids
+data.t0.status == employed ^ data.t1.status == retired -> data.t0.status < data.t1.status
+data.t0.status == retired ^ data.t1.status == passed -> data.t0.status < data.t1.status
+data.t0.kids == 3 ^ data.t1.kids == 4 -> data.t0.kids < data.t1.kids
+data.t0.status == involved ^ data.t1.status == unemployed -> data.t0.status < data.t1.status
+data.t0.status == employed ^ data.t1.status == unemployed -> data.t0.status < data.t1.status
+data.t0.status == unemployed ^ data.t1.status == passed -> data.t0.status < data.t1.status
+data.t0.status == involved ^ data.t1.status == passed -> data.t0.status < data.t1.status
+data.t0.kids == 0 ^ data.t1.kids == 4 -> data.t0.kids < data.t1.kids
+data.t0.status == involved ^ data.t1.status == quiet -> data.t0.status < data.t1.status
+data.t0.status == employed ^ data.t1.status == passed -> data.t0.status < data.t1.status
+data.t0.status == employed ^ data.t1.status == quiet -> data.t0.status < data.t1.status
+data.t0.status == quiet ^ data.t1.status == passed -> data.t0.status < data.t1.status
+data.t0.LN == kai ^ data.t1.LN == kai_changed -> data.t0.LN < data.t1.LN
+data.t0.status == operating ^ data.t1.status == passed -> data.t0.status < data.t1.status
+data.t0.status == laboring ^ data.t1.status == passed -> data.t0.status < data.t1.status
+data.t0.status == pulled out ^ data.t1.status == passed -> data.t0.status < data.t1.status
+data.t0.kids == 2 ^ data.t1.kids == 4 -> data.t0.kids < data.t1.kids
+data.t0.status == pensioned ^ data.t1.status == passed -> data.t0.status < data.t1.status
+data.t0.status == working ^ data.t1.status == passed -> data.t0.status < data.t1.status
+data.t0.status == unemployed ^ data.t1.status == expire -> data.t0.status < data.t1.status
+data.t0.kids == 3 ^ data.t1.kids == 5 -> data.t0.kids < data.t1.kids
+data.t0.status == operating ^ data.t1.status == expire -> data.t0.status < data.t1.status
+data.t0.kids == 0 ^ data.t1.kids == 5 -> data.t0.kids < data.t1.kids
+data.t0.status == laboring ^ data.t1.status == expire -> data.t0.status < data.t1.status
+data.t0.status == pulled out ^ data.t1.status == expire -> data.t0.status < data.t1.status
+data.t0.kids == 2 ^ data.t1.kids == 5 -> data.t0.kids < data.t1.kids
+data.t0.status == pensioned ^ data.t1.status == expire -> data.t0.status < data.t1.status
+data.t0.status == working ^ data.t1.status == expire -> data.t0.status < data.t1.status
+data.t0.status == operating ^ data.t1.status == unemployed -> data.t0.status < data.t1.status
+data.t0.status == laboring ^ data.t1.status == unemployed -> data.t0.status < data.t1.status
+data.t0.status == unemployed ^ data.t1.status == fallen -> data.t0.status < data.t1.status
+data.t0.status == unemployed ^ data.t1.status == departed -> data.t0.status < data.t1.status
+data.t0.status == unemployed ^ data.t1.status == deceased -> data.t0.status < data.t1.status
+data.t0.status == working ^ data.t1.status == unemployed -> data.t0.status < data.t1.status
+data.t0.status == operating ^ data.t1.status == pulled out -> data.t0.status < data.t1.status
+data.t0.kids == 0 ^ data.t1.kids == 2 -> data.t0.kids < data.t1.kids
+data.t0.status == operating ^ data.t1.status == fallen -> data.t0.status < data.t1.status
+data.t0.status == operating ^ data.t1.status == pensioned -> data.t0.status < data.t1.status
+data.t0.status == operating ^ data.t1.status == departed -> data.t0.status < data.t1.status
+data.t0.status == operating ^ data.t1.status == deceased -> data.t0.status < data.t1.status
+data.t0.status == laboring ^ data.t1.status == pulled out -> data.t0.status < data.t1.status
+data.t0.status == laboring ^ data.t1.status == fallen -> data.t0.status < data.t1.status
+data.t0.status == laboring ^ data.t1.status == pensioned -> data.t0.status < data.t1.status
+data.t0.status == laboring ^ data.t1.status == departed -> data.t0.status < data.t1.status
+data.t0.status == laboring ^ data.t1.status == deceased -> data.t0.status < data.t1.status
+data.t0.status == pulled out ^ data.t1.status == fallen -> data.t0.status < data.t1.status
+data.t0.status == pulled out ^ data.t1.status == departed -> data.t0.status < data.t1.status
+data.t0.status == pulled out ^ data.t1.status == deceased -> data.t0.status < data.t1.status
+data.t0.status == working ^ data.t1.status == pulled out -> data.t0.status < data.t1.status
+data.t0.status == pensioned ^ data.t1.status == fallen -> data.t0.status < data.t1.status
+data.t0.status == working ^ data.t1.status == fallen -> data.t0.status < data.t1.status
+data.t0.status == pensioned ^ data.t1.status == departed -> data.t0.status < data.t1.status
+data.t0.status == pensioned ^ data.t1.status == deceased -> data.t0.status < data.t1.status
+data.t0.status == working ^ data.t1.status == pensioned -> data.t0.status < data.t1.status
+data.t0.status == working ^ data.t1.status == departed -> data.t0.status < data.t1.status
+data.t0.status == working ^ data.t1.status == deceased -> data.t0.status < data.t1.status
+data.t0.LN == elliot ^ data.t1.LN == elliot_changed -> data.t0.LN < data.t1.LN
+data.t0.status == occupied ^ data.t1.status == pensioned -> data.t0.status < data.t1.status
+data.t0.status == occupied ^ data.t1.status == passed away -> data.t0.status < data.t1.status
+data.t0.status == occupied ^ data.t1.status == pensioned off -> data.t0.status < data.t1.status
+data.t0.status == occupied ^ data.t1.status == quiet -> data.t0.status < data.t1.status
+data.t0.status == occupied ^ data.t1.status == gone -> data.t0.status < data.t1.status
+data.t0.status == occupied ^ data.t1.status == pulled out -> data.t0.status < data.t1.status
+data.t0.status == occupied ^ data.t1.status == expire -> data.t0.status < data.t1.status
+data.t0.status == occupied ^ data.t1.status == dead -> data.t0.status < data.t1.status
+data.t0.status == pensioned ^ data.t1.status == passed away -> data.t0.status < data.t1.status
+data.t0.status == pensioned ^ data.t1.status == gone -> data.t0.status < data.t1.status
+data.t0.status == pensioned ^ data.t1.status == dead -> data.t0.status < data.t1.status
+data.t0.status == pensioned off ^ data.t1.status == passed away -> data.t0.status < data.t1.status
+data.t0.status == quiet ^ data.t1.status == passed away -> data.t0.status < data.t1.status
+data.t0.status == pulled out ^ data.t1.status == passed away -> data.t0.status < data.t1.status
+data.t0.status == pensioned off ^ data.t1.status == gone -> data.t0.status < data.t1.status
+data.t0.status == pensioned off ^ data.t1.status == expire -> data.t0.status < data.t1.status
+data.t0.status == pensioned off ^ data.t1.status == dead -> data.t0.status < data.t1.status
+data.t0.status == quiet ^ data.t1.status == gone -> data.t0.status < data.t1.status
+data.t0.status == quiet ^ data.t1.status == expire -> data.t0.status < data.t1.status
+data.t0.status == quiet ^ data.t1.status == dead -> data.t0.status < data.t1.status
+data.t0.status == pulled out ^ data.t1.status == gone -> data.t0.status < data.t1.status
+data.t0.status == pulled out ^ data.t1.status == dead -> data.t0.status < data.t1.status
+data.t0.status == pulled out ^ data.t1.status == defunct -> data.t0.status < data.t1.status
+data.t0.LN == zoey ^ data.t1.LN == zoey_changed -> data.t0.LN < data.t1.LN
+data.t0.status == running ^ data.t1.status == pulled out -> data.t0.status < data.t1.status
+data.t0.status == working ^ data.t1.status == defunct -> data.t0.status < data.t1.status
+data.t0.status == running ^ data.t1.status == defunct -> data.t0.status < data.t1.status
+data.t0.status == working ^ data.t1.status == passed away -> data.t0.status < data.t1.status
+data.t0.status == running ^ data.t1.status == deceased -> data.t0.status < data.t1.status
+data.t0.status == running ^ data.t1.status == passed away -> data.t0.status < data.t1.status
+data.t0.status == working ^ data.t1.status == withdrawn -> data.t0.status < data.t1.status
+data.t0.status == working ^ data.t1.status == discharged -> data.t0.status < data.t1.status
+data.t0.status == working ^ data.t1.status == in retirement -> data.t0.status < data.t1.status
+data.t0.LN == isabella ^ data.t1.LN == isabella_changed -> data.t0.LN < data.t1.LN
+data.t0.status == active ^ data.t1.status == finished -> data.t0.status < data.t1.status
+data.t0.status == running ^ data.t1.status == finished -> data.t0.status < data.t1.status
+data.t0.status == employed ^ data.t1.status == finished -> data.t0.status < data.t1.status
+data.t0.status == involved ^ data.t1.status == finished -> data.t0.status < data.t1.status
+data.t0.status == operating ^ data.t1.status == finished -> data.t0.status < data.t1.status
+data.t0.status == active ^ data.t1.status == dead -> data.t0.status < data.t1.status
+data.t0.status == active ^ data.t1.status == expire -> data.t0.status < data.t1.status
+data.t0.status == running ^ data.t1.status == dead -> data.t0.status < data.t1.status
+data.t0.status == running ^ data.t1.status == expire -> data.t0.status < data.t1.status
+data.t0.status == employed ^ data.t1.status == dead -> data.t0.status < data.t1.status
+data.t0.status == employed ^ data.t1.status == expire -> data.t0.status < data.t1.status
+data.t0.status == involved ^ data.t1.status == dead -> data.t0.status < data.t1.status
+data.t0.status == involved ^ data.t1.status == expire -> data.t0.status < data.t1.status
+data.t0.status == operating ^ data.t1.status == dead -> data.t0.status < data.t1.status
+data.t0.status == working ^ data.t1.status == removed -> data.t0.status < data.t1.status
+data.t0.status == removed ^ data.t1.status == departed -> data.t0.status < data.t1.status
+data.t0.status == occupied ^ data.t1.status == removed -> data.t0.status < data.t1.status
+data.t0.status == removed ^ data.t1.status == deceased -> data.t0.status < data.t1.status
+data.t0.status == removed ^ data.t1.status == passed -> data.t0.status < data.t1.status
+data.t0.status == operating ^ data.t1.status == removed -> data.t0.status < data.t1.status
+data.t0.status == occupied ^ data.t1.status == departed -> data.t0.status < data.t1.status
+data.t0.status == occupied ^ data.t1.status == deceased -> data.t0.status < data.t1.status
+data.t0.status == occupied ^ data.t1.status == passed -> data.t0.status < data.t1.status
+data.t0.LN == luca ^ data.t1.LN == luca_changed -> data.t0.LN < data.t1.LN
+data.t0.status == working ^ data.t1.status == finished -> data.t0.status < data.t1.status
+data.t0.status == working ^ data.t1.status == gone -> data.t0.status < data.t1.status
+data.t0.status == operating ^ data.t1.status == discharged -> data.t0.status < data.t1.status
+data.t0.status == operating ^ data.t1.status == defunct -> data.t0.status < data.t1.status
+data.t0.status == operating ^ data.t1.status == retired -> data.t0.status < data.t1.status
+data.t0.status == discharged ^ data.t1.status == dead -> data.t0.status < data.t1.status
+data.t0.status == discharged ^ data.t1.status == defunct -> data.t0.status < data.t1.status
+data.t0.status == active ^ data.t1.status == discharged -> data.t0.status < data.t1.status
+data.t0.status == retired ^ data.t1.status == dead -> data.t0.status < data.t1.status
+data.t0.status == retired ^ data.t1.status == defunct -> data.t0.status < data.t1.status
+data.t0.status == active ^ data.t1.status == defunct -> data.t0.status < data.t1.status
+data.t0.status == active ^ data.t1.status == retired -> data.t0.status < data.t1.status
+data.t0.status == working ^ data.t1.status == retired -> data.t0.status < data.t1.status
+data.t0.status == employed ^ data.t1.status == pulled out -> data.t0.status < data.t1.status
+data.t0.status == working ^ data.t1.status == dead -> data.t0.status < data.t1.status
+data.t0.status == withdrawn ^ data.t1.status == expire -> data.t0.status < data.t1.status
+data.t0.status == removed ^ data.t1.status == expire -> data.t0.status < data.t1.status
+data.t0.status == involved ^ data.t1.status == withdrawn -> data.t0.status < data.t1.status
+data.t0.status == laboring ^ data.t1.status == withdrawn -> data.t0.status < data.t1.status
+data.t0.status == operating ^ data.t1.status == withdrawn -> data.t0.status < data.t1.status
+data.t0.status == involved ^ data.t1.status == removed -> data.t0.status < data.t1.status
+data.t0.status == laboring ^ data.t1.status == removed -> data.t0.status < data.t1.status
+data.t0.status == withdrawn ^ data.t1.status == dead -> data.t0.status < data.t1.status
+data.t0.status == removed ^ data.t1.status == dead -> data.t0.status < data.t1.status
+data.t0.status == withdrawn ^ data.t1.status == defunct -> data.t0.status < data.t1.status
+data.t0.status == running ^ data.t1.status == withdrawn -> data.t0.status < data.t1.status
+data.t0.status == pensioned ^ data.t1.status == defunct -> data.t0.status < data.t1.status
+data.t0.status == running ^ data.t1.status == pensioned -> data.t0.status < data.t1.status
+data.t0.status == removed ^ data.t1.status == defunct -> data.t0.status < data.t1.status
+data.t0.status == running ^ data.t1.status == removed -> data.t0.status < data.t1.status
+data.t0.status == running ^ data.t1.status == retired -> data.t0.status < data.t1.status
+data.t0.status == removed ^ data.t1.status == finished -> data.t0.status < data.t1.status
+data.t0.status == quiet ^ data.t1.status == finished -> data.t0.status < data.t1.status
+data.t0.status == laboring ^ data.t1.status == finished -> data.t0.status < data.t1.status
+data.t0.status == pensioned off ^ data.t1.status == finished -> data.t0.status < data.t1.status
+data.t0.status == laboring ^ data.t1.status == quiet -> data.t0.status < data.t1.status
+data.t0.status == quiet ^ data.t1.status == defunct -> data.t0.status < data.t1.status
+data.t0.status == laboring ^ data.t1.status == pensioned off -> data.t0.status < data.t1.status
+data.t0.status == laboring ^ data.t1.status == defunct -> data.t0.status < data.t1.status
+data.t0.status == pensioned off ^ data.t1.status == defunct -> data.t0.status < data.t1.status
+data.t0.status == running ^ data.t1.status == discharged -> data.t0.status < data.t1.status
+data.t0.status == running ^ data.t1.status == resigned -> data.t0.status < data.t1.status
+data.t0.status == running ^ data.t1.status == pensioned off -> data.t0.status < data.t1.status
+data.t0.status == occupied ^ data.t1.status == discharged -> data.t0.status < data.t1.status
+data.t0.status == discharged ^ data.t1.status == passed away -> data.t0.status < data.t1.status
+data.t0.status == occupied ^ data.t1.status == resigned -> data.t0.status < data.t1.status
+data.t0.status == working ^ data.t1.status == resigned -> data.t0.status < data.t1.status
+data.t0.status == working ^ data.t1.status == pensioned off -> data.t0.status < data.t1.status
+data.t0.status == active ^ data.t1.status == resigned -> data.t0.status < data.t1.status
+data.t0.status == active ^ data.t1.status == passed away -> data.t0.status < data.t1.status
+data.t0.status == active ^ data.t1.status == pensioned off -> data.t0.status < data.t1.status
+data.t0.status == resigned ^ data.t1.status == passed away -> data.t0.status < data.t1.status
+data.t0.LN == quinn ^ data.t1.LN == quinn_changed -> data.t0.LN < data.t1.LN
+data.t0.status == involved ^ data.t1.status == departed -> data.t0.status < data.t1.status
+data.t0.status == involved ^ data.t1.status == passed away -> data.t0.status < data.t1.status
+data.t0.status == involved ^ data.t1.status == pensioned -> data.t0.status < data.t1.status
+data.t0.status == operating ^ data.t1.status == passed away -> data.t0.status < data.t1.status
+data.t0.status == removed ^ data.t1.status == passed away -> data.t0.status < data.t1.status
+data.t0.status == discharged ^ data.t1.status == deceased -> data.t0.status < data.t1.status
+data.t0.status == operating ^ data.t1.status == resigned -> data.t0.status < data.t1.status
+data.t0.status == resigned ^ data.t1.status == deceased -> data.t0.status < data.t1.status
+data.t0.status == retired ^ data.t1.status == gone -> data.t0.status < data.t1.status
+data.t0.status == occupied ^ data.t1.status == retired -> data.t0.status < data.t1.status
+data.t0.LN == mila ^ data.t1.LN == mila_changed -> data.t0.LN < data.t1.LN
+data.t0.status == pensioned ^ data.t1.status == finished -> data.t0.status < data.t1.status
+data.t0.status == occupied ^ data.t1.status == withdrawn -> data.t0.status < data.t1.status
+data.t0.status == withdrawn ^ data.t1.status == finished -> data.t0.status < data.t1.status
+data.t0.status == occupied ^ data.t1.status == finished -> data.t0.status < data.t1.status
+data.t0.status == in retirement ^ data.t1.status == expire -> data.t0.status < data.t1.status
+data.t0.status == occupied ^ data.t1.status == in retirement -> data.t0.status < data.t1.status
+data.t0.status == operating ^ data.t1.status == in retirement -> data.t0.status < data.t1.status
+data.t0.status == withdrawn ^ data.t1.status == passed away -> data.t0.status < data.t1.status
+data.t0.status == in retirement ^ data.t1.status == passed away -> data.t0.status < data.t1.status
+data.t0.status == withdrawn ^ data.t1.status == deceased -> data.t0.status < data.t1.status
+data.t0.status == active ^ data.t1.status == deceased -> data.t0.status < data.t1.status
+data.t0.status == in retirement ^ data.t1.status == deceased -> data.t0.status < data.t1.status
+data.t0.status == active ^ data.t1.status == withdrawn -> data.t0.status < data.t1.status
+data.t0.status == active ^ data.t1.status == removed -> data.t0.status < data.t1.status
+data.t0.status == active ^ data.t1.status == in retirement -> data.t0.status < data.t1.status
+data.t0.status == involved ^ data.t1.status == deceased -> data.t0.status < data.t1.status
+data.t0.status == employed ^ data.t1.status == defunct -> data.t0.status < data.t1.status
+data.t0.status == occupied ^ data.t1.status == defunct -> data.t0.status < data.t1.status
+data.t0.status == employed ^ data.t1.status == pensioned off -> data.t0.status < data.t1.status
+data.t0.status == active ^ data.t1.status == pulled out -> data.t0.status < data.t1.status
+data.t0.status == active ^ data.t1.status == pensioned -> data.t0.status < data.t1.status
+data.t0.status == employed ^ data.t1.status == pensioned -> data.t0.status < data.t1.status
+data.t0.status == working ^ data.t1.status == quiet -> data.t0.status < data.t1.status
+data.t0.status == operating ^ data.t1.status == gone -> data.t0.status < data.t1.status
+data.t0.status == operating ^ data.t1.status == quiet -> data.t0.status < data.t1.status
+data.t0.status == active ^ data.t1.status == gone -> data.t0.status < data.t1.status
+data.t0.status == active ^ data.t1.status == quiet -> data.t0.status < data.t1.status
+data.t0.status == employed ^ data.t1.status == gone -> data.t0.status < data.t1.status
+data.t0.status == employed ^ data.t1.status == withdrawn -> data.t0.status < data.t1.status
+data.t0.status == withdrawn ^ data.t1.status == fallen -> data.t0.status < data.t1.status
+data.t0.status == discharged ^ data.t1.status == expire -> data.t0.status < data.t1.status
+data.t0.status == employed ^ data.t1.status == discharged -> data.t0.status < data.t1.status
+data.t0.status == discharged ^ data.t1.status == fallen -> data.t0.status < data.t1.status
+data.t0.status == involved ^ data.t1.status == discharged -> data.t0.status < data.t1.status
+data.t0.status == retired ^ data.t1.status == expire -> data.t0.status < data.t1.status
+data.t0.status == employed ^ data.t1.status == passed away -> data.t0.status < data.t1.status
+data.t0.status == retired ^ data.t1.status == passed away -> data.t0.status < data.t1.status
+data.t0.status == employed ^ data.t1.status == fallen -> data.t0.status < data.t1.status
+data.t0.status == retired ^ data.t1.status == fallen -> data.t0.status < data.t1.status
+data.t0.status == involved ^ data.t1.status == fallen -> data.t0.status < data.t1.status
+data.t0.status == resigned ^ data.t1.status == finished -> data.t0.status < data.t1.status
+data.t0.status == involved ^ data.t1.status == resigned -> data.t0.status < data.t1.status
+data.t0.status == running ^ data.t1.status == unemployed -> data.t0.status < data.t1.status
+data.t0.status == retired ^ data.t1.status == finished -> data.t0.status < data.t1.status
+data.t0.status == involved ^ data.t1.status == pensioned off -> data.t0.status < data.t1.status
+data.t0.status == discharged ^ data.t1.status == finished -> data.t0.status < data.t1.status
+data.t0.status == unemployed ^ data.t1.status == finished -> data.t0.status < data.t1.status
+data.t0.status == in retirement ^ data.t1.status == defunct -> data.t0.status < data.t1.status
+data.t0.status == laboring ^ data.t1.status == resigned -> data.t0.status < data.t1.status
+data.t0.status == laboring ^ data.t1.status == discharged -> data.t0.status < data.t1.status
+data.t0.status == occupied ^ data.t1.status == unemployed -> data.t0.status < data.t1.status
+data.t0.status == resigned ^ data.t1.status == departed -> data.t0.status < data.t1.status
+data.t0.status == active ^ data.t1.status == unemployed -> data.t0.status < data.t1.status
+data.t0.status == active ^ data.t1.status == departed -> data.t0.status < data.t1.status
+data.t0.status == discharged ^ data.t1.status == departed -> data.t0.status < data.t1.status
+data.t0.status == withdrawn ^ data.t1.status == departed -> data.t0.status < data.t1.status
+data.t0.status == quiet ^ data.t1.status == deceased -> data.t0.status < data.t1.status
+data.t0.status == quiet ^ data.t1.status == departed -> data.t0.status < data.t1.status
+data.t0.status == employed ^ data.t1.status == deceased -> data.t0.status < data.t1.status
+data.t0.status == employed ^ data.t1.status == departed -> data.t0.status < data.t1.status
+data.t0.status == retired ^ data.t1.status == departed -> data.t0.status < data.t1.status
+data.t0.status == retired ^ data.t1.status == deceased -> data.t0.status < data.t1.status
+data.t0.status == withdrawn ^ data.t1.status == passed -> data.t0.status < data.t1.status
+data.t0.status == active ^ data.t1.status == fallen -> data.t0.status < data.t1.status
+data.t0.status == in retirement ^ data.t1.status == fallen -> data.t0.status < data.t1.status
+data.t0.status == occupied ^ data.t1.status == fallen -> data.t0.status < data.t1.status
+data.t0.status == removed ^ data.t1.status == fallen -> data.t0.status < data.t1.status
+data.t0.status == resigned ^ data.t1.status == gone -> data.t0.status < data.t1.status
+data.t0.status == removed ^ data.t1.status == gone -> data.t0.status < data.t1.status
+data.t0.status == resigned ^ data.t1.status == dead -> data.t0.status < data.t1.status
+data.t0.status == employed ^ data.t1.status == resigned -> data.t0.status < data.t1.status
+data.t0.status == resigned ^ data.t1.status == defunct -> data.t0.status < data.t1.status
+data.t0.status == resigned ^ data.t1.status == expire -> data.t0.status < data.t1.status
+data.t0.status == operating ^ data.t1.status == pensioned off -> data.t0.status < data.t1.status
+data.t0.status == employed ^ data.t1.status == removed -> data.t0.status < data.t1.status
+data.t0.status == pensioned off ^ data.t1.status == departed -> data.t0.status < data.t1.status
+data.t0.LN == ivy ^ data.t1.LN == ivy_changed -> data.t0.LN < data.t1.LN
+data.t0.status == discharged ^ data.t1.status == gone -> data.t0.status < data.t1.status
+data.t0.status == involved ^ data.t1.status == gone -> data.t0.status < data.t1.status
+data.t0.status == pensioned off ^ data.t1.status == passed -> data.t0.status < data.t1.status
+data.t0.status == active ^ data.t1.status == passed -> data.t0.status < data.t1.status
+data.t0.status == discharged ^ data.t1.status == passed -> data.t0.status < data.t1.status
+data.t0.status == running ^ data.t1.status == departed -> data.t0.status < data.t1.status
+data.t0.status == running ^ data.t1.status == gone -> data.t0.status < data.t1.status
+data.t0.status == pensioned off ^ data.t1.status == deceased -> data.t0.status < data.t1.status
+data.t0.status == in retirement ^ data.t1.status == gone -> data.t0.status < data.t1.status
+data.t0.status == employed ^ data.t1.status == in retirement -> data.t0.status < data.t1.status
+data.t0.status == unemployed ^ data.t1.status == gone -> data.t0.status < data.t1.status
+data.t0.status == involved ^ data.t1.status == defunct -> data.t0.status < data.t1.status
+data.t0.status == quiet ^ data.t1.status == fallen -> data.t0.status < data.t1.status
+data.t0.status == in retirement ^ data.t1.status == departed -> data.t0.status < data.t1.status
+data.t0.status == in retirement ^ data.t1.status == passed -> data.t0.status < data.t1.status
+data.t0.status == running ^ data.t1.status == quiet -> data.t0.status < data.t1.status
+data.t0.status == laboring ^ data.t1.status == gone -> data.t0.status < data.t1.status
+data.t0.status == laboring ^ data.t1.status == retired -> data.t0.status < data.t1.status
+data.t0.status == withdrawn ^ data.t1.status == gone -> data.t0.status < data.t1.status
+data.t0.status == unemployed ^ data.t1.status == defunct -> data.t0.status < data.t1.status
+data.t0.status == unemployed ^ data.t1.status == passed away -> data.t0.status < data.t1.status
+data.t0.status == involved ^ data.t1.status == pulled out -> data.t0.status < data.t1.status
+data.t0.status == pulled out ^ data.t1.status == finished -> data.t0.status < data.t1.status
+data.t0.status == running ^ data.t1.status == fallen -> data.t0.status < data.t1.status
+data.t0.status == laboring ^ data.t1.status == in retirement -> data.t0.status < data.t1.status
+data.t0.status == resigned ^ data.t1.status == passed -> data.t0.status < data.t1.status
+data.t0.status == resigned ^ data.t1.status == fallen -> data.t0.status < data.t1.status
+data.t0.status == running ^ data.t1.status == passed -> data.t0.status < data.t1.status
+data.t0.status == running ^ data.t1.status == in retirement -> data.t0.status < data.t1.status
+data.t0.status == unemployed ^ data.t1.status == dead -> data.t0.status < data.t1.status
+data.t0.LN == amara ^ data.t1.LN == amara_changed -> data.t0.LN < data.t1.LN
+data.t0.status == laboring ^ data.t1.status == dead -> data.t0.status < data.t1.status
+data.t0.status == involved ^ data.t1.status == in retirement -> data.t0.status < data.t1.status
+data.t0.status == laboring ^ data.t1.status == passed away -> data.t0.status < data.t1.status
+data.t0.status == pensioned off ^ data.t1.status == fallen -> data.t0.status < data.t1.status
+data.t0.status == in retirement ^ data.t1.status == finished -> data.t0.status < data.t1.status
+data.t0.status == in retirement ^ data.t1.status == dead -> data.t0.status < data.t1.status

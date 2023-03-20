@@ -1,0 +1,229 @@
+data.t0.id == 8109 ^ data.t1.id == 8101 ^ data.t0.status == employed ^ data.t1.status == deceased -> data.t0.status < data.t1.status
+data.t0.id == 4998 ^ data.t1.id == 4984 ^ data.t0.status == employed ^ data.t1.status == deceased -> data.t0.status < data.t1.status
+data.t0.id == 8130 ^ data.t1.id == 8126 ^ data.t0.status == employed ^ data.t1.status == deceased -> data.t0.status < data.t1.status
+data.t0.id == 3745 ^ data.t1.id == 3732 ^ data.t0.status == employed ^ data.t1.status == deceased -> data.t0.status < data.t1.status
+data.t0.id == 3029 ^ data.t1.id == 3024 ^ data.t0.status == employed ^ data.t1.status == deceased -> data.t0.status < data.t1.status
+data.t0.id == 9160 ^ data.t1.id == 9159 ^ data.t0.status == employed ^ data.t1.status == deceased -> data.t0.status < data.t1.status
+data.t0.id == 12261 ^ data.t1.id == 12254 ^ data.t0.status == employed ^ data.t1.status == deceased -> data.t0.status < data.t1.status
+data.t0.id == 7384 ^ data.t1.id == 7380 ^ data.t0.status == employed ^ data.t1.status == deceased -> data.t0.status < data.t1.status
+data.t0.id == 8255 ^ data.t1.id == 8250 ^ data.t0.status == working ^ data.t1.status == finished -> data.t0.status < data.t1.status
+data.t0.id == 996 ^ data.t1.id == 992 ^ data.t0.status == working ^ data.t1.status == finished -> data.t0.status < data.t1.status
+data.t0.id == 2464 ^ data.t1.id == 2462 ^ data.t0.status == working ^ data.t1.status == finished -> data.t0.status < data.t1.status
+data.t0.id == 7468 ^ data.t1.id == 7457 ^ data.t0.status == working ^ data.t1.status == finished -> data.t0.status < data.t1.status
+data.t0.id == 6843 ^ data.t1.id == 6838 ^ data.t0.status == working ^ data.t1.status == finished -> data.t0.status < data.t1.status
+data.t0.id == 11037 ^ data.t1.id == 11034 ^ data.t0.status == involved ^ data.t1.status == pensioned -> data.t0.status < data.t1.status
+data.t0.id == 4734 ^ data.t1.id == 4732 ^ data.t0.status == involved ^ data.t1.status == pensioned -> data.t0.status < data.t1.status
+data.t0.id == 1344 ^ data.t1.id == 1342 ^ data.t0.status == involved ^ data.t1.status == pensioned -> data.t0.status < data.t1.status
+data.t0.id == 11549 ^ data.t1.id == 11537 ^ data.t0.status == involved ^ data.t1.status == pensioned -> data.t0.status < data.t1.status
+data.t0.id == 11042 ^ data.t1.id == 11037 ^ data.t0.status == pensioned ^ data.t1.status == unemployed -> data.t0.status < data.t1.status
+data.t0.id == 533 ^ data.t1.id == 529 ^ data.t0.status == pensioned ^ data.t1.status == unemployed -> data.t0.status < data.t1.status
+data.t0.id == 6772 ^ data.t1.id == 6767 ^ data.t0.status == pensioned ^ data.t1.status == unemployed -> data.t0.status < data.t1.status
+data.t0.id == 11257 ^ data.t1.id == 11255 ^ data.t0.status == pensioned ^ data.t1.status == unemployed -> data.t0.status < data.t1.status
+data.t0.id == 6737 ^ data.t1.id == 6736 ^ data.t0.status == laboring ^ data.t1.status == pulled out -> data.t0.status < data.t1.status
+data.t0.id == 559 ^ data.t1.id == 550 ^ data.t0.status == laboring ^ data.t1.status == pulled out -> data.t0.status < data.t1.status
+data.t0.id == 2171 ^ data.t1.id == 2165 ^ data.t0.status == laboring ^ data.t1.status == pulled out -> data.t0.status < data.t1.status
+data.t0.id == 10866 ^ data.t1.id == 10861 ^ data.t0.status == expire ^ data.t1.status == quiet -> data.t0.status < data.t1.status
+data.t0.id == 9579 ^ data.t1.id == 9575 ^ data.t0.status == expire ^ data.t1.status == quiet -> data.t0.status < data.t1.status
+data.t0.id == 6313 ^ data.t1.id == 6312 ^ data.t0.status == gone ^ data.t1.status == occupied -> data.t0.status < data.t1.status
+data.t0.id == 3093 ^ data.t1.id == 3081 ^ data.t0.status == gone ^ data.t1.status == occupied -> data.t0.status < data.t1.status
+data.t0.id == 11751 ^ data.t1.id == 11749 ^ data.t0.status == gone ^ data.t1.status == occupied -> data.t0.status < data.t1.status
+data.t0.id == 11751 ^ data.t1.id == 11749 ^ data.t0.status == gone ^ data.t1.status == occupied -> data.t0.status < data.t1.status
+data.t0.id == 3682 ^ data.t1.id == 3671 ^ data.t0.status == gone ^ data.t1.status == occupied -> data.t0.status < data.t1.status
+data.t0.id == 3000 ^ data.t1.id == 2991 ^ data.t0.status == fallen ^ data.t1.status == in retirement -> data.t0.status < data.t1.status
+data.t0.id == 11870 ^ data.t1.id == 11866 ^ data.t0.status == fallen ^ data.t1.status == in retirement -> data.t0.status < data.t1.status
+data.t0.id == 3129 ^ data.t1.id == 3125 ^ data.t0.status == fallen ^ data.t1.status == in retirement -> data.t0.status < data.t1.status
+data.t0.id == 405 ^ data.t1.id == 400 ^ data.t0.status == quiet ^ data.t1.status == fallen -> data.t0.status < data.t1.status
+data.t0.id == 7200 ^ data.t1.id == 7192 ^ data.t0.status == quiet ^ data.t1.status == fallen -> data.t0.status < data.t1.status
+data.t0.id == 347 ^ data.t1.id == 342 ^ data.t0.status == quiet ^ data.t1.status == fallen -> data.t0.status < data.t1.status
+data.t0.id == 11757 ^ data.t1.id == 11751 ^ data.t0.status == occupied ^ data.t1.status == deceased -> data.t0.status < data.t1.status
+data.t0.id == 5770 ^ data.t1.id == 5760 ^ data.t0.status == occupied ^ data.t1.status == deceased -> data.t0.status < data.t1.status
+data.t0.id == 9545 ^ data.t1.id == 9543 ^ data.t0.status == occupied ^ data.t1.status == deceased -> data.t0.status < data.t1.status
+data.t0.id == 5913 ^ data.t1.id == 5912 ^ data.t0.status == occupied ^ data.t1.status == deceased -> data.t0.status < data.t1.status
+data.t0.id == 8094 ^ data.t1.id == 8089 ^ data.t0.status == occupied ^ data.t1.status == deceased -> data.t0.status < data.t1.status
+data.t0.id == 10699 ^ data.t1.id == 10697 ^ data.t0.status == occupied ^ data.t1.status == deceased -> data.t0.status < data.t1.status
+data.t0.id == 3631 ^ data.t1.id == 3625 ^ data.t0.status == withdrawn ^ data.t1.status == passed -> data.t0.status < data.t1.status
+data.t0.id == 5588 ^ data.t1.id == 5579 ^ data.t0.status == withdrawn ^ data.t1.status == passed -> data.t0.status < data.t1.status
+data.t0.id == 5637 ^ data.t1.id == 5634 ^ data.t0.status == withdrawn ^ data.t1.status == passed -> data.t0.status < data.t1.status
+data.t0.id == 12054 ^ data.t1.id == 12048 ^ data.t0.status == involved ^ data.t1.status == discharged -> data.t0.status < data.t1.status
+data.t0.id == 2635 ^ data.t1.id == 2623 ^ data.t0.status == involved ^ data.t1.status == discharged -> data.t0.status < data.t1.status
+data.t0.id == 12054 ^ data.t1.id == 12053 ^ data.t0.status == involved ^ data.t1.status == discharged -> data.t0.status < data.t1.status
+data.t0.id == 6424 ^ data.t1.id == 6419 ^ data.t0.status == active ^ data.t1.status == pensioned off -> data.t0.status < data.t1.status
+data.t0.id == 9020 ^ data.t1.id == 9018 ^ data.t0.status == active ^ data.t1.status == pensioned off -> data.t0.status < data.t1.status
+data.t0.id == 9276 ^ data.t1.id == 9269 ^ data.t0.status == occupied ^ data.t1.status == employed -> data.t0.status < data.t1.status
+data.t0.id == 8771 ^ data.t1.id == 8764 ^ data.t0.status == occupied ^ data.t1.status == employed -> data.t0.status < data.t1.status
+data.t0.id == 11335 ^ data.t1.id == 11331 ^ data.t0.status == pulled out ^ data.t1.status == employed -> data.t0.status < data.t1.status
+data.t0.id == 10574 ^ data.t1.id == 10571 ^ data.t0.status == pulled out ^ data.t1.status == employed -> data.t0.status < data.t1.status
+data.t0.id == 6278 ^ data.t1.id == 6277 ^ data.t0.status == working ^ data.t1.status == running -> data.t0.status < data.t1.status
+data.t0.id == 6486 ^ data.t1.id == 6483 ^ data.t0.status == working ^ data.t1.status == running -> data.t0.status < data.t1.status
+data.t0.id == 9870 ^ data.t1.id == 9866 ^ data.t0.status == working ^ data.t1.status == running -> data.t0.status < data.t1.status
+data.t0.id == 8060 ^ data.t1.id == 8056 ^ data.t0.status == working ^ data.t1.status == running -> data.t0.status < data.t1.status
+data.t0.id == 7397 ^ data.t1.id == 7389 ^ data.t0.status == working ^ data.t1.status == running -> data.t0.status < data.t1.status
+data.t0.id == 9129 ^ data.t1.id == 9122 ^ data.t0.status == retired ^ data.t1.status == running -> data.t0.status < data.t1.status
+data.t0.id == 12078 ^ data.t1.id == 12077 ^ data.t0.status == retired ^ data.t1.status == running -> data.t0.status < data.t1.status
+data.t0.id == 10748 ^ data.t1.id == 10743 ^ data.t0.status == laboring ^ data.t1.status == finished -> data.t0.status < data.t1.status
+data.t0.id == 3884 ^ data.t1.id == 3881 ^ data.t0.status == laboring ^ data.t1.status == finished -> data.t0.status < data.t1.status
+data.t0.id == 168 ^ data.t1.id == 167 ^ data.t0.status == laboring ^ data.t1.status == finished -> data.t0.status < data.t1.status
+data.t0.id == 6016 ^ data.t1.id == 6014 ^ data.t0.status == laboring ^ data.t1.status == finished -> data.t0.status < data.t1.status
+data.t0.id == 5576 ^ data.t1.id == 5571 ^ data.t0.status == laboring ^ data.t1.status == departed -> data.t0.status < data.t1.status
+data.t0.id == 3412 ^ data.t1.id == 3410 ^ data.t0.status == laboring ^ data.t1.status == departed -> data.t0.status < data.t1.status
+data.t0.id == 6319 ^ data.t1.id == 6314 ^ data.t0.status == laboring ^ data.t1.status == departed -> data.t0.status < data.t1.status
+data.t0.id == 5561 ^ data.t1.id == 5560 ^ data.t0.status == laboring ^ data.t1.status == departed -> data.t0.status < data.t1.status
+data.t0.id == 7734 ^ data.t1.id == 7733 ^ data.t0.status == active ^ data.t1.status == occupied -> data.t0.status < data.t1.status
+data.t0.id == 7407 ^ data.t1.id == 7403 ^ data.t0.status == active ^ data.t1.status == occupied -> data.t0.status < data.t1.status
+data.t0.id == 2440 ^ data.t1.id == 2439 ^ data.t0.status == active ^ data.t1.status == occupied -> data.t0.status < data.t1.status
+data.t0.id == 2865 ^ data.t1.id == 2861 ^ data.t0.status == active ^ data.t1.status == occupied -> data.t0.status < data.t1.status
+data.t0.id == 8622 ^ data.t1.id == 8620 ^ data.t0.status == active ^ data.t1.status == occupied -> data.t0.status < data.t1.status
+data.t0.id == 8525 ^ data.t1.id == 8521 ^ data.t0.status == pensioned off ^ data.t1.status == departed -> data.t0.status < data.t1.status
+data.t0.id == 7657 ^ data.t1.id == 7654 ^ data.t0.status == pensioned off ^ data.t1.status == departed -> data.t0.status < data.t1.status
+data.t0.id == 265 ^ data.t1.id == 256 ^ data.t0.status == pensioned off ^ data.t1.status == departed -> data.t0.status < data.t1.status
+data.t0.id == 5669 ^ data.t1.id == 5668 ^ data.t0.status == active ^ data.t1.status == operating -> data.t0.status < data.t1.status
+data.t0.id == 11907 ^ data.t1.id == 11905 ^ data.t0.status == active ^ data.t1.status == operating -> data.t0.status < data.t1.status
+data.t0.id == 2808 ^ data.t1.id == 2806 ^ data.t0.status == active ^ data.t1.status == operating -> data.t0.status < data.t1.status
+data.t0.id == 5596 ^ data.t1.id == 5592 ^ data.t0.status == active ^ data.t1.status == operating -> data.t0.status < data.t1.status
+data.t0.id == 8065 ^ data.t1.id == 8058 ^ data.t0.status == active ^ data.t1.status == operating -> data.t0.status < data.t1.status
+data.t0.id == 9781 ^ data.t1.id == 9775 ^ data.t0.status == active ^ data.t1.status == operating -> data.t0.status < data.t1.status
+data.t0.id == 5268 ^ data.t1.id == 5267 ^ data.t0.status == active ^ data.t1.status == operating -> data.t0.status < data.t1.status
+data.t0.id == 2546 ^ data.t1.id == 2539 ^ data.t0.status == pensioned off ^ data.t1.status == gone -> data.t0.status < data.t1.status
+data.t0.id == 8796 ^ data.t1.id == 8793 ^ data.t0.status == pensioned off ^ data.t1.status == gone -> data.t0.status < data.t1.status
+data.t0.id == 1697 ^ data.t1.id == 1695 ^ data.t0.status == deceased ^ data.t1.status == operating -> data.t0.status < data.t1.status
+data.t0.id == 9150 ^ data.t1.id == 9148 ^ data.t0.status == deceased ^ data.t1.status == operating -> data.t0.status < data.t1.status
+data.t0.id == 12062 ^ data.t1.id == 12057 ^ data.t0.status == running ^ data.t1.status == pensioned -> data.t0.status < data.t1.status
+data.t0.id == 10891 ^ data.t1.id == 10886 ^ data.t0.status == running ^ data.t1.status == pensioned -> data.t0.status < data.t1.status
+data.t0.id == 9300 ^ data.t1.id == 9290 ^ data.t0.status == laboring ^ data.t1.status == deceased -> data.t0.status < data.t1.status
+data.t0.id == 8931 ^ data.t1.id == 8927 ^ data.t0.status == laboring ^ data.t1.status == deceased -> data.t0.status < data.t1.status
+data.t0.id == 11253 ^ data.t1.id == 11251 ^ data.t0.status == laboring ^ data.t1.status == deceased -> data.t0.status < data.t1.status
+data.t0.id == 11273 ^ data.t1.id == 11259 ^ data.t0.status == gone ^ data.t1.status == quiet -> data.t0.status < data.t1.status
+data.t0.id == 10601 ^ data.t1.id == 10597 ^ data.t0.status == gone ^ data.t1.status == quiet -> data.t0.status < data.t1.status
+data.t0.id == 4636 ^ data.t1.id == 4635 ^ data.t0.status == working ^ data.t1.status == pulled out -> data.t0.status < data.t1.status
+data.t0.id == 1909 ^ data.t1.id == 1908 ^ data.t0.status == working ^ data.t1.status == pulled out -> data.t0.status < data.t1.status
+data.t0.id == 9010 ^ data.t1.id == 9003 ^ data.t0.status == fallen ^ data.t1.status == unemployed -> data.t0.status < data.t1.status
+data.t0.id == 4144 ^ data.t1.id == 4140 ^ data.t0.status == fallen ^ data.t1.status == unemployed -> data.t0.status < data.t1.status
+data.t0.id == 10311 ^ data.t1.id == 10308 ^ data.t0.status == involved ^ data.t1.status == employed -> data.t0.status < data.t1.status
+data.t0.id == 11569 ^ data.t1.id == 11568 ^ data.t0.status == involved ^ data.t1.status == employed -> data.t0.status < data.t1.status
+data.t0.id == 7377 ^ data.t1.id == 7376 ^ data.t0.status == involved ^ data.t1.status == employed -> data.t0.status < data.t1.status
+data.t0.id == 6873 ^ data.t1.id == 6872 ^ data.t0.status == fallen ^ data.t1.status == deceased -> data.t0.status < data.t1.status
+data.t0.id == 5770 ^ data.t1.id == 5764 ^ data.t0.status == fallen ^ data.t1.status == deceased -> data.t0.status < data.t1.status
+data.t0.id == 3467 ^ data.t1.id == 3462 ^ data.t0.status == pensioned off ^ data.t1.status == quiet -> data.t0.status < data.t1.status
+data.t0.id == 3312 ^ data.t1.id == 3310 ^ data.t0.status == pensioned off ^ data.t1.status == quiet -> data.t0.status < data.t1.status
+data.t0.id == 4821 ^ data.t1.id == 4818 ^ data.t0.status == pensioned off ^ data.t1.status == quiet -> data.t0.status < data.t1.status
+data.t0.id == 8926 ^ data.t1.id == 8925 ^ data.t0.status == pensioned off ^ data.t1.status == quiet -> data.t0.status < data.t1.status
+data.t0.id == 9266 ^ data.t1.id == 9257 ^ data.t0.status == pensioned off ^ data.t1.status == quiet -> data.t0.status < data.t1.status
+data.t0.id == 3467 ^ data.t1.id == 3463 ^ data.t0.status == pensioned off ^ data.t1.status == quiet -> data.t0.status < data.t1.status
+data.t0.id == 4138 ^ data.t1.id == 4134 ^ data.t0.status == unemployed ^ data.t1.status == retired -> data.t0.status < data.t1.status
+data.t0.id == 3098 ^ data.t1.id == 3097 ^ data.t0.status == unemployed ^ data.t1.status == retired -> data.t0.status < data.t1.status
+data.t0.id == 1426 ^ data.t1.id == 1417 ^ data.t0.status == withdrawn ^ data.t1.status == retired -> data.t0.status < data.t1.status
+data.t0.id == 5915 ^ data.t1.id == 5906 ^ data.t0.status == withdrawn ^ data.t1.status == retired -> data.t0.status < data.t1.status
+data.t0.id == 10691 ^ data.t1.id == 10679 ^ data.t0.status == withdrawn ^ data.t1.status == retired -> data.t0.status < data.t1.status
+data.t0.id == 8208 ^ data.t1.id == 8203 ^ data.t0.status == in retirement ^ data.t1.status == operating -> data.t0.status < data.t1.status
+data.t0.id == 9205 ^ data.t1.id == 9203 ^ data.t0.status == in retirement ^ data.t1.status == operating -> data.t0.status < data.t1.status
+data.t0.id == 4318 ^ data.t1.id == 4308 ^ data.t0.status == pensioned off ^ data.t1.status == occupied -> data.t0.status < data.t1.status
+data.t0.id == 4489 ^ data.t1.id == 4485 ^ data.t0.status == pensioned off ^ data.t1.status == occupied -> data.t0.status < data.t1.status
+data.t0.id == 11322 ^ data.t1.id == 11313 ^ data.t0.status == pensioned off ^ data.t1.status == occupied -> data.t0.status < data.t1.status
+data.t0.id == 9255 ^ data.t1.id == 9251 ^ data.t0.status == pensioned off ^ data.t1.status == finished -> data.t0.status < data.t1.status
+data.t0.id == 11003 ^ data.t1.id == 10998 ^ data.t0.status == pensioned off ^ data.t1.status == finished -> data.t0.status < data.t1.status
+data.t0.id == 9964 ^ data.t1.id == 9963 ^ data.t0.status == pensioned off ^ data.t1.status == finished -> data.t0.status < data.t1.status
+data.t0.id == 8137 ^ data.t1.id == 8127 ^ data.t0.status == operating ^ data.t1.status == unemployed -> data.t0.status < data.t1.status
+data.t0.id == 1566 ^ data.t1.id == 1563 ^ data.t0.status == operating ^ data.t1.status == unemployed -> data.t0.status < data.t1.status
+data.t0.id == 715 ^ data.t1.id == 714 ^ data.t0.status == operating ^ data.t1.status == unemployed -> data.t0.status < data.t1.status
+data.t0.id == 7254 ^ data.t1.id == 7251 ^ data.t0.status == operating ^ data.t1.status == passed away -> data.t0.status < data.t1.status
+data.t0.id == 3004 ^ data.t1.id == 2994 ^ data.t0.status == operating ^ data.t1.status == passed away -> data.t0.status < data.t1.status
+data.t0.id == 1848 ^ data.t1.id == 1847 ^ data.t0.status == operating ^ data.t1.status == passed away -> data.t0.status < data.t1.status
+data.t0.id == 778 ^ data.t1.id == 775 ^ data.t0.status == pulled out ^ data.t1.status == deceased -> data.t0.status < data.t1.status
+data.t0.id == 5051 ^ data.t1.id == 5050 ^ data.t0.status == pulled out ^ data.t1.status == deceased -> data.t0.status < data.t1.status
+data.t0.id == 10867 ^ data.t1.id == 10853 ^ data.t0.status == pulled out ^ data.t1.status == deceased -> data.t0.status < data.t1.status
+data.t0.id == 9052 ^ data.t1.id == 9049 ^ data.t0.status == dead ^ data.t1.status == defunct -> data.t0.status < data.t1.status
+data.t0.id == 7925 ^ data.t1.id == 7922 ^ data.t0.status == dead ^ data.t1.status == defunct -> data.t0.status < data.t1.status
+data.t0.id == 9052 ^ data.t1.id == 9047 ^ data.t0.status == dead ^ data.t1.status == defunct -> data.t0.status < data.t1.status
+data.t0.id == 3050 ^ data.t1.id == 3049 ^ data.t0.status == dead ^ data.t1.status == defunct -> data.t0.status < data.t1.status
+data.t0.id == 1824 ^ data.t1.id == 1822 ^ data.t0.status == dead ^ data.t1.status == defunct -> data.t0.status < data.t1.status
+data.t0.id == 5533 ^ data.t1.id == 5522 ^ data.t0.status == dead ^ data.t1.status == defunct -> data.t0.status < data.t1.status
+data.t0.id == 5480 ^ data.t1.id == 5475 ^ data.t0.status == dead ^ data.t1.status == defunct -> data.t0.status < data.t1.status
+data.t0.id == 2371 ^ data.t1.id == 2367 ^ data.t0.status == pulled out ^ data.t1.status == fallen -> data.t0.status < data.t1.status
+data.t0.id == 6744 ^ data.t1.id == 6737 ^ data.t0.status == pulled out ^ data.t1.status == fallen -> data.t0.status < data.t1.status
+data.t0.id == 10037 ^ data.t1.id == 10031 ^ data.t0.status == pulled out ^ data.t1.status == fallen -> data.t0.status < data.t1.status
+data.t0.id == 10040 ^ data.t1.id == 10029 ^ data.t0.status == pulled out ^ data.t1.status == departed -> data.t0.status < data.t1.status
+data.t0.id == 12163 ^ data.t1.id == 12162 ^ data.t0.status == pulled out ^ data.t1.status == departed -> data.t0.status < data.t1.status
+data.t0.id == 4473 ^ data.t1.id == 4466 ^ data.t0.status == pulled out ^ data.t1.status == departed -> data.t0.status < data.t1.status
+data.t0.id == 252 ^ data.t1.id == 244 ^ data.t0.status == retired ^ data.t1.status == discharged -> data.t0.status < data.t1.status
+data.t0.id == 7345 ^ data.t1.id == 7344 ^ data.t0.status == retired ^ data.t1.status == discharged -> data.t0.status < data.t1.status
+data.t0.id == 7951 ^ data.t1.id == 7942 ^ data.t0.status == quiet ^ data.t1.status == unemployed -> data.t0.status < data.t1.status
+data.t0.id == 5543 ^ data.t1.id == 5534 ^ data.t0.status == quiet ^ data.t1.status == unemployed -> data.t0.status < data.t1.status
+data.t0.id == 8190 ^ data.t1.id == 8189 ^ data.t0.status == quiet ^ data.t1.status == unemployed -> data.t0.status < data.t1.status
+data.t0.id == 11549 ^ data.t1.id == 11538 ^ data.t0.status == working ^ data.t1.status == pensioned -> data.t0.status < data.t1.status
+data.t0.id == 1629 ^ data.t1.id == 1627 ^ data.t0.status == working ^ data.t1.status == pensioned -> data.t0.status < data.t1.status
+data.t0.id == 279 ^ data.t1.id == 269 ^ data.t0.status == employed ^ data.t1.status == discharged -> data.t0.status < data.t1.status
+data.t0.id == 11570 ^ data.t1.id == 11561 ^ data.t0.status == employed ^ data.t1.status == discharged -> data.t0.status < data.t1.status
+data.t0.id == 4580 ^ data.t1.id == 4568 ^ data.t0.status == operating ^ data.t1.status == defunct -> data.t0.status < data.t1.status
+data.t0.id == 12274 ^ data.t1.id == 12273 ^ data.t0.status == operating ^ data.t1.status == defunct -> data.t0.status < data.t1.status
+data.t0.id == 4969 ^ data.t1.id == 4961 ^ data.t0.status == operating ^ data.t1.status == pulled out -> data.t0.status < data.t1.status
+data.t0.id == 9862 ^ data.t1.id == 9857 ^ data.t0.status == operating ^ data.t1.status == pulled out -> data.t0.status < data.t1.status
+data.t0.id == 9631 ^ data.t1.id == 9626 ^ data.t0.status == operating ^ data.t1.status == pulled out -> data.t0.status < data.t1.status
+data.t0.id == 11349 ^ data.t1.id == 11343 ^ data.t0.status == employed ^ data.t1.status == passed away -> data.t0.status < data.t1.status
+data.t0.id == 1535 ^ data.t1.id == 1528 ^ data.t0.status == employed ^ data.t1.status == passed away -> data.t0.status < data.t1.status
+data.t0.id == 6997 ^ data.t1.id == 6995 ^ data.t0.status == laboring ^ data.t1.status == expire -> data.t0.status < data.t1.status
+data.t0.id == 9689 ^ data.t1.id == 9680 ^ data.t0.status == laboring ^ data.t1.status == expire -> data.t0.status < data.t1.status
+data.t0.id == 5840 ^ data.t1.id == 5827 ^ data.t0.status == laboring ^ data.t1.status == expire -> data.t0.status < data.t1.status
+data.t0.id == 9689 ^ data.t1.id == 9680 ^ data.t0.status == laboring ^ data.t1.status == expire -> data.t0.status < data.t1.status
+data.t0.id == 93 ^ data.t1.id == 83 ^ data.t0.status == laboring ^ data.t1.status == expire -> data.t0.status < data.t1.status
+data.t0.id == 9947 ^ data.t1.id == 9938 ^ data.t0.status == laboring ^ data.t1.status == expire -> data.t0.status < data.t1.status
+data.t0.id == 6373 ^ data.t1.id == 6370 ^ data.t0.status == resigned ^ data.t1.status == passed away -> data.t0.status < data.t1.status
+data.t0.id == 640 ^ data.t1.id == 639 ^ data.t0.status == resigned ^ data.t1.status == passed away -> data.t0.status < data.t1.status
+data.t0.id == 12014 ^ data.t1.id == 12005 ^ data.t0.status == resigned ^ data.t1.status == passed away -> data.t0.status < data.t1.status
+data.t0.id == 3874 ^ data.t1.id == 3869 ^ data.t0.status == in retirement ^ data.t1.status == gone -> data.t0.status < data.t1.status
+data.t0.id == 3397 ^ data.t1.id == 3396 ^ data.t0.status == in retirement ^ data.t1.status == gone -> data.t0.status < data.t1.status
+data.t0.id == 3874 ^ data.t1.id == 3868 ^ data.t0.status == in retirement ^ data.t1.status == gone -> data.t0.status < data.t1.status
+data.t0.id == 3067 ^ data.t1.id == 3054 ^ data.t0.status == in retirement ^ data.t1.status == gone -> data.t0.status < data.t1.status
+data.t0.id == 1471 ^ data.t1.id == 1463 ^ data.t0.status == in retirement ^ data.t1.status == gone -> data.t0.status < data.t1.status
+data.t0.id == 10210 ^ data.t1.id == 10203 ^ data.t0.status == in retirement ^ data.t1.status == gone -> data.t0.status < data.t1.status
+data.t0.id == 10328 ^ data.t1.id == 10325 ^ data.t0.status == employed ^ data.t1.status == unemployed -> data.t0.status < data.t1.status
+data.t0.id == 8137 ^ data.t1.id == 8126 ^ data.t0.status == employed ^ data.t1.status == unemployed -> data.t0.status < data.t1.status
+data.t0.id == 1578 ^ data.t1.id == 1577 ^ data.t0.status == unemployed ^ data.t1.status == removed -> data.t0.status < data.t1.status
+data.t0.id == 4532 ^ data.t1.id == 4527 ^ data.t0.status == unemployed ^ data.t1.status == removed -> data.t0.status < data.t1.status
+data.t0.id == 2966 ^ data.t1.id == 2961 ^ data.t0.status == defunct ^ data.t1.status == retired -> data.t0.status < data.t1.status
+data.t0.id == 6213 ^ data.t1.id == 6205 ^ data.t0.status == defunct ^ data.t1.status == retired -> data.t0.status < data.t1.status
+data.t0.id == 7297 ^ data.t1.id == 7291 ^ data.t0.status == defunct ^ data.t1.status == retired -> data.t0.status < data.t1.status
+data.t0.id == 11367 ^ data.t1.id == 11361 ^ data.t0.status == resigned ^ data.t1.status == quiet -> data.t0.status < data.t1.status
+data.t0.id == 7516 ^ data.t1.id == 7515 ^ data.t0.status == resigned ^ data.t1.status == quiet -> data.t0.status < data.t1.status
+data.t0.id == 3440 ^ data.t1.id == 3439 ^ data.t0.status == resigned ^ data.t1.status == quiet -> data.t0.status < data.t1.status
+data.t0.id == 3430 ^ data.t1.id == 3422 ^ data.t0.status == resigned ^ data.t1.status == quiet -> data.t0.status < data.t1.status
+data.t0.id == 5991 ^ data.t1.id == 5987 ^ data.t0.status == unemployed ^ data.t1.status == dead -> data.t0.status < data.t1.status
+data.t0.id == 6410 ^ data.t1.id == 6402 ^ data.t0.status == unemployed ^ data.t1.status == dead -> data.t0.status < data.t1.status
+data.t0.id == 9406 ^ data.t1.id == 9404 ^ data.t0.status == quiet ^ data.t1.status == finished -> data.t0.status < data.t1.status
+data.t0.id == 3832 ^ data.t1.id == 3828 ^ data.t0.status == quiet ^ data.t1.status == finished -> data.t0.status < data.t1.status
+data.t0.id == 2028 ^ data.t1.id == 2020 ^ data.t0.status == unemployed ^ data.t1.status == expire -> data.t0.status < data.t1.status
+data.t0.id == 5840 ^ data.t1.id == 5839 ^ data.t0.status == unemployed ^ data.t1.status == expire -> data.t0.status < data.t1.status
+data.t0.id == 5840 ^ data.t1.id == 5839 ^ data.t0.status == unemployed ^ data.t1.status == expire -> data.t0.status < data.t1.status
+data.t0.id == 5717 ^ data.t1.id == 5709 ^ data.t0.status == running ^ data.t1.status == passed away -> data.t0.status < data.t1.status
+data.t0.id == 4029 ^ data.t1.id == 4027 ^ data.t0.status == running ^ data.t1.status == passed away -> data.t0.status < data.t1.status
+data.t0.id == 11510 ^ data.t1.id == 11503 ^ data.t0.status == running ^ data.t1.status == passed away -> data.t0.status < data.t1.status
+data.t0.id == 11923 ^ data.t1.id == 11910 ^ data.t0.status == laboring ^ data.t1.status == working -> data.t0.status < data.t1.status
+data.t0.id == 9068 ^ data.t1.id == 9066 ^ data.t0.status == laboring ^ data.t1.status == working -> data.t0.status < data.t1.status
+data.t0.id == 10343 ^ data.t1.id == 10335 ^ data.t0.status == laboring ^ data.t1.status == working -> data.t0.status < data.t1.status
+data.t0.id == 4523 ^ data.t1.id == 4519 ^ data.t0.status == laboring ^ data.t1.status == working -> data.t0.status < data.t1.status
+data.t0.id == 4766 ^ data.t1.id == 4758 ^ data.t0.status == resigned ^ data.t1.status == pensioned -> data.t0.status < data.t1.status
+data.t0.id == 6696 ^ data.t1.id == 6690 ^ data.t0.status == resigned ^ data.t1.status == pensioned -> data.t0.status < data.t1.status
+data.t0.id == 4143 ^ data.t1.id == 4134 ^ data.t0.status == unemployed ^ data.t1.status == gone -> data.t0.status < data.t1.status
+data.t0.id == 8792 ^ data.t1.id == 8788 ^ data.t0.status == unemployed ^ data.t1.status == gone -> data.t0.status < data.t1.status
+data.t0.id == 511 ^ data.t1.id == 497 ^ data.t0.status == defunct ^ data.t1.status == expire -> data.t0.status < data.t1.status
+data.t0.id == 4589 ^ data.t1.id == 4588 ^ data.t0.status == defunct ^ data.t1.status == expire -> data.t0.status < data.t1.status
+data.t0.id == 7951 ^ data.t1.id == 7949 ^ data.t0.status == resigned ^ data.t1.status == unemployed -> data.t0.status < data.t1.status
+data.t0.id == 6149 ^ data.t1.id == 6139 ^ data.t0.status == resigned ^ data.t1.status == unemployed -> data.t0.status < data.t1.status
+data.t0.id == 9749 ^ data.t1.id == 9747 ^ data.t0.status == unemployed ^ data.t1.status == withdrawn -> data.t0.status < data.t1.status
+data.t0.id == 2886 ^ data.t1.id == 2878 ^ data.t0.status == unemployed ^ data.t1.status == withdrawn -> data.t0.status < data.t1.status
+data.t0.id == 9609 ^ data.t1.id == 9604 ^ data.t0.status == unemployed ^ data.t1.status == withdrawn -> data.t0.status < data.t1.status
+data.t0.id == 11462 ^ data.t1.id == 11456 ^ data.t0.status == quiet ^ data.t1.status == dead -> data.t0.status < data.t1.status
+data.t0.id == 5535 ^ data.t1.id == 5534 ^ data.t0.status == quiet ^ data.t1.status == dead -> data.t0.status < data.t1.status
+data.t0.id == 9820 ^ data.t1.id == 9816 ^ data.t0.status == quiet ^ data.t1.status == dead -> data.t0.status < data.t1.status
+data.t0.id == 1974 ^ data.t1.id == 1970 ^ data.t0.status == quiet ^ data.t1.status == dead -> data.t0.status < data.t1.status
+data.t0.id == 619 ^ data.t1.id == 617 ^ data.t0.status == quiet ^ data.t1.status == dead -> data.t0.status < data.t1.status
+data.t0.id == 9569 ^ data.t1.id == 9562 ^ data.t0.status == quiet ^ data.t1.status == dead -> data.t0.status < data.t1.status
+data.t0.id == 4572 ^ data.t1.id == 4570 ^ data.t0.status == passed ^ data.t1.status == discharged -> data.t0.status < data.t1.status
+data.t0.id == 7170 ^ data.t1.id == 7167 ^ data.t0.status == passed ^ data.t1.status == discharged -> data.t0.status < data.t1.status
+data.t0.id == 2240 ^ data.t1.id == 2234 ^ data.t0.status == active ^ data.t1.status == withdrawn -> data.t0.status < data.t1.status
+data.t0.id == 11765 ^ data.t1.id == 11764 ^ data.t0.status == active ^ data.t1.status == withdrawn -> data.t0.status < data.t1.status
+data.t0.id == 6329 ^ data.t1.id == 6324 ^ data.t0.status == active ^ data.t1.status == withdrawn -> data.t0.status < data.t1.status
+data.t0.id == 5719 ^ data.t1.id == 5708 ^ data.t0.status == quiet ^ data.t1.status == pensioned -> data.t0.status < data.t1.status
+data.t0.id == 1629 ^ data.t1.id == 1623 ^ data.t0.status == quiet ^ data.t1.status == pensioned -> data.t0.status < data.t1.status
+data.t0.id == 4894 ^ data.t1.id == 4890 ^ data.t0.status == quiet ^ data.t1.status == pensioned -> data.t0.status < data.t1.status
+data.t0.id == 3488 ^ data.t1.id == 3486 ^ data.t0.status == quiet ^ data.t1.status == passed away -> data.t0.status < data.t1.status
+data.t0.id == 5909 ^ data.t1.id == 5907 ^ data.t0.status == quiet ^ data.t1.status == passed away -> data.t0.status < data.t1.status
