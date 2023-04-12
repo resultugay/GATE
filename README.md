@@ -34,12 +34,22 @@ The preview of the project structure is as follow.
     ├── results
     └── shell
 ```
+## Install packages
+```
+pip3 install -r requirements.txt
+```
+
 
 ## Run the code
 ```
 cd GATE
 python main.py --creator Gate --data ${data_path} --lr ${lr} --batch_size ${batch_size} --high_conf_sample_ratio ${conf_sample_size} --conf_threshold ${conf_threshold} --variant gate --gpuOption ${gpu}
 ```
+## Example
+```
+python3 main.py --creator Gate --data /home/rsltgy/Desktop/GATE/GATE/data/person/ --lr 1e-4 --batch_size 8 --high_conf_sample_ratio 0.52 --epoch 5
+```
+
 Here the arguments are described as follow
 
 - **data_path** is the path of the original data (*.csv file)
